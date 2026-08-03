@@ -59,9 +59,9 @@ https://leeleschool.substack.com/
 
 <hr>
 
-<img id="clases" class="section-logo" src="imagenes/logo_pequeño.png" alt="Logo de LéELE">
+<img class="section-logo" src="imagenes/logo_pequeño.png" alt="Logo de LéELE">
 
-<section class="pricing">
+<section id="clases" class="pricing">
 
 <h2>Clases particulares de español</h2>
 
@@ -110,19 +110,20 @@ const down = document.querySelector(".down-btn");
 const up = document.querySelector(".up-btn");
 const clases = document.getElementById("clases");
 
-const observer = new IntersectionObserver(([entry]) => {
-    if (entry.isIntersecting) {
+function actualizarBoton() {
+    const y = clases.getBoundingClientRect().top;
+
+    if (y <= 120) {
         down.style.display = "none";
         up.style.display = "block";
     } else {
         down.style.display = "block";
         up.style.display = "none";
     }
-}, {
-    threshold: 0.25
-});
+}
 
-observer.observe(clases);
+window.addEventListener("scroll", actualizarBoton);
+window.addEventListener("load", actualizarBoton);
 </script>
 
 </body>
