@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-nivel="c1">
 
 <div class="topbar">
   <span class="mark">É</span>
@@ -49,33 +49,21 @@
 
 <div class="reading">
   <p class="kicker">Nivel C1</p>
-  <h1>Título del primer texto de este nivel</h1>
-  <p class="byline">28 JUL · NOMBRE DEL AUTOR</p>
-  <p>
-    Reemplazá este párrafo por el texto real de la lectura para el nivel
-    C1. Podés escribir tantos párrafos como necesites.
-  </p>
-  <p>
-    Un segundo párrafo de ejemplo, para mostrar el espaciado entre
-    párrafos dentro de una misma lectura.
-  </p>
+  <h1>Textos de nivel C1</h1>
+  <p>Elegí un tema gramatical y un tema de contenido para filtrar, o dejá "Todos" para ver todos los textos disponibles de este nivel.</p>
+  <a href="#textos-nivel" class="btn-textos">Ir a los textos ↓</a>
 </div>
 
-<div class="layout" style="grid-template-columns: 1fr; max-width: 680px;">
-  <section>
-    <div class="article-row">
-      <div>
-        <span class="byline">C1</span>
-        <h3>Título del segundo texto de este nivel</h3>
-        <p class="dek">Resumen breve de este segundo texto de ejemplo.</p>
-      </div>
-      <div class="thumb"></div>
-    </div>
-  </section>
+<div class="layout" style="grid-template-columns: 1fr; max-width: 780px;">
+  <main id="textos-nivel">
+    <div id="filtros-tema" class="filtros-tema"></div>
+    <div id="lista-textos"><p>Cargando textos…</p></div>
+  </main>
 </div>
 
 <footer class="site-footer">Lé ELE! · Proyecto de escuela · 2026</footer>
 
 <script src="nav.js" defer></script>
+<script src="nivel.js" defer></script>
 </body>
 </html>
