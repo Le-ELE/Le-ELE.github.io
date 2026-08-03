@@ -23,7 +23,7 @@
 
 <img class="profile-photo" src="imagenes/santiago.jpeg" alt="Foto de Santiago">
 
-<h1 id="inicio" class="page-title">Esto es LéELE y yo soy Santiago.</h1>
+<h1 class="page-title">Esto es LéELE y yo soy Santiago.</h1>
 
 <p>
 Soy profesor de Español como Lengua Extranjera (ELE) con 5 años de experiencia.
@@ -59,7 +59,7 @@ https://leeleschool.substack.com/
 
 <hr>
 
-<img id="clases" class="section-logo" src="imagenes/logo_pequeño.png" alt="Logo de LéELE">
+<img class="section-logo" src="imagenes/logo_pequeño.png" alt="Logo de LéELE">
 
 <section class="pricing">
 
@@ -96,34 +96,6 @@ LéELE! · 2026
 </footer>
 
 </main>
-
-<a href="#clases" class="floating-btn down-btn">
-📚 Clases!
-</a>
-
-<a href="#inicio" class="floating-btn up-btn">
-📚 LéELE!
-</a>
-
-<script>
-const down = document.querySelector(".down-btn");
-const up = document.querySelector(".up-btn");
-const clases = document.getElementById("clases");
-
-const observer = new IntersectionObserver(([entry]) => {
-    if (entry.isIntersecting) {
-        down.style.display = "none";
-        up.style.display = "block";
-    } else {
-        down.style.display = "block";
-        up.style.display = "none";
-    }
-}, {
-    threshold: 0.25
-});
-
-observer.observe(clases);
-</script>
 
 </body>
 </html>
