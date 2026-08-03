@@ -3,61 +3,111 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cuaderno del Proyecto — Inicio</title>
+<title>Lé ELE! — Inicio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Literata:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav class="tabs">
+<div class="topbar">
+  <span class="mark">É</span>
+  <span class="meta">Lecturas para estudiantes de español</span>
+</div>
+
+<header class="masthead">
+  <h1 class="logo">Lé<br><em>ELE!</em></h1>
+  <p class="tagline">Textos originales para leer y aprender</p>
+</header>
+
+<nav class="levels">
   <a href="index.html" aria-current="page">Inicio</a>
-  <a href="textos.html">Lecturas</a>
-  <a href="sobre.html">Sobre el proyecto</a>
+  <div class="has-sub" tabindex="0">
+    <a href="nivel-a1.html">Nivel A (1 y 2)</a>
+    <div class="dropdown">
+      <a href="nivel-a1.html">Nivel: A1</a>
+      <a href="nivel-a2.html">Nivel: A2</a>
+    </div>
+  </div>
+  <div class="has-sub" tabindex="0">
+    <a href="nivel-b1.html">Nivel B (1 y 2)</a>
+    <div class="dropdown">
+      <a href="nivel-b1.html">Nivel: B1</a>
+      <a href="nivel-b2.html">Nivel: B2</a>
+    </div>
+  </div>
+  <div class="has-sub" tabindex="0">
+    <a href="nivel-c1.html">Nivel C (1 y 2)</a>
+    <div class="dropdown">
+      <a href="nivel-c1.html">Nivel: C1</a>
+      <a href="nivel-c2.html">Nivel: C2</a>
+    </div>
+  </div>
+  <a href="boletines.html">Boletines informativos</a>
+  <a href="acerca.html">Acerca de</a>
 </nav>
 
-<main class="page">
-  <header class="notebook-head">
-    <span class="eyebrow">Cuaderno de clase · página 1</span>
-    <h1 class="title">Nuestro proyecto de escuela</h1>
-    <p class="subtitle">Un espacio donde compartimos lo que estamos investigando y los textos que fuimos escribiendo y leyendo en el camino.</p>
-  </header>
+<div class="layout">
+  <main>
+    <article class="featured">
+      <div class="thumb" role="img" aria-label="Imagen del artículo destacado"></div>
+      <h1>(A2) Título del artículo destacado</h1>
+      <p class="dek">Un resumen de una o dos líneas que invita a leer el texto completo.</p>
+      <p class="byline">28 JUL · NOMBRE DEL AUTOR</p>
+    </article>
 
-  <section>
-    <h2>¿Qué vas a encontrar acá?</h2>
-    <p>
-      Esta página reúne los textos que preparamos para el proyecto de escuela,
-      pensados para que cualquier estudiante pueda leerlos, entender de qué
-      se trata el trabajo y seguir el proceso paso a paso.
-    </p>
-    <p>
-      Podés empezar por la sección de <a href="textos.html">Lecturas</a> si
-      querés ir directo a los textos, o pasar primero por
-      <a href="sobre.html">Sobre el proyecto</a> para conocer el contexto:
-      quiénes lo hicimos, con qué objetivo y qué aprendimos.
-    </p>
-  </section>
+    <section>
+      <div class="article-row">
+        <div>
+          <span class="byline">A1</span>
+          <h3><a href="nivel-a1.html">(A1) Título de otro artículo</a></h3>
+          <p class="dek">Resumen breve del contenido de este texto.</p>
+          <p class="byline">28 JUL · NOMBRE DEL AUTOR</p>
+        </div>
+        <div class="thumb"></div>
+      </div>
+      <div class="article-row">
+        <div>
+          <span class="byline">B1</span>
+          <h3><a href="nivel-b1.html">(B1) Título de otro artículo</a></h3>
+          <p class="dek">Resumen breve del contenido de este texto.</p>
+          <p class="byline">28 JUL · NOMBRE DEL AUTOR</p>
+        </div>
+        <div class="thumb"></div>
+      </div>
+    </section>
+  </main>
 
-  <section>
-    <h2>Últimas lecturas agregadas</h2>
-    <ul class="reading-list">
-      <li>
-        <span class="lbl">Texto 01</span>
-        <a href="textos.html#texto-1">Título de la primera lectura</a>
-        <p class="desc">Un resumen breve de una o dos líneas sobre qué trata este texto.</p>
-      </li>
-      <li>
-        <span class="lbl">Texto 02</span>
-        <a href="textos.html#texto-2">Título de la segunda lectura</a>
-        <p class="desc">Un resumen breve de una o dos líneas sobre qué trata este texto.</p>
-      </li>
-    </ul>
-  </section>
+  <aside>
+    <div class="sidebar-title">
+      <span>Más populares</span>
+      <a href="boletines.html">Ver todo</a>
+    </div>
+    <div class="pop-item">
+      <div>
+        <h4>(A1) Título de artículo popular</h4>
+        <p class="byline">28 JUL · NOMBRE DEL AUTOR</p>
+      </div>
+      <div class="thumb"></div>
+    </div>
+    <div class="pop-item">
+      <div>
+        <h4>(A2) Otro título de artículo</h4>
+        <p class="byline">28 JUL · NOMBRE DEL AUTOR</p>
+      </div>
+      <div class="thumb"></div>
+    </div>
+    <div class="pop-item">
+      <div>
+        <h4>(B1) Otro título más</h4>
+        <p class="byline">28 JUL · NOMBRE DEL AUTOR</p>
+      </div>
+      <div class="thumb"></div>
+    </div>
+  </aside>
+</div>
 
-  <footer>
-    Hecho a mano, sin plantillas, para el proyecto de escuela · actualizado 2026
-  </footer>
-</main>
+<footer class="site-footer">Lé ELE! · Proyecto de escuela · 2026</footer>
 
 </body>
 </html>
