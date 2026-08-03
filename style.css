@@ -93,6 +93,17 @@ nav.levels > a[aria-current="page"] { border-bottom: 2px solid var(--accent); }
 
 nav.levels .has-sub { position: relative; }
 
+nav.levels .level-toggle {
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0.2rem 0;
+}
+
 .dropdown {
   display: none;
   position: absolute;
@@ -107,7 +118,8 @@ nav.levels .has-sub { position: relative; }
 }
 
 nav.levels .has-sub:hover .dropdown,
-nav.levels .has-sub:focus-within .dropdown {
+nav.levels .has-sub:focus-within .dropdown,
+nav.levels .has-sub.open .dropdown {
   display: block;
 }
 
