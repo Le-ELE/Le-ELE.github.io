@@ -104,6 +104,12 @@ hr {
   margin: 2.8rem auto;
 }
 
+/* Hace que el botón Clases! deje visible el logo */
+
+#clases {
+  height: 1px;
+  scroll-margin-top: 1px;
+}
 /* ---------- Logo pequeño ---------- */
 
 .section-logo {
