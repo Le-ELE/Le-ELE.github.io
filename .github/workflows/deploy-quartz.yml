@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - vault
   workflow_dispatch:
 
 permissions:
@@ -19,8 +20,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout main
         uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Checkout vault
+        uses: actions/checkout@v4
+        with:
+          ref: vault
+          path: vault
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -37,7 +46,7 @@ jobs:
 
       - name: Copy content to Quartz
         run: |
-          cp -r $GITHUB_WORKSPACE/estudiantes /tmp/quartz-temp/content/
+          cp -r $GITHUB_WORKSPACE/vault/* /tmp/quartz-temp/content/
 
       - name: Build Quartz
         working-directory: /tmp/quartz-temp
