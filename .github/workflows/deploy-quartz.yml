@@ -30,8 +30,8 @@ jobs:
       - name: Install Quartz
         run: |
           cd /tmp
-          git clone https://github.com/jackyzha0/quartz.git
-          cd quartz
+          git clone https://github.com/jackyzha0/quartz.git quartz-temp
+          cd quartz-temp
           git checkout v4.5.2
           npm ci
 
