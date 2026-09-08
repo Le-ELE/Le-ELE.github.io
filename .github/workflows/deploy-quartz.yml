@@ -38,6 +38,7 @@ jobs:
       - name: Copy content to Quartz
         run: |
           cp -r $GITHUB_WORKSPACE/estudiantes /tmp/quartz-temp/content/
+          cp $GITHUB_WORKSPACE/quartz.config.ts /tmp/quartz-temp/quartz.config.ts
 
       - name: Build Quartz
         working-directory: /tmp/quartz-temp
@@ -53,6 +54,7 @@ jobs:
           cp -r /tmp/quartz-temp/public/* /tmp/site/estudiantes/
           mv /tmp/site/estudiantes/estudiantes/* /tmp/site/estudiantes/ 2>/dev/null || true
           rmdir /tmp/site/estudiantes/estudiantes 2>/dev/null || true
+          touch /tmp/site/.nojekyll
 
       - name: Inject hide script
         run: |
