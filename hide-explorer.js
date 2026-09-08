@@ -29,7 +29,7 @@
         btn.id = 'student-home-btn';
         btn.href = '/estudiantes/' + match[1] + '/';
         btn.textContent = '\u2190 Mi Inicio';
-        btn.style.cssText = 'position:fixed;top:70px;left:0;z-index:1000;background:#2563eb;color:#fff;padding:10px 20px;border-radius:0 8px 8px 0;text-decoration:none;font-size:16px;font-weight:600;box-shadow:2px 2px 8px rgba(0,0,0,0.2);transition:background 0.2s;';
+        btn.style.cssText = 'position:fixed;top:70px;right:0;z-index:1000;background:#2563eb;color:#fff;padding:10px 20px;border-radius:8px 0 0 8px;text-decoration:none;font-size:16px;font-weight:600;box-shadow:-2px 2px 8px rgba(0,0,0,0.2);transition:background 0.2s;';
         btn.onmouseover = function() { btn.style.background = '#1d4ed8'; };
         btn.onmouseout = function() { btn.style.background = '#2563eb'; };
         document.body.appendChild(btn);
