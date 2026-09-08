@@ -9,6 +9,10 @@
     var rightSidebar = document.querySelector('.right.sidebar');
     if (rightSidebar) rightSidebar.style.display = 'none';
 
+    // Hide breadcrumb
+    var breadcrumb = document.querySelector('.breadcrumb-container');
+    if (breadcrumb) breadcrumb.style.display = 'none';
+
     // Make center content full width
     var center = document.querySelector('.center');
     if (center) {
