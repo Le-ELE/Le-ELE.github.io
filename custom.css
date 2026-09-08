@@ -1,0 +1,25 @@
+/* Hide Explorer sidebar */
+aside.sidebar,
+[data-sidebar],
+.page aside {
+  display: none !important;
+}
+
+/* Hide Search */
+.search-button,
+[data-search],
+.toolbar .search {
+  display: none !important;
+}
+
+/* Hide Graph view */
+.graph-view,
+[data-graph] {
+  display: none !important;
+}
+
+/* Adjust layout to use full width without sidebar */
+.content {
+  max-width: 100% !important;
+  margin-left: 0 !important;
+}

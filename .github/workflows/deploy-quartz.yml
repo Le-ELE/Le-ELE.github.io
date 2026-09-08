@@ -53,6 +53,7 @@ jobs:
           cp -r /tmp/quartz-temp/public/* /tmp/site/estudiantes/
           mv /tmp/site/estudiantes/estudiantes/* /tmp/site/estudiantes/ 2>/dev/null || true
           rmdir /tmp/site/estudiantes/estudiantes 2>/dev/null || true
+          cat $GITHUB_WORKSPACE/custom.css >> /tmp/site/estudiantes/index.css
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
