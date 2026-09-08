@@ -1,0 +1,12 @@
+- ¿Cómo te llamas? 
+	- Me llamo ___
+- ¿Cuántos años tienes?
+	- Tengo ___ años
+- ¿De dónde eres?
+	- Soy de ___
+- ¿A qué te dedicas? (What do you do for living?)
+-
+* ¿Qué significa __?
+* ¿Cómo se dice __?
+* ¿Qué más?
+* 
