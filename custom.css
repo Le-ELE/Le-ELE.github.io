@@ -1,31 +1,33 @@
-/* Hide Explorer sidebar */
-.explorer,
-.explorer-content,
-.explorer-toggle,
-.left.sidebar {
+/* Hide entire left sidebar (Explorer + Search) */
+div.left.sidebar {
   display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
 }
 
-/* Hide Search */
-.search,
-.search-button,
-.search-container,
-.search-bar,
-.search-layout {
+/* Hide entire right sidebar (Graph) */
+div.right.sidebar {
   display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
 }
 
-/* Hide Graph view */
-.graph,
-.graph-container,
-.global-graph-container,
-.graph-outer,
-.global-graph-outer {
-  display: none !important;
-}
-
-/* Adjust layout to use full width without sidebar */
-.page {
+/* Make center content full width */
+div.center {
   margin-left: 0 !important;
   max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* Override page layout */
+div.page, div#quartz-root {
+  display: block !important;
+}
+
+div#quartz-body {
+  display: block !important;
 }
