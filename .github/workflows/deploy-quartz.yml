@@ -38,7 +38,10 @@ jobs:
       - name: Copy content to Quartz
         run: |
           cp -r $GITHUB_WORKSPACE/estudiantes /tmp/quartz-temp/content/
-          cp $GITHUB_WORKSPACE/quartz.config.ts /tmp/quartz-temp/quartz.config.ts
+          sed -i 's/pageTitle: "Quartz 4"/pageTitle: "LéELE"/' /tmp/quartz-temp/quartz.config.ts
+          sed -i 's/baseUrl: "quartz.jzhao.xyz"/baseUrl: "le-ele.github.io"/' /tmp/quartz-temp/quartz.config.ts
+          sed -i 's/locale: "en-US"/locale: "es"/' /tmp/quartz-temp/quartz.config.ts
+          sed -i 's/enableRSS: true/enableRSS: false/' /tmp/quartz-temp/quartz.config.ts
 
       - name: Build Quartz
         working-directory: /tmp/quartz-temp
