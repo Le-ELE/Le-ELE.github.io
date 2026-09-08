@@ -10,12 +10,16 @@ Configurar un sistema para que los estudiantes de Santiago (profesor de Español
 ### 1. Plataforma
 - **GitHub Pages** + **Quartz** (generador de sitios web para vaults de Obsidian)
 - Repositorio: `Le-ELE.github.io` (el que ya existía)
-- La página principal (`index.html`) se mantiene intacta
-- Las notas de los estudiantes se publican en `docs/` para ser servidas por GitHub Pages
+- La página principal (`index.html`) se mantiene intacta en la raíz
+- Las notas de los estudiantes se sirven desde `/estudiantes/` (generado por Quartz)
 
 ### 2. Privacidad
 - URLs no adivinables: cada estudiante tiene un código alfanumérico de 6 caracteres
 - Ejemplo: `le-ele.github.io/estudiantes/Leo-jxbun0/`
+- Plugins desactivados para evitar que un estudiante navegue las notas de otro:
+  - **Explorer** (sidebar con árbol de carpetas) → desactivado
+  - **Graph** (grafo de conexiones entre notas) → desactivado
+  - **Search** (búsqueda global) → desactivado
 - No es privacidad real (GitHub Pages es público), pero es suficiente para notas de progreso
 
 ### 3. Automatización
@@ -35,24 +39,29 @@ Configurar un sistema para que los estudiantes de Santiago (profesor de Español
 
 ```
 Le-ELE.github.io/
-├── index.html          ← página principal (se mantiene igual)
+├── index.html          ← página principal de Santiago (se mantiene intacta)
 ├── style.css           ← estilos de la página principal
 ├── imagenes/           ← imágenes de la página principal
-├── estudiantes/        ← notas markdown de los estudiantes (fuente)
+├── estudiantes/        ← notas markdown de los estudiantes (fuente para Quartz)
 │   ├── Leo-jxbun0/
 │   ├── Rebecca-u1e74p/
 │   └── Rheis-kggbu0/
-├── docs/               ← sitio generado por Quartz (desplegado en GitHub Pages)
-│   ├── index.html      ← página de inicio de Quartz
-│   ├── estudiantes/    ← notas de los estudiantes (HTML)
-│   │   ├── Leo-jxbun0/
-│   │   ├── Rebecca-u1e74p/
-│   │   └── Rheis-kggbu0/
-│   └── ...
 ├── .github/workflows/
-│   └── deploy-quartz.yml ← GitHub Actions configurado
+│   └── deploy-quartz.yml ← GitHub Actions (ensambla index.html + Quartz)
 ├── quartz.config.yaml    ← configuración de Quartz
 └── Historial Opencode.md ← este archivo
+```
+
+**Despliegue en GitHub Pages** (generado por GitHub Actions):
+```
+https://le-ele.github.io/
+├── index.html       ← página de Santiago
+├── style.css
+├── imagenes/
+└── estudiantes/     ← output de Quartz
+    ├── Leo-jxbun0/
+    ├── Rebecca-u1e74p/
+    └── Rheis-kggbu0/
 ```
 
 ## Estructura del vault de Obsidian
@@ -115,6 +124,10 @@ Notas de ELE/
 13. **Corregir workflow**: Se ajustaron las rutas en el workflow para que funcione correctamente
 
 14. **Probar despliegue**: Se verificó que el sitio se despliega correctamente en GitHub Pages
+
+15. **Corregir página principal**: Se modificó el workflow para que ensamble tu `index.html` original con el output de Quartz. Antes Quartz reemplazaba tu página.
+
+16. **Desactivar plugins de privacidad**: Se desactivaron `explorer`, `graph` y `search` en `quartz.config.yaml` para que un estudiante no pueda ver las notas de otro a través del sidebar o la búsqueda.
 
 ## Pendientes
 

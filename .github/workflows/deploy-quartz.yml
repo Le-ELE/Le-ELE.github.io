@@ -44,10 +44,18 @@ jobs:
         working-directory: /tmp/quartz-temp
         run: npx quartz build
 
+      - name: Assemble site
+        run: |
+          mkdir -p /tmp/site
+          cp $GITHUB_WORKSPACE/index.html /tmp/site/
+          cp $GITHUB_WORKSPACE/style.css /tmp/site/
+          cp -r $GITHUB_WORKSPACE/imagenes /tmp/site/
+          cp -r /tmp/quartz-temp/public /tmp/site/estudiantes
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: /tmp/quartz-temp/public
+          path: /tmp/site
 
   deploy:
     environment:
