@@ -53,8 +53,21 @@ jobs:
           cp -r /tmp/quartz-temp/public/* /tmp/site/estudiantes/
           mv /tmp/site/estudiantes/estudiantes/* /tmp/site/estudiantes/ 2>/dev/null || true
           rmdir /tmp/site/estudiantes/estudiantes 2>/dev/null || true
-          CUSTOM_CSS=$(cat $GITHUB_WORKSPACE/custom.css)
-          find /tmp/site/estudiantes -name "*.html" -exec sed -i "s|</head>|<style>${CUSTOM_CSS}</style></head>|" {} \;
+
+      - name: Inject custom CSS
+        run: |
+          CSS_CONTENT=$(cat $GITHUB_WORKSPACE/custom.css)
+          for f in $(find /tmp/site/estudiantes -name "*.html"); do
+            python3 -c "
+import sys
+css = '''$CSS_CONTENT'''
+with open('$f', 'r') as file:
+    content = file.read()
+content = content.replace('</head>', '<style>' + css + '</style></head>')
+with open('$f', 'w') as file:
+    file.write(content)
+"
+          done
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
