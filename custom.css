@@ -1,25 +1,31 @@
 /* Hide Explorer sidebar */
-aside.sidebar,
-[data-sidebar],
-.page aside {
+.explorer,
+.explorer-content,
+.explorer-toggle,
+.left.sidebar {
   display: none !important;
 }
 
 /* Hide Search */
+.search,
 .search-button,
-[data-search],
-.toolbar .search {
+.search-container,
+.search-bar,
+.search-layout {
   display: none !important;
 }
 
 /* Hide Graph view */
-.graph-view,
-[data-graph] {
+.graph,
+.graph-container,
+.global-graph-container,
+.graph-outer,
+.global-graph-outer {
   display: none !important;
 }
 
 /* Adjust layout to use full width without sidebar */
-.content {
-  max-width: 100% !important;
+.page {
   margin-left: 0 !important;
+  max-width: 100% !important;
 }
