@@ -56,18 +56,19 @@ jobs:
 
       - name: Inject custom CSS
         run: |
-          CSS_CONTENT=$(cat $GITHUB_WORKSPACE/custom.css)
-          for f in $(find /tmp/site/estudiantes -name "*.html"); do
-            python3 -c "
-import sys
-css = '''$CSS_CONTENT'''
-with open('$f', 'r') as file:
-    content = file.read()
-content = content.replace('</head>', '<style>' + css + '</style></head>')
-with open('$f', 'w') as file:
-    file.write(content)
-"
-          done
+          cp $GITHUB_WORKSPACE/custom.css /tmp/custom.css
+          cat > /tmp/inject_css.py << 'PYEOF'
+          import os, glob
+          with open('/tmp/custom.css', 'r') as f:
+              css = f.read()
+          for html_file in glob.glob('/tmp/site/estudiantes/**/*.html', recursive=True):
+              with open(html_file, 'r') as f:
+                  content = f.read()
+              content = content.replace('</head>', '<style>' + css + '</style></head>')
+              with open(html_file, 'w') as f:
+                  f.write(content)
+          PYEOF
+          python3 /tmp/inject_css.py
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
