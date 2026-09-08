@@ -38,9 +38,13 @@ Le-ELE.github.io/
 ├── index.html          ← página principal (se mantiene igual)
 ├── style.css           ← estilos de la página principal
 ├── imagenes/           ← imágenes de la página principal
-├── docs/               ← sitio generado por Quartz
+├── estudiantes/        ← notas markdown de los estudiantes (fuente)
+│   ├── Leo-jxbun0/
+│   ├── Rebecca-u1e74p/
+│   └── Rheis-kggbu0/
+├── docs/               ← sitio generado por Quartz (desplegado en GitHub Pages)
 │   ├── index.html      ← página de inicio de Quartz
-│   ├── estudiantes/    ← notas de los estudiantes
+│   ├── estudiantes/    ← notas de los estudiantes (HTML)
 │   │   ├── Leo-jxbun0/
 │   │   ├── Rebecca-u1e74p/
 │   │   └── Rheis-kggbu0/
@@ -106,6 +110,12 @@ Notas de ELE/
 
 11. **Crear configuración de Quartz**: Se creó `quartz.config.yaml` en la raíz del repositorio para ser usado por GitHub Actions
 
+12. **Crear carpeta de estudiantes**: Se creó `estudiantes/` en la raíz del repositorio con las notas markdown originales
+
+13. **Corregir workflow**: Se ajustaron las rutas en el workflow para que funcione correctamente
+
+14. **Probar despliegue**: Se verificó que el sitio se despliega correctamente en GitHub Pages
+
 ## Pendientes
 
 ### 1. Configurar GitHub Actions ✅
@@ -115,15 +125,26 @@ Creado archivo `.github/workflows/deploy-quartz.yml` que:
 - Copia el contenido de `estudiantes/` y `quartz.config.yaml`
 - Genera el sitio con `npx quartz build`
 - Despliega automáticamente a GitHub Pages
+- **Estado**: Funcionando correctamente
 
 ### 2. Configurar Obsidian Git
 - Instalar plugin en el vault
 - Configurar auto-commit cada 15-30 minutos
 - Configurar auto-push al repositorio
+- **Estado**: Pendiente
 
 ### 3. Compartir URLs con estudiantes
 - Enviar a cada estudiante su URL única
 - Explicar que pueden acceder desde cualquier navegador
+- **Estado**: Pendiente
+
+## URLs de los estudiantes
+
+| Estudiante | URL |
+|------------|-----|
+| Leo | https://le-ele.github.io/estudiantes/Leo-jxbun0/ |
+| Rebecca | https://le-ele.github.io/estudiantes/Rebecca-u1e74p/ |
+| Rheis | https://le-ele.github.io/estudiantes/Rheis-kggbu0/ |
 
 ## Notas técnicas
 
