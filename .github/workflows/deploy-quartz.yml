@@ -57,7 +57,7 @@ jobs:
       - name: Inject hide script
         run: |
           cp $GITHUB_WORKSPACE/hide-explorer.js /tmp/hide-explorer.js
-          cat > /tmp/inject_js.py << 'PYEOF'
+          python3 -c "
           import glob
           with open('/tmp/hide-explorer.js', 'r') as f:
               js = f.read()
@@ -67,8 +67,7 @@ jobs:
               content = content.replace('</body>', '<script>' + js + '</script></body>')
               with open(html_file, 'w') as f:
                   f.write(content)
-          PYEOF
-          python3 /tmp/inject_js.py
+          "
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
