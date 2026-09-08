@@ -50,7 +50,10 @@ jobs:
           cp $GITHUB_WORKSPACE/index.html /tmp/site/
           cp $GITHUB_WORKSPACE/style.css /tmp/site/
           cp -r $GITHUB_WORKSPACE/imagenes /tmp/site/
-          cp -r /tmp/quartz-temp/public /tmp/site/estudiantes
+          mkdir -p /tmp/site/estudiantes
+          cp -r /tmp/quartz-temp/public/* /tmp/site/estudiantes/
+          mv /tmp/site/estudiantes/estudiantes/* /tmp/site/estudiantes/ 2>/dev/null || true
+          rmdir /tmp/site/estudiantes/estudiantes 2>/dev/null || true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
