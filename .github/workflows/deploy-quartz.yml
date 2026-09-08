@@ -54,21 +54,21 @@ jobs:
           mv /tmp/site/estudiantes/estudiantes/* /tmp/site/estudiantes/ 2>/dev/null || true
           rmdir /tmp/site/estudiantes/estudiantes 2>/dev/null || true
 
-      - name: Inject custom CSS
+      - name: Inject hide script
         run: |
-          cp $GITHUB_WORKSPACE/custom.css /tmp/custom.css
-          cat > /tmp/inject_css.py << 'PYEOF'
-          import os, glob
-          with open('/tmp/custom.css', 'r') as f:
-              css = f.read()
+          cp $GITHUB_WORKSPACE/hide-explorer.js /tmp/hide-explorer.js
+          cat > /tmp/inject_js.py << 'PYEOF'
+          import glob
+          with open('/tmp/hide-explorer.js', 'r') as f:
+              js = f.read()
           for html_file in glob.glob('/tmp/site/estudiantes/**/*.html', recursive=True):
               with open(html_file, 'r') as f:
                   content = f.read()
-              content = content.replace('</head>', '<style>' + css + '</style></head>')
+              content = content.replace('</body>', '<script>' + js + '</script></body>')
               with open(html_file, 'w') as f:
                   f.write(content)
           PYEOF
-          python3 /tmp/inject_css.py
+          python3 /tmp/inject_js.py
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
