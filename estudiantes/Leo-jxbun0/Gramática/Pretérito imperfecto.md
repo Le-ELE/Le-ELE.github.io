@@ -49,4 +49,4 @@
 - ¿Cuáles videojuegos jugabas?
 - Jugaba LOL.
 - ---
-- 
+- Cuando tenía 17 años, me mudé a Suiza. 
