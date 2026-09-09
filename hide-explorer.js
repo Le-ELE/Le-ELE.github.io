@@ -80,6 +80,7 @@
         '',
         'html.dark { background: #1a1a1a !important; color: #e0e0e0 !important; }',
         'html.dark body { background: #1a1a1a !important; color: #e0e0e0 !important; }',
+        'html.dark #quartz-body { background: #1a1a1a !important; }',
         'html.dark .page, html.dark .page-header, html.dark article { background: #1a1a1a !important; color: #e0e0e0 !important; max-width: 100% !important; width: 100% !important; }',
         'html.dark h1, html.dark h2, html.dark h3, html.dark h4, html.dark h5, html.dark h6 { color: #f0f0f0 !important; }',
         'html.dark p, html.dark li, html.dark td, html.dark th, html.dark span, html.dark strong, html.dark b { color: #e0e0e0 !important; }',
