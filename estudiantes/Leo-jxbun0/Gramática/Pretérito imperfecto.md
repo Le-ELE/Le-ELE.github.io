@@ -32,4 +32,6 @@
 ## Acciones interrumpidas
 
 - Cuando llegaste, estaba cocinando.
+- Estaba escuchando música cuando me llamaste.
+- 
 
