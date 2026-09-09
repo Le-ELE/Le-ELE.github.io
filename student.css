@@ -6,8 +6,6 @@ html, body { background: #fff !important; color: #222 !important; margin: 0 !imp
 .page-header, article { background: #fff !important; color: #222 !important; max-width: 100% !important; width: 100% !important; }
 article { padding: 0 !important; }
 .meta, .meta time, time { display: none !important; }
-.page-listing > p { display: none !important; }
-.page-listing p { display: none !important; }
 h1, h2, h3, h4, h5, h6 { color: #111 !important; }
 p, li, td, th, span, strong, b { color: #222 !important; }
 a { color: #2563eb !important; }

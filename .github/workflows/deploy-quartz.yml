@@ -67,7 +67,7 @@ jobs:
           cp $GITHUB_WORKSPACE/hide-explorer.js /tmp/hide-explorer.js
           cp $GITHUB_WORKSPACE/student.css /tmp/student.css
           python3 -c "
-          import glob
+          import glob, re
           with open('/tmp/hide-explorer.js', 'r') as f:
               js = f.read()
           with open('/tmp/student.css', 'r') as f:
