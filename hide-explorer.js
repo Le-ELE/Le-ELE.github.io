@@ -1,4 +1,63 @@
 (function() {
+  var path = window.location.pathname.replace(/\/+$/, '');
+  var isLoginRoot = path === '/estudiantes' || path === '/estudiantes/';
+
+  // === Login page for /estudiantes/ ===
+  if (isLoginRoot) {
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.left.sidebar,.right.sidebar,.breadcrumb-container,footer.page-footer,.page footer,.graph,.explorer,.search,.page-header,.page-listing').forEach(function(el) {
+        el.style.display = 'none';
+      });
+      var qb = document.getElementById('quartz-body');
+      if (qb) {
+        qb.style.gridTemplate = '"grid-center" 1fr / 1fr';
+        qb.style.gap = '0';
+        qb.style.padding = '0';
+      }
+      var center = document.querySelector('.center');
+      if (center) {
+        center.innerHTML = '<div style="display:flex;justify-content:center;align-items:center;min-height:80vh;font-family:var(--bodyFont,sans-serif)">' +
+          '<div style="text-align:center;max-width:400px;width:90%">' +
+          '<h1 style="font-size:2rem;margin-bottom:0.5rem;color:#111">Estudiantes</h1>' +
+          '<p style="color:#666;margin-bottom:1.5rem;font-size:16px">Ingresa tu código de estudiante para acceder a tus notas.</p>' +
+          '<form id="login-form" style="display:flex;flex-direction:column;gap:12px">' +
+          '<input id="login-input" type="text" placeholder="Ej: Leo-jxbun0" autocomplete="off" style="padding:14px 16px;font-size:16px;border:2px solid #ddd;border-radius:8px;outline:none;transition:border-color 0.2s;width:100%;box-sizing:border-box" />' +
+          '<button type="submit" style="padding:14px;font-size:16px;background:#2563eb;color:#fff;border:none;border-radius:8px;cursor:pointer;font-weight:600;transition:background 0.2s">Entrar</button>' +
+          '</form>' +
+          '<p id="login-error" style="color:#e53e3e;margin-top:12px;font-size:14px;display:none">Código no encontrado. Intenta de nuevo.</p>' +
+          '</div></div>';
+        var form = document.getElementById('login-form');
+        var input = document.getElementById('login-input');
+        var error = document.getElementById('login-error');
+        form.onsubmit = function(e) {
+          e.preventDefault();
+          var code = input.value.trim();
+          if (code) {
+            window.location.href = '/estudiantes/' + code + '/';
+          }
+        };
+        input.focus();
+        // Also navigate on enter in case form submit doesn't fire
+        input.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') {
+            var c = input.value.trim();
+            if (c) window.location.href = '/estudiantes/' + c + '/';
+          }
+        });
+      }
+      // Dark mode button
+      var s = document.createElement('style');
+      s.textContent = 'html.dark .center{background:#1a1a1a!important;color:#e0e0e0!important}' +
+        'html.dark h1{color:#f0f0f0!important}' +
+        'html.dark p{color:#ccc!important}' +
+        'html.dark input{background:#333!important;color:#e0e0e0!important;border-color:#555!important}' +
+        'html.dark input::placeholder{color:#888!important}' +
+        'html.dark button[type=submit]{background:#7ba4d4!important}';
+      document.head.appendChild(s);
+    });
+    return; // Don't run the rest of the script on login page
+  }
+
   var selectors = '.left.sidebar,.right.sidebar,.breadcrumb-container,footer.page-footer,.page footer,.graph,.explorer,.search,.meta,time';
 
   function hideElements() {
