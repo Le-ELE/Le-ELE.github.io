@@ -33,5 +33,5 @@
 
 - Cuando llegaste, estaba cocinando.
 - Estaba escuchando música cuando me llamaste.
-- 
+- Estaba caminando mientras bailaba.
 
