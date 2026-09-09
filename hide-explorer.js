@@ -16,8 +16,13 @@
       page.style.maxWidth = '100%';
       page.style.width = '100%';
       page.style.margin = '0';
-      page.style.padding = '1.5rem';
+      page.style.padding = '0 2rem';
       page.style.overflow = 'hidden';
+    }
+    var article = document.querySelector('article');
+    if (article) {
+      article.style.maxWidth = '100%';
+      article.style.width = '100%';
     }
     if (!document.getElementById('student-home-btn')) {
       var path = window.location.pathname;
@@ -55,7 +60,8 @@
       style.textContent = [
         '*, *::before, *::after { box-sizing: border-box; }',
         'html, body { background: #fff !important; color: #222 !important; margin: 0 !important; padding: 0 !important; width: 100% !important; overflow-x: hidden !important; }',
-        '.page, .page-header, article { background: #fff !important; color: #222 !important; }',
+        '.page, .page-header, article { background: #fff !important; color: #222 !important; max-width: 100% !important; width: 100% !important; }',
+        'article { padding: 0 2rem !important; }',
         'h1, h2, h3, h4, h5, h6 { color: #111 !important; }',
         'p, li, td, th, span, strong, b { color: #222 !important; }',
         'a { color: #2563eb !important; }',
@@ -74,7 +80,7 @@
         '',
         'html.dark { background: #1a1a1a !important; color: #e0e0e0 !important; }',
         'html.dark body { background: #1a1a1a !important; color: #e0e0e0 !important; }',
-        'html.dark .page, html.dark .page-header, html.dark article { background: #1a1a1a !important; color: #e0e0e0 !important; }',
+        'html.dark .page, html.dark .page-header, html.dark article { background: #1a1a1a !important; color: #e0e0e0 !important; max-width: 100% !important; width: 100% !important; }',
         'html.dark h1, html.dark h2, html.dark h3, html.dark h4, html.dark h5, html.dark h6 { color: #f0f0f0 !important; }',
         'html.dark p, html.dark li, html.dark td, html.dark th, html.dark span, html.dark strong, html.dark b { color: #e0e0e0 !important; }',
         'html.dark a { color: #7ba4d4 !important; }',
