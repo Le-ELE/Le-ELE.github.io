@@ -7,4 +7,9 @@
 | Nosotros                | ábamos | íamos   |     | éramos | íbamos | veíamos |
 | Ustedes / Ellas / Ellos | aban   | ían     |     | eran   | iban   | veían   |
 
-- Acciones rutinarias en el pas
+## Acciones rutinarias en el pasado
+
+- Antes comía mucho pollo
+- Antes
+- 
+
