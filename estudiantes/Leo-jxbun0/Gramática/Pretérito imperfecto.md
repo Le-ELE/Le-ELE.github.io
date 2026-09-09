@@ -28,7 +28,7 @@
 - Estaba limpiando la casa mientras escuchaba música.
 - Mientras iba allá escuchaba un podcast.
 - Ayer (estaba cantando) cantaba mientras me duchaba.
-- Estaba caminando mientras él (añade el pronombre porque "aba" puede ser para "yo", "ella", "él" o "usted"bailaba.
+- Estaba caminando mientras ==él (añade el pronombre porque "aba" puede ser para "yo", "ella", "él" o "usted")== bailaba.
 
 ## Acciones interrumpidas
 
