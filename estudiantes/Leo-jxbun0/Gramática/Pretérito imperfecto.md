@@ -26,5 +26,6 @@
 ## Acciones simultáneas en el pasado
 
 - Estaba limpiando la casa mientras escuchaba música.
+- Mientras iba allá escuchaba un podcast.
 - 
 
