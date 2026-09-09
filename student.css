@@ -1,0 +1,75 @@
+/* === Student site base styles === */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { background: #fff !important; color: #222 !important; margin: 0 !important; padding: 0 !important; width: 100% !important; overflow-x: hidden !important; }
+#quartz-body { grid-template: "grid-center" 1fr / 1fr !important; gap: 0 !important; padding: 0 !important; }
+.page { max-width: 100% !important; width: 100% !important; padding: 0 2rem !important; }
+.page-header, article { background: #fff !important; color: #222 !important; max-width: 100% !important; width: 100% !important; }
+article { padding: 0 !important; }
+.meta, .meta time, time { display: none !important; }
+h1, h2, h3, h4, h5, h6 { color: #111 !important; }
+p, li, td, th, span, strong, b { color: #222 !important; }
+a { color: #2563eb !important; }
+a:hover { color: #1d4ed8 !important; }
+.popover, .popover .popover-inner { background-color: #fff !important; color: #222 !important; border-color: #ccc !important; box-shadow: 6px 6px 36px rgba(0,0,0,0.15) !important; }
+.popover h1, .popover h2, .popover h3, .popover p, .popover span, .popover li { color: #222 !important; }
+.popover a { color: #2563eb !important; }
+#student-home-btn, #student-back-btn { color: #fff !important; }
+#student-darkmode-btn { background: #333 !important; color: #fff !important; border: none !important; }
+#student-sort-btn { background: #f0f0f0 !important; color: #333 !important; border: 1px solid #ccc !important; }
+table { width: 100% !important; border-collapse: collapse; margin: 1em 0; font-size: 16px; }
+th, td { border: 1px solid #ccc; padding: 10px 14px; text-align: left; }
+th { background: #f0f0f0; font-weight: 600; color: #222 !important; }
+tr:nth-child(even) { background: #f5f5f5 !important; }
+tr:nth-child(odd) { background: #fff !important; }
+tr:hover { background: #e8f0fe !important; }
+hr { border-color: #ddd !important; }
+code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; color: #333 !important; }
+pre { background: #f4f4f4; padding: 12px; border-radius: 6px; overflow-x: auto; }
+
+/* === Dark mode === */
+html.dark { background: #1a1a1a !important; color: #e0e0e0 !important; }
+html.dark body { background: #1a1a1a !important; color: #e0e0e0 !important; }
+html.dark #quartz-body { background: #1a1a1a !important; }
+html.dark .page, html.dark .page-header, html.dark article { background: #1a1a1a !important; color: #e0e0e0 !important; max-width: 100% !important; width: 100% !important; }
+html.dark h1, html.dark h2, html.dark h3, html.dark h4, html.dark h5, html.dark h6 { color: #f0f0f0 !important; }
+html.dark p, html.dark li, html.dark td, html.dark th, html.dark span, html.dark strong, html.dark b { color: #e0e0e0 !important; }
+html.dark a { color: #7ba4d4 !important; }
+html.dark #student-home-btn, html.dark #student-back-btn, html.dark #student-home-btn span { color: #fff !important; }
+html.dark #student-darkmode-btn { background: #f0f0f0 !important; color: #333 !important; border: none !important; }
+html.dark #student-sort-btn { background: #333 !important; color: #e0e0e0 !important; border-color: #555 !important; }
+html.dark a:hover { color: #a0c4f0 !important; }
+html.dark th { background: #333 !important; color: #e0e0e0 !important; }
+html.dark tr:nth-child(even) { background: #2a2a2a !important; }
+html.dark tr:nth-child(odd) { background: #222 !important; }
+html.dark tr:hover { background: #3a3a4a !important; }
+html.dark th, html.dark td { border-color: #555 !important; }
+html.dark hr { border-color: #555 !important; }
+html.dark code { background: #333; color: #e0e0e0 !important; }
+html.dark pre { background: #2a2a2a; }
+html.dark .popover, html.dark .popover .popover-inner { background-color: #2a2a2a !important; color: #e0e0e0 !important; border-color: #555 !important; }
+html.dark .popover h1, html.dark .popover h2, html.dark .popover h3, html.dark .popover p, html.dark .popover span, html.dark .popover li { color: #e0e0e0 !important; }
+html.dark .popover a { color: #7ba4d4 !important; }
+
+/* === Login page === */
+.login-page body { background: #fff !important; }
+.login-page h1 { color: #111 !important; }
+.login-page p { color: #666 !important; }
+.login-page input { background: #fff !important; color: #222 !important; border-color: #ddd !important; }
+.login-page input::placeholder { color: #999 !important; }
+.login-page.dark body, .login-page.dark { background: #1a1a1a !important; }
+.login-page.dark .center { background: #1a1a1a !important; }
+.login-page.dark h1 { color: #f0f0f0 !important; }
+.login-page.dark p { color: #ccc !important; }
+.login-page.dark input { background: #333 !important; color: #e0e0e0 !important; border-color: #555 !important; }
+.login-page.dark input::placeholder { color: #888 !important; }
+.login-page.dark button[type=submit] { background: #7ba4d4 !important; }
+
+/* === Mobile === */
+@media (max-width: 768px) {
+  .page { padding: 1rem !important; }
+  table { font-size: 13px; }
+  th, td { padding: 6px 8px; }
+  #student-home-btn { top: 10px !important; right: 0 !important; font-size: 14px !important; padding: 8px 14px !important; }
+  #student-back-btn { top: 10px !important; right: 110px !important; font-size: 14px !important; padding: 8px 14px !important; }
+  #student-darkmode-btn { top: 10px !important; right: 200px !important; font-size: 16px !important; padding: 8px 10px !important; }
+}

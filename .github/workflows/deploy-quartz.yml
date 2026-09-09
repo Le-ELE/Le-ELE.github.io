@@ -62,18 +62,23 @@ jobs:
           rmdir /tmp/site/estudiantes/estudiantes 2>/dev/null || true
           touch /tmp/site/.nojekyll
 
-      - name: Inject hide script
+      - name: Inject hide script and styles
         run: |
           cp $GITHUB_WORKSPACE/hide-explorer.js /tmp/hide-explorer.js
+          cp $GITHUB_WORKSPACE/student.css /tmp/student.css
           python3 -c "
           import glob
           with open('/tmp/hide-explorer.js', 'r') as f:
               js = f.read()
+          with open('/tmp/student.css', 'r') as f:
+              css = f.read()
+          style_tag = '<style>' + css + '</style>'
           for html_file in glob.glob('/tmp/site/estudiantes/**/*.html', recursive=True):
               with open(html_file, 'r') as f:
                   content = f.read()
               content = content.replace('Quartz 4', 'LéELE')
               content = content.replace('Quartz v4.5.2', 'LéELE')
+              content = content.replace('</head>', style_tag + '</head>')
               content = content.replace('</body>', '<script>' + js + '</script></body>')
               with open(html_file, 'w') as f:
                   f.write(content)
