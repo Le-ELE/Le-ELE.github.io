@@ -21,5 +21,10 @@
 - Esta casa era verde.
 - Ella era graciosa.
 - Tú tenías buen humor.
+- Nosotros íbamos a la escuela juntos.
+
+## Acciones simultáneas en el pasado
+
+- Estaba limpiando la casa mientras escuchaba música.
 - 
 
