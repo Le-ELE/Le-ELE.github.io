@@ -12,9 +12,9 @@
     }
     var page = document.querySelector('.page');
     if (page) {
-      page.style.maxWidth = '900px';
-      page.style.margin = '0 auto';
-      page.style.padding = '2rem';
+      page.style.maxWidth = '100%';
+      page.style.margin = '0';
+      page.style.padding = '1.5rem';
     }
     if (!document.getElementById('student-home-btn')) {
       var path = window.location.pathname;
@@ -60,8 +60,8 @@
         '#student-home-btn, #student-home-btn span { color: #fff !important; }',
         '#student-darkmode-btn { background: #333 !important; color: #fff !important; border: none !important; }',
         'a:hover { color: #1d4ed8 !important; }',
-        'table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 14px; }',
-        'th, td { border: 1px solid #ccc; padding: 8px 12px; text-align: left; }',
+        'table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 16px; display: block; overflow-x: auto; }',
+        'th, td { border: 1px solid #ccc; padding: 10px 14px; text-align: left; white-space: nowrap; }',
         'th { background: #f0f0f0; font-weight: 600; color: #222 !important; }',
         'tr:nth-child(even) { background: #f5f5f5 !important; }',
         'tr:nth-child(odd) { background: #fff !important; }',
@@ -86,7 +86,15 @@
         'html.dark th, html.dark td { border-color: #555 !important; }',
         'html.dark hr { border-color: #555 !important; }',
         'html.dark code { background: #333; color: #e0e0e0 !important; }',
-        'html.dark pre { background: #2a2a2a; }'
+        'html.dark pre { background: #2a2a2a; }',
+        '',
+        '@media (max-width: 768px) {',
+        '  .page { padding: 1rem !important; }',
+        '  table { font-size: 13px; }',
+        '  th, td { padding: 6px 8px; }',
+        '  #student-home-btn { top: 10px !important; right: 0 !important; font-size: 14px !important; padding: 8px 14px !important; }',
+        '  #student-darkmode-btn { top: 10px !important; right: 110px !important; font-size: 16px !important; padding: 8px 10px !important; }',
+        '}'
       ].join('\n');
       document.head.appendChild(style);
     }
