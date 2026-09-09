@@ -15,7 +15,7 @@ a:hover { color: #1d4ed8 !important; }
 .popover a { color: #2563eb !important; }
 #student-home-btn, #student-back-btn { color: #fff !important; }
 #student-darkmode-btn { background: #333 !important; color: #fff !important; border: none !important; }
-#student-sort-btn { background: #f0f0f0 !important; color: #333 !important; border: 1px solid #ccc !important; }
+#student-sort-btn { background: #f0f0f0 !important; color: #333 !important; border: 1px solid #ccc !important; margin-bottom: 1rem !important; display: block !important; width: fit-content !important; }
 table { width: 100% !important; border-collapse: collapse; margin: 1em 0; font-size: 16px; }
 th, td { border: 1px solid #ccc; padding: 10px 14px; text-align: left; }
 th { background: #f0f0f0; font-weight: 600; color: #222 !important; }
