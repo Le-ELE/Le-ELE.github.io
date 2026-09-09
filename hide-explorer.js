@@ -61,14 +61,14 @@
       dmBtn.id = 'student-darkmode-btn';
       dmBtn.textContent = '\u263E';
       dmBtn.style.cssText = 'position:fixed;top:20px;right:290px;z-index:1000;background:#333;color:#fff;padding:10px 14px;border:none;border-radius:8px;font-size:18px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.2);transition:background 0.2s;';
-      dmBtn.onmouseover = function() { dmBtn.style.background = '#555'; };
-      dmBtn.onmouseout = function() { dmBtn.style.background = '#333'; };
+      dmBtn.onmouseover = function() { dmBtn.style.setProperty('background', '#555', 'important'); };
+      dmBtn.onmouseout = function() { dmBtn.style.setProperty('background', '#333', 'important'); };
       dmBtn.onclick = function() {
         document.documentElement.classList.toggle('dark');
         var isDark = document.documentElement.classList.contains('dark');
         dmBtn.textContent = isDark ? '\u2600' : '\u263E';
-        dmBtn.style.background = isDark ? '#f0f0f0' : '#333';
-        dmBtn.style.color = isDark ? '#333' : '#fff';
+        dmBtn.style.setProperty('background', isDark ? '#f0f0f0' : '#333', 'important');
+        dmBtn.style.setProperty('color', isDark ? '#333' : '#fff', 'important');
       };
       document.body.appendChild(dmBtn);
     }
