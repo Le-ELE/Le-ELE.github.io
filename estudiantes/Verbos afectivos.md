@@ -8,10 +8,10 @@
 |                        |         | me  |     | gustas                    |        |
 |                        |         |     |     |                           |        |
 
-|     |                         |     |
-| --- | ----------------------- | --- |
-| a   | mí                      | me  |
-| a   | ti                      | te  |
-| a   | usted / ella / él       | le  |
-| a   | nosotros                | nos |
-| a   | ustedes / ellas / ellos | les |
+|     |                         |     |     |        |                           |
+| --- | ----------------------- | --- | --- | ------ | ------------------------- |
+| a   | mí                      | me  |     | gusta  | Cocacola                  |
+| a   | ti                      | te  |     | gustan | la CocaCola y los doritos |
+| a   | usted / ella / él       | le  |     | gusta  |                           |
+| a   | nosotros                | nos |     | gusta  |                           |
+| a   | ustedes / ellas / ellos | les |     | gusta  |                           |
