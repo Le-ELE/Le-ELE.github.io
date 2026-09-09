@@ -164,8 +164,11 @@
       };
 
       var header = document.querySelector('.page-listing p');
+      var pageListing = document.querySelector('.page-listing');
       if (header && header.parentNode) {
         header.parentNode.insertBefore(sortBtn, header.nextSibling);
+      } else if (pageListing) {
+        pageListing.insertBefore(sortBtn, pageListing.firstChild);
       }
     }
   }
