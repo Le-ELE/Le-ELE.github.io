@@ -38,6 +38,7 @@ jobs:
       - name: Copy content to Quartz
         run: |
           cp -r $GITHUB_WORKSPACE/estudiantes/* /tmp/quartz-temp/content/
+          cp $GITHUB_WORKSPACE/quartz.config.ts /tmp/quartz-temp/quartz.config.ts
 
       - name: Build Quartz
         working-directory: /tmp/quartz-temp
