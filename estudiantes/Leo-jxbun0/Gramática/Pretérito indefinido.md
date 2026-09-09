@@ -1,13 +1,13 @@
 
 Acción en el pasado en momento específico en el pasado
 
-|                             | **-ar**n | **-er / -ir** |
-| --------------------------- | -------- | ------------- |
-| **Yo**                      | -é       | -í            |
-| **Tú**                      | -aste    | -iste         |
-| **Ella / Él**               | -ó       | -ió           |
-| **nosotros**                | -amos    | -imos         |
-| **Ustedes / Ellas / Ellos** | -aron    | -ieron        |
+|                             | **-ar** | **-er / -ir** |
+| --------------------------- | ------- | ------------- |
+| **Yo**                      | -é      | -í            |
+| **Tú**                      | -aste   | -iste         |
+| **Ella / Él**               | -ó      | -ió           |
+| **nosotros**                | -amos   | -imos         |
+| **Ustedes / Ellas / Ellos** | -aron   | -ieron        |
 
 |                             | **hacer** (to do) | **ser/ir (to go)** | irse (to leave) | tener    | poner    | **haber** |
 | --------------------------- | ----------------- | ------------------ | --------------- | -------- | -------- | --------- |
