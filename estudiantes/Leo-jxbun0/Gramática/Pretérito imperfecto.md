@@ -9,7 +9,8 @@
 
 ## Acciones rutinarias en el pasado
 
-- Antes comía mucho pollo
-- Antes
+- Antes comía mucho pollo.
+- Antes trabajaba mucho.
+- Antes viajaba mucho, pero ahora no.
 - 
 
