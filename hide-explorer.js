@@ -49,7 +49,41 @@
     if (!document.getElementById('student-table-styles')) {
       var style = document.createElement('style');
       style.id = 'student-table-styles';
-      style.textContent = 'table{width:100%;border-collapse:collapse;margin:1em 0;font-size:14px}th,td{border:1px solid #ccc;padding:8px 12px;text-align:left}th{background:#f0f0f0;font-weight:600}tr:nth-child(even){background:#f9f9f9}tr:nth-child(odd){background:#fff}tr:hover{background:#eef2ff}html.dark{background:#1a1a1a;color:#e0e0e0}html.dark table th{background:#333;color:#e0e0e0}html.dark table td{background:#222;color:#e0e0e0}html.dark table{border-color:#555}html.dark th,html.dark td{border-color:#555}';
+      style.textContent = [
+        '*, *::before, *::after { box-sizing: border-box; }',
+        'html { background: #fff !important; color: #222 !important; }',
+        'body { background: #fff !important; color: #222 !important; }',
+        '.page, .page-header, article { background: #fff !important; color: #222 !important; }',
+        'h1, h2, h3, h4, h5, h6 { color: #111 !important; }',
+        'p, li, td, th, span, strong, b { color: #222 !important; }',
+        'a { color: #2563eb !important; }',
+        'a:hover { color: #1d4ed8 !important; }',
+        'table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 14px; }',
+        'th, td { border: 1px solid #ccc; padding: 8px 12px; text-align: left; }',
+        'th { background: #f0f0f0; font-weight: 600; color: #222 !important; }',
+        'tr:nth-child(even) { background: #f5f5f5 !important; }',
+        'tr:nth-child(odd) { background: #fff !important; }',
+        'tr:hover { background: #e8f0fe !important; }',
+        'hr { border-color: #ddd !important; }',
+        'code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; color: #333 !important; }',
+        'pre { background: #f4f4f4; padding: 12px; border-radius: 6px; overflow-x: auto; }',
+        '',
+        'html.dark { background: #1a1a1a !important; color: #e0e0e0 !important; }',
+        'html.dark body { background: #1a1a1a !important; color: #e0e0e0 !important; }',
+        'html.dark .page, html.dark .page-header, html.dark article { background: #1a1a1a !important; color: #e0e0e0 !important; }',
+        'html.dark h1, html.dark h2, html.dark h3, html.dark h4, html.dark h5, html.dark h6 { color: #f0f0f0 !important; }',
+        'html.dark p, html.dark li, html.dark td, html.dark th, html.dark span, html.dark strong, html.dark b { color: #e0e0e0 !important; }',
+        'html.dark a { color: #7ba4d4 !important; }',
+        'html.dark a:hover { color: #a0c4f0 !important; }',
+        'html.dark th { background: #333 !important; color: #e0e0e0 !important; }',
+        'html.dark tr:nth-child(even) { background: #2a2a2a !important; }',
+        'html.dark tr:nth-child(odd) { background: #222 !important; }',
+        'html.dark tr:hover { background: #3a3a4a !important; }',
+        'html.dark th, html.dark td { border-color: #555 !important; }',
+        'html.dark hr { border-color: #555 !important; }',
+        'html.dark code { background: #333; color: #e0e0e0 !important; }',
+        'html.dark pre { background: #2a2a2a; }'
+      ].join('\n');
       document.head.appendChild(style);
     }
   }
