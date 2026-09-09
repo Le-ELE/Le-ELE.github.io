@@ -37,4 +37,8 @@
 
 
 ---
-¿Qué hacías cuando tenías 10 años?
+-- ¿Qué hacías cuando tenías 10 años?
+-- Estaba estudiando en la escuela.
+-- Estudiaba en la escuela.
+
+--
