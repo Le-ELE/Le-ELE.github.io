@@ -146,7 +146,7 @@
       var sortBtn = document.createElement('button');
       sortBtn.id = 'student-sort-btn';
       sortBtn.innerHTML = '&#8645; A&#8594;Z';
-      sortBtn.style.cssText = 'display:inline-block;margin:0.5rem 0;padding:6px 14px;background:#f0f0f0;color:#333;border:1px solid #ccc;border-radius:6px;font-size:14px;cursor:pointer;font-weight:600;transition:background 0.2s;';
+      sortBtn.style.cssText = 'display:block;margin:0.5rem 0;padding:6px 14px;background:#f0f0f0;color:#333;border:1px solid #ccc;border-radius:6px;font-size:14px;cursor:pointer;font-weight:600;transition:background 0.2s;width:fit-content;';
       sortBtn.onmouseover = function() { sortBtn.style.setProperty('background', '#e0e0e0', 'important'); };
       sortBtn.onmouseout = function() { sortBtn.style.setProperty('background', '#f0f0f0', 'important'); };
 
