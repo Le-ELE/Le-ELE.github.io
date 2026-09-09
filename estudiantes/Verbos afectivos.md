@@ -8,8 +8,10 @@
 |                        |         | me  |     | gustas                    |        |
 |                        |         |     |     |                           |        |
 
-|     |         |
-| --- | ------- |
-| a   | mí      |
-| a   | ti      |
-| a   | ella /  |
+|     |                         |     |
+| --- | ----------------------- | --- |
+| a   | mí                      | me  |
+| a   | ti                      | te  |
+| a   | usted / ella / él       | le  |
+| a   | nosotros                | nos |
+| a   | ustedes / ellas / ellos | les |
