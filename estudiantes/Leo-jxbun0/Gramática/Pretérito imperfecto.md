@@ -11,6 +11,7 @@
 
 - Antes comía mucho pollo.
 - Antes trabajaba mucho.
-- Antes viajaba mucho, pero ahora no.
-- 
+- Antes viajaba mucho, pero ahora ya no.
+- Ya no como pollo.
+- ¿Fumas? 
 
