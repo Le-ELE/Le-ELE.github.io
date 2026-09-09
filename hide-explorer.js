@@ -113,6 +113,7 @@
         elleBtn.style.cssText = 'position:fixed;top:20px;left:0;z-index:1000;background:#8B4513;color:#fff;padding:10px 18px;border-radius:0 8px 8px 0;text-decoration:none;font-size:15px;font-weight:600;box-shadow:2px 2px 8px rgba(0,0,0,0.2);transition:background 0.2s;';
         elleBtn.onmouseover = function() { elleBtn.style.background = '#A0522D'; };
         elleBtn.onmouseout = function() { elleBtn.style.background = '#8B4513'; };
+        elleBtn.onclick = function() { document.documentElement.classList.remove('dark'); };
         document.body.appendChild(elleBtn);
       }
 
