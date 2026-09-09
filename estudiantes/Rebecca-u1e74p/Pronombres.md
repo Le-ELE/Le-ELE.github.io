@@ -8,8 +8,7 @@
 | nosotros            | nos            | nos         | nos           | nosotros                        | nuestr@(s)   | nuestr@(s)     |
 | vosotros            | os             | os          | os            | vosotros                        | vuestr@(s)   | vuestr@(s)     |
 | ustedes/ellas/ellos | se             | las / los   | les           | ustedes / ellas / ellos         | su(s)        | suy@(s)        |
-|                     |                |             |               |                                 |              |                |
-|                     |                |             |               |                                 |              |                |
+
 
 Directo: con verbos que necesitan un objeto directo (transitivos)
 Ejemplo: Yo baño a mi bebé (Yo la baño)
@@ -43,6 +42,7 @@ Verbo --> complemento directo  --> complemento indirecto
 | ---------- | ------------ | ------------------ | -------------------- |
 | Yo         | compro       | flores             | para mi novia        |
 |            |              | las                | le                   |
+|            |              |                    |                      |
 | **Sujeto** | **verbo(s)** | **objeto directo** | **objeto indirecto** |
 | I          | buy          | flowers            | for my girlfriend    |
 |            |              | them               | her                  |
