@@ -198,6 +198,13 @@ hr {
   display: block;
 }
 
+.students-btn {
+  display: block;
+  right: 20px;
+  bottom: 70px;
+  background: #2563eb;
+}
+
 .up-btn {
   display: none;
 }
@@ -243,6 +250,10 @@ hr {
     bottom: 14px;
     padding: 10px 15px;
     font-size: .8rem;
+  }
+
+  .students-btn {
+    bottom: 60px;
   }
 
 }
