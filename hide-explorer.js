@@ -14,46 +14,74 @@
         qb.style.gap = '0';
         qb.style.padding = '0';
       }
+
+      // Dark mode styles for login
+      var s = document.createElement('style');
+      s.id = 'login-styles';
+      s.textContent = [
+        'body { background: #fff !important; }',
+        'h1 { color: #111 !important; }',
+        'p { color: #666 !important; }',
+        'input { background: #fff !important; color: #222 !important; border-color: #ddd !important; }',
+        'input::placeholder { color: #999 !important; }',
+        'html.dark body { background: #1a1a1a !important; }',
+        'html.dark .center { background: #1a1a1a !important; }',
+        'html.dark h1 { color: #f0f0f0 !important; }',
+        'html.dark p { color: #ccc !important; }',
+        'html.dark input { background: #333 !important; color: #e0e0e0 !important; border-color: #555 !important; }',
+        'html.dark input::placeholder { color: #888 !important; }',
+        'html.dark button[type=submit] { background: #7ba4d4 !important; }'
+      ].join('\n');
+      document.head.appendChild(s);
+
       var center = document.querySelector('.center');
       if (center) {
         center.innerHTML = '<div style="display:flex;justify-content:center;align-items:center;min-height:80vh;font-family:var(--bodyFont,sans-serif)">' +
           '<div style="text-align:center;max-width:400px;width:90%">' +
-          '<h1 style="font-size:2rem;margin-bottom:0.5rem;color:#111">Estudiantes</h1>' +
-          '<p style="color:#666;margin-bottom:1.5rem;font-size:16px">Ingresa tu código de estudiante para acceder a tus notas.</p>' +
+          '<h1 style="font-size:2rem;margin-bottom:0.5rem">Estudiantes</h1>' +
+          '<p style="margin-bottom:1.5rem;font-size:16px">Ingresa tu código de estudiante para acceder a tus notas.</p>' +
           '<form id="login-form" style="display:flex;flex-direction:column;gap:12px">' +
-          '<input id="login-input" type="text" placeholder="Ej: Leo-jxbun0" autocomplete="off" style="padding:14px 16px;font-size:16px;border:2px solid #ddd;border-radius:8px;outline:none;transition:border-color 0.2s;width:100%;box-sizing:border-box" />' +
+          '<input id="login-input" type="text" placeholder="Ej: Santiago-ie349t" autocomplete="off" style="padding:14px 16px;font-size:16px;border:2px solid #ddd;border-radius:8px;outline:none;transition:border-color 0.2s;width:100%;box-sizing:border-box" />' +
           '<button type="submit" style="padding:14px;font-size:16px;background:#2563eb;color:#fff;border:none;border-radius:8px;cursor:pointer;font-weight:600;transition:background 0.2s">Entrar</button>' +
           '</form>' +
-          '<p id="login-error" style="color:#e53e3e;margin-top:12px;font-size:14px;display:none">Código no encontrado. Intenta de nuevo.</p>' +
+          '<p id="login-error" style="color:#e53e3e;margin-top:12px;font-size:14px;display:none">Ese código no existe. Intenta de nuevo.</p>' +
           '</div></div>';
+
+        var validCodes = ['Leo-jxbun0','Rebecca-u1e74p','Rheis-kggbu0','Santiago-ie349t'];
         var form = document.getElementById('login-form');
         var input = document.getElementById('login-input');
         var error = document.getElementById('login-error');
+
         form.onsubmit = function(e) {
           e.preventDefault();
           var code = input.value.trim();
-          if (code) {
+          if (!code) return;
+          if (validCodes.indexOf(code) !== -1) {
             window.location.href = '/estudiantes/' + code + '/';
+          } else {
+            error.style.display = 'block';
+            input.value = '';
+            input.focus();
           }
         };
         input.focus();
-        // Also navigate on enter in case form submit doesn't fire
-        input.addEventListener('keydown', function(e) {
-          if (e.key === 'Enter') {
-            var c = input.value.trim();
-            if (c) window.location.href = '/estudiantes/' + c + '/';
-          }
-        });
       }
-      // Dark mode button
-      var s = document.createElement('style');
-      s.textContent = 'html.dark .center{background:#1a1a1a!important;color:#e0e0e0!important}' +
-        'html.dark h1{color:#f0f0f0!important}' +
-        'html.dark p{color:#ccc!important}' +
-        'html.dark input{background:#333!important;color:#e0e0e0!important;border-color:#555!important}' +
-        'html.dark input::placeholder{color:#888!important}' +
-        'html.dark button[type=submit]{background:#7ba4d4!important}';
-      document.head.appendChild(s);
+
+      // Dark mode toggle button
+      var dmBtn = document.createElement('button');
+      dmBtn.id = 'login-darkmode-btn';
+      dmBtn.textContent = '\u263E';
+      dmBtn.style.cssText = 'position:fixed;top:20px;right:20px;z-index:1000;background:#333;color:#fff;padding:10px 14px;border:none;border-radius:8px;font-size:18px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.2);transition:background 0.2s;';
+      dmBtn.onmouseover = function() { dmBtn.style.setProperty('background', '#555', 'important'); };
+      dmBtn.onmouseout = function() { dmBtn.style.setProperty('background', '#333', 'important'); };
+      dmBtn.onclick = function() {
+        document.documentElement.classList.toggle('dark');
+        var isDark = document.documentElement.classList.contains('dark');
+        dmBtn.textContent = isDark ? '\u2600' : '\u263E';
+        dmBtn.style.setProperty('background', isDark ? '#f0f0f0' : '#333', 'important');
+        dmBtn.style.setProperty('color', isDark ? '#333' : '#fff', 'important');
+      };
+      document.body.appendChild(dmBtn);
     });
     return; // Don't run the rest of the script on login page
   }
