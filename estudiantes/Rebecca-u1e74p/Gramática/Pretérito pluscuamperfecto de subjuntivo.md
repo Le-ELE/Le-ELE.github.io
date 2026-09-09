@@ -21,20 +21,17 @@ Si hubieras estudiado más, hablarías mejor ahora.
 
 1. Para hablar de una acción que quieres informar que "the person would not have done it". También puedes usar el condicional compuesto.
 
-Yo nunca hubiera dicho eso. = Yo nunca habría dicho eso.
-
-Él nunca hubiera hecho eso.  = 
-
-Yo nunca hubiera ido allá. = Yo nunca habría ido allá.
-
-Yo nunca lo hubiera hecho. = Yo nunca lo habría hecho.
+- Yo nunca hubiera dicho eso. = Yo nunca habría dicho eso.
+- Él nunca hubiera hecho eso.  = 
+- Yo nunca hubiera ido allá. = Yo nunca habría ido allá.
+- Yo nunca lo hubiera hecho. = Yo nunca lo habría hecho.
 
 
-Yo nunca haría eso. 
+- Yo nunca haría eso. 
 
-No, es imposible, ella nunca lo hubiera/habría hecho...
+- No, es imposible, ella nunca lo hubiera/habría hecho...
 
-No, Rebe, estás equivocada, yo nunca la hubiera olvidado
+- No, Rebe, estás equivocada, yo nunca la hubiera olvidado
 
 ---
 
