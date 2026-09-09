@@ -1,26 +1,15 @@
-// Hide Explorer, Search, and Graph on student pages + Home button
 (function() {
+  var selectors = '.left.sidebar,.right.sidebar,.breadcrumb-container,footer.page-footer,.page footer,.graph,.explorer,.search';
+
   function hideElements() {
-    // Hide left sidebar (Explorer + Search)
-    var leftSidebar = document.querySelector('.left.sidebar');
-    if (leftSidebar) leftSidebar.style.display = 'none';
-
-    // Hide right sidebar (Graph)
-    var rightSidebar = document.querySelector('.right.sidebar');
-    if (rightSidebar) rightSidebar.style.display = 'none';
-
-    // Hide breadcrumb
-    var breadcrumb = document.querySelector('.breadcrumb-container');
-    if (breadcrumb) breadcrumb.style.display = 'none';
-
-    // Make center content full width
+    document.querySelectorAll(selectors).forEach(function(el) {
+      el.style.display = 'none';
+    });
     var center = document.querySelector('.center');
     if (center) {
       center.style.marginLeft = '0';
       center.style.maxWidth = '100%';
     }
-
-    // Add Home button if not already added
     if (!document.getElementById('student-home-btn')) {
       var path = window.location.pathname;
       var match = path.match(/\/estudiantes\/([^/]+)/);
@@ -35,8 +24,6 @@
         document.body.appendChild(btn);
       }
     }
-
-    // Add table styles if not already added
     if (!document.getElementById('student-table-styles')) {
       var style = document.createElement('style');
       style.id = 'student-table-styles';
@@ -44,7 +31,8 @@
       document.head.appendChild(style);
     }
   }
+
   hideElements();
-  setTimeout(hideElements, 500);
-  setTimeout(hideElements, 1000);
+  var observer = new MutationObserver(hideElements);
+  observer.observe(document.body, { childList: true, subtree: true });
 })();
