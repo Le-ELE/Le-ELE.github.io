@@ -12,6 +12,10 @@
 - Antes comía mucho pollo.
 - Antes trabajaba mucho.
 - Antes viajaba mucho, pero ahora ya no.
-- Ya no como pollo.
-- ¿Fumas? 
+	- Ya no como pollo.
+	- ¿Fumas? Ya no.
+
+## Descripciones del pasado
+
+- 
 
