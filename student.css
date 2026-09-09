@@ -15,7 +15,6 @@ a:hover { color: #1d4ed8 !important; }
 .popover a { color: #2563eb !important; }
 #student-home-btn, #student-back-btn { color: #fff !important; }
 #student-darkmode-btn { background: #333 !important; color: #fff !important; border: none !important; }
-#student-sort-btn { background: #f0f0f0 !important; color: #333 !important; border: 1px solid #ccc !important; margin-bottom: 1rem !important; display: block !important; width: fit-content !important; }
 table { width: 100% !important; border-collapse: collapse; margin: 1em 0; font-size: 16px; }
 th, td { border: 1px solid #ccc; padding: 10px 14px; text-align: left; }
 th { background: #f0f0f0; font-weight: 600; color: #222 !important; }
@@ -36,7 +35,6 @@ html.dark p, html.dark li, html.dark td, html.dark th, html.dark span, html.dark
 html.dark a { color: #7ba4d4 !important; }
 html.dark #student-home-btn, html.dark #student-back-btn, html.dark #student-home-btn span { color: #fff !important; }
 html.dark #student-darkmode-btn { background: #f0f0f0 !important; color: #333 !important; border: none !important; }
-html.dark #student-sort-btn { background: #333 !important; color: #e0e0e0 !important; border-color: #555 !important; }
 html.dark a:hover { color: #a0c4f0 !important; }
 html.dark th { background: #333 !important; color: #e0e0e0 !important; }
 html.dark tr:nth-child(even) { background: #2a2a2a !important; }

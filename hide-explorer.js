@@ -140,37 +140,6 @@
       document.body.appendChild(dmBtn);
     }
 
-    // === Sort button for folder listings ===
-    var listing = document.querySelector('.page-listing .section-ul');
-    if (listing && !document.getElementById('student-sort-btn')) {
-      var sortBtn = document.createElement('button');
-      sortBtn.id = 'student-sort-btn';
-      sortBtn.innerHTML = '&#8645; A&#8594;Z';
-      sortBtn.style.cssText = 'display:block;margin:0 0 1rem 0;padding:6px 14px;background:#f0f0f0;color:#333;border:1px solid #ccc;border-radius:6px;font-size:14px;cursor:pointer;font-weight:600;transition:background 0.2s;width:fit-content;clear:both;';
-      sortBtn.onmouseover = function() { sortBtn.style.setProperty('background', '#e0e0e0', 'important'); };
-      sortBtn.onmouseout = function() { sortBtn.style.setProperty('background', '#f0f0f0', 'important'); };
-
-      var sortAsc = true;
-      sortBtn.onclick = function() {
-        var items = Array.from(listing.querySelectorAll('.section-li'));
-        items.sort(function(a, b) {
-          var textA = (a.querySelector('a') || {}).textContent || '';
-          var textB = (b.querySelector('a') || {}).textContent || '';
-          return sortAsc ? textA.localeCompare(textB, void 0, {numeric: true, sensitivity: 'base'}) : textB.localeCompare(textA, void 0, {numeric: true, sensitivity: 'base'});
-        });
-        items.forEach(function(item) { listing.appendChild(item); });
-        sortAsc = !sortAsc;
-        sortBtn.innerHTML = sortAsc ? '&#8645; A&#8594;Z' : '&#8645; Z&#8592;A';
-      };
-
-      var header = document.querySelector('.page-listing p');
-      var pageListing = document.querySelector('.page-listing');
-      if (header && header.parentNode) {
-        header.parentNode.insertBefore(sortBtn, header.nextSibling);
-      } else if (pageListing) {
-        pageListing.insertBefore(sortBtn, pageListing.firstChild);
-      }
-    }
   }
 
   hideElements();
