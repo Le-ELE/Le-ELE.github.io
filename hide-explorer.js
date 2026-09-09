@@ -58,6 +58,7 @@
         'p, li, td, th, span, strong, b { color: #222 !important; }',
         'a { color: #2563eb !important; }',
         '#student-home-btn, #student-home-btn span { color: #fff !important; }',
+        '#student-darkmode-btn { background: #333 !important; color: #fff !important; border: none !important; }',
         'a:hover { color: #1d4ed8 !important; }',
         'table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 14px; }',
         'th, td { border: 1px solid #ccc; padding: 8px 12px; text-align: left; }',
