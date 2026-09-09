@@ -60,6 +60,8 @@ jobs:
           cp -r /tmp/quartz-temp/public/* /tmp/site/estudiantes/
           mv /tmp/site/estudiantes/estudiantes/* /tmp/site/estudiantes/ 2>/dev/null || true
           rmdir /tmp/site/estudiantes/estudiantes 2>/dev/null || true
+          mkdir -p /tmp/site/estudiantes/static
+          cp $GITHUB_WORKSPACE/imagenes/logo_grande.png /tmp/site/estudiantes/static/og-image.png
           touch /tmp/site/.nojekyll
 
       - name: Inject hide script and styles
