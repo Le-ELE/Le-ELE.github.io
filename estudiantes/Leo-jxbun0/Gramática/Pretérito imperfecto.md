@@ -28,5 +28,8 @@
 - Estaba limpiando la casa mientras escuchaba música.
 - Mientras iba allá escuchaba un podcast.
 - Ayer (estaba cantando) cantaba mientras me duchaba.
-- 
+
+## Acciones interrumpidas
+
+- Cuando llegaste, estaba cocinando.
 
