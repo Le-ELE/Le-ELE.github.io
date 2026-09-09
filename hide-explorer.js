@@ -77,6 +77,7 @@
         'html.dark p, html.dark li, html.dark td, html.dark th, html.dark span, html.dark strong, html.dark b { color: #e0e0e0 !important; }',
         'html.dark a { color: #7ba4d4 !important; }',
         'html.dark #student-home-btn, html.dark #student-home-btn span { color: #fff !important; }',
+        'html.dark #student-darkmode-btn { background: #f0f0f0 !important; color: #333 !important; border: none !important; }',
         'html.dark a:hover { color: #a0c4f0 !important; }',
         'html.dark th { background: #333 !important; color: #e0e0e0 !important; }',
         'html.dark tr:nth-child(even) { background: #2a2a2a !important; }',
