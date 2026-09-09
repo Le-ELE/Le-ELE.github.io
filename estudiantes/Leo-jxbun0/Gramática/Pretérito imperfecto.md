@@ -1,8 +1,9 @@
 
-|           | ar   | er / ir |
-| --------- | ---- | ------- |
-| Yo        | aba  | ía      |
-| Tú        | abas | ías     |
-| Usted /e  |      |         |
-|           |      |         |
-|           |      |         |
+|                         | ar     | er / ir |     | ser | ir  | ver |
+| ----------------------- | ------ | ------- | --- | --- | --- | --- |
+| Yo                      | aba    | ía      |     | era |     |     |
+| Tú                      | abas   | ías     |     |     |     |     |
+| Usted / Ella / Él       | aba    | ía      |     |     |     |     |
+| Nosotros                | ábamos | íamos   |     |     |     |     |
+| Ustedes / Ellas / Ellos | aban   | ían     |     |     |     |     |
+
