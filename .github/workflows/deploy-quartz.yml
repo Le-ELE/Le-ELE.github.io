@@ -38,7 +38,13 @@ jobs:
       - name: Copy content to Quartz
         run: |
           cp -r $GITHUB_WORKSPACE/estudiantes/* /tmp/quartz-temp/content/
-          cp $GITHUB_WORKSPACE/quartz.config.ts /tmp/quartz-temp/quartz.config.ts
+
+      - name: Patch Quartz config
+        working-directory: /tmp/quartz-temp
+        run: |
+          sed -i 's/pageTitle: "Quartz 4"/pageTitle: "LéELE"/' quartz.config.ts
+          sed -i 's/pageTitleSuffix: ""/pageTitleSuffix: ""/' quartz.config.ts
+          sed -i 's/\["frontmatter", "git", "filesystem"\]/["filesystem"]/' quartz.config.ts
 
       - name: Build Quartz
         working-directory: /tmp/quartz-temp
