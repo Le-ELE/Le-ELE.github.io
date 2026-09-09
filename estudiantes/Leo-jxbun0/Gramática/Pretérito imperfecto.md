@@ -40,6 +40,9 @@
 - ¿Qué hacías cuando tenías 10 años?
 - Estaba estudiando en la escuela.
 - Estudiaba en la escuela.
-
+---
 - ¿Dónde vivías cuando tenías 15 años?
 - Cuando tenía 15 años, vivía en Itagüí.
+---
+- ¿Qué te gustaba hacer cuando tenías 20 años?
+- Me gustaba 
