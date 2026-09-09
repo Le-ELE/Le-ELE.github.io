@@ -17,5 +17,7 @@
 
 ## Descripciones del pasado
 
+- El restaurante era delicioso, ya no.
+- Esta casa era verde.
 - 
 
