@@ -19,5 +19,7 @@
 
 - El restaurante era delicioso, ya no.
 - Esta casa era verde.
+- Ella era graciosa.
+- Tú tenías buen humor.
 - 
 
