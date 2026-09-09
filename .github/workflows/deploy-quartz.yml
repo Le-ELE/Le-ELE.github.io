@@ -79,6 +79,7 @@ jobs:
               content = content.replace('Quartz 4', 'LéELE')
               content = content.replace('Quartz v4.5.2', 'LéELE')
               content = content.replace('Folder:', 'Carpeta:')
+              content = re.sub(r'<p>\d+ items? under this folder\.</p>', '', content)
               content = content.replace('</head>', style_tag + '</head>')
               content = content.replace('</body>', '<script>' + js + '</script></body>')
               with open(html_file, 'w') as f:
