@@ -1,11 +1,11 @@
 
-|                             | **ar**     | **er / ir** |     | **ser**    | **ir**     | **ver**     |
-| --------------------------- | ------ | ------- | --- | ------ | ------ | ------- |
-| **Yo**                      | aba    | ía      |     | era    | iba    | veía    |
-| **Tú**                      | abas   | ías     |     | eras   | ibas   | veías   |
-| **Usted / Ella / Él**       | aba    | ía      |     | era    | iba    | veía    |
-| **Nosotros**                | ábamos | íamos   |     | éramos | íbamos | veíamos |
-| **Ustedes / Ellas / Ellos** | aban   | ían     |     | eran   | iban   | veían   |
+|                             | **ar** | **er / ir** |     | **ser** | **ir** | **ver** |
+| --------------------------- | ------ | ----------- | --- | ------- | ------ | ------- |
+| **Yo**                      | aba    | ía          |     | era     | iba    | veía    |
+| **Tú**                      | abas   | ías         |     | eras    | ibas   | veías   |
+| **Usted / Ella / Él**       | aba    | ía          |     | era     | iba    | veía    |
+| **Nosotros**                | ábamos | íamos       |     | éramos  | íbamos | veíamos |
+| **Ustedes / Ellas / Ellos** | aban   | ían         |     | eran    | iban   | veían   |
 
 ## Acciones rutinarias en el pasado
 
@@ -28,10 +28,11 @@
 - Estaba limpiando la casa mientras escuchaba música.
 - Mientras iba allá escuchaba un podcast.
 - Ayer (estaba cantando) cantaba mientras me duchaba.
+- Estaba caminando mientras él (añade el pronombre porque "aba" puede ser para "yo", "ella", "él" o "usted"bailaba.
 
 ## Acciones interrumpidas
 
 - Cuando llegaste, estaba cocinando.
 - Estaba escuchando música cuando me llamaste.
-- Estaba caminando mientras bailaba.
+
 
