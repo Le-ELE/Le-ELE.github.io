@@ -77,7 +77,6 @@ const config: QuartzConfig = {
       Plugin.Assets(),
       Plugin.Static(),
       Plugin.Favicon(),
-      Plugin.NotFoundPage(),
     ],
   },
 }
