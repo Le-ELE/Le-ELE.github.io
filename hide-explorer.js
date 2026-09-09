@@ -15,25 +15,6 @@
         qb.style.padding = '0';
       }
 
-      // Dark mode styles for login
-      var s = document.createElement('style');
-      s.id = 'login-styles';
-      s.textContent = [
-        'body { background: #fff !important; }',
-        'h1 { color: #111 !important; }',
-        'p { color: #666 !important; }',
-        'input { background: #fff !important; color: #222 !important; border-color: #ddd !important; }',
-        'input::placeholder { color: #999 !important; }',
-        'html.dark body { background: #1a1a1a !important; }',
-        'html.dark .center { background: #1a1a1a !important; }',
-        'html.dark h1 { color: #f0f0f0 !important; }',
-        'html.dark p { color: #ccc !important; }',
-        'html.dark input { background: #333 !important; color: #e0e0e0 !important; border-color: #555 !important; }',
-        'html.dark input::placeholder { color: #888 !important; }',
-        'html.dark button[type=submit] { background: #7ba4d4 !important; }'
-      ].join('\n');
-      document.head.appendChild(s);
-
       var center = document.querySelector('.center');
       if (center) {
         center.innerHTML = '<div style="display:flex;justify-content:center;align-items:center;min-height:80vh;font-family:var(--bodyFont,sans-serif)">' +
@@ -83,9 +64,10 @@
       };
       document.body.appendChild(dmBtn);
     });
-    return; // Don't run the rest of the script on login page
+    return;
   }
 
+  // === Student pages ===
   var selectors = '.left.sidebar,.right.sidebar,.breadcrumb-container,footer.page-footer,.page footer,.graph,.explorer,.search,.meta,time';
 
   function hideElements() {
@@ -105,13 +87,12 @@
     }
 
     // === Navigation buttons ===
-    var path = window.location.pathname;
-    var match = path.match(/\/estudiantes\/([^/]+)/);
+    var navPath = window.location.pathname;
+    var match = navPath.match(/\/estudiantes\/([^/]+)/);
     if (match) {
       var code = match[1];
       var root = '/estudiantes/' + code + '/';
 
-      // Mi Inicio button (house icon)
       if (!document.getElementById('student-home-btn')) {
         var homeBtn = document.createElement('a');
         homeBtn.id = 'student-home-btn';
@@ -123,8 +104,7 @@
         document.body.appendChild(homeBtn);
       }
 
-      // Volver button (back arrow) - only if not at student root
-      var cleaned = path.replace(/\/+$/, '');
+      var cleaned = navPath.replace(/\/+$/, '');
       var segments = cleaned.split('/estudiantes/' + code);
       var subPath = segments[1] || '';
       if (subPath && subPath !== '/' && subPath !== '') {
@@ -167,8 +147,8 @@
       sortBtn.id = 'student-sort-btn';
       sortBtn.innerHTML = '&#8645; A&#8594;Z';
       sortBtn.style.cssText = 'display:inline-block;margin:0.5rem 0;padding:6px 14px;background:#f0f0f0;color:#333;border:1px solid #ccc;border-radius:6px;font-size:14px;cursor:pointer;font-weight:600;transition:background 0.2s;';
-      sortBtn.onmouseover = function() { sortBtn.style.background = '#e0e0e0'; };
-      sortBtn.onmouseout = function() { sortBtn.style.background = '#f0f0f0'; };
+      sortBtn.onmouseover = function() { sortBtn.style.setProperty('background', '#e0e0e0', 'important'); };
+      sortBtn.onmouseout = function() { sortBtn.style.setProperty('background', '#f0f0f0', 'important'); };
 
       var sortAsc = true;
       sortBtn.onclick = function() {
@@ -190,75 +170,6 @@
     }
   }
 
-  // === Styles ===
-  function injectStyles() {
-    if (document.getElementById('student-table-styles')) return;
-    var style = document.createElement('style');
-    style.id = 'student-table-styles';
-    style.textContent = [
-      '*, *::before, *::after { box-sizing: border-box; }',
-      'html, body { background: #fff !important; color: #222 !important; margin: 0 !important; padding: 0 !important; width: 100% !important; overflow-x: hidden !important; }',
-      '#quartz-body { grid-template: "grid-center" 1fr / 1fr !important; gap: 0 !important; padding: 0 !important; }',
-      '.page { max-width: 100% !important; width: 100% !important; padding: 0 2rem !important; }',
-      '.page-header, article { background: #fff !important; color: #222 !important; max-width: 100% !important; width: 100% !important; }',
-      'article { padding: 0 !important; }',
-      '.meta, .meta time, time { display: none !important; }',
-      'h1, h2, h3, h4, h5, h6 { color: #111 !important; }',
-      'p, li, td, th, span, strong, b { color: #222 !important; }',
-      'a { color: #2563eb !important; }',
-      'a:hover { color: #1d4ed8 !important; }',
-      '.popover, .popover .popover-inner { background-color: #fff !important; color: #222 !important; border-color: #ccc !important; box-shadow: 6px 6px 36px rgba(0,0,0,0.15) !important; }',
-      '.popover h1, .popover h2, .popover h3, .popover p, .popover span, .popover li { color: #222 !important; }',
-      '.popover a { color: #2563eb !important; }',
-      '#student-home-btn, #student-back-btn { color: #fff !important; }',
-      '#student-darkmode-btn { background: #333 !important; color: #fff !important; border: none !important; }',
-      '#student-sort-btn { background: #f0f0f0 !important; color: #333 !important; border: 1px solid #ccc !important; }',
-      'table { width: 100% !important; border-collapse: collapse; margin: 1em 0; font-size: 16px; }',
-      'th, td { border: 1px solid #ccc; padding: 10px 14px; text-align: left; }',
-      'th { background: #f0f0f0; font-weight: 600; color: #222 !important; }',
-      'tr:nth-child(even) { background: #f5f5f5 !important; }',
-      'tr:nth-child(odd) { background: #fff !important; }',
-      'tr:hover { background: #e8f0fe !important; }',
-      'hr { border-color: #ddd !important; }',
-      'code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; color: #333 !important; }',
-      'pre { background: #f4f4f4; padding: 12px; border-radius: 6px; overflow-x: auto; }',
-      '',
-      'html.dark { background: #1a1a1a !important; color: #e0e0e0 !important; }',
-      'html.dark body { background: #1a1a1a !important; color: #e0e0e0 !important; }',
-      'html.dark #quartz-body { background: #1a1a1a !important; }',
-      'html.dark .page, html.dark .page-header, html.dark article { background: #1a1a1a !important; color: #e0e0e0 !important; max-width: 100% !important; width: 100% !important; }',
-      'html.dark h1, html.dark h2, html.dark h3, html.dark h4, html.dark h5, html.dark h6 { color: #f0f0f0 !important; }',
-      'html.dark p, html.dark li, html.dark td, html.dark th, html.dark span, html.dark strong, html.dark b { color: #e0e0e0 !important; }',
-      'html.dark a { color: #7ba4d4 !important; }',
-      'html.dark #student-home-btn, html.dark #student-back-btn, html.dark #student-home-btn span { color: #fff !important; }',
-      'html.dark #student-darkmode-btn { background: #f0f0f0 !important; color: #333 !important; border: none !important; }',
-      'html.dark #student-sort-btn { background: #333 !important; color: #e0e0e0 !important; border-color: #555 !important; }',
-      'html.dark a:hover { color: #a0c4f0 !important; }',
-      'html.dark th { background: #333 !important; color: #e0e0e0 !important; }',
-      'html.dark tr:nth-child(even) { background: #2a2a2a !important; }',
-      'html.dark tr:nth-child(odd) { background: #222 !important; }',
-      'html.dark tr:hover { background: #3a3a4a !important; }',
-      'html.dark th, html.dark td { border-color: #555 !important; }',
-      'html.dark hr { border-color: #555 !important; }',
-      'html.dark code { background: #333; color: #e0e0e0 !important; }',
-      'html.dark pre { background: #2a2a2a; }',
-      'html.dark .popover, html.dark .popover .popover-inner { background-color: #2a2a2a !important; color: #e0e0e0 !important; border-color: #555 !important; }',
-      'html.dark .popover h1, html.dark .popover h2, html.dark .popover h3, html.dark .popover p, html.dark .popover span, html.dark .popover li { color: #e0e0e0 !important; }',
-      'html.dark .popover a { color: #7ba4d4 !important; }',
-      '',
-      '@media (max-width: 768px) {',
-      '  .page { padding: 1rem !important; }',
-      '  table { font-size: 13px; }',
-      '  th, td { padding: 6px 8px; }',
-      '  #student-home-btn { top: 10px !important; right: 0 !important; font-size: 14px !important; padding: 8px 14px !important; }',
-      '  #student-back-btn { top: 10px !important; right: 110px !important; font-size: 14px !important; padding: 8px 14px !important; }',
-      '  #student-darkmode-btn { top: 10px !important; right: 200px !important; font-size: 16px !important; padding: 8px 10px !important; }',
-      '}'
-    ].join('\n');
-    document.head.appendChild(style);
-  }
-
-  injectStyles();
   hideElements();
   var observer = new MutationObserver(hideElements);
   observer.observe(document.body, { childList: true, subtree: true });
