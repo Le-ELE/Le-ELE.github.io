@@ -9,12 +9,15 @@
     if (center) {
       center.style.marginLeft = '0';
       center.style.maxWidth = '100%';
+      center.style.width = '100%';
     }
     var page = document.querySelector('.page');
     if (page) {
       page.style.maxWidth = '100%';
+      page.style.width = '100%';
       page.style.margin = '0';
       page.style.padding = '1.5rem';
+      page.style.overflow = 'hidden';
     }
     if (!document.getElementById('student-home-btn')) {
       var path = window.location.pathname;
@@ -51,8 +54,7 @@
       style.id = 'student-table-styles';
       style.textContent = [
         '*, *::before, *::after { box-sizing: border-box; }',
-        'html { background: #fff !important; color: #222 !important; }',
-        'body { background: #fff !important; color: #222 !important; }',
+        'html, body { background: #fff !important; color: #222 !important; margin: 0 !important; padding: 0 !important; width: 100% !important; overflow-x: hidden !important; }',
         '.page, .page-header, article { background: #fff !important; color: #222 !important; }',
         'h1, h2, h3, h4, h5, h6 { color: #111 !important; }',
         'p, li, td, th, span, strong, b { color: #222 !important; }',
@@ -60,8 +62,8 @@
         '#student-home-btn, #student-home-btn span { color: #fff !important; }',
         '#student-darkmode-btn { background: #333 !important; color: #fff !important; border: none !important; }',
         'a:hover { color: #1d4ed8 !important; }',
-        'table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 16px; display: block; overflow-x: auto; }',
-        'th, td { border: 1px solid #ccc; padding: 10px 14px; text-align: left; white-space: nowrap; }',
+        'table { width: 100% !important; border-collapse: collapse; margin: 1em 0; font-size: 16px; }',
+        'th, td { border: 1px solid #ccc; padding: 10px 14px; text-align: left; }',
         'th { background: #f0f0f0; font-weight: 600; color: #222 !important; }',
         'tr:nth-child(even) { background: #f5f5f5 !important; }',
         'tr:nth-child(odd) { background: #fff !important; }',
