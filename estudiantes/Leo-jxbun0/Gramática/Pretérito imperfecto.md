@@ -45,4 +45,8 @@
 - Cuando tenía 15 años, vivía en Itagüí.
 ---
 - ¿Qué te gustaba hacer cuando tenías 20 años?
-- Me gustaba 
+- Me gustaba jugar videojuegos.
+- ¿Cuáles videojuegos jugabas?
+- Jugaba LOL.
+- ---
+- 
