@@ -1,13 +1,15 @@
 
 |               | -ar | -er | -ir |
 | ------------- | --- | --- | --- |
-| Yo            |     |     |     |
-| Tú            |     |     |     |
-| usted         |     |     |     |
+| Yo            | -o  | -o  | -o  |
+| Tú            | -as | -es | -es |
+| usted         | -   |     |     |
 | Ella / Él     |     |     |     |
 | Nosotros      |     |     |     |
 | Ustedes       |     |     |     |
 | Ellas / Ellos |     |     |     |
 ¿Cuáles son los pronombres personales?
 
-* trabajo
+* trabajar
+* comer
+* vivir
