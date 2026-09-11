@@ -39,5 +39,7 @@
 	* Tus estudiantes estudian español 
 * tomar
 	* Nosotros bebemos café
-* levantar(se)
-	* Yo me levanto a las 8 
+* levantar(se) [[Reflexivos]]
+	* Yo me levanto a las 8 todos los días
+* despertar(se) 
+	* Yo me despierto
