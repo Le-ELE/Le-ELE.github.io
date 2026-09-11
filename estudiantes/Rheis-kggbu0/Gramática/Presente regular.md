@@ -37,4 +37,5 @@
 	* Los carros pasan por mi casa [[Por vs para]]
 * estudiar
 	* Tus estudiantes estudian español 
-* 
+* tomar
+	* Nosotros bebemos 
