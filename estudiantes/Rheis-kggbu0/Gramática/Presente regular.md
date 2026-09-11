@@ -22,4 +22,6 @@
 * escribir
 	* Claude escribe el código
 * descansar (to rest)
-	* 
+	* Nosotros descansamos todos los domingos
+* manejar (to drive)
+	* Ella maneja
