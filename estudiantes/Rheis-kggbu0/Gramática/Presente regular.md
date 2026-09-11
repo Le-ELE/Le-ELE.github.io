@@ -34,4 +34,4 @@
 * bajar
 	* Yo bajo las escaleras
 * pasar
-	* 
+	* Los carros pasan por mi casa
