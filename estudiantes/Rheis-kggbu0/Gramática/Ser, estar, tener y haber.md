@@ -1,13 +1,13 @@
 
-|                                            | **ser** (to be)<br><br>Características | **estar** (to be)<br><br>Circunstancias | **tener (to have)<br><br>With nouns** | **haber<br><br>(there is / there are)** |
-| ------------------------------------------ | -------------------------------------- | --------------------------------------- | ------------------------------------- | --------------------------------------- |
-| **Yo**                                     | soy                                    | estoy                                   | tengo                                 |                                         |
-| **Tú**                                     | eres                                   | estás                                   | tienes                                |                                         |
-| ==**Usted (Tú, singular, formal)**==       | es                                     | está                                    | tiene                                 |                                         |
-| ==**Ella / Él / (It)**==                   | es                                     | está                                    | tiene                                 | hay                                     |
-| **Nosotros**                               | somos                                  | estamos                                 | tenemos                               |                                         |
-| ==**Ustedes / Ellas / ellos**==            | son                                    | están                                   | tienen                                |                                         |
-| Recomiendo decir los que están resaltados. |                                        |                                         |                                       |                                         |
+|                                                | **ser** (to be)<br><br>Características | **estar** (to be)<br><br>Circunstancias | **tener (to have)<br><br>With nouns** | **haber<br><br>(there is / there are)** |
+| ---------------------------------------------- | -------------------------------------- | --------------------------------------- | ------------------------------------- | --------------------------------------- |
+| **Yo**                                         | soy                                    | estoy                                   | tengo                                 |                                         |
+| **Tú**                                         | eres                                   | estás                                   | tienes                                |                                         |
+| ==**Usted (Tú, singular, formal)**==           | es                                     | está                                    | tiene                                 |                                         |
+| ==**Ella / Él / (It)**==                       | es                                     | está                                    | tiene                                 | hay                                     |
+| **Nosotros**                                   | somos                                  | estamos                                 | tenemos                               |                                         |
+| ==**Ustedes / Ellas / ellos**==                | son                                    | están                                   | tienen                                |                                         |
+| ==Recomiendo decir los que están resaltados.== |                                        |                                         |                                       |                                         |
 
 * La botella es transparente
 * lento (slow)
@@ -73,4 +73,7 @@ de la niña
 del niño 
 
 Somos hombres
-Somos hermanos
+Somos hermanos 
+
+Ellas están afuera (outside)
+Ustedes tienen
