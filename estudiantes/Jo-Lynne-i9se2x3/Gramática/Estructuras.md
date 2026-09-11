@@ -2,4 +2,8 @@
 
 - Acabo de comer (I just ate)
 - Ella acaba de irse (She just left)
-- Acabamos de hablar (We )
+- Acabamos de hablar (We just talked)
+---
+# seguir + gerundio
+
+- 
