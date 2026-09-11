@@ -41,5 +41,7 @@
 	* Nosotros bebemos café
 * levantar(se) [[Reflexivos]]
 	* Yo me levanto a las 8 todos los días
-* despertar(se) 
-	* Yo me despierto
+* duchar(se)
+	* Yo me ducho todos todas las mañanas
+* cocinar
+	* 
