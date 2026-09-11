@@ -18,4 +18,8 @@
 * olvidar (to forget)
 	* Ella olvida la fiesta
 * vender
+	* Nosotros vendemos nuestros (our) productos
+* escribir
+	* Claude escribe el código
+* descansar (to rest)
 	* 
