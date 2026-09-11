@@ -13,4 +13,4 @@ Someone keeps doing something
 
 - Sigo leyendo mucho (I still read a lot)
 - Ella sigue siendo divertida (She keeps being fun)
-- Nosotros seguimos
+- Nosotros seguimos hablando sobre el proyecto (we are still talking about the project)
