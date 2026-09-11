@@ -40,4 +40,4 @@
 * tomar
 	* Nosotros bebemos café
 * levantar(se)
-	* Me 
+	* Yo me levanto a las 8 
