@@ -1,0 +1,3 @@
+acabar + de + infinitivo
+
+()
