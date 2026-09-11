@@ -6,7 +6,7 @@
 | **Usted (Tú, singular, formal)** | es                                     | está                                    | tiene                                 |                                         |
 | **Ella / Él / (It)**             | es                                     | está                                    | tiene                                 | hay                                     |
 | **Nosotros**                     | somos                                  | estamos                                 | tenemos                               |                                         |
-| **Ustedes / Ellas / ellos**      | son                                    | están                                   |                                       |                                         |
+| **Ustedes / Ellas / ellos**      | son                                    | están                                   | tienen                                |                                         |
 
 * La botella es transparente
 * lento (slow)
@@ -70,3 +70,6 @@ a el hospital -> al hospital
 
 de la niña
 del niño 
+
+Somos hombres
+Somos hermanos
