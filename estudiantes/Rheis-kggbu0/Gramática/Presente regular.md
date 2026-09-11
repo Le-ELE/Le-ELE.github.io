@@ -14,4 +14,8 @@
 * comer
 * vivir
 * caminar
-* Yo camin
+	* Yo camino todos los días
+* olvidar (to forget)
+	* Ella olvida la fiesta
+* vender
+	* 
