@@ -9,6 +9,8 @@ Someone just did something
 # seguir + gerundio
 
 Someone is still doing something
+Someone keeps doing something
 
 - Sigo leyendo mucho (I still read a lot)
-- 
+- Ella sigue siendo divertida (She keeps being fun)
+- Nosotros seguimos
