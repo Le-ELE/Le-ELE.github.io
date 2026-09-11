@@ -25,4 +25,8 @@
 	* Nosotros descansamos todos los domingos
 * manejar (to drive)
 	* Ellas manejan las bicicletas en Medellín
+* llegar 
+	* Yo llego a la fiesta tarde
+* entrar
+	* tú entras a mi casa a las 4
 * 
