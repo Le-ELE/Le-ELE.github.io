@@ -72,8 +72,10 @@ a el hospital -> al hospital
 de la niña
 del niño 
 
+---
+
 Somos hombres
 Somos hermanos 
 
 Ellas están afuera (outside)
-Ustedes tienen
+Ustedes tienen las cervezas
