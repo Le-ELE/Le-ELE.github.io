@@ -5,8 +5,8 @@
 | **Tú**                           | eres                                   | estás                                   | tienes                                |                                         |
 | **Usted (Tú, singular, formal)** | es                                     | está                                    | tiene                                 |                                         |
 | **Ella / Él / (It)**             | es                                     | está                                    | tiene                                 | hay                                     |
-| **Nosotros**                         |                                        |                                         |                                       |                                         |
-| **Ustedes / Ellas / ellos**          |                                        |                                         |                                       |                                         |
+| **Nosotros**                     | somos                                  | estamos                                 | tenemos                               |                                         |
+| **Ustedes / Ellas / ellos**      | son                                    | están                                   |                                       |                                         |
 
 * La botella es transparente
 * lento (slow)
