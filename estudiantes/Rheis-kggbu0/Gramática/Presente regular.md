@@ -38,4 +38,6 @@
 * estudiar
 	* Tus estudiantes estudian español 
 * tomar
-	* Nosotros bebemos 
+	* Nosotros bebemos café
+* levantar(se)
+	* Me 
