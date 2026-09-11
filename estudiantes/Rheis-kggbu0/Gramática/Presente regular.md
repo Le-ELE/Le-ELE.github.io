@@ -46,4 +46,4 @@
 * cocinar
 	* El cocinero cocina la cena (the diner)
 * limpiar
-	* Él limpia 
+	* Él limpia la mesa
