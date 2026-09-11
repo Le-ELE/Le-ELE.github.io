@@ -24,4 +24,5 @@
 * descansar (to rest)
 	* Nosotros descansamos todos los domingos
 * manejar (to drive)
-	* Ella maneja
+	* Ellas manejan las bicicletas en Medellín
+* 
