@@ -44,4 +44,6 @@
 * duchar(se)
 	* Yo me ducho todos todas las mañanas
 * cocinar
-	* 
+	* El cocinero cocina la cena (the diner)
+* limpiar
+	* Él limpia 
