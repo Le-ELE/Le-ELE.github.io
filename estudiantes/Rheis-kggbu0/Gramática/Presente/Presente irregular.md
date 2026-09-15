@@ -51,4 +51,6 @@
 - Yo pienso que tú duermes 
 - ¿A qué hora almuerzas generalmente?
 - Yo almuerzo generalmente a las dos
+- ¿A qué hora almuerzan generalmente en D'Lula?
+- No tengo idea (I have no idea)
 - 
