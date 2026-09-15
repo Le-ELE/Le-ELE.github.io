@@ -33,5 +33,6 @@
 * con (with)
 * Ella trabaja conmigo (with me)
 * cuando (when)
-* Yo miento mucho cuando 
+* Yo miento mucho cuando no 
+* lastimar
   
