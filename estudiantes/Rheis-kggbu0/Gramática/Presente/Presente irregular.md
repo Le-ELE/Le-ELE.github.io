@@ -1,13 +1,13 @@
 
-|               | e -> ie     |            |          |
-| ------------- | ----------- | ---------- | -------- |
-|               | Pensar      | Advertir   | Entender |
-| Yo            | p*ie* nso   | advierto   |          |
-| Tú            | p *ie* nsas | adviertes  |          |
-| Ella / él     | p *ie* nsa  | advierte   |          |
-| Nosotros      | pensamos    | advertimos |          |
-| Ustedes       | p *ie* nsan | advierten  |          |
-| Ellas / Ellos | p *ie* nsan | advierten  |          |
+|               | e -> ie     |            |            |
+| ------------- | ----------- | ---------- | ---------- |
+|               | Pensar      | Advertir   | Entender   |
+| Yo            | p*ie* nso   | advierto   | entiendo   |
+| Tú            | p *ie* nsas | adviertes  | entiendes  |
+| Ella / él     | p *ie* nsa  | advierte   | entiende   |
+| ==Nosotros==      | ==pensamos==    | ==advertimos== | ==entendemos== |
+| Ustedes       | p *ie* nsan | advierten  | entienden  |
+| Ellas / Ellos | p *ie* nsan | advierten  | entienden  |
 * pensar (to think)
 * advertir (to warn)
 * ¿Qué piensas de Medellín?
@@ -22,5 +22,6 @@
 * cuando se volvió presidente
 * el lugar (place)
 * tal vez (maybe)
+* cosa (thing)
 * 
   
