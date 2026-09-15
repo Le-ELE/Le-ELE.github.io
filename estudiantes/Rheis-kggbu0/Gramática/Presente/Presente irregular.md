@@ -9,3 +9,5 @@
 | Ustedes       | p *ie* nsan | advierten  |
 | Ellas / Ellos | p *ie* nsan | advierten  |
 * pensar (to think)
+* advertir (to warn)
+* 
