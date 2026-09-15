@@ -1,13 +1,13 @@
 
-|               | e -> ie      |                |                |        |
-| ------------- | ------------ | -------------- | -------------- | ------ |
-|               | Pensar       | Advertir       | Entender       | Mentir |
-| Yo            | p*ie* nso    | advierto       | entiendo       |        |
-| Tú            | p *ie* nsas  | adviertes      | entiendes      |        |
-| Ella / él     | p *ie* nsa   | advierte       | entiende       |        |
-| ==Nosotros==  | ==pensamos== | ==advertimos== | ==entendemos== |        |
-| Ustedes       | p *ie* nsan  | advierten      | entienden      |        |
-| Ellas / Ellos | p *ie* nsan  | advierten      | entienden      |        |
+|               | e -> ie      |                |                |          |
+| ------------- | ------------ | -------------- | -------------- | -------- |
+|               | Pensar       | Advertir       | Entender       | Mentir   |
+| Yo            | p*ie* nso    | advierto       | entiendo       | miento   |
+| Tú            | p *ie* nsas  | adviertes      | entiendes      | mientes  |
+| Ella / él     | p *ie* nsa   | advierte       | entiende       | miente   |
+| ==Nosotros==  | ==pensamos== | ==advertimos== | ==entendemos== | mentimos |
+| Ustedes       | p *ie* nsan  | advierten      | entienden      | mienten  |
+| Ellas / Ellos | p *ie* nsan  | advierten      | entienden      | mienten  |
 * pensar (to think)
 * advertir (to warn)
 * ¿Qué piensas de Medellín?
@@ -28,5 +28,5 @@
 * Yo entiendo mucho los computadores
 * mercado de valores 
 * el sistema
-* 
+* No miento a menudo (often)
   
