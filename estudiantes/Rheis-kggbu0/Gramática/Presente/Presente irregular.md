@@ -23,5 +23,6 @@
 * el lugar (place)
 * tal vez (maybe)
 * cosa (thing)
+* (Yo) no entiendo mucho español
 * 
   
