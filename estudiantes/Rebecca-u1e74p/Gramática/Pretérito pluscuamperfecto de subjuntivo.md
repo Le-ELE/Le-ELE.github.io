@@ -46,7 +46,8 @@ Si hubieras estudiado más, hablarías mejor ahora.
 
 - No, pero si el viaje fuera más corto, hubiera/habría ido
 - No, pero si el viaje fuera más corto, iría
-- 
+---
+2. 
 
 
 
