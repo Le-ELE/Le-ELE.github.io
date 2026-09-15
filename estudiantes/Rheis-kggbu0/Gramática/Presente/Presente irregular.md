@@ -36,15 +36,15 @@
 * Yo miento mucho cuando no lastima a las personas
 * lastimar
 
-|               | o -> ue  |            |     |     |     |     |     |
-| ------------- | -------- | ---------- | --- | --- | --- | --- | --- |
-|               | Dormir   | Almorzar   |     |     |     |     |     |
-| Yo            | duermo   | almuerzo   |     |     |     |     |     |
-| Tú            | duermes  | almuerzas  |     |     |     |     |     |
-| Ella / él     | duerme   | almuerza   |     |     |     |     |     |
-| ==Nosotros==  | dormimos | almorzamos |     |     |     |     |     |
-| Ustedes       | duermen  | almuerzan  |     |     |     |     |     |
-| Ellas / Ellos | duermen  | almuerzan  |     |     |     |     |     |
+|               | o -> ue  |            |         |     |     |     |     |
+| ------------- | -------- | ---------- | ------- | --- | --- | --- | --- |
+|               | Dormir   | Almorzar   | Poder   |     |     |     |     |
+| Yo            | duermo   | almuerzo   | puedo   |     |     |     |     |
+| Tú            | duermes  | almuerzas  | puedes  |     |     |     |     |
+| Ella / él     | duerme   | almuerza   | puede   |     |     |     |     |
+| ==Nosotros==  | dormimos | almorzamos | podemos |     |     |     |     |
+| Ustedes       | duermen  | almuerzan  | pueden  |     |     |     |     |
+| Ellas / Ellos | duermen  | almuerzan  | pueden  |     |     |     |     |
 - Yo duermo seis a ocho horas por noche
 - Ella duerme ocho a nueve por noche, pero a veces ella duerme diez horas
 - a veces (sometimes)
@@ -55,4 +55,5 @@
 - No tengo idea (I have no idea)
 - más o menos (more or less)
 - antes (before)
+- pareja (couple)
 - 
