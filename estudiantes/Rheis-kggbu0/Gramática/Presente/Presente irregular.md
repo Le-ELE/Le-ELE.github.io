@@ -22,7 +22,7 @@
 * cuando se volvió presidente
 * el lugar (place)
 * tal vez (maybe)
-* cosa (thing)
+* la cosa (thing)
 * (Yo) no entiendo mucho español
 * los computadores
 * Yo entiendo mucho los computadores
