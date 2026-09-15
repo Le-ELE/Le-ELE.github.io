@@ -21,5 +21,6 @@
 * racista
 * cuando se volvió presidente
 * el lugar (place)
+* tal vez (maybe)
 * 
   
