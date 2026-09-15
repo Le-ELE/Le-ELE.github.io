@@ -26,5 +26,6 @@
 * (Yo) no entiendo mucho español
 * los computadores
 * Yo entiendo mucho los computadores
-* 
+* mercado de valores 
+* el sistema
   
