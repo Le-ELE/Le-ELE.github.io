@@ -36,15 +36,15 @@
 * Yo miento mucho cuando no lastima a las personas
 * lastimar
 
-|               | o -> ue  |            |         |     |     |     |     |
-| ------------- | -------- | ---------- | ------- | --- | --- | --- | --- |
-|               | Dormir   | Almorzar   | Poder   |     |     |     |     |
-| Yo            | duermo   | almuerzo   | puedo   |     |     |     |     |
-| Tú            | duermes  | almuerzas  | puedes  |     |     |     |     |
-| Ella / él     | duerme   | almuerza   | puede   |     |     |     |     |
-| ==Nosotros==  | dormimos | almorzamos | podemos |     |     |     |     |
-| Ustedes       | duermen  | almuerzan  | pueden  |     |     |     |     |
-| Ellas / Ellos | duermen  | almuerzan  | pueden  |     |     |     |     |
+|               | o -> ue  |            |         |         |          |        |     |
+| ------------- | -------- | ---------- | ------- | ------- | -------- | ------ | --- |
+|               | Dormir   | Almorzar   | Poder   | Acostar | Resolver | Volver |     |
+| Yo            | duermo   | almuerzo   | puedo   |         |          |        |     |
+| Tú            | duermes  | almuerzas  | puedes  |         |          |        |     |
+| Ella / él     | duerme   | almuerza   | puede   |         |          |        |     |
+| ==Nosotros==  | dormimos | almorzamos | podemos |         |          |        |     |
+| Ustedes       | duermen  | almuerzan  | pueden  |         |          |        |     |
+| Ellas / Ellos | duermen  | almuerzan  | pueden  |         |          |        |     |
 - Yo duermo seis a ocho horas por noche
 - Ella duerme ocho a nueve por noche, pero a veces ella duerme diez horas
 - a veces (sometimes)
@@ -59,4 +59,4 @@
 - hacer (to do)
 - caminatas (walks)
 - bosque (forest)
-- Las cosas que no puedo hacer en Colombia son: yo no puedo caminar solo por
+- Las cosas que no puedo hacer en Colombia son: yo no puedo caminar solo por la noche
