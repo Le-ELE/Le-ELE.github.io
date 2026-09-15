@@ -29,5 +29,7 @@
 * mercado de valores 
 * el sistema
 * No miento a menudo (often)
-* 
+* ¿Qué hace?
+* con (with)
+* Ella trabaja conmigo (withme)
   
