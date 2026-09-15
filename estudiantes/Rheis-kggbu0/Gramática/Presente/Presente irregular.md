@@ -57,4 +57,6 @@
 - antes (before)
 - pareja (couple)
 - hacer (to do)
-- 
+- caminatas (walks)
+- bosque (forest)
+- Las cosas
