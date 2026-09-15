@@ -35,5 +35,14 @@
 * cuando (when)
 * Yo miento mucho cuando no lastima a las personas
 * lastimar
-* 
-  
+
+|               | o -> ue  |     |     |     |     |     |     |
+| ------------- | -------- | --- | --- | --- | --- | --- | --- |
+|               | Dormir   |     |     |     |     |     |     |
+| Yo            | duermo   |     |     |     |     |     |     |
+| Tú            | duermes  |     |     |     |     |     |     |
+| Ella / él     | duerme   |     |     |     |     |     |     |
+| ==Nosotros==  | dormimos |     |     |     |     |     |     |
+| Ustedes       | duermen  |     |     |     |     |     |     |
+| Ellas / Ellos | duermen  |     |     |     |     |     |     |
+- 
