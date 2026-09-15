@@ -36,16 +36,17 @@
 * Yo miento mucho cuando no lastima a las personas
 * lastimar
 
-|               | o -> ue  |     |     |     |     |     |     |
-| ------------- | -------- | --- | --- | --- | --- | --- | --- |
-|               | Dormir   |     |     |     |     |     |     |
-| Yo            | duermo   |     |     |     |     |     |     |
-| Tú            | duermes  |     |     |     |     |     |     |
-| Ella / él     | duerme   |     |     |     |     |     |     |
-| ==Nosotros==  | dormimos |     |     |     |     |     |     |
-| Ustedes       | duermen  |     |     |     |     |     |     |
-| Ellas / Ellos | duermen  |     |     |     |     |     |     |
+|               | o -> ue  |           |     |     |     |     |     |
+| ------------- | -------- | --------- | --- | --- | --- | --- | --- |
+|               | Dormir   | Almorzar  |     |     |     |     |     |
+| Yo            | duermo   | almuerzo  |     |     |     |     |     |
+| Tú            | duermes  | almuerzas |     |     |     |     |     |
+| Ella / él     | duerme   | almuerza  |     |     |     |     |     |
+| ==Nosotros==  | dormimos |           |     |     |     |     |     |
+| Ustedes       | duermen  |           |     |     |     |     |     |
+| Ellas / Ellos | duermen  |           |     |     |     |     |     |
 - Yo duermo seis a ocho horas por noche
 - Ella duerme ocho a nueve por noche, pero a veces ella duerme diez horas
 - a veces (sometimes)
+- Yo pienso que tú duermes 
 - 
