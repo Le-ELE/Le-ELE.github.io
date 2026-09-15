@@ -53,4 +53,6 @@
 - Yo almuerzo generalmente a las dos
 - ¿A qué hora almuerzan generalmente en D'Lula?
 - No tengo idea (I have no idea)
+- más o menos (more or less)
+- antes (before)
 - 
