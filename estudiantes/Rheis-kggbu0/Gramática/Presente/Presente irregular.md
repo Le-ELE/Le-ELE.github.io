@@ -31,5 +31,7 @@
 * No miento a menudo (often)
 * ¿Qué hace?
 * con (with)
-* Ella trabaja conmigo (withme)
+* Ella trabaja conmigo (with me)
+* cuando (when)
+* Yo miento mucho cuando 
   
