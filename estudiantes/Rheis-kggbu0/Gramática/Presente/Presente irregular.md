@@ -10,4 +10,4 @@
 | Ellas / Ellos | p *ie* nsan | advierten  |
 * pensar (to think)
 * advertir (to warn)
-* 
+* Pienso que es una ciudad extraña porque hay dos mundos muy diferentes juntos
