@@ -19,5 +19,6 @@
 * Tengo familia en Estados Unidos 
 * decir (to say - they said - ellos dijeron)
 * racista
+* cuando se volvió presidente
 * 
   
