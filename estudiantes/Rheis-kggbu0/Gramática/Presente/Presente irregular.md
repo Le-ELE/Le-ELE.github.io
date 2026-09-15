@@ -1,13 +1,13 @@
 
-|               | e -> ie      |                |                |          |
-| ------------- | ------------ | -------------- | -------------- | -------- |
-|               | Pensar       | Advertir       | Entender       | Mentir   |
-| Yo            | p*ie* nso    | advierto       | entiendo       | miento   |
-| Tú            | p *ie* nsas  | adviertes      | entiendes      | mientes  |
-| Ella / él     | p *ie* nsa   | advierte       | entiende       | miente   |
-| ==Nosotros==  | ==pensamos== | ==advertimos== | ==entendemos== | mentimos |
-| Ustedes       | p *ie* nsan  | advierten      | entienden      | mienten  |
-| Ellas / Ellos | p *ie* nsan  | advierten      | entienden      | mienten  |
+|               | e -> ie      |                |                |          |        |        |     |
+| ------------- | ------------ | -------------- | -------------- | -------- | ------ | ------ | --- |
+|               | Pensar       | Advertir       | Entender       | Mentir   | querer | sentir |     |
+| Yo            | p*ie* nso    | advierto       | entiendo       | miento   |        |        |     |
+| Tú            | p *ie* nsas  | adviertes      | entiendes      | mientes  |        |        |     |
+| Ella / él     | p *ie* nsa   | advierte       | entiende       | miente   |        |        |     |
+| ==Nosotros==  | ==pensamos== | ==advertimos== | ==entendemos== | mentimos |        |        |     |
+| Ustedes       | p *ie* nsan  | advierten      | entienden      | mienten  |        |        |     |
+| Ellas / Ellos | p *ie* nsan  | advierten      | entienden      | mienten  |        |        |     |
 * pensar (to think)
 * advertir (to warn)
 * ¿Qué piensas de Medellín?
@@ -33,6 +33,7 @@
 * con (with)
 * Ella trabaja conmigo (with me)
 * cuando (when)
-* Yo miento mucho cuando no 
+* Yo miento mucho cuando no lastima a las personas
 * lastimar
+* 
   
