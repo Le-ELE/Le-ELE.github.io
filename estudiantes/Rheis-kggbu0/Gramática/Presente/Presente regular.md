@@ -47,3 +47,6 @@
 	* El cocinero cocina la cena (the diner)
 * limpiar
 	* Él limpia la mesa
+	  
+	  
+	  ![[Pasted image 20260915140842.png]]
