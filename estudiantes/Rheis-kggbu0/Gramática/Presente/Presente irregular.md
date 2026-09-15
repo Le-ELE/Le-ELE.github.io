@@ -24,5 +24,7 @@
 * tal vez (maybe)
 * cosa (thing)
 * (Yo) no entiendo mucho español
+* los computadores
+* Yo entiendo mucho los computadores
 * 
   
