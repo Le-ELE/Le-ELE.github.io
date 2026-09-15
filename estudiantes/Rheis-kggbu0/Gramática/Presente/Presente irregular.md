@@ -46,3 +46,6 @@
 | Ustedes       | duermen  |     |     |     |     |     |     |
 | Ellas / Ellos | duermen  |     |     |     |     |     |     |
 - Yo duermo seis a ocho horas por noche
+- Ella duerme ocho a nueve por noche, pero a veces ella duerme diez horas
+- a veces (sometimes)
+- 
