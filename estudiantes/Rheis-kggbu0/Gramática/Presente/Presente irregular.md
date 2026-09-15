@@ -1,13 +1,13 @@
 
-|               | e -> ie     |            |
-| ------------- | ----------- | ---------- |
-|               | Pensar      | Advertir   |
-| Yo            | p*ie* nso   | advierto   |
-| Tú            | p *ie* nsas | adviertes  |
-| Ella / él     | p *ie* nsa  | advierte   |
-| Nosotros      | pensamos    | advertimos |
-| Ustedes       | p *ie* nsan | advierten  |
-| Ellas / Ellos | p *ie* nsan | advierten  |
+|               | e -> ie     |            |          |
+| ------------- | ----------- | ---------- | -------- |
+|               | Pensar      | Advertir   | Entender |
+| Yo            | p*ie* nso   | advierto   |          |
+| Tú            | p *ie* nsas | adviertes  |          |
+| Ella / él     | p *ie* nsa  | advierte   |          |
+| Nosotros      | pensamos    | advertimos |          |
+| Ustedes       | p *ie* nsan | advierten  |          |
+| Ellas / Ellos | p *ie* nsan | advierten  |          |
 * pensar (to think)
 * advertir (to warn)
 * ¿Qué piensas de Medellín?
