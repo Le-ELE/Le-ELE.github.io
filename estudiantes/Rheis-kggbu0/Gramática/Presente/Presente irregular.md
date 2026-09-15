@@ -1,10 +1,11 @@
 
-|               | e -> ie | o -> ue |
-| ------------- | ------- | ------- |
-|               | Pebsa   |         |
-| Yo            |         |         |
-| Tú            |         |         |
-| Ella / él     |         |         |
-| Nosotros      |         |         |
-| Ustedes       |         |         |
-| Ellas / Ellos |         |         |
+|               | e -> ie     | o -> ue |
+| ------------- | ----------- | ------- |
+|               | Pensar      |         |
+| Yo            | p*ie* nso   |         |
+| Tú            | p *ie* nsas |         |
+| Ella / él     |             |         |
+| Nosotros      |             |         |
+| Ustedes       |             |         |
+| Ellas / Ellos |             |         |
+* pensar (to think)
