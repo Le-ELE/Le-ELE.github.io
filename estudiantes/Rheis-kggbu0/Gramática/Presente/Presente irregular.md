@@ -15,4 +15,6 @@
 * probablemente
 * No tengo idea de Mark Carney. Yo no soy una persona política.
 * enfoque (focus)
-* 
+* loco (crazy)
+* Tengo familia en Estados Unidos
+  
