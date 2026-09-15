@@ -20,5 +20,6 @@
 * decir (to say - they said - ellos dijeron)
 * racista
 * cuando se volvió presidente
+* el lugar (place)
 * 
   
