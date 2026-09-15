@@ -56,4 +56,5 @@
 - más o menos (more or less)
 - antes (before)
 - pareja (couple)
+- hacer (to do)
 - 
