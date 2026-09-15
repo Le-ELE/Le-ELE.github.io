@@ -14,4 +14,5 @@
 	* Pienso que es una ciudad extraña porque hay dos mundos muy diferentes juntos
 * probablemente
 * No tengo idea de Mark Carney. Yo no soy una persona política.
+* enfoque (focus)
 * 
