@@ -59,4 +59,4 @@
 - hacer (to do)
 - caminatas (walks)
 - bosque (forest)
-- Las cosas
+- Las cosas que no puedo hacer en Colombia son: yo no puedo caminar solo por
