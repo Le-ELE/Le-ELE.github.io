@@ -25,7 +25,12 @@ To be
 |     |                              |                                                               |                        |
 - ¿Qué significa ---? (What is the meaning of ---?)
 - ¿Cómo se dice ---? (How do you say ---?)
+---
 
+No antes del verbo
+- No soy colombiana
+
+---
 ja (hah)
 je (heh)
 ji (hee)
