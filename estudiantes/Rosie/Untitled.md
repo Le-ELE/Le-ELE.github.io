@@ -7,8 +7,8 @@ To be
 | Yo  | soy                          | estoy                                                         | I am    |
 | Tú  | eres                         | estás                                                         | You are |
 |     |                              |                                                               |         |
-|     | enfermero                    | upset (enojado/a(s))                                          |         |
-|     |                              | happy (feliz(es))                                             |         |
+|     | enfermero (nurse)            | upset (enojado/a(s))                                          |         |
+|     | deportista ()                | happy (feliz(es))                                             |         |
 |     |                              | tired (cansado/a(s))                                          |         |
 |     |                              | en mi casa<br><br>en ---                                      |         |
 |     |                              | enfermo (sick)<br>                                            |         |
