@@ -58,4 +58,8 @@ ju (hoo)
 - ¿Qué más?
 	- Me gusta ir a conciertos
 - ¿Qué música te gusta?
+	- Me gusta Drum and bass
+- ¿Qué te gusta comer?
+	- Me gusta el sushi
+- ¿Qué no te gusta comer?
 	- 
