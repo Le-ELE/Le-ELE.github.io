@@ -11,7 +11,7 @@ To be
 |     |                              | happy (feliz(es))                                             |         |
 |     |                              | tired (cansado/a(s))                                          |         |
 |     |                              | en mi casa<br><br>en ---                                      |         |
-|     |                              | enfermo<br>                                                   |         |
+|     |                              | enfermo (sick)<br>                                            |         |
 |     |                              |                                                               |         |
 |     |                              |                                                               |         |
 |     |                              |                                                               |         |
