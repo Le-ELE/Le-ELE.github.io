@@ -29,6 +29,7 @@ To be
 
 No antes del verbo
 - No soy colombiana
+- No estoy enferma
 
 ---
 ja (hah)
