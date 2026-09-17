@@ -14,8 +14,8 @@ To be
 |     | nutritionist (nutricionista) | enfermo (sick)<br>                                            | glasses (gafas)        |
 |     | dancer (bailarín/a)          | caliente                                                      | long hair (pelo largo) |
 |     | influencer                   |                                                               | jewlery (joyas)        |
-|     | woman (mujer)                |                                                               | plants ()              |
-|     | cool (chévere)               |                                                               | a dog                  |
+|     | woman (mujer)                |                                                               | plants (plantas)       |
+|     | cool (chévere)               |                                                               | a dog (un perro)       |
 |     | english (inglés/a)           |                                                               | a job                  |
 |     |                              |                                                               | friends                |
 |     |                              |                                                               | a house                |
@@ -25,6 +25,12 @@ To be
 |     |                              |                                                               |                        |
 - ¿Qué significa ---? (What is the meaning of ---?)
 - ¿Cómo se dice ---? (How do you say ---?)
+
+ja (hah)
+je (heh)
+ji (hee)
+jo (hoh)
+ju (hoo)
 
 
 - Yo estoy en mi casa en Woodstock
