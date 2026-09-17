@@ -7,9 +7,9 @@ To be
 | Yo  | soy                        | estoy                                                         | I am |
 | Tú  | eres                       | estás                                                         |      |
 |     |                            |                                                               |      |
-|     |                            | hot                                                           |      |
-|     |                            | hungry                                                        |      |
-|     |                            | tired                                                         |      |
+|     |                            |                                                               |      |
+|     |                            |                                                               |      |
+|     |                            | tired (cansado/a)                                             |      |
 |     |                            | laughing                                                      |      |
 |     |                            | traveling                                                     |      |
 |     |                            | upset                                                         |      |
@@ -22,6 +22,7 @@ To be
 |     | cool                       |                                                               |      |
 |     | english                    |                                                               |      |
 |     |                            | learning english                                              |      |
-|     |                            |                                                               |      |
+|     |                            | going to be a mom                                             |      |
 
-- going to be a mom
+- calor (heat)
+- hambre (hunger)
