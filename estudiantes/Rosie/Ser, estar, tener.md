@@ -44,14 +44,18 @@ ju (hoo)
 
 - going to be a mom
 
-| laughing                                                      |
-| ------------------------------------------------------------- |
-| traveling                                                     |
-| learning english                                              |
-| watching                                                      |
-| gardening                                                     |
+| laughing         |
+| ---------------- |
+| traveling        |
+| learning english |
+| watching         |
+| gardening        |
 
 ---
 
 - ¿Qué te gusta hacer en tu tiempo libre?
-- 
+	- Me gusta pasear mi perro
+- ¿Qué más?
+	- Me gusta ir a conciertos
+- ¿Qué música te gusta?
+	- 
