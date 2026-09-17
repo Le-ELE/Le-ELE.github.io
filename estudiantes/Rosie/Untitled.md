@@ -7,6 +7,9 @@ To be
 | Yo  | soy                        | estoy                                                     | I am |
 | Tú  | eres                       | estás                                                     |      |
 |     |                            |                                                           |      |
+|     |                            | hot                                                       |      |
+|     |                            | hungry                                                    |      |
+|     |                            | tired                                                     |      |
 - hot
 - hungry
 - tired
@@ -22,4 +25,4 @@ To be
 - cool
 - english
 - learning spanish
-- 
+- going to be a mom
