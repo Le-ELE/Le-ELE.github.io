@@ -12,17 +12,18 @@ To be
 |     |                              | tired (cansado/a(s))                                          |      |
 |     |                              | laughing                                                      |      |
 |     |                              | traveling                                                     |      |
-|     |                              |                                                               |      |
+|     |                              | learning english                                              |      |
 |     |                              | watching                                                      |      |
 |     |                              | gardening                                                     |      |
 |     | nutritionist (nutricionista) |                                                               |      |
 |     | dancer (bailarín/a)          |                                                               |      |
 |     | influencer                   |                                                               |      |
 |     | woman (mujer)                |                                                               |      |
-|     | cool ()                      |                                                               |      |
-|     | english                      |                                                               |      |
-|     |                              | learning english                                              |      |
-|     |                              | going to be a mom                                             |      |
+|     | cool (chévere)               |                                                               |      |
+|     | english (inglés/a)           |                                                               |      |
+|     |                              |                                                               |      |
+|     |                              |                                                               |      |
 
 - calor (heat)
 - hambre (hunger)
+- going to be a mom
