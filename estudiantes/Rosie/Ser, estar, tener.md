@@ -62,4 +62,5 @@ ju (hoo)
 - ¿Qué te gusta comer?
 	- Me gusta el sushi
 - ¿Qué no te gusta comer?
-	- 
+	- No me gusta queso azul
+peas ()
