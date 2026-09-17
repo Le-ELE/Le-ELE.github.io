@@ -14,15 +14,14 @@ To be
 |     |                            | traveling                                                     |      |
 |     |                            | upset                                                         |      |
 |     |                            | watching                                                      |      |
-|     |                            | garden                                                        |      |
+|     |                            | gardening                                                     |      |
+|     | nutritionist               |                                                               |      |
+|     | dancer                     |                                                               |      |
+|     | influencer                 |                                                               |      |
+|     | woman                      |                                                               |      |
+|     | cool                       |                                                               |      |
+|     | english                    |                                                               |      |
+|     |                            | learning english                                              |      |
+|     |                            |                                                               |      |
 
-- watching 
-- gardening
-- nutritionist
-- dancer
-- influencer
-- woman
-- cool
-- english
-- learning spanish
 - going to be a mom
