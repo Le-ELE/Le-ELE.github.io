@@ -8,9 +8,9 @@ To be
 | Tú  | eres                         | estás                                                         | You are |
 |     |                              |                                                               |         |
 |     | enfermero (nurse)            | upset (enojado/a(s))                                          |         |
-|     | deportista ()                | happy (feliz(es))                                             |         |
-|     |                              | tired (cansado/a(s))                                          |         |
-|     |                              | en mi casa<br><br>en ---                                      |         |
+|     | deportista (atlete)          | happy (feliz(es))                                             |         |
+|     | colombiano                   | tired (cansado/a(s))                                          |         |
+|     | inglés(a)                    | en mi casa<br><br>en ---                                      |         |
 |     |                              | enfermo (sick)<br>                                            |         |
 |     |                              |                                                               |         |
 |     |                              |                                                               |         |
