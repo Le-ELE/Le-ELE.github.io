@@ -10,8 +10,8 @@ To be
 |     |                              | upset (enojado/a(s))                                          |         |
 |     |                              | happy (feliz(es))                                             |         |
 |     |                              | tired (cansado/a(s))                                          |         |
-|     |                              |                                                               |         |
-|     |                              |                                                               |         |
+|     |                              | en mi casa<br><br>en ---                                      |         |
+|     |                              | <br>                                                          |         |
 |     |                              |                                                               |         |
 |     |                              |                                                               |         |
 |     |                              |                                                               |         |
