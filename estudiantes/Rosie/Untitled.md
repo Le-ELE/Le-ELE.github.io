@@ -2,10 +2,13 @@ Ser y estar
 
 To be
 
-|     | Ser<br><br>Características | Estar |
-| --- | -------------------------- | ----- |
-| Yo  | soy                        | estoy |
-| Tú  | eres                       | estás |
-|     |                            |       |
-- 
+|     | Ser<br><br>Características | Estar<br><br>Circunstancias<br>Current state of the thing |      |
+| --- | -------------------------- | --------------------------------------------------------- | ---- |
+| Yo  | soy                        | estoy                                                     | I am |
+| Tú  | eres                       | estás                                                     |      |
+|     |                            |                                                           |      |
+- hot
+- hungry
+- tired
+- laughing
 - 
