@@ -11,7 +11,7 @@ To be
 |     |                              | happy (feliz(es))                                             |         |
 |     |                              | tired (cansado/a(s))                                          |         |
 |     |                              | en mi casa<br><br>en ---                                      |         |
-|     |                              | <br>                                                          |         |
+|     |                              | enfermo<br>                                                   |         |
 |     |                              |                                                               |         |
 |     |                              |                                                               |         |
 |     |                              |                                                               |         |
@@ -26,6 +26,9 @@ To be
 - ¿Qué significa ---? (What is the meaning of ---?)
 - ¿Cómo se dice ---? (How do you say ---?)
 
+
+- Yo estoy en mi casa en Woodstock
+- 
 
 - calor (heat)
 - hambre (hunger)
