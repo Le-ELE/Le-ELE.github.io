@@ -50,3 +50,8 @@ ju (hoo)
 | learning english                                              |
 | watching                                                      |
 | gardening                                                     |
+
+---
+
+- ¿Qué te gusta hacer en tu tiempo libre?
+- 
