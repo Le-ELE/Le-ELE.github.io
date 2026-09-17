@@ -16,9 +16,9 @@ To be
 |     | influencer                   |                                                               | jewlery (joyas)        |
 |     | woman (mujer)                |                                                               | plants (plantas)       |
 |     | cool (chévere)               |                                                               | a dog (un perro)       |
-|     | english (inglés/a)           |                                                               | a job                  |
-|     |                              |                                                               | friends                |
-|     |                              |                                                               | a house                |
+|     | english (inglés/a)           |                                                               | a job (un trabajo)     |
+|     |                              |                                                               | friends (amigos)       |
+|     |                              |                                                               | a house (una casa)     |
 |     |                              |                                                               |                        |
 |     |                              |                                                               |                        |
 |     |                              |                                                               |                        |
