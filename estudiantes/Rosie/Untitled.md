@@ -17,4 +17,9 @@ To be
 - gardening
 - nutritionist
 - dancer
+- influencer
+- woman
+- cool
+- english
+- learning spanish
 - 
