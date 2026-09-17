@@ -9,10 +9,10 @@ To be
 |     |                            |                                                               |      |
 |     |                            |                                                               |      |
 |     |                            |                                                               |      |
-|     |                            | tired (cansado/a)                                             |      |
+|     |                            | tired (cansado/a(s))                                          |      |
 |     |                            | laughing                                                      |      |
 |     |                            | traveling                                                     |      |
-|     |                            | upset                                                         |      |
+|     |                            | upset (enojado/a(s))                                          |      |
 |     |                            | watching                                                      |      |
 |     |                            | gardening                                                     |      |
 |     | nutritionist               |                                                               |      |
