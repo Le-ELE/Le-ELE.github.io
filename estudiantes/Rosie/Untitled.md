@@ -34,7 +34,7 @@ To be
 - hambre (hunger)
 - going to be a mom
 
-  | laughing                                                      |
+| laughing                                                      |
 | ------------------------------------------------------------- |
 | traveling                                                     |
 | learning english                                              |
