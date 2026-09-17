@@ -7,7 +7,7 @@ To be
 | Yo  | soy                          | estoy                                                         | I am    |
 | Tú  | eres                         | estás                                                         | You are |
 |     |                              |                                                               |         |
-|     |                              | upset (enojado/a(s))                                          |         |
+|     | enfermero                    | upset (enojado/a(s))                                          |         |
 |     |                              | happy (feliz(es))                                             |         |
 |     |                              | tired (cansado/a(s))                                          |         |
 |     |                              | en mi casa<br><br>en ---                                      |         |
