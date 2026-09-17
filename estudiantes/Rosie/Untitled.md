@@ -11,4 +11,10 @@ To be
 - hungry
 - tired
 - laughing
+- traveling
+- upset
+- watching 
+- gardening
+- nutritionist
+- dancer
 - 
