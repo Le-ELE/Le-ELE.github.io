@@ -10,11 +10,11 @@ To be
 |     |                              | upset (enojado/a(s))                                          |         |
 |     |                              | happy (feliz(es))                                             |         |
 |     |                              | tired (cansado/a(s))                                          |         |
-|     |                              | laughing                                                      |         |
-|     |                              | traveling                                                     |         |
-|     |                              | learning english                                              |         |
-|     |                              | watching                                                      |         |
-|     |                              | gardening                                                     |         |
+|     |                              |                                                               |         |
+|     |                              |                                                               |         |
+|     |                              |                                                               |         |
+|     |                              |                                                               |         |
+|     |                              |                                                               |         |
 |     | nutritionist (nutricionista) |                                                               |         |
 |     | dancer (bailarín/a)          |                                                               |         |
 |     | influencer                   |                                                               |         |
@@ -24,9 +24,16 @@ To be
 |     |                              |                                                               |         |
 |     |                              |                                                               |         |
 - ¿Qué significa ---? (What is the meaning of ---?)
-- ¿Cómo se
+- ¿Cómo se dice ---? (How do you say ---?)
 
 
 - calor (heat)
 - hambre (hunger)
 - going to be a mom
+
+  | laughing                                                      |
+| ------------------------------------------------------------- |
+| traveling                                                     |
+| learning english                                              |
+| watching                                                      |
+| gardening                                                     |
