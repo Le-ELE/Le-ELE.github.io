@@ -1,5 +1,11 @@
+Ser y estar
 
-|     | Ser | Estar |
-| --- | --- | ----- |
-| Yo  |     |       |
-| Tú  |     |       |
+To be
+
+|     | Ser<br><br>Características | Estar |
+| --- | -------------------------- | ----- |
+| Yo  | soy                        | estoy |
+| Tú  | eres                       | estás |
+|     |                            |       |
+- 
+- 
