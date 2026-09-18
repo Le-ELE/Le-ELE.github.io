@@ -21,7 +21,10 @@
 - ¿Con quién fuiste?
 - Yo fui con mi compañero de cuarto.
 ---
-- ¿
+- ¿Qué bebiste esta mañana?
+- Esta mañana bebí leche con proteína. ¿Y tú?
+- Yo bebí dos o tres tazas de café.
+- 
 ---
 ago > hace 
 
