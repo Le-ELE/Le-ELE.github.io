@@ -9,7 +9,8 @@
 |       | estuvieras bien      | I wish you are well       | sé    | presente o futuro |
 |       | hayas estado bien    | I hope you have been well | no sé | pasado            |
 |       | hubieras estado bien | I wish you had been well  | sé    | pasado            |
-|       |                      |                           |       |                   |
+
+
 Ojalá no estuvieras enfermo
 Ojalá no estés enfermo
 
@@ -25,16 +26,16 @@ Ojalá no estés enfermo
 | "     | dios existiera        | I wish god exists  | ateo              | sé    | presente o futuro |
 | "     | dios haya existido    | I hope god existed |                   | no sé | pasado            |
 | "     | dios hubiera existido | I wish god existed |                   | sé    | pasado            |
-|       |                       |                    |                   |       |                   |
+
 
 
 |       |                                   |     | ¿Quién dice esto?                                                | saber | Tiempo            |
 | ----- | --------------------------------- | --- | ---------------------------------------------------------------- | ----- | ----------------- |
-| Ojalá | los dinosaurios existan           |     | niño que no sabe                                                 | no sé | presente o futuro |
-| "     | los dinosaurios existieran        |     | adulto que sabe que no existen                                   | sé    | presente o futuro |
+| Ojalá | los dinosaurios existan           |     | Un niño que no sabe                                              | no sé | presente o futuro |
+| "     | los dinosaurios existieran        |     | Un adulto que sabe que no existen                                | sé    | presente o futuro |
 | "     | los dinosaurios hayan existido    |     | Una persona que no sabe si existieron en el pasado               | no sé | pasado            |
 | "     | los dinosaurios hubieran existido |     | Una persona que está segura de que los dinosaurios no existieron | sé    | pasado            |
-|       |                                   |     |                                                                  |       |                   |
+
 
 ---
 
