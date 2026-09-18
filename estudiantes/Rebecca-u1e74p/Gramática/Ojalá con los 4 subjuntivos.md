@@ -18,5 +18,6 @@ Ojalá no estés enfermo
 - Ojalá hayas ido a la fiesta > I hope that you went to the party
 - Ojalá hubieras ido a la fiesta > I wish that you went to the party
 ---
-- 
+- Ojalá dios exista
+- Oaj
  
