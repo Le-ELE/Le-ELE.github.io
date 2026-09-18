@@ -62,10 +62,11 @@
 - Las cosas que no puedo hacer en Colombia son: yo no puedo caminar solo por la noche
 
 
-|            | e > i |
-| ---------- | ----- |
-| yo         |       |
-| tú         |       |
-| ella / él  |       |
-| nosotros   |       |
-| ustedes /  |       |
+|                         | e > i   |     |     |     |
+| ----------------------- | ------- | --- | --- | --- |
+|                         | pedir   |     |     |     |
+| yo                      | pido    |     |     |     |
+| tú                      | pides   |     |     |     |
+| ella / él               | pide    |     |     |     |
+| nosotros                | pedimos |     |     |     |
+| ustedes / ellas / ellos | piden   |     |     |     |
