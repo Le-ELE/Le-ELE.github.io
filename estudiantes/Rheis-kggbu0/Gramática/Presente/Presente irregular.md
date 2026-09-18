@@ -69,7 +69,7 @@
 | tú                      | pides     | compites     | consigues     | sigues     |
 | ella / él               | pide      | compite      | consigue      | sigue      |
 | nosotros                | pedimos   | competimos   | conseguimos   | seguimos   |
-| ustedes / ellas / ellos | piden     | compiten     | consiguen     |            |
+| ustedes / ellas / ellos | piden     | compiten     | consiguen     | siguen     |
 - yo pido comida por Rappi
 - yo pido la cuenta
 - nosotros pedimos ayuda
@@ -82,5 +82,7 @@
 - Ellas consiguen trabajo rápido
 - Ella consigue la visa tarde
 ---
-- seguir
+- Yo sigo las reglas
+- Yo no la sigo en Instagram
+- 
 - 
