@@ -62,14 +62,14 @@
 - Las cosas que no puedo hacer en Colombia son: yo no puedo caminar solo por la noche
 
 
-|                         | e > i     |              |               |            |
-| ----------------------- | --------- | ------------ | ------------- | ---------- |
-|                         | **pedir** | **competir** | **conseguir** | **seguir** |
-| yo                      | pido      | compito      | consigo       | sigo       |
-| tú                      | pides     | compites     | consigues     | sigues     |
-| ella / él               | pide      | compite      | consigue      | sigue      |
-| nosotros                | pedimos   | competimos   | conseguimos   | seguimos   |
-| ustedes / ellas / ellos | piden     | compiten     | consiguen     | siguen     |
+|                         | e > i     |              |               |            |             |
+| ----------------------- | --------- | ------------ | ------------- | ---------- | ----------- |
+|                         | **pedir** | **competir** | **conseguir** | **seguir** | **repetir** |
+| yo                      | pido      | compito      | consigo       | sigo       | repito      |
+| tú                      | pides     | compites     | consigues     | sigues     | repites     |
+| ella / él               | pide      | compite      | consigue      | sigue      | repite      |
+| nosotros                | pedimos   | competimos   | conseguimos   | seguimos   | repetimos   |
+| ustedes / ellas / ellos | piden     | compiten     | consiguen     | siguen     | repiten     |
 - yo pido comida por Rappi
 - yo pido la cuenta
 - nosotros pedimos ayuda
@@ -86,5 +86,5 @@
 - Yo no la sigo en Instagram
 - Ustedes siguen mi dirección
 ---
-
+- Yo repito la palabra que tú d
 - 
