@@ -1,8 +1,8 @@
 
-|     | -ar   | -er   | hacer (to do) |
-| --- | ----- | ----- | ------------- |
-| yo  | -é    | -í    | hice          |
-| tú  | -aste | -iste | hiciste       |
+|     | -ar   | -er   | hacer (to do) | ir (to go) |
+| --- | ----- | ----- | ------------- | ---------- |
+| yo  | -é    | -í    | hice          | fui        |
+| tú  | -aste | -iste | hiciste       | fuiste     |
 - Yo trabajé por ocho horas hoy
 - Yo visité a mi amigo hace 2 días
 - Yo comí un banano hace 5 minutos
@@ -15,7 +15,9 @@
 - No sé cuántas salchichas comí porque yo corté en pedazos.
 ---
 - ¿Qué hiciste el fin de semana pasado?
-- Yo vi una reunión en El Poblado 
+- Yo fui a una reunión en El Poblado 
+- ¿A qué hora fuiste a la reunión?
+- Yo fui a la reunión a las 6:30 
 ---
 ago > hace 
 
