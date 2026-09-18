@@ -60,3 +60,12 @@
 - caminatas (walks)
 - bosque (forest)
 - Las cosas que no puedo hacer en Colombia son: yo no puedo caminar solo por la noche
+
+
+|            | e > i |
+| ---------- | ----- |
+| yo         |       |
+| tú         |       |
+| ella / él  |       |
+| nosotros   |       |
+| ustedes /  |       |
