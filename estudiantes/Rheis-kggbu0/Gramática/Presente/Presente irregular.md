@@ -62,14 +62,14 @@
 - Las cosas que no puedo hacer en Colombia son: yo no puedo caminar solo por la noche
 
 
-|                         | e > i     |              |               |     |
-| ----------------------- | --------- | ------------ | ------------- | --- |
-|                         | **pedir** | **competir** | **conseguir** |     |
-| yo                      | pido      | compito      | consigo       |     |
-| tú                      | pides     | compites     | consigues     |     |
-| ella / él               | pide      | compite      | consigue      |     |
-| nosotros                | pedimos   | competimos   | conseguimos   |     |
-| ustedes / ellas / ellos | piden     | compiten     | consiguen     |     |
+|                         | e > i     |              |               |            |
+| ----------------------- | --------- | ------------ | ------------- | ---------- |
+|                         | **pedir** | **competir** | **conseguir** | **seguir** |
+| yo                      | pido      | compito      | consigo       | sigo       |
+| tú                      | pides     | compites     | consigues     | sigues     |
+| ella / él               | pide      | compite      | consigue      | sigue      |
+| nosotros                | pedimos   | competimos   | conseguimos   | seguimos   |
+| ustedes / ellas / ellos | piden     | compiten     | consiguen     |            |
 - yo pido comida por Rappi
 - yo pido la cuenta
 - nosotros pedimos ayuda
@@ -80,4 +80,7 @@
 ---
 - Tú consigues la rueda de tu moto
 - Ellas consiguen trabajo rápido
-- Ella consigue 
+- Ella consigue la visa tarde
+---
+- seguir
+- 
