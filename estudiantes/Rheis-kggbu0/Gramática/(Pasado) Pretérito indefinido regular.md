@@ -17,7 +17,11 @@
 - ¿Qué hiciste el fin de semana pasado?
 - Yo fui a una reunión en El Poblado 
 - ¿A qué hora fuiste a la reunión?
-- Yo fui a la reunión a las 6:30 
+- Yo fui a la reunión a las 6:30 pm
+- ¿Con quién fuiste?
+- Yo fui con mi compañero de cuarto.
+---
+¿
 ---
 ago > hace 
 
