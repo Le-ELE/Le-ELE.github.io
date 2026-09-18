@@ -30,7 +30,11 @@
 ---
 - ¿Con quién estuviste ayer?
 - Estuve con mi amiga Maritza
-- 
+---
+- ¿Con quién estuviste el viernes?
+- El viernes yo estuve con mis amigos.
+---
+
 ---
 ago > hace 
 
