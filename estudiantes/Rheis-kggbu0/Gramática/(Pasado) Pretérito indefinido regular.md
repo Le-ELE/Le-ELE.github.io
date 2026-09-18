@@ -35,7 +35,7 @@
 - El viernes yo estuve con mis amigos.
 ---
 - ¿Dónde conociste a Lucas?
-- 
+- Yo conocí a Lucas hace 6 años.
 ---
 ago > hace 
 
