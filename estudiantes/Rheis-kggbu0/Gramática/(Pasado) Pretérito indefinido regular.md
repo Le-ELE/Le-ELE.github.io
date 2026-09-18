@@ -12,7 +12,9 @@
 - ¿Qué cocinaste?
 - Yo cociné arroz y salchichas
 - ¿Cuántas salchichas comiste?
-- 
+- No sé cuántas salchichas comí porque yo corté en pedazos.
+---
+- ¿Qué hiciste el fin de semana pasado?
 ---
 ago > hace 
 
