@@ -19,10 +19,10 @@ Ojalá no estés enfermo
 - Ojalá hubieras ido a la fiesta > I wish that you went to the party
 ---
 
-|       |                       |                   |     | saber | Tiempo            |
-| ----- | --------------------- | ----------------- | --- | ----- | ----------------- |
-| Ojalá | dios exista           | I hope god exists |     | no sé | presente o futuro |
-|       | dios existiera        | I wish god exists |     | sé    | presente o futuro |
-|       | dios haya existido    |                   |     | no sé | pasado            |
-|       | dios hubiera existido |                   |     | sé    | pasado            |
-|       |                       |                   |     |       |                   |
+|       |                       |                   | ¿Quién dice esto? | saber | Tiempo            |
+| ----- | --------------------- | ----------------- | ----------------- | ----- | ----------------- |
+| Ojalá | dios exista           | I hope god exists | agnóstica         | no sé | presente o futuro |
+|       | dios existiera        | I wish god exists |                   | sé    | presente o futuro |
+|       | dios haya existido    |                   |                   | no sé | pasado            |
+|       | dios hubiera existido |                   |                   | sé    | pasado            |
+|       |                       |                   |                   |       |                   |
