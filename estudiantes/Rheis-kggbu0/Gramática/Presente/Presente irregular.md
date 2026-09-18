@@ -84,5 +84,7 @@
 ---
 - Yo sigo las reglas
 - Yo no la sigo en Instagram
-- 
+- Ustedes siguen mi dirección
+---
+
 - 
