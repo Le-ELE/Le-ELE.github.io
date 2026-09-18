@@ -1,8 +1,8 @@
 
-|     | -ar   | -er   | hacer (to do) | ir (to go) |
-| --- | ----- | ----- | ------------- | ---------- |
-| yo  | -é    | -í    | hice          | fui        |
-| tú  | -aste | -iste | hiciste       | fuiste     |
+|     | -ar   | -er   | hacer (to do) | ir (to go) | estar |
+| --- | ----- | ----- | ------------- | ---------- | ----- |
+| yo  | -é    | -í    | hice          | fui        |       |
+| tú  | -aste | -iste | hiciste       | fuiste     |       |
 - Yo trabajé por ocho horas hoy
 - Yo visité a mi amigo hace 2 días
 - Yo comí un banano hace 5 minutos
@@ -24,7 +24,9 @@
 - ¿Qué bebiste esta mañana?
 - Esta mañana bebí leche con proteína. ¿Y tú?
 - Yo bebí dos o tres tazas de café.
-- 
+---
+- ¿Qué hiciste ayer?
+- Ayer fui al cumpleaños de una amiga y estuve con ella todo el día.
 ---
 ago > hace 
 
