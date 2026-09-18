@@ -12,4 +12,5 @@
 ---
 - ¿Qué vas a hacer el fin de semana?
 - Yo y mi amigo vamos a ir a la Comuna 13 mañana.
+- Él es de Vancuver
 - 

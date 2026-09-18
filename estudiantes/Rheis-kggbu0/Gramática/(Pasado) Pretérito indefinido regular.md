@@ -34,7 +34,8 @@
 - ¿Con quién estuviste el viernes?
 - El viernes yo estuve con mis amigos.
 ---
-
+- ¿Dónde conociste a Lucas?
+- 
 ---
 ago > hace 
 
