@@ -62,16 +62,17 @@
 - Las cosas que no puedo hacer en Colombia son: yo no puedo caminar solo por la noche
 
 
-|                         | e > i   |     |     |     |
-| ----------------------- | ------- | --- | --- | --- |
-|                         | pedir   |     |     |     |
-| yo                      | pido    |     |     |     |
-| tú                      | pides   |     |     |     |
-| ella / él               | pide    |     |     |     |
-| nosotros                | pedimos |     |     |     |
-| ustedes / ellas / ellos | piden   |     |     |     |
+|                         | e > i     |              |     |     |
+| ----------------------- | --------- | ------------ | --- | --- |
+|                         | **pedir** | **competir** |     |     |
+| yo                      | pido      | compito      |     |     |
+| tú                      | pides     | compites     |     |     |
+| ella / él               | pide      | compite      |     |     |
+| nosotros                | pedimos   | competimos   |     |     |
+| ustedes / ellas / ellos | piden     | compiten     |     |     |
 - yo pido comida por Rappi
 - yo pido la cuenta
 - nosotros pedimos ayuda
 - nosotros pedimos los billetes (tiquetes) para el partido de fútbol
--  
+---
+- 
