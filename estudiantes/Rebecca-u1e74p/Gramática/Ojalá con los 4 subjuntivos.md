@@ -13,9 +13,10 @@
 Ojalá no estuvieras enfermo
 Ojalá no estés enfermo
 
-- Ojalá vayas a la fiesta
-- Ojalá fueras a la fiesta
-- Ojalá hayas ido a la fiesta
+- Ojalá vayas a la fiesta > I hope that you go to the party
+- Ojalá fueras a la fiesta > I wish that you go to the party
+- Ojalá hayas ido a la fiesta > 
 - Ojalá hubieras ido a la fiesta
-- 
+---
+
  
