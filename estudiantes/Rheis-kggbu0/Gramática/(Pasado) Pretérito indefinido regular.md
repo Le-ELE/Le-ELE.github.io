@@ -1,10 +1,15 @@
 
-|     | -ar   | -er   |
-| --- | ----- | ----- |
-| yo  | -é    | -í    |
-| tú  | -aste | -iste |
+|     | -ar   | -er   | hacer |
+| --- | ----- | ----- | ----- |
+| yo  | -é    | -í    |       |
+| tú  | -aste | -iste |       |
 - Yo trabajé por ocho horas hoy
-- Yo visité a mi amigo 
+- Yo visité a mi amigo hace 2 días
+- Yo comí un banano hace 5 minutos
+- ¿Qué hiciste
 ---
-ago --> 
+ago > hace 
+
+hace 2 días
+
 ---
