@@ -78,4 +78,6 @@
 - En las carreras corriendo
 - Mi amigo compite en wrestling
 ---
-- Tú consigues la  
+- Tú consigues la rueda de tu moto
+- Ellas consiguen trabajo rápido
+- 
