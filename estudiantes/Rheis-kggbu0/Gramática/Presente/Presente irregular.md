@@ -70,3 +70,7 @@
 | ella / él               | pide    |     |     |     |
 | nosotros                | pedimos |     |     |     |
 | ustedes / ellas / ellos | piden   |     |     |     |
+- yo pido comida por Rappi
+- yo pido la cuenta
+- nosotros pedimos ayuda
+- 
