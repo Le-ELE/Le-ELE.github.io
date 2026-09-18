@@ -10,4 +10,6 @@
 - ¿A qué hora van a ir?
 - Nosotros vamos a ir a las 7.
 ---
-¿Qué vas a hacer e
+- ¿Qué vas a hacer el fin de semana?
+- Yo y mi amigo vamos a ir a la Comuna 13 mañana.
+- 
