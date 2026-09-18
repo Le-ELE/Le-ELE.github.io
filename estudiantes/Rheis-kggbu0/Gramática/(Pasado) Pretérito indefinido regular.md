@@ -21,7 +21,7 @@
 - ¿Con quién fuiste?
 - Yo fui con mi compañero de cuarto.
 ---
-¿
+- ¿
 ---
 ago > hace 
 
