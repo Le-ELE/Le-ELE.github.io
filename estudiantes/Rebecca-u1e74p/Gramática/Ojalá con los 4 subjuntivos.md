@@ -10,22 +10,23 @@
 |       | hayas estado bien    | I hope you have been well | no sé | pasado            |
 |       | hubieras estado bien | I wish you had been well  | sé    | pasado            |
 
-
+---
 Ojalá no estuvieras enfermo
 Ojalá no estés enfermo
 
+--- 
 - Ojalá vayas a la fiesta > I hope that you go to the party
 - Ojalá fueras a la fiesta > I wish that you go to the party
 - Ojalá hayas ido a la fiesta > I hope that you went to the party
 - Ojalá hubieras ido a la fiesta > I wish that you went to the party
 ---
 
-|       |                       |                    | ¿Quién dice esto? | saber | Tiempo            |
-| ----- | --------------------- | ------------------ | ----------------- | ----- | ----------------- |
-| Ojalá | dios exista           | I hope god exists  | agnóstica         | no sé | presente o futuro |
-| "     | dios existiera        | I wish god exists  | ateo              | sé    | presente o futuro |
-| "     | dios haya existido    | I hope god existed |                   | no sé | pasado            |
-| "     | dios hubiera existido | I wish god existed |                   | sé    | pasado            |
+|       |                       |                    | ¿Quién dice esto?     | saber | Tiempo            |
+| ----- | --------------------- | ------------------ | --------------------- | ----- | ----------------- |
+| Ojalá | dios exista           | I hope god exists  | Una persona agnóstica | no sé | presente o futuro |
+| "     | dios existiera        | I wish god exists  | Una persona atea      | sé    | presente o futuro |
+| "     | dios haya existido    | I hope god existed |                       | no sé | pasado            |
+| "     | dios hubiera existido | I wish god existed |                       | sé    | pasado            |
 
 
 
