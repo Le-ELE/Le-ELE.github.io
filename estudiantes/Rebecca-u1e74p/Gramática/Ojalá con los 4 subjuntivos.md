@@ -18,6 +18,11 @@ Ojalá no estés enfermo
 - Ojalá hayas ido a la fiesta > I hope that you went to the party
 - Ojalá hubieras ido a la fiesta > I wish that you went to the party
 ---
-- Ojalá dios exista
-- Oaj
- 
+
+|       |                    |                           | saber | Tiempo            |
+| ----- | ------------------ | ------------------------- | ----- | ----------------- |
+| Ojalá | dios exista        | I hope you are well       | no sé | presente o futuro |
+|       | dios existiera     | I wish you are well       | sé    | presente o futuro |
+|       | dios haya existido | I hope you have been well | no sé | pasado            |
+|       | dios               | I wish you had been well  | sé    | pasado            |
+|       |                    |                           |       |                   |
