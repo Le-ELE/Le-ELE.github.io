@@ -22,7 +22,7 @@ Ojalá no estés enfermo
 |       |                       |                   | ¿Quién dice esto? | saber | Tiempo            |
 | ----- | --------------------- | ----------------- | ----------------- | ----- | ----------------- |
 | Ojalá | dios exista           | I hope god exists | agnóstica         | no sé | presente o futuro |
-|       | dios existiera        | I wish god exists |                   | sé    | presente o futuro |
-|       | dios haya existido    |                   |                   | no sé | pasado            |
-|       | dios hubiera existido |                   |                   | sé    | pasado            |
+| "     | dios existiera        | I wish god exists | ateo              | sé    | presente o futuro |
+| "     | dios haya existido    |                   |                   | no sé | pasado            |
+| "     | dios hubiera existido |                   |                   | sé    | pasado            |
 |       |                       |                   |                   |       |                   |
