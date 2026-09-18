@@ -8,7 +8,11 @@
 - Yo comí un banano hace 5 minutos
 ---
 - ¿Qué hiciste ayer en la noche?
-- Yo cociné la com
+- Yo cociné la comida
+- ¿Qué cocinaste?
+- Yo cociné arroz y salchichas
+- ¿Cuántas salchichas comiste?
+- 
 ---
 ago > hace 
 
