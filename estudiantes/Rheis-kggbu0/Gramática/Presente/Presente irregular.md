@@ -73,4 +73,5 @@
 - yo pido comida por Rappi
 - yo pido la cuenta
 - nosotros pedimos ayuda
+- nosotros pedimos los billetes (tiquetes) para el partido de fútbol
 - 
