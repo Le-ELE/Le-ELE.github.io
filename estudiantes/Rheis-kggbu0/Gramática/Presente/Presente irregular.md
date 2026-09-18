@@ -88,4 +88,5 @@
 ---
 - Yo repito la palabra que tú dices
 - Nosotros repetimos los ejemplos
-- Ella repite la 
+- Ella repite (el error) la equivocación  
+---
