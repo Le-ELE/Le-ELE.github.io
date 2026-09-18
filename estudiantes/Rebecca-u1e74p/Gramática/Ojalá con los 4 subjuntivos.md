@@ -28,10 +28,10 @@ Ojalá no estés enfermo
 |       |                       |                    |                   |       |                   |
 
 
-|       |                                   |     | ¿Quién dice esto? | saber | Tiempo            |
-| ----- | --------------------------------- | --- | ----------------- | ----- | ----------------- |
-| Ojalá | los dinosaurios existan           |     | niño que no sabe  | no sé | presente o futuro |
-| "     | los dinosaurios existieran        |     |                   | sé    | presente o futuro |
-| "     | los dinosaurios hayan existido    |     |                   | no sé | pasado            |
-| "     | los dinosaurios hubieran existido |     |                   | sé    | pasado            |
-|       |                                   |     |                   |       |                   |
+|       |                                   |     | ¿Quién dice esto?                                  | saber | Tiempo            |
+| ----- | --------------------------------- | --- | -------------------------------------------------- | ----- | ----------------- |
+| Ojalá | los dinosaurios existan           |     | niño que no sabe                                   | no sé | presente o futuro |
+| "     | los dinosaurios existieran        |     | adulto que sabe que no existen                     | sé    | presente o futuro |
+| "     | los dinosaurios hayan existido    |     | Una persona que no sabe si existieron en el pasado | no sé | pasado            |
+| "     | los dinosaurios hubieran existido |     | Una persona que está segura de que los             | sé    | pasado            |
+|       |                                   |     |                                                    |       |                   |
