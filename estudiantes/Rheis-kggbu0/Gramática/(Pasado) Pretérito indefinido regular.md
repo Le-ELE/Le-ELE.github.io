@@ -15,6 +15,7 @@
 - No sé cuántas salchichas comí porque yo corté en pedazos.
 ---
 - ¿Qué hiciste el fin de semana pasado?
+- Yo vi una reunión en El Poblado 
 ---
 ago > hace 
 
