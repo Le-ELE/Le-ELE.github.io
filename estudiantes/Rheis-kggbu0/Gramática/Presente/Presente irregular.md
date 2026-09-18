@@ -86,5 +86,6 @@
 - Yo no la sigo en Instagram
 - Ustedes siguen mi dirección
 ---
-- Yo repito la palabra que tú d
-- 
+- Yo repito la palabra que tú dices
+- Nosotros repetimos los ejemplos
+- Ella repite la 
