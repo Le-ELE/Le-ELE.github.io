@@ -1,12 +1,14 @@
 
-|     | -ar   | -er   | hacer |
-| --- | ----- | ----- | ----- |
-| yo  | -é    | -í    |       |
-| tú  | -aste | -iste |       |
+|     | -ar   | -er   | hacer (to do) |
+| --- | ----- | ----- | ------------- |
+| yo  | -é    | -í    | hice          |
+| tú  | -aste | -iste | hiciste       |
 - Yo trabajé por ocho horas hoy
 - Yo visité a mi amigo hace 2 días
 - Yo comí un banano hace 5 minutos
-- ¿Qué hiciste
+---
+- ¿Qué hiciste ayer en la noche?
+- Yo cociné la com
 ---
 ago > hace 
 
