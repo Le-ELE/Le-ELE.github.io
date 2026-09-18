@@ -28,10 +28,10 @@ Ojalá no estés enfermo
 |       |                       |                    |                   |       |                   |
 
 
-|       |                       |                   | ¿Quién dice esto? | saber | Tiempo            |
-| ----- | --------------------- | ----------------- | ----------------- | ----- | ----------------- |
-| Ojalá | dios exista           | I hope god exists | agnóstica         | no sé | presente o futuro |
-| "     | dios existiera        | I wish god exists | ateo              | sé    | presente o futuro |
-| "     | dios haya existido    |                   |                   | no sé | pasado            |
-| "     | dios hubiera existido |                   |                   | sé    | pasado            |
-|       |                       |                   |                   |       |                   |
+|       |                                   |     | ¿Quién dice esto? | saber | Tiempo            |
+| ----- | --------------------------------- | --- | ----------------- | ----- | ----------------- |
+| Ojalá | los dinosaurios existan           |     | niño que no sabe  | no sé | presente o futuro |
+| "     | los dinosaurios existieran        |     |                   | sé    | presente o futuro |
+| "     | los dinosaurios hayan existido    |     |                   | no sé | pasado            |
+| "     | los dinosaurios hubieran existido |     |                   | sé    | pasado            |
+|       |                                   |     |                   |       |                   |
