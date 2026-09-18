@@ -42,4 +42,5 @@ Santiago está enfermo
 
 - Ojalá tome sus medicamentos
 - Ojalá no tuviera tanta fiebre
-- Ojalá haya 
+- Ojalá haya ido al doctor
+- Ojalá no se hubiera comido eso
