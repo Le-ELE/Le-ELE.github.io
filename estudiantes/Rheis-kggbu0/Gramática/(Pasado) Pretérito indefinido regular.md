@@ -1,8 +1,8 @@
 
-|     | -ar   | -er   | hacer (to do) | ir (to go) | estar |
-| --- | ----- | ----- | ------------- | ---------- | ----- |
-| yo  | -é    | -í    | hice          | fui        |       |
-| tú  | -aste | -iste | hiciste       | fuiste     |       |
+|     | -ar   | -er   | hacer (to do) | ir (to go) | estar     |
+| --- | ----- | ----- | ------------- | ---------- | --------- |
+| yo  | -é    | -í    | hice          | fui        | estuve    |
+| tú  | -aste | -iste | hiciste       | fuiste     | estuviste |
 - Yo trabajé por ocho horas hoy
 - Yo visité a mi amigo hace 2 días
 - Yo comí un banano hace 5 minutos
@@ -27,6 +27,10 @@
 ---
 - ¿Qué hiciste ayer?
 - Ayer fui al cumpleaños de una amiga y estuve con ella todo el día.
+---
+- ¿Con quién estuviste ayer?
+- Estuve con mi amiga Maritza
+- 
 ---
 ago > hace 
 
