@@ -14,3 +14,16 @@
 | A mí                             |          | me  | gusta | trabajar                  |
 | A mí                             | no       | me  | gusta | nadar                     |
 | A mí                             | no       | me  | gusta |                           |
+
+| Opcional excepto tercera persona | Negación |     |       | Nombres  |
+| -------------------------------- | -------- | --- | ----- | -------- |
+| A mí                             |          | me  | gusta | Medellín |
+
+| Opcional excepto tercera persona |     |                                              |     |
+| -------------------------------- | --- | -------------------------------------------- | --- |
+| A mí                             | me  | gusta                                        |     |
+| A ti                             | te  | gusta                                        |     |
+| A ella / él                      | le  | Si el sustantivo es plural, el verbo también |     |
+| A nosotros                       | me  | gustan                                       |     |
+| A ustedes / ellas / ellos        | me  | gustan                                       |     |
+|                                  |     |                                              |     |
