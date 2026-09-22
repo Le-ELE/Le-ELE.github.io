@@ -19,11 +19,11 @@
 | -------------------------------- | -------- | --- | ----- | -------- |
 | A mí                             |          | me  | gusta | Medellín |
 
-| Opcional excepto tercera persona |     |       |     |
-| -------------------------------- | --- | ----- | --- |
-| A mí                             | me  | gusta |     |
-| A ti                             | te  | gusta |     |
-| A ella / él                      | le  |       |     |
-| A nosotros                       | nos |       |     |
-| A ustedes / ellas / ellos        | les |       |     |
-|                                  |     |       |     |
+| Opcional excepto tercera persona |     |       |              |
+| -------------------------------- | --- | ----- | ------------ |
+| A mí                             | me  | gusta | Bogotá       |
+| A ti                             | te  | gusta | la bicicleta |
+| A ella / él                      | le  | gusta | la comida    |
+| A nosotros                       | nos |       |              |
+| A ustedes / ellas / ellos        | les |       |              |
+|                                  |     |       |              |
