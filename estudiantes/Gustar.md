@@ -6,9 +6,11 @@
 |                                  |     | Si el sustantivo es plural, el verbo también |                                                |     |
 | A mí                             | me  | gustan                                       | las flores                                     |     |
 | A mí                             | me  | gustan                                       | los carros                                     |     |
+|                                  |     |                                              |                                                |     |
 
 | Opcional excepto tercera persona | Negación |     |       | Verbos<br>(En infinitivo) |
 | -------------------------------- | -------- | --- | ----- | ------------------------- |
 | A mí                             |          | me  | gusta | correr                    |
 | A mí                             |          | me  | gusta | trabajar                  |
-| A mi                             | no       | me  | gusta | nadar                     |
+| A mí                             | no       | me  | gusta | nadar                     |
+| A mí                             | no       | me  | gusta |                           |
