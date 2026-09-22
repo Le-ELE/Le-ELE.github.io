@@ -19,11 +19,11 @@
 | -------------------------------- | -------- | --- | ----- | -------- |
 | A mí                             |          | me  | gusta | Medellín |
 
-| Opcional excepto tercera persona |     |                                              |     |
-| -------------------------------- | --- | -------------------------------------------- | --- |
-| A mí                             | me  | gusta                                        |     |
-| A ti                             | te  | gusta                                        |     |
-| A ella / él                      | le  | Si el sustantivo es plural, el verbo también |     |
-| A nosotros                       | me  | gustan                                       |     |
-| A ustedes / ellas / ellos        | me  | gustan                                       |     |
-|                                  |     |                                              |     |
+| Opcional excepto tercera persona |     |       |     |
+| -------------------------------- | --- | ----- | --- |
+| A mí                             | me  | gusta |     |
+| A ti                             | te  | gusta |     |
+| A ella / él                      | le  |       |     |
+| A nosotros                       | nos |       |     |
+| A ustedes / ellas / ellos        | les |       |     |
+|                                  |     |       |     |
