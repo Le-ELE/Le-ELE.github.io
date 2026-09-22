@@ -1,8 +1,11 @@
 
-|     | -ar   | -er   | hacer (to do) | ir (to go) | estar     |
-| --- | ----- | ----- | ------------- | ---------- | --------- |
-| yo  | -é    | -í    | hice          | fui        | estuve    |
-| tú  | -aste | -iste | hiciste       | fuiste     | estuviste |
+|                         | -ar   | -er   | hacer (to do) | ir (to go) | estar     |
+| ----------------------- | ----- | ----- | ------------- | ---------- | --------- |
+| yo                      | -é    | -í    | hice          | fui        | estuve    |
+| tú                      | -aste | -iste | hiciste       | fuiste     | estuviste |
+| Ella / Él               | -     |       |               |            |           |
+| Nosotros                |       |       |               |            |           |
+| Ustedes / Ellas / Ellos |       |       |               |            |           |
 - Yo trabajé por ocho horas hoy
 - Yo visité a mi amigo hace 2 días
 - Yo comí un banano hace 5 minutos
