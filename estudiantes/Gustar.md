@@ -26,5 +26,7 @@
 | A ella / él                      | le  | gusta  | la comida    |
 | A nosotros                       | nos | gustan | los carros   |
 | A ustedes / ellas / ellos        | les | gustan | los árboles  |
--
+- A Rheis le gusta el café, pero no le gusta el té
+- A los colombianos nos gusta bailar salsa
+- A los canadienses les gusta comer con sirope 
  
