@@ -8,9 +8,9 @@ article { padding: 0 !important; }
 .meta, .meta time, time { display: none !important; }
 
 /* Folder/file icons in listings */
-a.internal[href$="/"]::before { content: "📁 "; }
-a.internal:not([href$="/"])::before { content: "📄 "; }
-h3 { display: flex; align-items: center; gap: 6px; }
+a.internal { display: inline-flex; align-items: center; gap: 4px; }
+a.internal[href$="/"]::before { content: "📁 "; flex-shrink: 0; }
+a.internal:not([href$="/"])::before { content: "📄 "; flex-shrink: 0; }
 h1, h2, h3, h4, h5, h6 { color: #111 !important; }
 p, li, td, th, span, strong, b { color: #222 !important; }
 a { color: #2563eb !important; }
