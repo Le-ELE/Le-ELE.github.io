@@ -1,4 +1,11 @@
 
+| Opcional excepto tercera persona |     |        |                        |
+| -------------------------------- | --- | ------ | ---------------------- |
+| A mí                             | me  | gusta  | Bogotá                 |
+| A ti                             | te  | gusta  | comer helado           |
+| A ella / él                      | le  | gusta  | la comida              |
+| A nosotros                       | nos | gustan | los perros y los gatos |
+| A ustedes / ellas / ellos        | les | gustan | los árboles            |
 # Con sustantivos
 
 | Opcional excepto tercera persona |     |                                              | Sustantivo (noun)<br>- Necesitas los artículos |
@@ -17,19 +24,12 @@
 | A mí                             |          | me  | gusta | trabajar                  |
 | A mí                             | no       | me  | gusta | nadar                     |
 | A mí                             | no       | me  | gusta |                           |
-Con nombres
+# Con nombres
 
 | Opcional excepto tercera persona | Negación |     |       | Nombres  |
 | -------------------------------- | -------- | --- | ----- | -------- |
 | A mí                             |          | me  | gusta | Medellín |
 
-| Opcional excepto tercera persona |     |        |              |
-| -------------------------------- | --- | ------ | ------------ |
-| A mí                             | me  | gusta  | Bogotá       |
-| A ti                             | te  | gusta  | la bicicleta |
-| A ella / él                      | le  | gusta  | la comida    |
-| A nosotros                       | nos | gustan | los carros   |
-| A ustedes / ellas / ellos        | les | gustan | los árboles  |
 - A Rheis le gusta el café, pero no le gusta el té
 - A los colombianos nos gusta bailar salsa
 - A los canadienses les gusta comer con sirope 
