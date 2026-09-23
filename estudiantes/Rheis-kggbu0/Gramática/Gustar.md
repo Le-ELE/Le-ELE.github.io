@@ -2,9 +2,9 @@
 | Opcional excepto tercera persona |     |        |                        |
 | -------------------------------- | --- | ------ | ---------------------- |
 | (A mí)                           | me  | gusta  | Bogotá                 |
-| (A ti)                           | te  | gusta  | comer helado           |
+| (A ti)                           | te  | gustan | los perros y los gatos |
 | A ella / él                      | le  | gusta  | la comida              |
-| (A nosotros)                     | nos | gustan | los perros y los gatos |
+| (A nosotros)                     | nos | gusta  | comer helado           |
 | A ustedes / ellas / ellos        | les | gustan | los árboles            |
 # Con sustantivos
 
