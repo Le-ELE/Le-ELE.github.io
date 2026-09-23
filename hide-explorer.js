@@ -2,6 +2,11 @@
   var path = window.location.pathname.replace(/\/+$/, '');
   var isLoginRoot = path === '/estudiantes' || path === '/estudiantes/';
 
+  // === Restore dark mode from localStorage ===
+  if (localStorage.getItem('leele-dark') === 'true') {
+    document.documentElement.classList.add('dark');
+  }
+
   // === Login page for /estudiantes/ ===
   if (isLoginRoot) {
     document.addEventListener('DOMContentLoaded', function() {
@@ -58,6 +63,7 @@
       dmBtn.onclick = function() {
         document.documentElement.classList.toggle('dark');
         var isDark = document.documentElement.classList.contains('dark');
+        localStorage.setItem('leele-dark', isDark);
         dmBtn.textContent = isDark ? '\u2600' : '\u263E';
         dmBtn.style.setProperty('background', isDark ? '#f0f0f0' : '#333', 'important');
         dmBtn.style.setProperty('color', isDark ? '#333' : '#fff', 'important');
@@ -146,6 +152,7 @@
       dmBtn.onclick = function() {
         document.documentElement.classList.toggle('dark');
         var isDark = document.documentElement.classList.contains('dark');
+        localStorage.setItem('leele-dark', isDark);
         dmBtn.textContent = isDark ? '\u2600' : '\u263E';
         dmBtn.style.setProperty('background', isDark ? '#f0f0f0' : '#333', 'important');
         dmBtn.style.setProperty('color', isDark ? '#333' : '#fff', 'important');

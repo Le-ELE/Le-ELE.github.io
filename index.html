@@ -12,6 +12,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Literata:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
+<script>
+  if (localStorage.getItem('leele-dark') === 'true') {
+    document.documentElement.classList.add('dark');
+  }
+</script>
 </head>
 
 <body>
@@ -130,11 +135,31 @@ LéELE! · 2026
 📚 LéELE!
 </a>
 
+<button id="index-darkmode-btn" class="floating-btn darkmode-btn">
+☾
+</button>
+
 <script>
 const down = document.querySelector(".down-btn");
 const up = document.querySelector(".up-btn");
 const students = document.querySelector(".students-btn");
 const clases = document.getElementById("clases");
+const dmBtn = document.getElementById("index-darkmode-btn");
+
+// Dark mode toggle
+if (localStorage.getItem('leele-dark') === 'true') {
+  dmBtn.textContent = '☀';
+  dmBtn.style.background = '#f0f0f0';
+  dmBtn.style.color = '#333';
+}
+dmBtn.addEventListener('click', function() {
+  document.documentElement.classList.toggle('dark');
+  var isDark = document.documentElement.classList.contains('dark');
+  localStorage.setItem('leele-dark', isDark);
+  dmBtn.textContent = isDark ? '☀' : '☾';
+  dmBtn.style.background = isDark ? '#f0f0f0' : 'var(--accent)';
+  dmBtn.style.color = isDark ? '#333' : '#fff';
+});
 
 function actualizarBoton() {
     const y = clases.getBoundingClientRect().top;

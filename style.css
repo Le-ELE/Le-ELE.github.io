@@ -205,6 +205,14 @@ hr {
   background: #2563eb;
 }
 
+.darkmode-btn {
+  display: block;
+  right: 20px;
+  bottom: 120px;
+  background: var(--accent);
+  color: white;
+}
+
 .up-btn {
   display: none;
 }
@@ -219,6 +227,39 @@ hr {
   font-family: "IBM Plex Mono", monospace;
   font-size: .72rem;
   color: var(--ink-soft);
+}
+
+/* ---------- Dark mode ---------- */
+
+html.dark {
+  --ink: #e0e0e0;
+  --ink-soft: #aaa;
+  --paper: #1a1a1a;
+  --rule: #444;
+  --accent: #7ba4d4;
+}
+
+html.dark body {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+html.dark .pricing {
+  background: #2a2a2a;
+  border-color: #555;
+}
+
+html.dark .pricing li {
+  border-color: #555;
+}
+
+html.dark .site-footer {
+  border-color: #555;
+}
+
+html.dark .darkmode-btn {
+  background: #f0f0f0 !important;
+  color: #333 !important;
 }
 
 /* ---------- Responsive ---------- */
@@ -254,6 +295,10 @@ hr {
 
   .students-btn {
     bottom: 60px;
+  }
+
+  .darkmode-btn {
+    bottom: 105px;
   }
 
 }
