@@ -1,0 +1,1 @@
+  - [ ] preposiciones al final vs en la mitad
