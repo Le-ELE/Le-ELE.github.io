@@ -6,24 +6,24 @@ To be
 | Tú  | eres                       | estás                                                         | tienes        |
 
 
-|     | Ser                          | Estar                    | Tener                  |
-| --- | ---------------------------- | ------------------------ | ---------------------- |
-|     | enfermero (nurse)            | upset (enojado/a(s))     | calor (heat)<br>       |
-|     | deportista (atlete)          | happy (feliz(es))        | hambre (hunger)        |
-|     | colombiano                   | tired (cansado/a(s))     | frío (cold)            |
-|     | inglés(a)                    | en mi casa<br><br>en --- | pereza (lazyness)      |
-|     | nutritionist (nutricionista) | enfermo (sick)<br>       | glasses (gafas)        |
-|     | dancer (bailarín/a)          | caliente                 | long hair (pelo largo) |
-|     | influencer                   |                          | jewlery (joyas)        |
-|     | woman (mujer)                |                          | plants (plantas)       |
-|     | cool (chévere)               |                          | a dog (un perro)       |
-|     | english (inglés/a)           |                          | a job (un trabajo)     |
-|     |                              |                          | friends (amigos)       |
-|     |                              |                          | a house (una casa)     |
-|     |                              |                          |                        |
-|     |                              |                          |                        |
-|     |                              |                          |                        |
-|     |                              |                          |                        |
+| Ser                          | Estar                    | Tener                  |
+| ---------------------------- | ------------------------ | ---------------------- |
+| enfermero (nurse)            | upset (enojado/a(s))     | calor (heat)<br>       |
+| deportista (atlete)          | happy (feliz(es))        | hambre (hunger)        |
+| colombiano                   | tired (cansado/a(s))     | frío (cold)            |
+| inglés(a)                    | en mi casa<br><br>en --- | pereza (lazyness)      |
+| nutritionist (nutricionista) | enfermo (sick)<br>       | glasses (gafas)        |
+| dancer (bailarín/a)          | caliente                 | long hair (pelo largo) |
+| influencer                   |                          | jewlery (joyas)        |
+| woman (mujer)                |                          | plants (plantas)       |
+| cool (chévere)               |                          | a dog (un perro)       |
+| english (inglés/a)           |                          | a job (un trabajo)     |
+|                              |                          | friends (amigos)       |
+|                              |                          | a house (una casa)     |
+|                              |                          |                        |
+|                              |                          |                        |
+|                              |                          |                        |
+|                              |                          |                        |
 - ¿Qué significa ---? (What is the meaning of ---?)
 - ¿Cómo se dice ---? (How do you say ---?)
 ---
@@ -66,4 +66,3 @@ ju (hoo)
 	- Me gusta el sushi
 - ¿Qué no te gusta comer?
 	- No me gusta queso azul
-peas ()
