@@ -133,7 +133,7 @@
   }
 
   // === Collapsible headings (like Obsidian folds) ===
-  var foldKey = 'leele-folds:' + window.location.pathname;
+  function getFoldKey() { return 'leele-folds:' + window.location.pathname; }
 
   function headingLevel(el) {
     var t = el.tagName;
@@ -157,7 +157,7 @@
     document.querySelectorAll('article h1.is-collapsed,article h2.is-collapsed,article h3.is-collapsed,article h4.is-collapsed,article h5.is-collapsed,article h6.is-collapsed').forEach(function(h) {
       if (h.id) ids.push(h.id);
     });
-    try { localStorage.setItem(foldKey, JSON.stringify(ids)); } catch (e) {}
+    try { localStorage.setItem(getFoldKey(), JSON.stringify(ids)); } catch (e) {}
   }
 
   function enableFoldableHeadings() {
@@ -173,7 +173,7 @@
 
     // Restore saved collapsed state
     var saved = [];
-    try { saved = JSON.parse(localStorage.getItem(foldKey) || '[]'); } catch (e) { saved = []; }
+    try { saved = JSON.parse(localStorage.getItem(getFoldKey()) || '[]'); } catch (e) { saved = []; }
     saved.forEach(function(id) {
       var h = article.querySelector('#' + id);
       if (h && h.classList.contains('is-foldable') && !h.classList.contains('is-collapsed')) {

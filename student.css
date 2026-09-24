@@ -43,6 +43,35 @@ html.dark .package-track { background: #333 !important; border-color: #555 !impo
 html.dark .package-fill { background: #7ba4d4 !important; }
 html.dark .contains-task-list input[type=checkbox] { accent-color: #7ba4d4 !important; }
 
+/* === Collapsible headings === */
+article h1.is-foldable, article h2.is-foldable, article h3.is-foldable,
+article h4.is-foldable, article h5.is-foldable, article h6.is-foldable {
+  cursor: pointer;
+  user-select: none;
+}
+article h1.is-foldable::before, article h2.is-foldable::before, article h3.is-foldable::before,
+article h4.is-foldable::before, article h5.is-foldable::before, article h6.is-foldable::before {
+  content: "▾";
+  display: inline-block;
+  font-size: 0.7em;
+  color: #888;
+  margin-right: 8px;
+  transition: transform 0.15s ease;
+}
+article h1.is-collapsed::before, article h2.is-collapsed::before, article h3.is-collapsed::before,
+article h4.is-collapsed::before, article h5.is-collapsed::before, article h6.is-collapsed::before {
+  transform: rotate(-90deg);
+}
+article h1.is-collapsed, article h2.is-collapsed, article h3.is-collapsed,
+article h4.is-collapsed, article h5.is-collapsed, article h6.is-collapsed {
+  margin-bottom: 0.5rem;
+}
+.is-folded { display: none !important; }
+html.dark article h1.is-foldable::before, html.dark article h2.is-foldable::before, html.dark article h3.is-foldable::before,
+html.dark article h4.is-foldable::before, html.dark article h5.is-foldable::before, html.dark article h6.is-foldable::before {
+  color: #aaa;
+}
+
 /* === Dark mode === */
 html.dark { background: #1a1a1a !important; color: #e0e0e0 !important; }
 html.dark body { background: #1a1a1a !important; color: #e0e0e0 !important; }
