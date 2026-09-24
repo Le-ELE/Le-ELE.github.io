@@ -27,7 +27,10 @@ To be
 - Ella está enferma
 ----
 - ¿Qué cosas (things) tiene Jo?
-- 
+- Jo tiene un perro
+- ¿Qué cosas tiene tu casa?
+- Mi casa tiene un sofá
+- ¿cuántas 
 
 | Ser                          | Estar                    | Tener                  |
 | ---------------------------- | ------------------------ | ---------------------- |
