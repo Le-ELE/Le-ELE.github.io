@@ -9,6 +9,11 @@ To be
 | Ustedes (all of you / y'all) |                            |                                                                  |               |
 | Ellos / Ellas                |                            |                                                                  |               |
 
+- Él es actor
+- Jim es actor
+- novio (boyfriend)
+- ¿Qué hace tu novio?
+- 
 
 | Ser                          | Estar                    | Tener                  |
 | ---------------------------- | ------------------------ | ---------------------- |
