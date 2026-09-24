@@ -45,6 +45,7 @@ jobs:
           sed -i 's/pageTitle: "Quartz 4"/pageTitle: "LéELE"/' quartz.config.ts
           sed -i 's/pageTitleSuffix: ""/pageTitleSuffix: ""/' quartz.config.ts
           sed -i 's/\["frontmatter", "git", "filesystem"\]/["filesystem"]/' quartz.config.ts
+          sed -i 's/enableRSS: true/enableRSS: false/' quartz.config.ts
 
       - name: Build Quartz
         working-directory: /tmp/quartz-temp
