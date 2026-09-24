@@ -10,7 +10,7 @@ To be
 | Ellos / Ellas (they)         | son                        | están                                                            | tienen        |                              |
 
 ---
-Yo soy Santiago. Estoy muy feliz. Tengo dos gatos. Mis gatos son muy inteligentes. Ellos están en la cama (bed). 
+Yo soy Santiago. Estoy muy feliz. Tengo dos gatos. Mis gatos son muy inteligentes. Ellos están en la cama (bed). Ellos tienen una cama, pero (but) están en mi cama. En mi habitación h
 
 ---
 
