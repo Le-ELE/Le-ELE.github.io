@@ -31,6 +31,18 @@ hr { border-color: #ddd !important; }
 code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; color: #333 !important; }
 pre { background: #f4f4f4; padding: 12px; border-radius: 6px; overflow-x: auto; }
 
+/* === Package progress bar === */
+.package-progress { margin: 1rem 0; }
+.package-track { height: 16px; background: #ececec; border: 1px solid #ccc; border-radius: 999px; overflow: hidden; }
+.package-fill { height: 100%; background: #2563eb; border-radius: 999px; min-width: 0; transition: width 0.3s ease; }
+.package-text { margin: 0.4rem 0 0; font-weight: 600; font-size: 16px; }
+.contains-task-list { list-style: none; padding-left: 0; }
+.contains-task-list .task-list-item { margin: 6px 0; }
+.contains-task-list input[type=checkbox] { width: 18px; height: 18px; accent-color: #2563eb; margin-right: 10px; vertical-align: middle; }
+html.dark .package-track { background: #333 !important; border-color: #555 !important; }
+html.dark .package-fill { background: #7ba4d4 !important; }
+html.dark .contains-task-list input[type=checkbox] { accent-color: #7ba4d4 !important; }
+
 /* === Dark mode === */
 html.dark { background: #1a1a1a !important; color: #e0e0e0 !important; }
 html.dark body { background: #1a1a1a !important; color: #e0e0e0 !important; }
