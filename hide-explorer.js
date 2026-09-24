@@ -132,6 +132,71 @@
     });
   }
 
+  // === Collapsible headings (like Obsidian folds) ===
+  var foldKey = 'leele-folds:' + window.location.pathname;
+
+  function headingLevel(el) {
+    var t = el.tagName;
+    return t[1] ? parseInt(t[1]) : 0;
+  }
+
+  function sectionRange(heading) {
+    var level = headingLevel(heading);
+    var range = [];
+    var n = heading.nextElementSibling;
+    while (n) {
+      if (/^H[1-6]$/.test(n.tagName) && headingLevel(n) <= level) break;
+      range.push(n);
+      n = n.nextElementSibling;
+    }
+    return range;
+  }
+
+  function saveFolds() {
+    var ids = [];
+    document.querySelectorAll('article h1.is-collapsed,article h2.is-collapsed,article h3.is-collapsed,article h4.is-collapsed,article h5.is-collapsed,article h6.is-collapsed').forEach(function(h) {
+      if (h.id) ids.push(h.id);
+    });
+    try { localStorage.setItem(foldKey, JSON.stringify(ids)); } catch (e) {}
+  }
+
+  function enableFoldableHeadings() {
+    var article = document.querySelector('article');
+    if (!article) return;
+
+    // Mark headings as foldable if they have content below them
+    article.querySelectorAll('h1,h2,h3,h4,h5,h6').forEach(function(h) {
+      var first = h.nextElementSibling;
+      var hasContent = !!(first && !(/^H[1-6]$/.test(first.tagName) && headingLevel(first) <= headingLevel(h)));
+      h.classList.toggle('is-foldable', hasContent);
+    });
+
+    // Restore saved collapsed state
+    var saved = [];
+    try { saved = JSON.parse(localStorage.getItem(foldKey) || '[]'); } catch (e) { saved = []; }
+    saved.forEach(function(id) {
+      var h = article.querySelector('#' + id);
+      if (h && h.classList.contains('is-foldable') && !h.classList.contains('is-collapsed')) {
+        h.classList.add('is-collapsed');
+        sectionRange(h).forEach(function(el) { el.classList.add('is-folded'); });
+      }
+    });
+
+    if (article.dataset.foldBound) return;
+    article.dataset.foldBound = '1';
+    article.addEventListener('click', function(e) {
+      var target = e.target;
+      if (target.closest && target.closest('a')) return;
+      var heading = target.closest ? target.closest('h1,h2,h3,h4,h5,h6') : null;
+      if (!heading || !heading.classList.contains('is-foldable')) return;
+      var collapsed = heading.classList.toggle('is-collapsed');
+      sectionRange(heading).forEach(function(el) {
+        el.classList.toggle('is-folded', collapsed);
+      });
+      saveFolds();
+    });
+  }
+
   function hideElements() {
     document.querySelectorAll(selectors).forEach(function(el) {
       el.style.display = 'none';
@@ -217,6 +282,7 @@
     }
 
     addPackageBars();
+    enableFoldableHeadings();
 
   }
 
