@@ -33,7 +33,10 @@ To be
 - Hay un vaso (glass) en la mesa (table)
 	- En la mesa hay un vaso
 - Hay una vela (candle) en la mesa
-- Hay un catedral
+- Hay una catedral en Woodstock
+- Hay una planta (plant) en mi casa
+- Hay un perro en mi sofá
+- 
 
 ---
 
