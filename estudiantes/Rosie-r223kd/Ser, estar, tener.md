@@ -18,6 +18,11 @@ To be
 - ¿Qué hay en tu casa?
 - En mi casa hay un perro
 - En mi casa hay tres perros
+- En mi casa no hay aire acondicionado
+- ¿Qué no hay en tu casa?
+- En mi casa no hay un gato
+- ¿Qué hay en Woodstock?
+- En Woods
 
 ---
 
