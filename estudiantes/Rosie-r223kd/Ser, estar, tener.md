@@ -4,7 +4,7 @@ To be
 | ---------------------------- | -------------------------- | ---------------------------------------------------------------- | ------------- |
 | Yo                           | soy                        | estoy                                                            | tengo         |
 | Tú                           | eres                       | estás                                                            | tienes        |
-| Él / Ella                    | es                         | está                                                             |               |
+| Él / Ella                    | es                         | está                                                             | tiene         |
 | Nosotro/as                   |                            |                                                                  |               |
 | Ustedes (all of you / y'all) |                            |                                                                  |               |
 | Ellos / Ellas                |                            |                                                                  |               |
@@ -24,6 +24,9 @@ To be
 - Él está en Woodstock
 - ¿Cómo está tu mamá?
 - Ella está muy bien
+- Ella está enferma
+----
+- ¿Qué cosas (things) tiene Jo?
 - 
 
 | Ser                          | Estar                    | Tener                  |
