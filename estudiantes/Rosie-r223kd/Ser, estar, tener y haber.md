@@ -1,4 +1,3 @@
-To be
 
 |                              | Ser<br><br>Características | Estar<br><br>Circunstancias<br>---<br>Current state of the thing | Tener<br><br> | Haber (there is / there are) |
 | ---------------------------- | -------------------------- | ---------------------------------------------------------------- | ------------- | ---------------------------- |
