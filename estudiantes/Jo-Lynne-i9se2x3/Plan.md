@@ -4,3 +4,7 @@
 2. Resolución de errores (10 minutos o lo que sea necesario)
 3. Revisión de la gramática que estás aprendiendo afuera de la clase (10 minutos o lo que sea necesario)
 4. Preguntas (el resto de la clase)
+
+---
+
+https://le-ele.github.io/estudiantes/Jo-Lynne-i9se2x3/
