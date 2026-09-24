@@ -14,7 +14,9 @@ To be
 - novio (boyfriend)
 - ¿Qué hace tu novio?
 - Él es encuestador
-- 
+- Ella es artista
+- Él es presidente 
+- Ella es retirada
 
 | Ser                          | Estar                    | Tener                  |
 | ---------------------------- | ------------------------ | ---------------------- |
