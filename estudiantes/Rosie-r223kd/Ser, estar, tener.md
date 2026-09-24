@@ -26,7 +26,8 @@ To be
 - ¿Qué no hay en Woodstock?
 - En Woodstock no hay catedral
 - ¿Qué hay y qué no hay en Londres?
-- 
+- En Londres no hay muchos árboles y hay muchas ratas (rats)
+- ¿
 
 ---
 
