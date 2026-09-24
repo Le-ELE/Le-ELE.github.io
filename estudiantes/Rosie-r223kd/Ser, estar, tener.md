@@ -17,6 +17,7 @@ To be
 - En (    ) hay (    )  
 - ¿Qué hay en tu casa?
 - En mi casa hay un perro
+	- Hay un perro en mi casa
 - En mi casa hay tres perros
 - En mi casa no hay aire acondicionado
 - ¿Qué no hay en tu casa?
@@ -29,6 +30,8 @@ To be
 - En Londres no hay muchos árboles y hay muchas ratas (rats)
 - ¿Qué hay en Colombia?
 - En Colombia hay muchas playas?
+- Hay un vaso (glass) en la mesa (table)
+	- En la mesa hay un vaso
 - 
 
 ---
