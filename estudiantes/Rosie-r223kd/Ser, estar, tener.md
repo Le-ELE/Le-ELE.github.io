@@ -30,7 +30,10 @@ To be
 - Jo tiene un perro
 - ¿Qué cosas tiene tu casa?
 - Mi casa tiene un sofá
-- ¿cuántas 
+- ¿Cuántos baños tiene tu casa?
+- Mi casa tiene un baño
+- ¿Cuántas habitaciones (bedrooms) tiene tu casa?
+- Mi casa tiene una habitación
 
 | Ser                          | Estar                    | Tener                  |
 | ---------------------------- | ------------------------ | ---------------------- |
