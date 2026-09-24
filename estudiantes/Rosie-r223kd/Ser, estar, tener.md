@@ -1,13 +1,13 @@
 To be
 
-|                              | Ser<br><br>Características | Estar<br><br>Circunstancias<br>---<br>Current state of the thing | Tener<br><br> |
-| ---------------------------- | -------------------------- | ---------------------------------------------------------------- | ------------- |
-| Yo                           | soy                        | estoy                                                            | tengo         |
-| Tú                           | eres                       | estás                                                            | tienes        |
-| Él / Ella / (it)             | es                         | está                                                             | tiene         |
-| Nosotro/as                   | somos                      | estamos                                                          | tenemos       |
-| Ustedes (all of you / y'all) | son                        | están                                                            | tienen        |
-| Ellos / Ellas                | son                        | están                                                            | tienen        |
+|                              | Ser<br><br>Características | Estar<br><br>Circunstancias<br>---<br>Current state of the thing | Tener<br><br> | Haber (there is / there are) |
+| ---------------------------- | -------------------------- | ---------------------------------------------------------------- | ------------- | ---------------------------- |
+| Yo                           | soy                        | estoy                                                            | tengo         |                              |
+| Tú                           | eres                       | estás                                                            | tienes        |                              |
+| Él / Ella / (it)             | es                         | está                                                             | tiene         | hay                          |
+| Nosotro/as                   | somos                      | estamos                                                          | tenemos       |                              |
+| Ustedes (all of you / y'all) | son                        | están                                                            | tienen        |                              |
+| Ellos / Ellas                | son                        | están                                                            | tienen        |                              |
 - Mi casa es pequeña (small)
 - Mi casa es fría (cold)
 - Mi casa está limpia (clean)
