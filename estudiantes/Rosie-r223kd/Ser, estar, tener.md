@@ -8,7 +8,9 @@ To be
 | Nosotro/as                   | somos                      | estamos                                                          | tenemos       |
 | Ustedes (all of you / y'all) | son                        | están                                                            | tienen        |
 | Ellos / Ellas                | son                        | están                                                            | tienen        |
-
+- Mi casa es pequeña (small)
+- Mi casa es fría (cold)
+- Mi casa está 
 - --
 - Nosotros tenemos un perro
 - Nosotros somos amigos
