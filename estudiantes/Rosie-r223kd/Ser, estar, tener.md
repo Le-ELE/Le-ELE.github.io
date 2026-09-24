@@ -22,7 +22,11 @@ To be
 - ¿Qué no hay en tu casa?
 - En mi casa no hay un gato
 - ¿Qué hay en Woodstock?
-- En Woods
+- En Woodstock hay muchos pubs
+- ¿Qué no hay en Woodstock?
+- En Woodstock no hay catedral
+- ¿Qué hay y qué no hay en Londres?
+- 
 
 ---
 
