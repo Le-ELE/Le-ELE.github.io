@@ -1,10 +1,10 @@
 
 # Paquete 1
 
-
-|     |     |
-| --- | --- |
-|     |     |
+| **Fecha de pago**      | dsds |
+| ---------------------- | ---- |
+| **Cantidad de clases** |      |
+|                        |      |
 
 Pagado el 2026-09-24
 
