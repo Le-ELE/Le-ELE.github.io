@@ -21,6 +21,9 @@ To be
 - ¿Dónde está Jo?
 - Jo está en Barcelona
 - ¿Dónde está tu novio?
+- Él está en Woodstock
+- ¿Cómo está tu mamá?
+- Ella está muy bien
 - 
 
 | Ser                          | Estar                    | Tener                  |
