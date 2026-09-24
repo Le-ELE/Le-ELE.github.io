@@ -6,15 +6,16 @@ To be
 | Tú                           | eres                       | estás                                                            | tienes        |
 | Él / Ella                    | es                         | está                                                             | tiene         |
 | Nosotro/as                   | somos                      | estamos                                                          | tenemos       |
-| Ustedes (all of you / y'all) |                            |                                                                  |               |
-| Ellos / Ellas                |                            |                                                                  |               |
+| Ustedes (all of you / y'all) | son                        | están                                                            | tienen        |
+| Ellos / Ellas                | son                        | están                                                            | tienen        |
 
 - --
 - Nosotros tenemos un perro
 - Nosotros somos amigos
 - Nosotros tenemos hambre
 - Nosotros estamos enfermos
-- 
+- ---
+- Los colombianos son 
 - ---
 - 
 - Él es actor
