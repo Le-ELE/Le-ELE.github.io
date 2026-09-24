@@ -16,7 +16,8 @@ To be
 - Nosotros estamos enfermos
 - ---
 - Los colombianos son morenos (tan skin)
-- Los colombianos están 
+- Los colombianos están cansados
+- Las colombianas
 - ---
 - 
 - Él es actor
