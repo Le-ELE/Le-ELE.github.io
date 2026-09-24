@@ -27,7 +27,8 @@ To be
 - En Woodstock no hay catedral
 - ¿Qué hay y qué no hay en Londres?
 - En Londres no hay muchos árboles y hay muchas ratas (rats)
-- ¿
+- ¿Qué hay en Colombia?
+- En Colombia hay muchas playas?
 
 ---
 
