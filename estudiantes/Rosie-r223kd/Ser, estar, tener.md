@@ -7,10 +7,10 @@ To be
 | Él / Ella / (it)             | es                         | está                                                             | tiene         | hay                          |
 | Nosotro/as                   | somos                      | estamos                                                          | tenemos       |                              |
 | Ustedes (all of you / y'all) | son                        | están                                                            | tienen        |                              |
-| Ellos / Ellas                | son                        | están                                                            | tienen        |                              |
+| Ellos / Ellas (they)         | son                        | están                                                            | tienen        |                              |
 
 ---
-Yo soy Santiago. Estoy muy feliz. Tengo dos gatos. Mis gatos 
+Yo soy Santiago. Estoy muy feliz. Tengo dos gatos. Mis gatos son muy inteligentes. Ellos están en la cama (bed). 
 
 ---
 
