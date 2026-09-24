@@ -292,11 +292,6 @@
       qb.style.gap = '0';
       qb.style.padding = '0';
     }
-    var article = document.querySelector('article');
-    if (article) {
-      article.style.maxWidth = '100%';
-      article.style.width = '100%';
-    }
 
     if (!document.getElementById('leele-nav')) {
       buildNav();

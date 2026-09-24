@@ -1,9 +1,13 @@
 :root {
-  --ink: #171412;
-  --ink-soft: #6b6560;
-  --paper: #ffffff;
-  --rule: #e4e0d9;
+  --ink: #241f1b;
+  --ink-soft: #8a8177;
+  --paper: #fdfbf7;
+  --card: #ffffff;
+  --rule: #ece3d5;
   --accent: #a3352c;
+  --accent-2: #c75b3c;
+  --amber: #d97706;
+  --shadow: 0 10px 28px rgba(163, 53, 44, 0.12);
 }
 
 * {
@@ -69,7 +73,9 @@ a:hover {
   width: 100%;
   max-width: 280px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 18px;
+  border: 3px solid rgba(163, 53, 44, 0.35);
+  box-shadow: var(--shadow);
   background: var(--rule);
   margin: 0 auto 2rem;
 }
@@ -100,7 +106,10 @@ ol li {
 hr {
   width: min(560px, 92%);
   border: none;
-  border-top: 4px solid #555;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, var(--accent) 30%, var(--accent) 70%, transparent);
+  opacity: .6;
   margin: 2.8rem auto;
 }
 
@@ -126,8 +135,9 @@ hr {
   margin: 0 auto 3rem;
   padding: 1.8rem;
   border: 1px solid var(--rule);
-  border-radius: 12px;
-  background: #faf9f7;
+  border-radius: 18px;
+  background: var(--card);
+  box-shadow: var(--shadow);
 }
 
 .pricing h2 {
@@ -136,7 +146,8 @@ hr {
 }
 
 .pricing p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
+  color: var(--ink-soft);
 }
 
 .pricing ul {
@@ -146,12 +157,21 @@ hr {
 }
 
 .pricing li {
-  padding: .8rem 0;
-  border-bottom: 1px solid var(--rule);
+  padding: .9rem 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 11px;
+  margin-bottom: .6rem;
+  transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease;
 }
 
 .pricing li:last-child {
-  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.pricing li:hover {
+  transform: translateY(-1px);
+  border-color: rgba(163, 53, 44, .4);
+  box-shadow: 0 6px 16px rgba(163, 53, 44, .10);
 }
 
 .pricing span {
@@ -167,7 +187,7 @@ hr {
   bottom: 20px;
   z-index: 9999;
 
-  background: var(--accent);
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
   color: white;
 
   padding: 12px 18px;
@@ -176,7 +196,7 @@ hr {
 
   font-family: "IBM Plex Mono", monospace;
   font-size: .85rem;
-  font-weight: 500;
+  font-weight: 600;
 
   text-decoration: none;
 
@@ -202,7 +222,7 @@ hr {
   display: block;
   right: 20px;
   bottom: 70px;
-  background: #2563eb;
+  background: linear-gradient(135deg, var(--amber), #e8a13a);
 }
 
 .darkmode-btn {
@@ -232,11 +252,15 @@ hr {
 /* ---------- Dark mode ---------- */
 
 html.dark {
-  --ink: #e0e0e0;
-  --ink-soft: #aaa;
-  --paper: #1a1a1a;
-  --rule: #444;
-  --accent: #7ba4d4;
+  --ink: #f2eae0;
+  --ink-soft: #a39680;
+  --paper: #191512;
+  --card: #25211b;
+  --rule: #3a332b;
+  --accent: #e2826f;
+  --accent-2: #ef9d8a;
+  --amber: #e8a13a;
+  --shadow: 0 10px 28px rgba(0, 0, 0, 0.4);
 }
 
 html.dark body {
@@ -245,16 +269,31 @@ html.dark body {
 }
 
 html.dark .pricing {
-  background: #2a2a2a;
-  border-color: #555;
+  background: var(--card);
+  border-color: var(--rule);
 }
 
 html.dark .pricing li {
-  border-color: #555;
+  border-color: var(--rule);
+}
+
+html.dark .pricing li:hover {
+  border-color: rgba(226, 130, 111, .45);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, .35);
+}
+
+html.dark .pricing span {
+  color: var(--ink-soft);
 }
 
 html.dark .site-footer {
-  border-color: #555;
+  border-color: var(--rule);
+}
+
+html.dark .Logo,
+html.dark .section-logo {
+  filter: invert(1);
+  opacity: .92;
 }
 
 html.dark .darkmode-btn {
