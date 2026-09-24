@@ -32,7 +32,8 @@ To be
 - En Colombia hay muchas playas?
 - Hay un vaso (glass) en la mesa (table)
 	- En la mesa hay un vaso
-- 
+- Hay una vela (candle) en la mesa
+- Hay un catedral
 
 ---
 
