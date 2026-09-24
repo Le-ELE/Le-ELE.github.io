@@ -17,7 +17,9 @@ To be
 - ---
 - Los colombianos son morenos (tan skin)
 - Los colombianos están cansados
-- Las colombianas
+- Las colombianas están cansadas
+- Los ingleses son divertidos (funny)
+- Los ingleses tienen un perro
 - ---
 - 
 - Él es actor
