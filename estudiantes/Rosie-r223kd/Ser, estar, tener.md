@@ -8,6 +8,16 @@ To be
 | Nosotro/as                   | somos                      | estamos                                                          | tenemos       |                              |
 | Ustedes (all of you / y'all) | son                        | están                                                            | tienen        |                              |
 | Ellos / Ellas                | son                        | están                                                            | tienen        |                              |
+
+---
+
+- En mi casa hay un gato (In my house there is one cat)
+- En mi casa hay dos gatos (In my house there are two cats)
+- --
+- En ____ 
+
+---
+
 - Mi casa es pequeña (small)
 - Mi casa es fría (cold)
 - Mi casa está limpia (clean)
