@@ -10,6 +10,9 @@ To be
 | Ellos / Ellas                | son                        | están                                                            | tienen        |                              |
 
 ---
+Yo soy Santiago. Estoy muy feliz. Tengo dos gatos. Mis gatos 
+
+---
 
 - En mi casa hay un gato (In my house there is one cat)
 - En mi casa hay dos gatos (In my house there are two cats)
