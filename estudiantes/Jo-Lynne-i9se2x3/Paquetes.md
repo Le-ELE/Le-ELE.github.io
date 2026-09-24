@@ -1,8 +1,12 @@
 # Paquete 1
 
-| **Fecha de pago** | Cantidad de clases |
-| ----------------- | ------------------ |
-| 2026-09-24        | 20                 |
+| **Fecha de pago** | Cantidad de horas |
+| ----------------- | ----------------- |
+| 2026-09-24        | 20                |
+|                   |                   |
+**Fecha de pago:** 2026-09-24 
+**Cantidad de horas:** 20
+
 - [ ] 1 
 - [ ] 2
 - [ ] 3
