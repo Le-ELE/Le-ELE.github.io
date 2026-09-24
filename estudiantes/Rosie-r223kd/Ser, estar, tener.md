@@ -1,9 +1,13 @@
 To be
 
-|     | Ser<br><br>Características | Estar<br><br>Circunstancias<br>---<br>Current state of the thing | Tener<br><br> |
-| --- | -------------------------- | ---------------------------------------------------------------- | ------------- |
-| Yo  | soy                        | estoy                                                            | tengo         |
-| Tú  | eres                       | estás                                                            | tienes        |
+|            | Ser<br><br>Características | Estar<br><br>Circunstancias<br>---<br>Current state of the thing | Tener<br><br> |
+| ---------- | -------------------------- | ---------------------------------------------------------------- | ------------- |
+| Yo         | soy                        | estoy                                                            | tengo         |
+| Tú         | eres                       | estás                                                            | tienes        |
+| Él / Ella  |                            |                                                                  |               |
+| Nosotro/as |                            |                                                                  |               |
+|            |                            |                                                                  |               |
+|            |                            |                                                                  |               |
 
 
 | Ser                          | Estar                    | Tener                  |
