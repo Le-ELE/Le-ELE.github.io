@@ -34,6 +34,8 @@ To be
 - Mi casa tiene un baño
 - ¿Cuántas habitaciones (bedrooms) tiene tu casa?
 - Mi casa tiene una habitación
+---
+
 
 | Ser                          | Estar                    | Tener                  |
 | ---------------------------- | ------------------------ | ---------------------- |
