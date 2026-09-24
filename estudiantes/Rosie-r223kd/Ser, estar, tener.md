@@ -13,6 +13,7 @@ To be
 - Jim es actor
 - novio (boyfriend)
 - ¿Qué hace tu novio?
+- Él es encuestador
 - 
 
 | Ser                          | Estar                    | Tener                  |
