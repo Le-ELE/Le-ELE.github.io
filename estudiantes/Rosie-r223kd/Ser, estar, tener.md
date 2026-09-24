@@ -15,7 +15,8 @@ To be
 - Nosotros tenemos hambre
 - Nosotros estamos enfermos
 - ---
-- Los colombianos son 
+- Los colombianos son morenos (tan skin)
+- Los colombianos están 
 - ---
 - 
 - Él es actor
