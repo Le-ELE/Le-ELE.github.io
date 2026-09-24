@@ -14,7 +14,10 @@ To be
 - En mi casa hay un gato (In my house there is one cat)
 - En mi casa hay dos gatos (In my house there are two cats)
 - --
-- En ____ 
+- En (    ) hay (    )  
+- ¿Qué hay en tu casa?
+- En mi casa hay un perro
+- En mi casa hay tres perros
 
 ---
 
