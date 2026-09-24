@@ -10,7 +10,9 @@ To be
 | Ellos / Ellas                | son                        | están                                                            | tienen        |
 - Mi casa es pequeña (small)
 - Mi casa es fría (cold)
-- Mi casa está 
+- Mi casa está limpia (clean)
+- Mi casa tiene un baño
+- Mi casa tiene dos puertas (doors)
 - --
 - Nosotros tenemos un perro
 - Nosotros somos amigos
