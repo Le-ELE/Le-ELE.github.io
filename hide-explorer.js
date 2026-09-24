@@ -25,15 +25,14 @@
         center.innerHTML = '<div style="display:flex;justify-content:center;align-items:center;min-height:80vh;font-family:var(--bodyFont,sans-serif)">' +
           '<div style="text-align:center;max-width:400px;width:90%">' +
           '<h1 style="font-size:2rem;margin-bottom:0.5rem">Estudiantes</h1>' +
-          '<p style="margin-bottom:1.5rem;font-size:16px">Ingresa tu código de estudiante para acceder a tus notas.</p>' +
+          '<p style="margin-bottom:1.5rem;font-size:16px">Escribe el nombre de tu carpeta para entrar a tus notas.</p>' +
           '<form id="login-form" style="display:flex;flex-direction:column;gap:12px">' +
           '<input id="login-input" type="text" placeholder="Ej: Santiago-ie349t" autocomplete="off" style="padding:14px 16px;font-size:16px;border:2px solid #ddd;border-radius:8px;outline:none;transition:border-color 0.2s;width:100%;box-sizing:border-box" />' +
-          '<button type="submit" style="padding:14px;font-size:16px;background:#2563eb;color:#fff;border:none;border-radius:8px;cursor:pointer;font-weight:600;transition:background 0.2s">Entrar</button>' +
+          '<button type="submit" style="padding:14px;font-size:16px;background:#2563eb;color:#fff;border:none;border-radius:8px;cursor:pointer;font-weight:600;transition:background 0.2s">Buscar</button>' +
           '</form>' +
           '<p id="login-error" style="color:#e53e3e;margin-top:12px;font-size:14px;display:none">Ese código no existe. Intenta de nuevo.</p>' +
           '</div></div>';
 
-        var validCodes = ['Leo-jxbun0','Rebecca-u1e74p','Rheis-kggbu0','Santiago-ie349t'];
         var form = document.getElementById('login-form');
         var input = document.getElementById('login-input');
         var error = document.getElementById('login-error');
@@ -42,13 +41,36 @@
           e.preventDefault();
           var code = input.value.trim();
           if (!code) return;
-          if (validCodes.indexOf(code) !== -1) {
-            window.location.href = '/estudiantes/' + code + '/';
-          } else {
+          if (code.indexOf('/') !== -1) {
+            error.textContent = 'Solo puedes buscar carpetas del primer nivel.';
+            error.style.display = 'block';
+            input.focus();
+            return;
+          }
+          var target = '/estudiantes/' + encodeURIComponent(code) + '/';
+          var btn = form.querySelector('button[type=submit]');
+          var original = btn.textContent;
+          btn.textContent = 'Buscando…';
+          btn.style.opacity = '0.7';
+          fetch(target, { method: 'GET' }).then(function(res) {
+            if (res.ok) {
+              window.location.href = target;
+            } else {
+              btn.textContent = original;
+              btn.style.opacity = '1';
+              error.textContent = 'Ese código no existe. Intenta de nuevo.';
+              error.style.display = 'block';
+              input.value = '';
+              input.focus();
+            }
+          })['catch'](function() {
+            btn.textContent = original;
+            btn.style.opacity = '1';
+            error.textContent = 'Ese código no existe. Intenta de nuevo.';
             error.style.display = 'block';
             input.value = '';
             input.focus();
-          }
+          });
         };
         input.focus();
       }
@@ -75,6 +97,40 @@
 
   // === Student pages ===
   var selectors = '.left.sidebar,.right.sidebar,.breadcrumb-container,footer.page-footer,.page footer,.graph,.explorer,.search,.meta,time';
+
+  // === Progress bar for class packages (task lists like "- [ ] 1") ===
+  function addPackageBars() {
+    var article = document.querySelector('article');
+    if (!article) return;
+    if (article.textContent.indexOf('Paquete') === -1) return;
+    article.querySelectorAll('ul.contains-task-list').forEach(function(list) {
+      var prev = list.previousElementSibling;
+      if (prev && prev.classList && prev.classList.contains('package-progress')) return;
+      var boxes = list.querySelectorAll('input[type=checkbox]');
+      if (!boxes.length) return;
+      var total = boxes.length;
+      var seen = 0;
+      boxes.forEach(function(b) { if (b.checked) seen++; });
+      var pct = Math.round(seen / total * 100);
+      var remaining = total - seen;
+      var pluralSeen = seen === 1 ? '1 clase' : seen + ' clases';
+      var pluralRemain = remaining === 1 ? 'te queda 1' : 'te quedan ' + remaining;
+      var bar = document.createElement('div');
+      bar.className = 'package-progress';
+      var track = document.createElement('div');
+      track.className = 'package-track';
+      var fill = document.createElement('div');
+      fill.className = 'package-fill';
+      fill.style.width = pct + '%';
+      track.appendChild(fill);
+      var text = document.createElement('p');
+      text.className = 'package-text';
+      text.textContent = 'Has visto ' + pluralSeen + ', ' + pluralRemain;
+      bar.appendChild(track);
+      bar.appendChild(text);
+      list.parentNode.insertBefore(bar, list);
+    });
+  }
 
   function hideElements() {
     document.querySelectorAll(selectors).forEach(function(el) {
@@ -159,6 +215,8 @@
       };
       document.body.appendChild(dmBtn);
     }
+
+    addPackageBars();
 
   }
 
