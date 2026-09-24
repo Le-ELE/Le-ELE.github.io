@@ -4,7 +4,7 @@ To be
 | ---------------------------- | -------------------------- | ---------------------------------------------------------------- | ------------- |
 | Yo                           | soy                        | estoy                                                            | tengo         |
 | Tú                           | eres                       | estás                                                            | tienes        |
-| Él / Ella                    | es                         | está                                                             | tiene         |
+| Él / Ella / (it)             | es                         | está                                                             | tiene         |
 | Nosotro/as                   | somos                      | estamos                                                          | tenemos       |
 | Ustedes (all of you / y'all) | son                        | están                                                            | tienen        |
 | Ellos / Ellas                | son                        | están                                                            | tienen        |
