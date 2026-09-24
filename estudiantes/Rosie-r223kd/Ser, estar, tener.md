@@ -11,7 +11,10 @@ To be
 
 - --
 - Nosotros tenemos un perro
-- Nosotros somos 
+- Nosotros somos amigos
+- Nosotros tenemos hambre
+- Nosotros estamos enfermos
+- 
 - ---
 - 
 - Él es actor
