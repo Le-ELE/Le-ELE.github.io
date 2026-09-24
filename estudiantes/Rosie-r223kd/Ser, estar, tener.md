@@ -19,7 +19,8 @@ To be
 - Los colombianos están cansados
 - Las colombianas están cansadas
 - Los ingleses son divertidos (funny)
-- Los ingleses tienen un perro
+- Los ingleses tienen perros
+- 
 - ---
 - 
 - Él es actor
