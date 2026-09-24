@@ -29,6 +29,7 @@ To be
 - En Londres no hay muchos árboles y hay muchas ratas (rats)
 - ¿Qué hay en Colombia?
 - En Colombia hay muchas playas?
+- 
 
 ---
 
@@ -67,6 +68,7 @@ To be
 - ¿Cómo está tu mamá?
 - Ella está muy bien
 - Ella está enferma
+- Estoy enfermo
 ----
 - ¿Qué cosas (things) tiene Jo?
 - Jo tiene un perro
