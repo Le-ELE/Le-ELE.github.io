@@ -5,10 +5,15 @@ To be
 | Yo                           | soy                        | estoy                                                            | tengo         |
 | Tú                           | eres                       | estás                                                            | tienes        |
 | Él / Ella                    | es                         | está                                                             | tiene         |
-| Nosotro/as                   |                            |                                                                  |               |
+| Nosotro/as                   | somos                      | estamos                                                          | tenemos       |
 | Ustedes (all of you / y'all) |                            |                                                                  |               |
 | Ellos / Ellas                |                            |                                                                  |               |
 
+- --
+- Nosotros tenemos un perro
+- Nosotros somos 
+- ---
+- 
 - Él es actor
 - Jim es actor
 - novio (boyfriend)
