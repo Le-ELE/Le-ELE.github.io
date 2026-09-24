@@ -2,12 +2,39 @@
   var path = window.location.pathname.replace(/\/+$/, '');
   var isLoginRoot = path === '/estudiantes' || path === '/estudiantes/';
 
-  // === Restore dark mode from localStorage ===
+  // === Iconos SVG de navegación ===
+  var ICONS = {
+    book: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>',
+    house: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>',
+    back: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>',
+    moon: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>',
+    sun: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>'
+  };
+
+  // === Restaurar modo oscuro desde localStorage ===
   if (localStorage.getItem('leele-dark') === 'true') {
     document.documentElement.classList.add('dark');
   }
 
-  // === Login page for /estudiantes/ ===
+  // === Aplicar ícono de sol/luna a un botón de modo oscuro ===
+  function setDarkIcon(btn, isDark) {
+    var ico = btn.querySelector('.nav-ico') || btn;
+    ico.innerHTML = isDark ? ICONS.sun : ICONS.moon;
+  }
+
+  function initDarkToggle(btn, onToggle) {
+    btn.setAttribute('aria-label', 'Cambiar modo oscuro');
+    btn.innerHTML = '<span class="nav-ico"></span>';
+    setDarkIcon(btn, document.documentElement.classList.contains('dark'));
+    btn.addEventListener('click', function() {
+      var isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('leele-dark', isDark);
+      setDarkIcon(btn, isDark);
+      if (onToggle) onToggle(isDark);
+    });
+  }
+
+  // === Login page para /estudiantes/ ===
   if (isLoginRoot) {
     document.addEventListener('DOMContentLoaded', function() {
       document.querySelectorAll('.left.sidebar,.right.sidebar,.breadcrumb-container,footer.page-footer,.page footer,.graph,.explorer,.search,.page-header,.page-listing').forEach(function(el) {
@@ -22,16 +49,21 @@
 
       var center = document.querySelector('.center');
       if (center) {
-        center.innerHTML = '<div style="display:flex;justify-content:center;align-items:center;min-height:80vh;font-family:var(--bodyFont,sans-serif)">' +
-          '<div style="text-align:center;max-width:400px;width:90%">' +
-          '<h1 style="font-size:2rem;margin-bottom:0.5rem">Estudiantes</h1>' +
-          '<p style="margin-bottom:1.5rem;font-size:16px">Escribe el nombre de tu carpeta para entrar a tus notas.</p>' +
-          '<form id="login-form" style="display:flex;flex-direction:column;gap:12px">' +
-          '<input id="login-input" type="text" placeholder="Ej: Santiago-ie349t" autocomplete="off" style="padding:14px 16px;font-size:16px;border:2px solid #ddd;border-radius:8px;outline:none;transition:border-color 0.2s;width:100%;box-sizing:border-box" />' +
-          '<button type="submit" style="padding:14px;font-size:16px;background:#2563eb;color:#fff;border:none;border-radius:8px;cursor:pointer;font-weight:600;transition:background 0.2s">Buscar</button>' +
-          '</form>' +
-          '<p id="login-error" style="color:#e53e3e;margin-top:12px;font-size:14px;display:none">Ese código no existe. Intenta de nuevo.</p>' +
-          '</div></div>';
+        center.innerHTML =
+          '<div class="login-wrap">' +
+            '<div class="login-card">' +
+              '<img class="login-logo" src="/imagenes/logo_pequeño.png" alt="Logo de LéELE">' +
+              '<h1 class="login-title">Estudiantes</h1>' +
+              '<p class="login-sub">Escribe el nombre de tu carpeta para entrar a tus notas.</p>' +
+              '<form id="login-form" class="login-form">' +
+                '<div class="login-field">' +
+                  '<input id="login-input" class="login-input" type="text" placeholder="Ej: Santiago" autocomplete="off">' +
+                '</div>' +
+                '<button type="submit" class="login-btn">Buscar</button>' +
+              '</form>' +
+              '<p id="login-error" class="login-error">Ese código no existe. Intenta de nuevo.</p>' +
+            '</div>' +
+          '</div>';
 
         var form = document.getElementById('login-form');
         var input = document.getElementById('login-input');
@@ -50,22 +82,22 @@
           var target = '/estudiantes/' + encodeURIComponent(code) + '/';
           var btn = form.querySelector('button[type=submit]');
           var original = btn.textContent;
+          btn.classList.add('is-loading');
           btn.textContent = 'Buscando…';
-          btn.style.opacity = '0.7';
           fetch(target, { method: 'GET' }).then(function(res) {
             if (res.ok) {
               window.location.href = target;
             } else {
+              btn.classList.remove('is-loading');
               btn.textContent = original;
-              btn.style.opacity = '1';
               error.textContent = 'Ese código no existe. Intenta de nuevo.';
               error.style.display = 'block';
               input.value = '';
               input.focus();
             }
           })['catch'](function() {
+            btn.classList.remove('is-loading');
             btn.textContent = original;
-            btn.style.opacity = '1';
             error.textContent = 'Ese código no existe. Intenta de nuevo.';
             error.style.display = 'block';
             input.value = '';
@@ -75,30 +107,20 @@
         input.focus();
       }
 
-      // Dark mode toggle button
+      // Botón de modo oscuro (circular, arriba a la derecha)
       var dmBtn = document.createElement('button');
       dmBtn.id = 'login-darkmode-btn';
-      dmBtn.textContent = '\u263E';
-      dmBtn.style.cssText = 'position:fixed;top:20px;right:20px;z-index:1000;background:#333;color:#fff;padding:10px 14px;border:none;border-radius:8px;font-size:18px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.2);transition:background 0.2s;';
-      dmBtn.onmouseover = function() { dmBtn.style.setProperty('background', '#555', 'important'); };
-      dmBtn.onmouseout = function() { dmBtn.style.setProperty('background', '#333', 'important'); };
-      dmBtn.onclick = function() {
-        document.documentElement.classList.toggle('dark');
-        var isDark = document.documentElement.classList.contains('dark');
-        localStorage.setItem('leele-dark', isDark);
-        dmBtn.textContent = isDark ? '\u2600' : '\u263E';
-        dmBtn.style.setProperty('background', isDark ? '#f0f0f0' : '#333', 'important');
-        dmBtn.style.setProperty('color', isDark ? '#333' : '#fff', 'important');
-      };
+      dmBtn.className = 'leele-dm';
+      initDarkToggle(dmBtn);
       document.body.appendChild(dmBtn);
     });
     return;
   }
 
-  // === Student pages ===
+  // === Páginas de estudiantes ===
   var selectors = '.left.sidebar,.right.sidebar,.breadcrumb-container,footer.page-footer,.page footer,.graph,.explorer,.search,.meta,time';
 
-  // === Progress bar for class packages (task lists like "- [ ] 1") ===
+  // === Barra de progreso para paquetes de clases (listas de tareas) ===
   function addPackageBars() {
     var article = document.querySelector('article');
     if (!article) return;
@@ -132,7 +154,7 @@
     });
   }
 
-  // === Collapsible headings (like Obsidian folds) ===
+  // === Títulos plegables (tipo Obsidian) ===
   function getFoldKey() { return 'leele-folds:' + window.location.pathname; }
 
   function headingLevel(el) {
@@ -164,14 +186,12 @@
     var article = document.querySelector('article');
     if (!article) return;
 
-    // Mark headings as foldable if they have content below them
     article.querySelectorAll('h1,h2,h3,h4,h5,h6').forEach(function(h) {
       var first = h.nextElementSibling;
       var hasContent = !!(first && !(/^H[1-6]$/.test(first.tagName) && headingLevel(first) <= headingLevel(h)));
       h.classList.toggle('is-foldable', hasContent);
     });
 
-    // Restore saved collapsed state
     var saved = [];
     try { saved = JSON.parse(localStorage.getItem(getFoldKey()) || '[]'); } catch (e) { saved = []; }
     saved.forEach(function(id) {
@@ -197,6 +217,71 @@
     });
   }
 
+  // === Barra de navegación unificada ===
+  function buildNav() {
+    var navPath = window.location.pathname;
+    var match = navPath.match(/\/estudiantes\/([^/]+)/);
+    if (!match) return;
+    var code = match[1];
+    var root = '/estudiantes/' + code + '/';
+
+    var nav = document.createElement('nav');
+    nav.id = 'leele-nav';
+    nav.className = 'leele-nav';
+    nav.setAttribute('aria-label', 'Navegación');
+
+    // LéELE (enlace al sitio principal)
+    var brand = document.createElement('a');
+    brand.className = 'nav-pill nav-pill-brand';
+    brand.href = '/';
+    brand.innerHTML = '<span class="nav-ico">' + ICONS.book + '</span><span class="nav-label">LéELE</span>';
+    brand.addEventListener('click', function() { document.documentElement.classList.remove('dark'); });
+    nav.appendChild(brand);
+
+    nav.appendChild(sep());
+
+    // Volver (si estamos dentro de una subcarpeta)
+    var cleaned = navPath.replace(/\/+$/, '');
+    var segments = cleaned.split('/estudiantes/' + code);
+    var subPath = segments[1] || '';
+    if (subPath && subPath !== '/' && subPath !== '') {
+      var parentPath = subPath.substring(0, subPath.lastIndexOf('/'));
+      var backBtn = document.createElement('a');
+      backBtn.id = 'student-back-btn';
+      backBtn.className = 'nav-pill';
+      backBtn.href = root + parentPath.substring(1) + (parentPath ? '/' : '');
+      backBtn.innerHTML = '<span class="nav-ico">' + ICONS.back + '</span><span class="nav-label">Volver</span>';
+      nav.appendChild(backBtn);
+    }
+
+    // Mi Inicio
+    var home = document.createElement('a');
+    home.id = 'student-home-btn';
+    home.className = 'nav-pill';
+    home.href = root;
+    home.innerHTML = '<span class="nav-ico">' + ICONS.house + '</span><span class="nav-label">Mi Inicio</span>';
+    nav.appendChild(home);
+
+    nav.appendChild(sep());
+
+    // Modo oscuro
+    var dmBtn = document.createElement('button');
+    dmBtn.id = 'student-darkmode-btn';
+    dmBtn.className = 'nav-pill nav-pill-dark';
+    dmBtn.type = 'button';
+    initDarkToggle(dmBtn);
+    nav.appendChild(dmBtn);
+
+    document.body.appendChild(nav);
+  }
+
+  function sep() {
+    var s = document.createElement('span');
+    s.className = 'nav-sep';
+    s.setAttribute('aria-hidden', 'true');
+    return s;
+  }
+
   function hideElements() {
     document.querySelectorAll(selectors).forEach(function(el) {
       el.style.display = 'none';
@@ -213,77 +298,12 @@
       article.style.width = '100%';
     }
 
-    // === Navigation buttons ===
-    var navPath = window.location.pathname;
-    var match = navPath.match(/\/estudiantes\/([^/]+)/);
-    if (match) {
-      var code = match[1];
-      var root = '/estudiantes/' + code + '/';
-
-      if (!document.getElementById('student-home-btn')) {
-        var homeBtn = document.createElement('a');
-        homeBtn.id = 'student-home-btn';
-        homeBtn.href = root;
-        homeBtn.innerHTML = '&#127968; Mi Inicio';
-        homeBtn.style.cssText = 'position:fixed;top:20px;right:0;z-index:1000;background:#2563eb;color:#fff;padding:10px 18px;border-radius:8px 0 0 8px;text-decoration:none;font-size:15px;font-weight:600;box-shadow:-2px 2px 8px rgba(0,0,0,0.2);transition:background 0.2s;';
-        homeBtn.onmouseover = function() { homeBtn.style.background = '#1d4ed8'; };
-        homeBtn.onmouseout = function() { homeBtn.style.background = '#2563eb'; };
-        document.body.appendChild(homeBtn);
-      }
-
-      // LéELE button (link to main site)
-      if (!document.getElementById('student-elle-btn')) {
-        var elleBtn = document.createElement('a');
-        elleBtn.id = 'student-elle-btn';
-        elleBtn.href = '/';
-        elleBtn.innerHTML = '&#128214; LéELE';
-        elleBtn.style.cssText = 'position:fixed;top:20px;left:0;z-index:1000;background:#8B4513;color:#fff;padding:10px 18px;border-radius:0 8px 8px 0;text-decoration:none;font-size:15px;font-weight:600;box-shadow:2px 2px 8px rgba(0,0,0,0.2);transition:background 0.2s;';
-        elleBtn.onmouseover = function() { elleBtn.style.background = '#A0522D'; };
-        elleBtn.onmouseout = function() { elleBtn.style.background = '#8B4513'; };
-        elleBtn.onclick = function() { document.documentElement.classList.remove('dark'); };
-        document.body.appendChild(elleBtn);
-      }
-
-      var cleaned = navPath.replace(/\/+$/, '');
-      var segments = cleaned.split('/estudiantes/' + code);
-      var subPath = segments[1] || '';
-      if (subPath && subPath !== '/' && subPath !== '') {
-        if (!document.getElementById('student-back-btn')) {
-          var parentPath = subPath.substring(0, subPath.lastIndexOf('/'));
-          var backBtn = document.createElement('a');
-          backBtn.id = 'student-back-btn';
-          backBtn.href = root + parentPath.substring(1) + (parentPath ? '/' : '');
-          backBtn.innerHTML = '&#8592; Volver';
-          backBtn.style.cssText = 'position:fixed;top:20px;right:160px;z-index:1000;background:#555;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;font-size:15px;font-weight:600;box-shadow:-2px 2px 8px rgba(0,0,0,0.2);transition:background 0.2s;';
-          backBtn.onmouseover = function() { backBtn.style.background = '#777'; };
-          backBtn.onmouseout = function() { backBtn.style.background = '#555'; };
-          document.body.appendChild(backBtn);
-        }
-      }
-    }
-
-    // === Dark mode button ===
-    if (!document.getElementById('student-darkmode-btn')) {
-      var dmBtn = document.createElement('button');
-      dmBtn.id = 'student-darkmode-btn';
-      dmBtn.textContent = '\u263E';
-      dmBtn.style.cssText = 'position:fixed;top:20px;right:290px;z-index:1000;background:#333;color:#fff;padding:10px 14px;border:none;border-radius:8px;font-size:18px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.2);transition:background 0.2s;';
-      dmBtn.onmouseover = function() { dmBtn.style.setProperty('background', '#555', 'important'); };
-      dmBtn.onmouseout = function() { dmBtn.style.setProperty('background', '#333', 'important'); };
-      dmBtn.onclick = function() {
-        document.documentElement.classList.toggle('dark');
-        var isDark = document.documentElement.classList.contains('dark');
-        localStorage.setItem('leele-dark', isDark);
-        dmBtn.textContent = isDark ? '\u2600' : '\u263E';
-        dmBtn.style.setProperty('background', isDark ? '#f0f0f0' : '#333', 'important');
-        dmBtn.style.setProperty('color', isDark ? '#333' : '#fff', 'important');
-      };
-      document.body.appendChild(dmBtn);
+    if (!document.getElementById('leele-nav')) {
+      buildNav();
     }
 
     addPackageBars();
     enableFoldableHeadings();
-
   }
 
   hideElements();
