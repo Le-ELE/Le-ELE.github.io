@@ -4,7 +4,7 @@ To be
 | ---------------------------- | -------------------------- | ---------------------------------------------------------------- | ------------- |
 | Yo                           | soy                        | estoy                                                            | tengo         |
 | Tú                           | eres                       | estás                                                            | tienes        |
-| Él / Ella                    | es                         |                                                                  |               |
+| Él / Ella                    | es                         | está                                                             |               |
 | Nosotro/as                   |                            |                                                                  |               |
 | Ustedes (all of you / y'all) |                            |                                                                  |               |
 | Ellos / Ellas                |                            |                                                                  |               |
@@ -16,7 +16,12 @@ To be
 - Él es encuestador
 - Ella es artista
 - Él es presidente 
-- Ella es retirada
+- Ella es jubilada/retirada
+---
+- ¿Dónde está Jo?
+- Jo está en Barcelona
+- ¿Dónde está tu novio?
+- 
 
 | Ser                          | Estar                    | Tener                  |
 | ---------------------------- | ------------------------ | ---------------------- |
