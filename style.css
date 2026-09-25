@@ -52,7 +52,145 @@ a:hover {
 .page {
   max-width: 700px;
   margin: 0 auto;
-  padding: .5rem 1.5rem 5rem;
+  padding: .5rem 1.5rem 6rem;
+}
+
+/* ---------- Barra de navegación inferior (píldoras colapsables) ---------- */
+
+.leele-nav {
+  position: fixed;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  max-width: calc(100vw - 16px);
+  padding: 7px;
+  background: rgba(255, 254, 251, .86);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, .16);
+  font-family: var(--font, "Source Sans Pro", sans-serif);
+  transition: padding .25s ease, gap .25s ease;
+}
+
+.leele-nav.is-collapsed {
+  gap: 0;
+  padding: 6px;
+}
+
+.nav-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 13px;
+  border-radius: 999px;
+  text-decoration: none !important;
+  font-size: 14.5px;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  color: var(--ink) !important;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background .18s ease, color .18s ease, transform .12s ease, opacity .2s ease, max-width .25s ease, padding .25s ease, margin .25s ease;
+}
+
+.nav-pill:hover {
+  background: var(--soft);
+  transform: translateY(-1px);
+}
+
+.nav-pill .nav-ico {
+  display: inline-flex;
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
+.nav-pill .nav-ico svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.nav-pill-brand {
+  background: var(--accent);
+  color: #fff !important;
+}
+
+.nav-pill-brand:hover {
+  background: var(--accent-2);
+  color: #fff !important;
+}
+
+.nav-sep {
+  width: 1px;
+  height: 22px;
+  background: var(--rule);
+  margin: 0 4px;
+  transition: opacity .2s ease, max-width .25s ease, margin .25s ease;
+}
+
+.nav-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  flex-shrink: 0;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background .18s ease, transform .12s ease;
+}
+
+.nav-toggle:hover {
+  background: var(--accent-2);
+  transform: scale(1.05);
+}
+
+.leele-nav.is-collapsed .nav-pill,
+.leele-nav.is-collapsed .nav-sep {
+  opacity: 0;
+  max-width: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  visibility: hidden;
+  transition: opacity .15s ease, max-width .25s ease, padding .25s ease, margin .25s ease;
+}
+
+/* Modo oscuro */
+html.dark .leele-nav {
+  background: rgba(42, 42, 42, .9);
+  border-color: #555;
+}
+
+html.dark .nav-pill {
+  color: #e6e6e6 !important;
+}
+
+html.dark .nav-pill:hover {
+  background: #3a3a3a;
+}
+
+html.dark .nav-sep {
+  background: #555;
 }
 
 .masthead {
