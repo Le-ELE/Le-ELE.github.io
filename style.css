@@ -566,10 +566,11 @@ html.dark .darkmode-btn {
   width: 38px;
 }
 
-/* Ícono del botón: abierto muestra ⋯; recién al colapsar muestra V */
-#index-nav .nav-toggle .nav-toggle-close { display: none; }
-#index-nav.is-collapsed .nav-toggle .nav-toggle-open { display: none; }
-#index-nav.is-collapsed .nav-toggle .nav-toggle-close { display: inline-block; }
+/* Ícono del botón: abierto muestra V (colapsar); cerrado muestra ⋯ (hay más) */
+#index-nav .nav-toggle .nav-toggle-open { display: none; }
+#index-nav .nav-toggle .nav-toggle-close { display: inline-block; }
+#index-nav.is-collapsed .nav-toggle .nav-toggle-open { display: inline-block; }
+#index-nav.is-collapsed .nav-toggle .nav-toggle-close { display: none; }
 
 #index-nav.is-collapsed {
   gap: 0;
