@@ -6,7 +6,19 @@ El flujo es:
 
 > Escribís en **Obsidian** → se hace **commit + push** automático → **GitHub Actions** regenera el sitio con **Quartz** → se publica en **GitHub Pages**.
 
-No hay que tocar nada más: guardás una nota y en ~2-3 minutos está publicada.
+Guardás una nota y en ~2-3 minutos está publicada.
+
+## Publicación: qué se ve en la web
+
+- **Todo el vault** (`estudiantes/`) se publica: cada carpeta es una URL navegable
+  escribiéndola directamente en el navegador.
+- Casi todo se puede cambiar libremente; lo único que **no** se publica es:
+  - `.obsidian/` → ajustes internos de Obsidian.
+  - `**/*.pdf` → los PDF (exportados desde Obsidian quedan ocultos).
+- **Nunca** entra nada de afuera del vault: el build solo consume `estudiantes/*`.
+
+Privacidad: GitHub Pages es un sitio **público**. La única protección es que los
+códigos no se puedan adivinar (`Jo-Lynne-i9se2x3`). No publiques datos sensibles.
 
 ## Estructura del repositorio
 
@@ -15,16 +27,16 @@ Le-ELE.github.io/
 ├── index.html                 ← página principal: https://le-ele.github.io/
 ├── style.css                  ← estilos de la página principal
 ├── imagenes/                  ← logo_grande, logo_pequeño, santiago.jpeg
-├── estudiantes/               ← VAULT de Obsidian (la fuente del contenido)
+├── estudiantes/               ← VAULT de Obsidian → se publica en /estudiantes/
 │   ├── index.md               ← página de acceso (login) en /estudiantes/
-│   ├── Jo-Lynne-i9se2x3/      → https://le-ele.github.io/estudiantes/Jo-Lynne-i9se2x3/
-│   ├── Rebecca-u1e74p/        → https://le-ele.github.io/estudiantes/Rebecca-u1e74p/
-│   ├── Rheis-kggbu0/          → https://le-ele.github.io/estudiantes/Rheis-kggbu0/
-│   ├── Rosie-r223kd/          → https://le-ele.github.io/estudiantes/Rosie-r223kd/
-│   ├── Nuevo estudiante/      ← copiá esta carpeta para crear un estudiante nuevo (NO se publica)
-│   ├── Inactivos/             ← estudiantes que ya no tienen clases (NO se publica)
-│   ├── Pruebas/               ← notas de prueba (NO se publica)
-│   └── Templates/             ← templates de Obsidian, no de la web (NO se publica)
+│   ├── Jo-Lynne-i9se2x3/      → /estudiantes/Jo-Lynne-i9se2x3/
+│   ├── Rebecca-u1e74p/        → /estudiantes/Rebecca-u1e74p/
+│   ├── Rheis-kggbu0/          → /estudiantes/Rheis-kggbu0/
+│   ├── Rosie-r223kd/          → /estudiantes/Rosie-r223kd/
+│   ├── Nuevo estudiante/      ← plantilla de estudiante nuevo (copiála y renombrala)
+│   ├── Inactivos/             ← estudiantes que ya no tienen clases
+│   ├── Pruebas/               ← notas de prueba
+│   └── Templates Obsidian/    ← templates de Obsidian (como carpeta, también es URL)
 ├── site/                      ← todo lo del portal de estudiantes
 │   ├── quartz.config.ts       ← configuración real de Quartz (la usa el pipeline)
 │   ├── student.css            ← tema del portal (tarjetas, modo oscuro, login…)
@@ -32,6 +44,14 @@ Le-ELE.github.io/
 └── .github/workflows/
     └── deploy-quartz.yml      ← build + deploy a GitHub Pages
 ```
+
+> Sobre los dos "templates": Quartz ignora por defecto una carpeta interna llamada
+> `templates` (la del propio framework, no la del vault). Por eso la carpeta de
+> templates del vault se llama **`Templates Obsidian`** y sí se publica.
+
+> Ojo con los espacios en los nombres de carpeta: en la URL se publican con guiones.
+> `Nuevo estudiante` → `/estudiantes/Nuevo-estudiante/`, `Templates Obsidian` →
+> `/estudiantes/Templates-Obsidian/`.
 
 ## Estructura del vault (una carpeta por estudiante)
 
@@ -42,38 +62,28 @@ Cada estudiante es una carpeta `Nombre-código` (el código es alfanumérico y e
 Rosie-r223kd/
 ├── Gramática/          ← fichas de gramática (una nota por tema)
 ├── Notas/              ← lo que se vio en clase
-│   └── 2026-09-24/     ← una nota por fecha (Mes/Año como en Plantillas)
+│   └── 2026-09-24.md   ← una nota por fecha (Mes/Año)
 └── Tareas.md           ← pendientes y checkboxes
 ```
-
-Las carpetas dentro de `estudiantes/` que **no** se publican están listadas en
-`site/quartz.config.ts` (`ignorePatterns`): `Inactivos`, `Nuevo estudiante`,
-`Pruebas`, `Templates`. Si creás una carpeta nueva que sea interna (no de un
-estudiante activo), agregala ahí.
 
 ## Cómo trabajar
 
 ### Agregar un estudiante nuevo
 1. En Obsidian, copiá la carpeta `Nuevo estudiante/` dentro de `estudiantes/`.
 2. Renombrala a `Nombre-código` (ej. `Ana-ab12cd`).
-3. Esa URL queda disponible (el código debe ser difícil de adivinar).
+3. Su URL queda disponible en `https://le-ele.github.io/estudiantes/Nombre-código/`
+   (el código debe ser difícil de adivinar).
 
 ### Editar notas existentes
 Solo escribís en Obsidian. El plugin **Obsidian Git** hace commit + push cada
 minuto (mensaje `vault: fecha`). El workflow se dispara solo en cada push.
 
-### Obtener las URLs
-- Portal de acceso: `https://le-ele.github.io/estudiantes/` (buscador por nombre de carpeta)
-- Notas de cada estudiante: `https://le-ele.github.io/estudiantes/Nombre-código/`
-
-## Privacidad
-
-GitHub Pages es **público** por naturaleza, así que esto no es una garantía real:
-- La seguridad es "por oscuridad": códigos no adivinables (`Jo-Lynne-i9se2x3`, etc.).
-- Las carpetas internas (`Inactivos`, `Pruebas`, `Nuevo estudiante`, `Templates`)
-  quedan **fuera del build** y dan 404 en la web.
-- Busqueda/Explorer/Graph de Quartz están ocultos en la interfaz.
-- No publiques datos sensibles (DNI, contraseñas, direcciones).
+### Navegar la web
+- Portal de acceso: `https://le-ele.github.io/estudiantes/` (login por nombre de carpeta).
+- Cualquier carpeta se abre escribiendo su URL directa, por ejemplo:
+  - `https://le-ele.github.io/estudiantes/Inactivos/`
+  - `https://le-ele.github.io/estudiantes/Pruebas/`
+  - `https://le-ele.github.io/estudiantes/Templates-Obsidian/`
 
 ## Cómo funciona el pipeline
 
@@ -96,11 +106,13 @@ cp -r ../estudiantes/* content/
 npx quartz build                                       # genera public/
 ```
 
-El resultado debe ir a `public/`, sin `Inactivos/`, `Pruebas/`, `Templates/` ni
-`Nuevo estudiante/`.
+El resultado en `public/` debe contener **todas** las carpetas del vault
+(`Inactivos`, `Pruebas`, `Templates Obsidian`, `Nuevo estudiante`, …) y ninguna
+entrada de `.obsidian` ni PDFs.
 
 ## Notas
 
 - **Obsidian Git**: auto-commit cada minuto, auto-push cada minuto (config en `estudiantes/.obsidian/`).
 - El vault es la carpeta `estudiantes/` (por eso tiene `.obsidian/` y está ignorada en git).
 - Quartz v5 no se usa: tiene un bug de compatibilidad con este flujo; la versión pinned es v4.5.2.
+- En Quartz v4.5.2 el locale válido es `"es-ES"` (no `"es"`): `"es"` rompe el build.

@@ -14,17 +14,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     locale: "es-ES",
     baseUrl: "le-ele.github.io",
-    ignorePatterns: [
-      "private",
-      "templates",
-      ".obsidian",
-      "Inactivos",
-      "Plantillas",
-      "Nuevo estudiante",
-      "Pruebas",
-      "Templates",
-      "**/*.pdf",
-    ],
+    ignorePatterns: ["private", "templates", ".obsidian", "**/*.pdf"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
