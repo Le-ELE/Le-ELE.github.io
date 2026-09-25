@@ -39,13 +39,9 @@ jobs:
         run: |
           cp -r $GITHUB_WORKSPACE/estudiantes/* /tmp/quartz-temp/content/
 
-      - name: Patch Quartz config
-        working-directory: /tmp/quartz-temp
+      - name: Use LéELE Quartz config
         run: |
-          sed -i 's/pageTitle: "Quartz 4"/pageTitle: "LéELE"/' quartz.config.ts
-          sed -i 's/pageTitleSuffix: ""/pageTitleSuffix: ""/' quartz.config.ts
-          sed -i 's/\["frontmatter", "git", "filesystem"\]/["filesystem"]/' quartz.config.ts
-          sed -i 's/enableRSS: true/enableRSS: false/' quartz.config.ts
+          cp $GITHUB_WORKSPACE/site/quartz.config.ts /tmp/quartz-temp/quartz.config.ts
 
       - name: Build Quartz
         working-directory: /tmp/quartz-temp
@@ -59,16 +55,14 @@ jobs:
           cp -r $GITHUB_WORKSPACE/imagenes /tmp/site/
           mkdir -p /tmp/site/estudiantes
           cp -r /tmp/quartz-temp/public/* /tmp/site/estudiantes/
-          mv /tmp/site/estudiantes/estudiantes/* /tmp/site/estudiantes/ 2>/dev/null || true
-          rmdir /tmp/site/estudiantes/estudiantes 2>/dev/null || true
           mkdir -p /tmp/site/estudiantes/static
           cp $GITHUB_WORKSPACE/imagenes/logo_grande.png /tmp/site/estudiantes/static/og-image.png
           touch /tmp/site/.nojekyll
 
       - name: Inject hide script and styles
         run: |
-          cp $GITHUB_WORKSPACE/hide-explorer.js /tmp/hide-explorer.js
-          cp $GITHUB_WORKSPACE/student.css /tmp/student.css
+          cp $GITHUB_WORKSPACE/site/hide-explorer.js /tmp/hide-explorer.js
+          cp $GITHUB_WORKSPACE/site/student.css /tmp/student.css
           python3 -c "
           import glob, re
           with open('/tmp/hide-explorer.js', 'r') as f:
@@ -85,7 +79,7 @@ jobs:
               content = content.replace('https://quartz.jzhao.xyz/static/og-image.png', 'https://le-ele.github.io/estudiantes/static/og-image.png')
               content = content.replace('property="og:image:width" content="1200"', 'property="og:image:width" content="1080"')
               content = content.replace('property="og:image:height" content="630"', 'property="og:image:height" content="1080"')
-              content = re.sub(r'<p>\d+ items? under this folder\.</p>', '', content)
+              content = re.sub(r'<p>\d+ (?:items? under this folder|artículos? en esta carpeta)\.</p>', '', content)
               content = content.replace('</head>', style_tag + '</head>')
               content = content.replace('</body>', '<script>' + js + '</script></body>')
               with open(html_file, 'w') as f:
