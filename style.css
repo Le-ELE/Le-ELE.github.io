@@ -356,6 +356,60 @@ hr {
   display: block;
 }
 
+/* ---------- Barra de navegación inferior (píldoras colapsables) ---------- */
+
+.leele-nav {
+  position: fixed;
+  bottom: 14px;
+  left: 62%;
+  transform: translateX(-62%);
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  padding: 7px;
+
+  background: var(--paper);
+  background: color-mix(in srgb, var(--paper) 85%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+
+  box-shadow: 0 9px 26px rgba(0,0,0,.17);
+
+  max-width: calc(100vw - 16px);
+  overflow: hidden;
+
+  transition: max-width .3s ease, padding .3s ease, gap .3s ease;
+}
+
+.leele-nav.is-collapsed {
+  max-width: 44px;
+  padding: 7px;
+  gap: 0;
+}
+
+/* Píldoras y separadores: se ocultan al plegar */
+.leele-nav.nav-pill,
+.leele-nav.nav-sep {
+  transition: opacity .15s ease, visibility .15s ease, max-width .25s ease, padding .25s ease, margin .25s ease;
+}
+
+.leele-nav.is-collapsed .nav-pill,
+.leele-nav.is-collapsed .nav-sep {
+  opacity: 0;
+  visibility: hidden;
+  max-width: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .students-btn {
   display: block;
   right: 20px;

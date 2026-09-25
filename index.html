@@ -123,58 +123,69 @@ LéELE! · 2026
 
 </main>
 
-<a href="#clases" class="floating-btn down-btn">
-📚 Clases!
-</a>
-
-<a href="estudiantes/" class="floating-btn students-btn">
-📝 Notas de estudiantes!
-</a>
-
-<a href="#inicio" class="floating-btn up-btn">
-📚 LéELE!
-</a>
-
-<button id="index-darkmode-btn" class="floating-btn darkmode-btn">
-☾
-</button>
+<nav id="index-nav" class="leele-nav is-collapsed" aria-label="Navegación principal">
+  <a class="nav-pill nav-pill-brand" href="#inicio">
+    <span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span><span class="nav-label">LéELE</span>
+  </a>
+  <span class="nav-sep" aria-hidden="true"></span>
+  <a class="nav-pill" href="#clases">
+    <span class="nav-ico"><svg viewBox="0 0 24 24"><path d="m4 4 3-1.5L10 4l3-1.5L16 4V20l-3-1.5L10 20l-3-1.5L4 20z"/><path d="m10 4v16"/></svg></span><span class="nav-label">Clases</span>
+  </a>
+  <a class="nav-pill" href="estudiantes/">
+    <span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M13 2v7h7"/><path d="M9 13h6M9 17h6"/></svg></span><span class="nav-label">Notas de estudiantes</span>
+  </a>
+  <span class="nav-sep" aria-hidden="true"></span>
+  <button id="index-darkmode-btn" class="nav-pill nav-pill-dark" type="button" aria-label="Cambiar modo oscuro">☾</button>
+  <button id="index-nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-label="Abrir navegación">
+    <span class="nav-toggle-open">⋯</span><span class="nav-toggle-close">▾</span>
+  </button>
+</nav>
 
 <script>
-const down = document.querySelector(".down-btn");
-const up = document.querySelector(".up-btn");
-const students = document.querySelector(".students-btn");
-const clases = document.getElementById("clases");
-const dmBtn = document.getElementById("index-darkmode-btn");
+var indexNav = document.getElementById("index-nav");
+var indexToggle = document.getElementById("index-nav-toggle");
+var clases = document.getElementById("clases");
+var dmBtn = document.getElementById("index-darkmode-btn");
+
+// Dark mode restore
+if (document.documentElement.classList.contains('dark')) {
+  dmBtn.textContent = '☀';
+  dmBtn.classList.add('is-light');
+}
 
 // Dark mode toggle
-if (localStorage.getItem('leele-dark') === 'true') {
-  dmBtn.textContent = '☀';
-  dmBtn.style.background = '#f0f0f0';
-  dmBtn.style.color = '#333';
-}
-dmBtn.addEventListener('click', function() {
+dmBtn.addEventListener('click', function(e) {
+  e.stopPropagation();
   document.documentElement.classList.toggle('dark');
   var isDark = document.documentElement.classList.contains('dark');
   localStorage.setItem('leele-dark', isDark);
   dmBtn.textContent = isDark ? '☀' : '☾';
-  dmBtn.style.background = isDark ? '#f0f0f0' : 'var(--accent)';
-  dmBtn.style.color = isDark ? '#333' : '#fff';
+  dmBtn.classList.toggle('is-light', isDark);
 });
 
-function actualizarBoton() {
-    const y = clases.getBoundingClientRect().top;
-
-    if (y <= 120) {
-        down.style.display = "none";
-        up.style.display = "block";
-    } else {
-        down.style.display = "block";
-        up.style.display = "none";
-    }
+// Ver/ocultar píldoras
+function plegarIndex() {
+  indexNav.classList.add('is-collapsed');
+  indexToggle.setAttribute('aria-expanded', 'false');
+  indexToggle.setAttribute('aria-label', 'Abrir navegación');
+  indexToggle.classList.remove('is-rotated');
 }
-
-window.addEventListener("scroll", actualizarBoton);
-window.addEventListener("load", actualizarBoton);
+function desplegarIndex() {
+  indexNav.classList.remove('is-collapsed');
+  indexToggle.setAttribute('aria-expanded', 'true');
+  indexToggle.setAttribute('aria-label', 'Cerrar navegación');
+  indexToggle.classList.add('is-rotated');
+}
+indexToggle.addEventListener('click', function(e) {
+  e.stopPropagation();
+  if (indexNav.classList.contains('is-collapsed')) desplegarIndex();
+  else plegarIndex();
+});
+document.addEventListener('click', function(e) {
+  if (indexNav.classList.contains('is-collapsed')) return;
+  if (indexNav.contains(e.target)) return;
+  plegarIndex();
+});
 </script>
 
 </body>
