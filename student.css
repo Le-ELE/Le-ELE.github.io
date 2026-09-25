@@ -11,6 +11,8 @@
   --leele-muted: #8a8072;
   --leele-accent: #a3352c;
   --leele-accent-2: #c75b3c;
+  --leele-brand: #a3352c;
+  --leele-brand-2: #b0402f;
   --leele-rule: #ece4d7;
   --leele-soft: #f6efe7;
   --leele-soft-2: #f2e3dc;
@@ -29,6 +31,8 @@ html.dark {
   --leele-muted: #a39680;
   --leele-accent: #e2826f;
   --leele-accent-2: #ef9d8a;
+  --leele-brand: #7a241d;
+  --leele-brand-2: #96352b;
   --leele-rule: #3a332b;
   --leele-soft: #2e2922;
   --leele-soft-2: #35281f;
@@ -313,8 +317,8 @@ article h4.is-collapsed, article h5.is-collapsed, article h6.is-collapsed {
 .nav-pill:hover { background: var(--leele-soft); transform: translateY(-1px); }
 .nav-pill .nav-ico { display: inline-flex; width: 17px; height: 17px; flex-shrink: 0; }
 .nav-pill .nav-ico svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-.nav-pill-brand { background: var(--leele-accent); color: #ffffff !important; }
-.nav-pill-brand:hover { background: var(--leele-accent-2); color: #ffffff !important; }
+.nav-pill-brand { background: var(--leele-brand); color: #ffffff !important; }
+.nav-pill-brand:hover { background: var(--leele-brand-2); color: #ffffff !important; }
 .nav-sep { width: 1px; height: 22px; background: var(--leele-rule); margin: 0 4px; }
 .nav-pill-dark { padding: 8px 10px; }
 
@@ -404,7 +408,7 @@ article h4.is-collapsed, article h5.is-collapsed, article h6.is-collapsed {
   font-weight: 700;
   font-family: var(--leele-font);
   color: #ffffff !important;
-  background: linear-gradient(135deg, var(--leele-accent), var(--leele-accent-2));
+  background: linear-gradient(135deg, var(--leele-brand), var(--leele-brand-2));
   border: none;
   border-radius: 12px;
   cursor: pointer;
