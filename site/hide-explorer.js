@@ -254,6 +254,41 @@
     holder.appendChild(wrap);
   }
 
+  // === Título de carpetas: solo el último segmento ===
+  function fixFolderTitles() {
+    var titleEl = document.querySelector('.page-header .article-title');
+    if (!titleEl || (titleEl.textContent || '').indexOf('Carpeta: ') !== 0) return;
+    var clean = titleEl.textContent.substring('Carpeta: '.length);
+    var parts = clean.split('/');
+    var last = parts[parts.length - 1];
+    if (!last) return;
+    if (titleEl.dataset.leeleFolderTitle !== last) {
+      titleEl.textContent = last;
+      titleEl.dataset.leeleFolderTitle = last;
+    }
+    document.title = last;
+    var og = document.querySelector('meta[property="og:title"]');
+    if (og) og.setAttribute('content', last);
+    var tw = document.querySelector('meta[name="twitter:title"]');
+    if (tw) tw.setAttribute('content', last);
+  }
+
+  // === Envolver el texto de las tarjetas para que encierre dentro de la caja ===
+  function wrapSectionTitles() {
+    document.querySelectorAll('.section .desc h3 a').forEach(function(a) {
+      if (a.querySelector('.section-title')) return;
+      var nodes = [];
+      a.childNodes.forEach(function(n) {
+        if (n.nodeType === 3 && n.textContent.trim()) nodes.push(n);
+      });
+      if (!nodes.length) return;
+      var span = document.createElement('span');
+      span.className = 'section-title';
+      nodes.forEach(function(n) { span.appendChild(n); });
+      a.appendChild(span);
+    });
+  }
+
   // === Barra de navegación unificada ===
   function buildNav() {
     var navPath = window.location.pathname;
@@ -384,6 +419,8 @@
     }
 
     addHeroGreeting();
+    fixFolderTitles();
+    wrapSectionTitles();
     addPackageBars();
     enableFoldableHeadings();
   }

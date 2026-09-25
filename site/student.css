@@ -166,6 +166,17 @@ a.internal:not([href$="/"])::before { content: "📄 "; flex-shrink: 0; }
 .section .desc h3 a::after { content: "›"; margin-left: auto; color: var(--leele-accent); font-size: 24px; font-weight: 400; padding-left: 10px; transition: transform 0.18s ease; }
 .section:hover .desc h3 a::after { transform: translateX(3px); }
 
+/* === Títulos largos dentro de las tarjetas === */
+.section-li, .section, .section .desc { min-width: 0; }
+.section .desc h3 a .section-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.section .desc h3 a::before,
+.section .desc h3 a::after { flex: 0 0 auto; }
+
 /* === Tablas === */
 table {
   width: 100% !important;
