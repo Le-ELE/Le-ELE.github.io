@@ -533,3 +533,55 @@ html.dark .darkmode-btn {
   }
 
 }
+
+/* ---------- Index: barra de navegación VERTICAL (estilo portal) ---------- */
+/* Solo el index; en el resto de páginas la barra sigue horizontal. */
+
+#index-nav {
+  flex-direction: column;
+  align-items: stretch;
+  left: 14px;
+  transform: none;
+  max-width: calc(100vw - 28px);
+  max-height: calc(100vh - 28px);
+  border-radius: 20px;
+}
+
+#index-nav .nav-pill {
+  width: 100%;
+  justify-content: flex-start;
+  padding: 10px 14px;
+  white-space: nowrap;
+}
+
+#index-nav .nav-sep {
+  width: 100%;
+  height: 1px;
+  max-width: 100%;
+  margin: 3px 8px;
+}
+
+#index-nav .nav-toggle {
+  align-self: center;
+  width: 38px;
+}
+
+#index-nav.is-collapsed {
+  gap: 0;
+  padding: 6px;
+  border-radius: 999px;
+  max-width: none;
+}
+
+#index-nav.is-collapsed .nav-pill,
+#index-nav.is-collapsed .nav-sep {
+  height: 0;
+  max-width: 0;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  white-space: nowrap;
+}
