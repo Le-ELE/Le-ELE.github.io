@@ -217,6 +217,43 @@
     });
   }
 
+  // === Saludo de bienvenida (carpetas principales de estudiantes) ===
+  function addHeroGreeting() {
+    if (document.getElementById('leele-hero')) return;
+    var heroPath = window.location.pathname.replace(/\/+$/, '');
+    var match = heroPath.match(/^\/estudiantes\/([^/]+)$/);
+    if (!match) return;
+    var folderName = decodeURIComponent(match[1]);
+    var parts = folderName.match(/^(.+)-([a-zA-Z0-9]+)$/);
+    if (!parts) return;
+    var code = parts[2];
+    if (code.length < 5 || !/[0-9]/.test(code)) return;
+    var name = parts[1];
+
+    document.title = 'LéELE: ' + name;
+    var og = document.querySelector('meta[property="og:title"]');
+    if (og) og.setAttribute('content', 'LéELE: ' + name);
+    var tw = document.querySelector('meta[name="twitter:title"]');
+    if (tw) tw.setAttribute('content', 'LéELE: ' + name);
+
+    var holder = document.querySelector('.page-header .popover-hint');
+    if (!holder) return;
+    var wrap = document.createElement('div');
+    wrap.id = 'leele-hero';
+    wrap.className = 'leele-hero';
+    var logo = document.createElement('img');
+    logo.className = 'leele-hero-logo';
+    logo.src = '/imagenes/logo_grande.png';
+    logo.alt = 'Logo de LéELE';
+    var titleEl = document.createElement('h1');
+    titleEl.className = 'leele-hero-title';
+    titleEl.textContent = 'Hola, ' + name + '!';
+    wrap.appendChild(logo);
+    wrap.appendChild(titleEl);
+    holder.innerHTML = '';
+    holder.appendChild(wrap);
+  }
+
   // === Barra de navegación unificada ===
   function buildNav() {
     var navPath = window.location.pathname;
@@ -346,6 +383,7 @@
       buildNav();
     }
 
+    addHeroGreeting();
     addPackageBars();
     enableFoldableHeadings();
   }
