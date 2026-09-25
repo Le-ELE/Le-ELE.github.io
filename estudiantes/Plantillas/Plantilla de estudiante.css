@@ -1,0 +1,14 @@
+
+/* ===== Paquetes: tareas completadas SIN tachado =====
+   Quartz tacha el <li> entero (.contains-task-list li:has(input:checked))
+   y arrastra párrafos de continuación (p. ej. "Fecha").
+   Aquí lo neutralizamos: el ítem marcado se atenúa, nunca se tacha. */
+
+.contains-task-list li:has(> input[type="checkbox"]:checked),
+.contains-task-list li:has(> input[type="checkbox"]:checked) * {
+  text-decoration: none !important;
+}
+
+.contains-task-list li:has(> input[type="checkbox"]:checked) {
+  opacity: .72;
+}
