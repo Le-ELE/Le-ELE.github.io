@@ -2,7 +2,7 @@
 
 ---
 
-**Fecha de pago:** 
+**Fecha de pago:** 2026-09-24
 
 **Cantidad de horas:** 5
 
