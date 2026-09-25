@@ -306,7 +306,7 @@
     var brand = document.createElement('a');
     brand.className = 'nav-pill nav-pill-brand';
     brand.href = '/';
-    brand.innerHTML = '<span class="nav-ico">' + ICONS.book + '</span><span class="nav-label">LéELE</span>';
+    brand.innerHTML = '<span class="nav-ico nav-ico-brand"><img src="/imagenes/logo_favicon.png" alt="LéELE"></span>';
     brand.addEventListener('click', function() { document.documentElement.classList.remove('dark'); });
     nav.appendChild(brand);
 
