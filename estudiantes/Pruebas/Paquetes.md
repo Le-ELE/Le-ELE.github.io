@@ -1,4 +1,4 @@
-# Paquete 2 
+# Paquete # 2 
 
 ---
 
@@ -15,7 +15,7 @@
 - [ ] 5
 
 ---
-# Paquete 1
+# Paquete # 1
 
 ---
 
