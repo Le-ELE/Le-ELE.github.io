@@ -63,7 +63,7 @@ jobs:
         run: |
           cp $GITHUB_WORKSPACE/site/hide-explorer.js /tmp/hide-explorer.js
           cp $GITHUB_WORKSPACE/site/student.css /tmp/student.css
-          python3 -c "
+          python3 - <<'PY'
           import glob, re
           with open('/tmp/hide-explorer.js', 'r') as f:
               js = f.read()
@@ -85,7 +85,7 @@ jobs:
               content = content.replace('</body>', '<script>' + js + '</script></body>')
               with open(html_file, 'w') as f:
                   f.write(content)
-          "
+          PY
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
