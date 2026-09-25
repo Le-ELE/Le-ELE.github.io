@@ -371,25 +371,38 @@ article h4.is-collapsed, article h5.is-collapsed, article h6.is-collapsed {
 .nav-pill-brand:hover { background: var(--leele-brand-2); color: #ffffff !important; }
 
 /* Botón LéELE con logo: fondo oscuro + logo claro (claro) / fondo blanco + logo negro (oscuro) */
-.nav-pill-brand,
-.nav-pill-brand:hover {
-  padding: 4px;
+.nav-pill-brand.nav-pill-brand,
+.nav-pill-brand.nav-pill-brand:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
   background: #2d2a26;
   color: #ffffff !important;
 }
 .nav-pill-brand .nav-ico {
-  width: 30px;
-  height: 30px;
+  position: relative;
+  display: block;
+  width: 32px;
+  height: 32px;
 }
 .nav-pill-brand .nav-ico img {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 32px;
+  height: 32px;
   display: block;
   border-radius: 50%;
   filter: invert(1);
 }
-html.dark .nav-pill-brand,
-html.dark .nav-pill-brand:hover {
+html.dark .nav-pill-brand.nav-pill-brand,
+html.dark .nav-pill-brand.nav-pill-brand:hover {
   background: #ffffff;
 }
 html.dark .nav-pill-brand .nav-ico img {
