@@ -171,8 +171,7 @@ a.internal:not([href$="/"])::before { content: "📄 "; flex-shrink: 0; }
 .section .desc h3 a .section-title {
   flex: 1 1 auto;
   min-width: 0;
-  overflow-wrap: anywhere;
-  word-break: break-word;
+  overflow-wrap: break-word;
 }
 .section .desc h3 a::before,
 .section .desc h3 a::after { flex: 0 0 auto; }
