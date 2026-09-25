@@ -272,7 +272,56 @@
     initDarkToggle(dmBtn);
     nav.appendChild(dmBtn);
 
+    // Botón para plegar/desplegar la barra
+    var toggle = document.createElement('button');
+    toggle.className = 'nav-toggle';
+    toggle.type = 'button';
+    toggle.setAttribute('aria-label', 'Abrir menú');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-controls', 'leele-nav');
+    toggle.innerHTML = '<span class="nav-toggle-open">⋯</span><span class="nav-toggle-close">▾</span>';
+    nav.appendChild(toggle);
+
+    // Plegada por defecto
+    nav.classList.add('is-collapsed');
+
+    initNavCollapse(nav, toggle);
+
     document.body.appendChild(nav);
+  }
+
+  // === Plegar/desplegar la barra de navegación ===
+  function initNavCollapse(nav, toggle) {
+    function state() { return nav.classList.contains('is-collapsed'); }
+    function collapse(save) {
+      if (state()) return;
+      nav.classList.add('is-collapsed');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Abrir menú');
+    }
+    function expand() {
+      if (!state()) return;
+      nav.classList.remove('is-collapsed');
+      toggle.setAttribute('aria-expanded', 'true');
+      toggle.setAttribute('aria-label', 'Cerrar menú');
+    }
+    toggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      if (state()) { expand(); } else { collapse(); }
+    });
+    // Clic fuera de la barra → se pliega
+    document.addEventListener('click', function(e) {
+      if (state()) return;
+      if (nav.contains(e.target)) return;
+      collapse();
+    });
+    // La barra se mantiene abierta al usar las píldoras; solo el toggle la pliega
+    nav.addEventListener('click', function(e) {
+      if (state()) return;
+      if (e.target.closest && (e.target.closest('a.nav-pill') || e.target.closest('.nav-pill-dark'))) {
+        e.stopPropagation();
+      }
+    });
   }
 
   function sep() {

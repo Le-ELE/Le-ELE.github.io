@@ -56,7 +56,7 @@ html, body {
   line-height: 1.7;
 }
 #quartz-body { grid-template: "grid-center" 1fr / 1fr !important; gap: 0 !important; padding: 0 !important; }
-.page { max-width: 100% !important; width: 100% !important; padding: 0 2rem !important; }
+.page { max-width: 100% !important; width: 100% !important; padding: 0 2rem 96px !important; }
 .page-header, article { background: transparent !important; color: var(--leele-ink) !important; }
 .center { background: transparent !important; }
 article { padding: 0 2rem 2rem !important; max-width: 820px !important; margin: 0 auto !important; }
@@ -277,10 +277,10 @@ article h4.is-collapsed, article h5.is-collapsed, article h6.is-collapsed {
 }
 .is-folded { display: none !important; }
 
-/* === Barra de navegación (píldoras flotantes) === */
+/* === Barra de navegación inferior (píldoras flotantes) === */
 .leele-nav {
   position: fixed;
-  top: 14px;
+  bottom: 16px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
@@ -295,6 +295,21 @@ article h4.is-collapsed, article h5.is-collapsed, article h6.is-collapsed {
   border: 1px solid var(--leele-rule);
   border-radius: 999px;
   box-shadow: var(--leele-shadow-lg);
+  transition: padding 0.25s ease, gap 0.25s ease;
+}
+
+/* Estado plegado: solo se ve el botón circular */
+.leele-nav.is-collapsed { gap: 0; padding: 6px; }
+.leele-nav.is-collapsed .nav-pill,
+.leele-nav.is-collapsed .nav-sep {
+  opacity: 0;
+  max-width: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  visibility: hidden;
+  transition: opacity 0.15s ease, max-width 0.25s ease, padding 0.25s ease, margin 0.25s ease;
 }
 .nav-pill {
   display: inline-flex;
@@ -312,15 +327,39 @@ article h4.is-collapsed, article h5.is-collapsed, article h6.is-collapsed {
   cursor: pointer;
   white-space: nowrap;
   font-family: var(--leele-font);
-  transition: background 0.18s ease, color 0.18s ease, transform 0.12s ease;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.12s ease, opacity 0.2s ease, max-width 0.25s ease, padding 0.25s ease, margin 0.25s ease;
 }
 .nav-pill:hover { background: var(--leele-soft); transform: translateY(-1px); }
 .nav-pill .nav-ico { display: inline-flex; width: 17px; height: 17px; flex-shrink: 0; }
 .nav-pill .nav-ico svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .nav-pill-brand { background: var(--leele-brand); color: #ffffff !important; }
 .nav-pill-brand:hover { background: var(--leele-brand-2); color: #ffffff !important; }
-.nav-sep { width: 1px; height: 22px; background: var(--leele-rule); margin: 0 4px; }
+.nav-sep { width: 1px; height: 22px; background: var(--leele-rule); margin: 0 4px;
+  transition: opacity 0.15s ease, max-width 0.25s ease, margin 0.25s ease; }
 .nav-pill-dark { padding: 8px 10px; }
+
+/* Botón para plegar/desplegar la barra */
+.nav-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: var(--leele-brand);
+  color: #ffffff !important;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: var(--leele-font);
+  transition: background 0.18s ease, transform 0.25s ease;
+}
+.nav-toggle:hover { background: var(--leele-brand-2); transform: scale(1.05); }
+.nav-toggle .nav-toggle-close { display: none; }
+.leele-nav:not(.is-collapsed) .nav-toggle .nav-toggle-open { display: none; }
+.leele-nav:not(.is-collapsed) .nav-toggle .nav-toggle-close { display: inline-block; }
 
 /* Botón oscuro suelto (usado en el login) */
 .leele-dm {
@@ -453,9 +492,10 @@ article { animation: leeleFade 0.35s ease; }
   .section-ul { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
   table { font-size: 13px; }
   th, td { padding: 8px 10px; }
-  .leele-nav { top: 10px; max-width: calc(100vw - 16px); }
+  .leele-nav { bottom: 10px; max-width: calc(100vw - 16px); }
   .nav-pill { padding: 9px; }
   .nav-label { display: none; }
   .nav-pill-brand .nav-label { display: inline; font-size: 13px; }
+  .page { padding: 0 1rem 90px !important; }
   .login-card { padding: 30px 22px 28px; }
 }
