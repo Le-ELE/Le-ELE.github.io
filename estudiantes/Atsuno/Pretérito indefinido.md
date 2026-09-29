@@ -9,4 +9,5 @@
 - que me hacen llorar
 - El Escocés 
 - Años de la vida 
-- 
+- Por mi cuenta
+- Por mi propia cuenta
