@@ -50,6 +50,8 @@
 - ¿En qué año estámos?
 	- Estamos en dos mil veintiseis
 - ¿En qué año naciste?
-	- Yo nací en el año 2000
+	- Yo nací en el año 2000 (dos mil)
 - Yo tengo 29 años, ¿en qué año nací?
-	- Tú naciste en el año 1
+	- Tú naciste en el año 1997 (mil novecientos noventa y siete)
+- ¿En qué año terminó la Segunda Guerra Mundial?
+	- 
