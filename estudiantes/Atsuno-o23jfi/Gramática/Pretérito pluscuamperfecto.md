@@ -16,4 +16,7 @@
 
 - Antes de mi clase con Atsuno, solo había tenido 2 estudiantes japoneses
 - Antes de venir a Colombia, nunca había visitado Suramérica
-- Antes 
+----
+- Antes de aprender tango, había aprendido cómo se baila salsa
+- Antes de los humanos, los dinosaurios habían estado aquí
+- Antes de escuchar a Shakira, no había conocer canciones en español
