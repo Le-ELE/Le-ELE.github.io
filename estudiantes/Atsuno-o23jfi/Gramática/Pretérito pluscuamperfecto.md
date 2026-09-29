@@ -19,4 +19,7 @@
 ----
 - Antes de aprender tango, había aprendido cómo se baila salsa
 - Antes de los humanos, los dinosaurios habían estado aquí
-- Antes de escuchar a Shakira, no había conocer canciones en español
+- Antes de escuchar a Shakira, no había conocido canciones en español
+- Antes de nuestros gatos, habíamos tenido perros
+- Antes de mi trabajo como ilustradora, había trabajado como traductora
+- 
