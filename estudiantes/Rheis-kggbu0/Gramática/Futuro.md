@@ -15,3 +15,4 @@
 - Él es de Vancuver
 ---
 Yo y mis amigos vamos a reunirnos para cenar
+Mi amigo Lucas se va del país
