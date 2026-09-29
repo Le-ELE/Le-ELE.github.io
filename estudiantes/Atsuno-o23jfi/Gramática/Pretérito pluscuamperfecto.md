@@ -2,10 +2,10 @@
 |     | haber    | participio |
 | --- | -------- | ---------- |
 | Yo  | había    | hablado    |
-| Tú  | habías   |            |
-|     | había    |            |
-|     | habíamos |            |
-|     | habían   |            |
+| Tú  | habías   | comido     |
+|     | había    | hecho      |
+|     | habíamos | visto      |
+|     | habían   | leído      |
 - anciano
 ---
 - Cuando viajé a México, había comido comida mexicana mucho (antes de viajar)
