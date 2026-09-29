@@ -6,4 +6,6 @@
 - mudarse
 	- Me mudé
 - género (gendra)
-- que me hacen 
+- que me hacen llorar
+- El Escocés 
+- 
