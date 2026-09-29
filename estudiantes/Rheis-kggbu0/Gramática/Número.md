@@ -15,4 +15,18 @@
 - 194
 	- Cienta noventa y cuatro
 - 200
-- 
+- Doscientos
+- 300
+- trescientos
+- 400
+- cuatrocientos
+- 500
+- Quinientos
+- 600
+- seiscientos
+- 700
+- Setecientos
+- 800
+- Ochocientos
+- 900
+- Nove
