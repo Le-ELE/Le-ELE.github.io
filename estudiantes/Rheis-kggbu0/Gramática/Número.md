@@ -41,4 +41,8 @@
 	- Trescientos sesenta y siete
 - 999
 	- Novecientos noventa y nueve
-- 
+---
+- 1000
+	- Mil
+- 2000 
+	- Dos mil
