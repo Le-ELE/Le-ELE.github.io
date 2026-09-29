@@ -31,5 +31,9 @@
 - 900
 	- Novecientos
 ---
-754
-Setecientos cincuenta y cuatro
+- 754
+	- Setecientos cincuenta y cuatro
+- 498
+	- Cuatrocientos noventa y ocho
+- 799
+	- 
