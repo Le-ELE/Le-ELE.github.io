@@ -1,2 +1,2 @@
-- [ ] Escribirme el nombre de la película
-- [ ] Escribir 
+- [ ] Escribirme el nombre de la película.
+- [ ] Escribir 3 ejemplos con indefinido, 3 con imperfecto, 3 con perfecto y 3 con pluscuamperfecto.
