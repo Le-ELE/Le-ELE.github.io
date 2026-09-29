@@ -6,3 +6,5 @@
 |     | había    |            |
 |     | habíamos |            |
 |     | habían   |            |
+- anciano
+- 
