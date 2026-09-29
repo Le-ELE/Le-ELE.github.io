@@ -58,3 +58,5 @@
 - ¿En qué año nació tu mamá?
 	- Ella nació en el año 1968
 - Ella va a tener 60 en mayo
+- ¿Cuándo murió M. Jackson?
+	- M. J. murió en200
