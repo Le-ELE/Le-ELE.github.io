@@ -36,4 +36,9 @@
 - 498
 	- Cuatrocientos noventa y ocho
 - 799
-	- 
+	- Setecientos noventa y nueve
+- 367
+	- Trescientos sesenta y siete
+- 999
+	- Novecientos noventa y nueve
+- 
