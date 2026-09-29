@@ -12,7 +12,8 @@
 -  Cuando viajé a México, comí comida mexicana mucho (durante el viaje)
 - Cuando me vi con mi amigo, había comido la cena
 ---
-Primeras veces
+# Primeras veces
 
 - Antes de mi clase con Atsuno, solo había tenido 2 estudiantes japoneses
+- Antes de venir a Colombia, nunca había visitado Suramérica
 - 
