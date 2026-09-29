@@ -7,4 +7,8 @@
 
 ---
 
+- [ ] Complemento directo y complemento indirecto
+
+---
+
 https://le-ele.github.io/estudiantes/Jo-Lynne-i9se2x3/

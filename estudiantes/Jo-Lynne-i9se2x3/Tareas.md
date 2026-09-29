@@ -1,2 +1,3 @@
   - [ ] preposiciones al final vs en la mitad
-  - [ ] Aprender la definición de adjetivos (adjetives), sustantivos (nouns) y verbos (verbs) y escribir 5 ejemplos de cada uno.
+  - [x] Aprender la definición de adjetivos (adjetives), sustantivos (nouns) y verbos (verbs) y escribir 5 ejemplos de cada uno.
+  - [ ] Infinitivo
