@@ -16,4 +16,4 @@
 
 - Antes de mi clase con Atsuno, solo había tenido 2 estudiantes japoneses
 - Antes de venir a Colombia, nunca había visitado Suramérica
-- 
+- Antes
