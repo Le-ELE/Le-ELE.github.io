@@ -14,4 +14,4 @@
 - Yo y mi amigo vamos a ir a la Comuna 13 mañana.
 - Él es de Vancuver
 ---
-Yo y mis amigos vamos a reunirnos para cenar 
+Yo y mis amigos vamos a reunirnos para cenar
