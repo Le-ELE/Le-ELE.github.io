@@ -54,4 +54,4 @@
 - Yo tengo 29 años, ¿en qué año nací?
 	- Tú naciste en el año 1997 (mil novecientos noventa y siete)
 - ¿En qué año terminó la Segunda Guerra Mundial?
-	- 
+	- La Segunda Guerra Mundial terminó en (el año) 1945 (mil novecientos cuarenta y)
