@@ -1,0 +1,4 @@
+
+|     | haber | participio |
+| --- | ----- | ---------- |
+| Yo  | había |            |
