@@ -35,5 +35,5 @@
 - voy a ser/estar (I am going to be)
 - Voy a ser una artista famosa
 - Voy a estar en museos alrededor (around) del mundo
-- No voy a decirte
+
 - 
