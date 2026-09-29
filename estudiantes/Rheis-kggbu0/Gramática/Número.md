@@ -59,4 +59,5 @@
 	- Ella nació en el año 1968
 - Ella va a tener 60 en mayo
 - ¿Cuándo murió M. Jackson?
-	- M. J. murió en200
+	- M. J. murió en 2009
+- 
