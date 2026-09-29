@@ -1,2 +1,2 @@
 - [ ] Escribirme el nombre de la película
-- [ ] 
+- [ ] Escribir 
