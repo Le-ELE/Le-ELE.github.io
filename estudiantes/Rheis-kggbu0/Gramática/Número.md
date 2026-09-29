@@ -46,3 +46,8 @@
 	- Mil
 - 2000 
 	- Dos mil
+---
+- ¿En qué año estámos?
+	- Estamos en dos mil veintiseis
+- ¿En qué año naciste?
+	- 
