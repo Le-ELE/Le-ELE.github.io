@@ -23,7 +23,7 @@
 - Estoy tan feliz
 - 
 ---
-# (Comparaciones o comparativos) Tan ... como ...
+# (Comparaciones o comparativos de i) Tan ... como ...
 
 - Estoy tan cansada como tú
 - Como tantos vegetales como tú

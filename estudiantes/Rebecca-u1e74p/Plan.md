@@ -1,0 +1,1 @@
+- [ ] Comparativos completos
