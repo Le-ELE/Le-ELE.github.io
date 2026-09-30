@@ -13,3 +13,9 @@
 - Ya dormí 
 - Ya hice ejercicio
 - Ya te dije sobre la diferencia de tiempo muchas veces
+	- I already told you about the time difference many times
+
+# Ya + no + presente (anymore)
+
+- Ya no quiero comer
+- Ya n
