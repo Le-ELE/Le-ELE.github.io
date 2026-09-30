@@ -27,5 +27,6 @@
 
 - Estoy tan cansada como tú
 - Como tantos vegetales como tú
-- Tu español es tan mejor como yo
-	- Tu español es tan 
+- ~~Tu español es tan mejor como yo~~
+	- Tu español es tan bueno como el mío 
+- La vida en las montañas es 
