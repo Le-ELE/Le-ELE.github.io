@@ -15,4 +15,7 @@
 
 - Estoy tan cansado
 - Estoy muy cansado
-- Ayer estuve 
+- Ayer estaba tan triste
+- Mañana voy a estar tan feliz
+- Estoy tan orgulloso de ti y de tu español, muy bien, continúa así, eres una gran estudiante, te mando felicitaciones
+- 
