@@ -18,4 +18,5 @@
 # Ya + no + presente (anymore)
 
 - Ya no quiero comer
-- Ya n
+- Ya no quiero ir a la fiesta
+- Ya no  
