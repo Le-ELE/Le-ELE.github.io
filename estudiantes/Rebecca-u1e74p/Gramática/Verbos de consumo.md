@@ -1,4 +1,4 @@
-Cuando usamos un verbo de consumo, como "comer", "beber", "tomar", "fumar" etc., usamos el pronombre reflexivo si decimos el sustantivo de lo que se consume con un artículo o un demostrativo como "este", "esa"
+Cuando usamos un verbo de consumo, como "comer", "beber", "tomar", "fumar" etc., usamos el pronombre reflexivo si decimos el sustantivo de lo que se consume con un artículo o un demostrativo como "este", "esa" o cantidades específicas.
 
 - Ayer me fumé un cigarrillo
 - Ayer mi amiga y yo comimos ceviche
@@ -9,6 +9,6 @@ Cuando usamos un verbo de consumo, como "comer", "beber", "tomar", "fumar" etc.,
 - Ayer comí una hamburguesa (?)
 - La hamburguesa está siendo comida
 - Quiero que te tomes un café conmigo
-- 
+- Ayer me bebí tres shots 
 
 
