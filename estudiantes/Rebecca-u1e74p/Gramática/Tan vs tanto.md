@@ -23,7 +23,7 @@
 - Estoy tan feliz
 - 
 ---
-# (Comparaciones o comparativos de i) Tan ... como ...
+# (Comparaciones o comparativos de igualdad) Tan ... como ...
 
 - Estoy tan cansada como tú
 - Como tantos vegetales como tú
@@ -31,4 +31,5 @@
 	- Tu español es tan bueno como el mío 
 - La vida en las montañas es tan tranquila como la vida en una ciudad
 - Tú piensas que el violín es tan difícil como el trombón?
-- 
+---
+- Estoy más cansada que tú
