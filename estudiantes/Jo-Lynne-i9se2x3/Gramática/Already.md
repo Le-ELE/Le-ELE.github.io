@@ -1,7 +1,9 @@
 # ya + presente
 
 - Ya me siento cansada
-- Ya 
+- Ya tengo hambre
+- Ya estoy caliente
+- 
 
 # ya + pasado
 
@@ -9,3 +11,4 @@
 - Ya fui al baño
 - Ya dormí 
 - Ya hice ejercicio
+- 
