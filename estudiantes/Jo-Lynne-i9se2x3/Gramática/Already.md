@@ -12,4 +12,4 @@
 - Ya fui al baño
 - Ya dormí 
 - Ya hice ejercicio
-- 
+- Ya te dije sobre la diferencia de tiempo muchas veces
