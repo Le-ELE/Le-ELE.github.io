@@ -11,4 +11,8 @@
 - Ayer me comí tantos panes, que hoy no quiero comer nada
 - Ayer comí tanto pan, que hoy no quiero comer nada
 ---
-tan
+# tan + adjetivos/adverbios
+
+- Estoy tan cansado
+- Estoy muy cansado
+- Ayer estuve 
