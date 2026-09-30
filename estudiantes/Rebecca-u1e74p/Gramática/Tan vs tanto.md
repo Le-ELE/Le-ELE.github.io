@@ -5,11 +5,13 @@
 - Me gusta tanto Lima
 - Ayer bebí tanto (so much), que no recuerdo nada
 - Me gusta tanto Lima, que no quiero irme
+- Yo hablo tanto
 
 # tanto/a(s) + sustantivos
 
 - Ayer me comí tantos panes, que hoy no quiero comer nada
 - Ayer comí tanto pan, que hoy no quiero comer nada
+- Yo como tanta fruta
 ---
 # tan + adjetivos/adverbios
 
