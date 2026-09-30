@@ -31,6 +31,7 @@
 | **Ella / Él**               | va a ir    | va a ser    | va a estar    | va a tener    |
 | **Nosotros**                | vamos a ir | vamos a ser | vamos a estar | vamos a tener |
 | **Ustedes / Ellas / Ellos** | van a ir   | van a ser   | van a estar   | van a tener   |
+|                             |            |             |               |               |
 - voy a comer (I am going to eat)
 - voy a ser/estar (I am going to be)
 - Voy a ser una artista famosa
