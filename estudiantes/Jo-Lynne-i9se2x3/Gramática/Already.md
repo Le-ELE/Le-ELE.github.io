@@ -20,5 +20,3 @@
 - Ya no quiero comer
 - Ya no quiero ir a la fiesta
 - Ya no quiero ser tu amiga
-- Estoy siendo
-- ¿Por qué estás enojada conmigo?
