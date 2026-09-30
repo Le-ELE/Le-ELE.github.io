@@ -8,6 +8,7 @@ Cuando usamos un verbo de consumo, como "comer", "beber", "tomar", "fumar" etc.,
 - ~~Ayer me comí hamburguesa~~
 - Ayer comí una hamburguesa (?)
 - La hamburguesa está siendo comida
+- Quiero que te tomes un café conmigo
 - 
 
 
