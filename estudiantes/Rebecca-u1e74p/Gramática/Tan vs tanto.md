@@ -18,4 +18,9 @@
 - Ayer estaba tan triste
 - Mañana voy a estar tan feliz
 - Estoy tan orgulloso de ti y de tu español, muy bien, continúa así, eres una gran estudiante, te mando felicitaciones
+---
+# Tan ... como ...
+
+- Estoy tan cansada como tú
+- Como tantos vegetales como tú
 - 
