@@ -1,4 +1,5 @@
 # verbo + tanto
 
-- Yo como tanto... ()
-- Yo como mucho...
+- Yo como tanto... (I eat so much) Expresivo
+- Yo como mucho... (I eat a lot) Informativo
+- 
