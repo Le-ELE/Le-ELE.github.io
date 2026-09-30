@@ -4,7 +4,7 @@
 
 **Fecha de pago:** 2026-09-30 
 
-**Cantidad de horas:** 
+**Cantidad de horas:** 12.5
 
 ---
 
@@ -20,4 +20,5 @@
 - [ ] 10
 - [ ] 11
 - [ ] 12
+- [ ] 12.5
 
