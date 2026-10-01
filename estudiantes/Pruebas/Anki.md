@@ -89,3 +89,4 @@ exportarlo o borrarlo cuando quieras sin tocar nada del curso.
 | Nunca como en la mañana.        | I never eat in the morning.    |                              |
 | Esta es la prueba               | This is the try                | DJSDJJDEJ                    |
 | Esta es la segunda prueba       | This is the second try         | kkdkkdkk                     |
+| Esta es la tercer prueba.       | This is the third try.         | Tercerita                    |
