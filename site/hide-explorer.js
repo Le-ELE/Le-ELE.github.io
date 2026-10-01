@@ -8,7 +8,8 @@
     house: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>',
     back: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>',
     moon: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>',
-    sun: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>'
+    sun: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>',
+    download: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>'
   };
 
   // === Restaurar modo oscuro desde localStorage ===
@@ -254,6 +255,56 @@
     holder.appendChild(wrap);
   }
 
+  // === Botón de descarga del mazo de Anki ===
+  // Solo aparece en las páginas dentro de /estudiantes/<código>/Anki/. El
+  // .apkg se genera en el build (site/anki_build.py) junto a la página, así
+  // que la URL se deduce del path quitando la extensión.
+  function addAnkiDownload() {
+    if (document.getElementById('leele-anki')) return;
+
+    var match = window.location.pathname.match(/^\/estudiantes\/([^/]+)\/Anki\/(.+?)(?:\.html)?\/?$/);
+    if (!match) return;
+
+    var code = match[1];
+    var nombre = decodeURIComponent(match[2]);
+    // La página de la carpeta Anki/ es un listado de mazos, no un mazo: ahí
+    // no hay nada que descargar.
+    if (nombre === 'index') return;
+
+    // Nombre del archivo tal como lo publica Quartz (guiones por espacios).
+    var slug = nombre.replace(/\s+/g, '-');
+    var url = '/estudiantes/' + code + '/Anki/' + slug + '.apkg';
+
+    var box = document.createElement('div');
+    box.id = 'leele-anki';
+    box.className = 'leele-anki';
+
+    var link = document.createElement('a');
+    link.className = 'leele-anki-btn';
+    link.href = url;
+    link.setAttribute('download', nombre + '.apkg');
+    link.innerHTML = '<span class="leele-anki-ico">' + ICONS.download + '</span>' +
+                     '<span class="leele-anki-label">Descargar ' + nombre + '</span>' +
+                     '<span class="leele-anki-ext">.apkg</span>';
+
+    var help = document.createElement('p');
+    help.className = 'leele-anki-help';
+    help.textContent = 'Descargalo y abrilo con Anki para importar las tarjetas. ' +
+                       'Cuando lo vuelvas a descargar e importar, se actualizan las que cambiaron ' +
+                       'y se conserva lo que ya repasaste.';
+
+    box.appendChild(link);
+    box.appendChild(help);
+
+    var article = document.querySelector('article');
+    if (article) {
+      article.insertBefore(box, article.firstChild);
+      return;
+    }
+    var holder = document.querySelector('.page-header .popover-hint');
+    if (holder) holder.appendChild(box);
+  }
+
   // === Título de carpetas: solo el último segmento ===
   function fixFolderTitles() {
     var titleEl = document.querySelector('.page-header .article-title');
@@ -419,6 +470,7 @@
     }
 
     addHeroGreeting();
+    addAnkiDownload();
     fixFolderTitles();
     wrapSectionTitles();
     addPackageBars();

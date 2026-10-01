@@ -40,7 +40,8 @@ Le-ELE.github.io/
 ├── site/                      ← todo lo del portal de estudiantes
 │   ├── quartz.config.ts       ← configuración real de Quartz (la usa el pipeline)
 │   ├── student.css            ← tema del portal (tarjetas, modo oscuro, login…)
-│   └── hide-explorer.js       ← oculta sidebars/grafos, agrega navegación y login
+│   ├── hide-explorer.js       ← oculta sidebars/grafos, agrega navegación y login
+│   └── anki_build.py          ← convierte las tablas de Anki/ en .apkg descargables
 └── .github/workflows/
     └── deploy-quartz.yml      ← build + deploy a GitHub Pages
 ```
@@ -63,8 +64,77 @@ Rosie-r223kd/
 ├── Gramática/          ← fichas de gramática (una nota por tema)
 ├── Notas/              ← lo que se vio en clase
 │   └── 2026-09-24.md   ← una nota por fecha (Mes/Año)
+├── Anki/               ← mazos de Anki (cada tabla .md es un mazo)
+│   ├── Vocabulario.md
+│   └── Frases.md
 └── Tareas.md           ← pendientes y checkboxes
 ```
+
+## Mazos de Anki
+
+Cada archivo `.md` dentro de `Anki/` es un mazo. Escribís las tarjetas como
+una tabla Markdown normal y el build las convierte en un `.apkg` que el
+estudiante descarga desde su propia página:
+
+```
+estudiantes/Pruebas/Anki/Vocabulario.md   ->  /estudiantes/Pruebas/Anki/Vocabulario.apkg
+```
+
+La tabla se lee así:
+
+```markdown
+| Español | Inglés | Nota          |
+| ------- | ------ | ------------- |
+| ella    | she    |               |
+| la      | the    | femenino      |
+```
+
+- **La primera tabla del archivo es la que se convierte.** El resto del texto
+  es para el estudiante y no genera tarjetas.
+- **Cada archivo es un mazo aparte.** `Vocabulario.md` → mazo `Vocabulario`,
+  `Frases.md` → mazo `Frases`. Se pueden repasar por separado.
+- **La columna 1 es el anverso y la 2 el reverso.** La 3 (nota) es opcional y se
+  muestra debajo de la respuesta.
+- **Las dos primeras columnas son obligatorias.** Si una fila tiene el anverso
+  pero no el reverso, el build falla y te dice qué fila es (es casi siempre un
+  error de tipeo, no una tarjeta a medio hacer).
+
+### Cómo lo importa el estudiante
+
+Anki **no tiene push**: no hay forma de escribirle automáticamente en la
+colección de un estudiante. Lo que hay es que el `.apkg` siempre está en la
+misma URL y al reimportarlo **actualiza las tarjetas que cambiaron sin perder
+lo que ya repasó**:
+
+- **Escritorio (Anki 23.10 o superior)**: `Archivo > Importar`, elegir el `.apkg`.
+- **AnkiDroid / AnkiMobile**: abrir el `.apkg` desde el celu (descargalo y abrilo).
+
+Eso es solo para los cambios. No hace falta hacer nada más.
+
+Dos cosas que conviene saber:
+
+- Si **corregís la traducción** de una palabra, la tarjeta se actualiza sola.
+- Si **borrás una palabra** del vault, la tarjeta sigue en el Anki del
+  estudiante: hay que borrarla a mano desde Anki. Borrar del vault nunca borra
+  tarjetas importadas.
+- Si **cambiás el texto del anverso**, eso es otra tarjeta y aparece la nueva
+  al lado de la vieja. Para corregir el español de una palabra, cambiá la
+  columna 2 y dejá la 1 igual.
+
+El identificador de cada tarjeta se deriva del anverso, no de la posición en la
+tabla: por eso reordenar la tabla no rompe nada, pero cambiar el anverso crea
+una tarjeta nueva.
+
+### Probar los mazos en local
+
+```bash
+python3 -m venv /tmp/anki-venv && /tmp/anki-venv/bin/pip install genanki==0.13.1
+/tmp/anki-venv/bin/python site/anki_build.py estudiantes /tmp/prueba-anki
+```
+
+El script imprime una línea por mazo. Si algo está mal (falta una traducción,
+no hay tabla) imprime el archivo y la fila y **detiene el build**, para que no
+se publique a medias. El `.apkg` solo queda bien si la tabla está completa.
 
 ## Cómo trabajar
 
@@ -91,8 +161,10 @@ minuto (mensaje `vault: fecha`). El workflow se dispara solo en cada push.
 2. `site/quartz.config.ts` se copia al checkout de **Quartz v4.5.2** (pinned).
 3. `estudiantes/*` se copia como `content/` de Quartz y se corre `npx quartz build`.
 4. El resultado se ensambla en `/tmp/site/` junto con `index.html`, `style.css` e `imagenes/`.
-5. `student.css` y `hide-explorer.js` se inyectan en cada HTML generado.
-6. `actions/deploy-pages` publica el artefacto en GitHub Pages (fuente = **GitHub Actions**).
+5. `site/anki_build.py` convierte las tablas de `estudiantes/*/Anki/*.md` en `.apkg`
+   descargables, en la misma carpeta donde Quartz dejó la página de cada nota.
+6. `student.css` y `hide-explorer.js` se inyectan en cada HTML generado.
+7. `actions/deploy-pages` publica el artefacto en GitHub Pages (fuente = **GitHub Actions**).
 
 ## Probar el build localmente (sin tocar el repo)
 
@@ -109,6 +181,16 @@ npx quartz build                                       # genera public/
 El resultado en `public/` debe contener **todas** las carpetas del vault
 (`Inactivos`, `Pruebas`, `Templates Obsidian`, `Nuevo estudiante`, …) y ninguna
 entrada de `.obsidian` ni PDFs.
+
+Para probar también los mazos de Anki, agregá este paso antes de `npx quartz build`:
+
+```bash
+python3 -m venv /tmp/anki-venv && /tmp/anki-venv/bin/pip install genanki==0.13.1
+/tmp/anki-venv/bin/python ../site/anki_build.py ../estudiantes public/
+```
+
+Cada `.apkg` debe aparecer en `public/<Estudiante>/Anki/`, junto al `.html` de
+la tabla que lo originó.
 
 ## Notas
 

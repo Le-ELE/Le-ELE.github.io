@@ -60,14 +60,16 @@ Página web/
 │   ├── Rebecca-u1e74p/     Estudiante activo.
 │   ├── Rheis-kggbu0/       Estudiante activo.
 │   ├── Rosie-r223kd/       Estudiante activo (estructura modelo: Gramática/ · Notas/ · Tareas.md).
+│   ├── Atsuno-o23jfi/      Estudiante activo (⚠ ver §4: publica un email real).
 │   ├── Nuevo estudiante/   Plantilla de estudiante (copiar y renombrar).
 │   ├── Inactivos/          Estudiantes sin clases (igual se publica, a propósito).
-│   ├── Pruebas/            Notas de prueba.
+│   ├── Pruebas/            Notas de prueba. Único con mazos de Anki (Pruebas/Anki/).
 │   └── Templates Obsidian/ Templates del vault (NO confundir con la carpeta "templates" de Quartz).
 ├── site/                   → TODO lo del portal vive acá.
 │   ├── quartz.config.ts    Config REAL de Quartz (la copia el pipeline encima del vendored).
 │   ├── student.css         Tema del portal: tokens, login, nav, tarjetas, hero, folds, modo oscuro.
-│   └── hide-explorer.js    Lógica del portal: login, nav, dark, folds, barras de paquete, saludo, títulos.
+│   ├── hide-explorer.js    Lógica del portal: login, nav, dark, folds, barras de paquete, saludo, títulos, botón de Anki.
+│   └── anki_build.py       Tablas Markdown de Anki/ → .apkg descargables (se ejecuta en CI).
 ├── .github/workflows/
 │   └── deploy-quartz.yml   Build + inyección + deploy a GitHub Pages.
 └── README.md               Documentación operativa (flujo, agregar estudiante, probar local).
@@ -106,8 +108,9 @@ y lo publica:
 5. **Build**: `npx quartz build` → `public/`.
 6. **Ensamblado**: `public/*` → `/tmp/site/estudiantes/`, más `index.html`, `style.css`, `imagenes/`,
    `.nojekyll` y `static/og-image.png` (copia de `logo_grande.png`).
-7. **Inyección** (paso crítico, ver 3.2).
-8. **Upload + deploy** con `actions/upload-pages-artifact@v3` y `actions/deploy-pages@v4`.
+7. **Mazos de Anki**: `pip install genanki==0.13.1` + `site/anki_build.py` (ver §3.4).
+8. **Inyección** (paso crítico, ver 3.2).
+9. **Upload + deploy** con `actions/upload-pages-artifact@v3` y `actions/deploy-pages@v4`.
 
 ### 3.2 La inyección (cómo el portal "aparece" en cada HTML)
 
@@ -148,7 +151,68 @@ si Quartz muta el DOM.
   `index.html` (no se inyecta). Al final de `style.css` están los overrides
   (`#index-nav { flex-direction: column; ... }`).
 
-### 3.4 Privacidad
+### 3.4 Mazos de Anki (`site/anki_build.py`)
+
+Paso nuevo del workflow, entre el ensamblado y la inyección.
+
+**Idea:** cada tabla Markdown en `estudiantes/<Estudiante>/Anki/*.md` se convierte
+en un `.apkg` que el estudiante descarga desde su propia página. El `.apkg` se
+escribe en la misma carpeta donde Quartz dejó el `.html` de esa nota, así que
+`hide-explorer.js` (`addAnkiDownload`) deduce la URL del propio path de la
+página, sin ningún archivo de configuración.
+
+```
+estudiantes/Pruebas/Anki/Vocabulario.md
+  -> /tmp/site/estudiantes/Pruebas/Anki/Vocabulario.apkg
+  -> https://le-ele.github.io/estudiantes/Pruebas/Anki/Vocabulario.apkg
+```
+
+**El botón solo aparece** si el path matchea `/estudiantes/<código>/Anki/<algo>`
+y `<algo> !== 'index'` (la página de la carpeta es un listado de mazos, no un
+mazo). Los estilos viven en `.leele-anki*` dentro de `student.css`.
+
+**Decisiones que no romper:**
+
+- **El GUID de cada nota se deriva SOLO del anverso** (clase `Nota.guid` en
+  `anki_build.py`). Esto es lo que hace que reimportar actualice en el lugar y
+  **no duplique**. El default de genanki hashea *todos* los campos: con eso, cada
+  vez que se corrige una traducción aparece una tarjeta repetida. Verificado con
+  la librería real de Anki 26.9.3: importar, reimportar editado → 27 notas (no
+  28) y el progreso de repaso intacto.
+- **El ID del modelo (`LEELE_MODEL_ID = 1607392319`) es fijo.** Si cambia, Anki
+  deja de poder actualizar las notas viejas. Cambiar la estructura de la carta
+  implica un modelo nuevo con otro ID.
+- **El `deck_id` también es estable**: `sha256(model_id|carpeta|archivo)` mapeado
+  a un entero < 2³¹. Si variara, cada build crearía un mazo nuevo.
+- **Un `.apkg` por archivo, no uno solo**: así se puede repasar vocabulario y
+  frases por separado.
+- **Un error de parseo detiene el build entero** (`sys.exit(1)`). Se prefiere que
+  la web no se publique a que se publique un mazo a medias. El log dice archivo y
+  fila.
+- **Las columnas 1 y 2 son obligatorias**: una fila con anverso y sin reverso es
+  un error de tipeo con casi toda seguridad, y el script lo rechaza.
+- **Solo se toma la primera tabla** del archivo: el resto es texto para el
+  estudiante.
+- `genanki` se usa a propósito en vez de escribir el SQLite a mano: el esquema de
+  la colección de Anki tiene detalles que no conviene mantener a mano.
+
+**Limitaciones que hay que tener presentes:**
+
+- **Anki no tiene push.** No existe forma de escribirle automáticamente a la
+  colección de un estudiante; el siempre tiene que importar el archivo. La
+  alternativa real (AnkiWeb shared decks) tampoco es automática: la doc oficial
+  dice que quien ya descargó el mazo *"will not automatically receive updates"*,
+  y encima habría que re-compartir a mano desde Anki desktop. Por eso el `.apkg`.
+- **Anki nunca borra al reimportar.** Si una palabra se saca del vault, la
+  tarjeta sigue en el Anki del estudiante: hay que borrarla a mano.
+- **Cambiar el anverso crea una tarjeta nueva** (y deja la vieja). Para corregir
+  el español de una palabra hay que cambiar la columna 2 y dejar la 1 igual.
+- **Requiere genanki en CI** (`pip install genanki==0.13.1`). Es la única
+  dependencia Python del proyecto.
+- **No hay push de scheduling**: el `.apkg` se genera con las cartas en estado
+  nuevo; el estudiante conserva su propio progreso, no se sobrescribe.
+
+### 3.5 Privacidad
 
 GitHub Pages es público. La única protección es el **código no adivinable** en el
 nombre de carpeta (ej. `Jo-Lynne-i9se2x3`). No publicar datos sensibles. El login
@@ -173,6 +237,13 @@ solo navega a `/estudiantes/<código>/`; no hay contraseña real.
   actual usa centrado absoluto, que es inmune a ese tipo de interferencia).
 - [ ] Posible mejora: medir el render del portal en CI (harness headless existe
   pero vive en `/tmp`, no en el repo).
+- [ ] **Riesgo de privacidad sin resolver: `estudiantes/Atsuno-o23jfi/Info.md`
+  contiene el email real de la estudiante y se publica en un sitio público.**
+  Contradice la regla de §3.5. **El usuario decidió dejarlo así por ahora**
+  (30-09-2026), así que NO se tocó el archivo. Arreglar solo el `.md` no alcanza:
+  el email sigue en el historial de git y hay que purgarlo (force push) si
+  algún día se decide sacarlo de verdad. Mientras tanto, ese archivo es el
+  lugar donde ese dato está expuesto.
 
 **Notas / deuda técnica:**
 
@@ -183,6 +254,12 @@ solo navega a `/estudiantes/<código>/`; no hay contraseña real.
   hay que commitearlos rápido y explícito).
 - La ruta del repo **contiene un espacio** (`/home/zaov/Desarrollo/Página web`):
   siempre entrecomillar.
+- **Los mazos de Anki solo existen para `Pruebas/`** (a decisión del usuario el
+  30-09-2026: probar primero con un solo lugar antes de tocar las notas de los
+  estudiantes reales). El pipeline es genérico: crear `Anki/<Archivo>.md` en
+  cualquier carpeta de estudiante lo activa, sin tocar el workflow.
+- `genanki` es la única dependencia Python del proyecto y solo se usa en CI.
+  Para trabajar en local: `python3 -m venv /tmp/anki-venv && /tmp/anki-venv/bin/pip install genanki==0.13.1`.
 
 ---
 
@@ -213,6 +290,43 @@ Sesión de pulido del portal y la landing (tarde del 24-seto-24 sep, commits del
 
 Deploys verificados vía `gh run list` (todos `success` en ~45-60 s).
 
+### 5.1b Sesión de los mazos de Anki (30-sep-2026)
+
+Feature pedida: que las tarjetas de Anki de los estudiantes se actualicen solas
+desde el vault. Decisión tomada: **`.apkg` descargable desde la página del
+estudiante**, no AnkiWeb shared decks, porque Anki no tiene push y el shared deck
+tampoco actualiza solo (la doc lo dice: *"will not automatically receive
+updates"*), encima de exigir re-compartir a mano desde el escritorio.
+
+Decisiones que se tomaron con el usuario:
+
+- **Formato de origen**: tabla Markdown en `Anki/<Archivo>.md` (no TSV), porque
+  se lee bien en Obsidian y Quartz la renderiza como tabla en la web.
+- **Carta de dos lados obligatoria**: si falta la columna 2, el build falla.
+- **Un mazo por archivo**, no uno con tags: `Vocabulario` y `Frases` se repasan
+  por separado.
+- **Origen de las tarjetas: solo la carpeta `Anki/`**, sin harvest de `Notas/`
+  (el formato de las notas va libre y el parser terminaría agarrando basura).
+- **Alcance: solo `Pruebas/`** para probar antes de tocar notas de estudiantes
+  reales.
+
+**Trampa grande de este feature: el GUID.** genanki por defecto hashea *todos*
+los campos de la nota para el GUID. Eso está bien para decks inmutables, pero acá
+rompe el requisito central: al corregir una traducción cambia el hash, aparece
+una nota nueva y el estudiante ve la tarjeta duplicada. La solución fue una
+subclase `Nota` con `guid = genanki.guid_for(frente)`. **Verificado con la
+librería real de Anki (26.9.3), no solo con inspección del ZIP:** importar →
+reimportar editado → 27 notas (no 28) y las 27 conservan `queue`/`due`/`reps`.
+Como control, el mismo test con genanki puro dio 28: el duplicado era real.
+
+| Qué | Dónde |
+|---|---|
+| Parser de tablas + generador | `site/anki_build.py` (`Nota.guid` = la parte crítica) |
+| Botón de descarga | `hide-explorer.js` → `addAnkiDownload()` |
+| Estilos | `student.css` → `.leele-anki*` |
+| Paso de CI | `deploy-quartz.yml` → "Install Python deps for Anki decks" + "Build Anki decks" |
+| Notas de prueba | `estudiantes/Pruebas/Anki/{Vocabulario,Frases}.md` |
+
 ### 5.2 Trampas aprendidas (leer en futuras sesiones)
 
 1. **Comillas dentro de `python3 -c "..."`** rompen el workflow → usar heredoc
@@ -242,10 +356,31 @@ Deploys verificados vía `gh run list` (todos `success` en ~45-60 s).
    donde el override `.nav-pill { padding:9px }` de la media query pierde contra
    `.nav-pill-brand.nav-pill-brand` solo porque el selector duplicado sube la
    especificidad a 0,2,0).
+10. **Para probar si un `.apkg` realmente actualiza sin duplicar, hay que usar
+    la librería de Anki, no inspección visual del ZIP.** `pip install anki` en
+    un venv y:
+    `Collection('/tmp/x/collection.anki2').import_anki_package(ImportAnkiPackageRequest(package_path=...))`
+    (ojo: el importador está en Rust, no es `anki.importing.apkg`; y `note_ids()`
+    no existe, usar `find_notes("")`). Importar, tocar `queue`/`due`/`reps` de
+    algunas cartas, reimportar el `.apkg` editado y comparar. Sin ese test, el
+    feature parece correcto y está roto.
+11. **Al probar con la librería de Anki, guardar el estado a disco con claves
+    enteras**: `json.dump` convierte las claves `int` de los IDs de nota en
+    `str` y la comparación da 0/27 cuando en realidad están todas (se pierden
+    varios minutos en un bug del test, no del código).
+12. **Servir el sitio para probar el botón**: `python3 -m http.server` y pegar
+    la URL **con `.html`**. Sin extensión devuelve 404 y parece que el JS no
+    funciona, cuando en realidad el regex también acepta la forma sin extensión.
+13. **El modo oscuro se lee de `localStorage`**, así que un `--dump-dom` normal
+    siempre da el tema claro. Para forzarlo en un test, agregar `class="dark"`
+    al `<html lang="es" dir="ltr">` del HTML servido.
 
 ### 5.3 Estado actual del sitio
 
 - Servido en: `https://le-ele.github.io/` y `https://le-ele.github.io/estudiantes/`.
-- "HEAD" operativo: `65348fc` (logo centrado), CI verde.
 - Estudiantes activos publicados: `Jo-Lynne-i9se2x3`, `Rebecca-u1e74p`,
-  `Rheis-kggbu0`, `Rosie-r223kd`.
+  `Rheis-kggbu0`, `Rosie-r223kd`, **`Atsuno-o23jfi`** (este último no está en el
+  mapa de §2 ni en la lista de §5.1: la documentación se había quedado atrás del
+  vault).
+- Mazos de Anki: solo `Pruebas/Anki/{Vocabulario,Frases}.apkg`. Probando con el
+  usuario antes de activar el resto.

@@ -59,6 +59,16 @@ jobs:
           cp $GITHUB_WORKSPACE/imagenes/logo_grande.png /tmp/site/estudiantes/static/og-image.png
           touch /tmp/site/.nojekyll
 
+      - name: Install Python deps for Anki decks
+        run: |
+          python3 -m pip install --quiet genanki==0.13.1
+
+      - name: Build Anki decks
+        run: |
+          python3 $GITHUB_WORKSPACE/site/anki_build.py \
+            $GITHUB_WORKSPACE/estudiantes \
+            /tmp/site/estudiantes
+
       - name: Inject hide script and styles
         run: |
           cp $GITHUB_WORKSPACE/site/hide-explorer.js /tmp/hide-explorer.js
