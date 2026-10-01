@@ -33,6 +33,7 @@ Uso:
 """
 
 import hashlib
+import json
 import os
 import re
 import sys
@@ -323,6 +324,47 @@ def procesar(vault_root, site_root):
         generados.append((destino, len(tarjetas)))
 
     return generados, errores
+
+
+def escribir_manifest(vault_root, site_root, generados):
+    """Escribe <Estudiante>/Anki.json con el conteo de cada mazo.
+
+    El boton de descarga (site/hide-explorer.js) compara este numero con las
+    filas de la tabla que ve el estudiante. Si no coinciden, el .apkg que
+    ofrece el navegador es una copia vieja (GitHub Pages lo cachea 10
+    minutos) y todavia no incluye lo ultimo que escribiste: se le avisa que
+    espere en vez de importarlo y creer que fallo.
+
+    El archivo se escribe aunque el build haya fallado, para que un error de
+    parseo se muestre como "desfasado" y no como pagina rota.
+    """
+    ruta_manifests = os.path.join(site_root)
+    os.makedirs(ruta_manifests, exist_ok=True)
+
+    conteo = {}
+    for ruta, cantidad in generados:
+        carpeta = os.path.basename(os.path.dirname(ruta))
+        conteo[carpeta] = cantidad
+
+    # Anadir tambien los estudiantes que tienen Anki.md pero no Generates por
+    # error, para que el boton pueda avisar.
+    for entrada in sorted(os.listdir(vault_root)):
+        ruta_estudiante = os.path.join(vault_root, entrada)
+        if not os.path.isdir(ruta_estudiante):
+            continue
+        if not os.path.isfile(
+            os.path.join(ruta_estudiante, NOMBRE_MAZO + ".md")
+        ):
+            continue
+        conteo.setdefault(entrada, 0)
+
+    for carpeta, cantidad in conteo.items():
+        destino = os.path.join(
+            ruta_manifests, carpeta, NOMBRE_MAZO + ".json"
+        )
+        os.makedirs(os.path.dirname(destino), exist_ok=True)
+        with open(destino, "w", encoding="utf-8") as f:
+            json.dump({"notas": cantidad}, f)
 
 
 def main():
