@@ -267,7 +267,7 @@
     if (!match) return;
 
     var code = match[1];
-    var url = '/estudiantes/' + code + '/Anki.apkg';
+    var base = '/estudiantes/' + code;
 
     var box = document.createElement('div');
     box.id = 'leele-anki';
@@ -275,8 +275,10 @@
 
     var link = document.createElement('a');
     link.className = 'leele-anki-btn';
-    link.href = url;
-    link.setAttribute('download', 'Anki.apkg');
+    // El href y el nombre real (LeELE_Anki_<Nombre>.apkg) se completan al leer
+    // el manifest; esto es solo el estado hasta que responde el fetch.
+    link.href = base + '/';
+    link.setAttribute('download', 'mazo.apkg');
     link.innerHTML = '<span class="leele-anki-ico">' + ICONS.download + '</span>' +
                      '<span class="leele-anki-label">Descargar el mazo</span>' +
                      '<span class="leele-anki-ext">.apkg</span>';

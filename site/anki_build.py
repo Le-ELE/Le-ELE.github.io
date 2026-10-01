@@ -364,13 +364,18 @@ def procesar(vault_root, site_root):
 
 
 def escribir_manifest(vault_root, site_root, generados):
-    """Escribe <Estudiante>/Anki.json con el conteo de cada mazo.
+    """Escribe <Estudiante>/Anki.json para que el boton sepa que ofrecer.
 
-    El boton de descarga (site/hide-explorer.js) compara este numero con las
-    filas de la tabla que ve el estudiante. Si no coinciden, el .apkg que
-    ofrece el navegador es una copia vieja (GitHub Pages lo cachea 10
-    minutos) y todavia no incluye lo ultimo que escribiste: se le avisa que
-    espere en vez de importarlo y creer que fallo.
+    El JSON lleva:
+      - notas: cuantas tarjetas tiene el .apkg.
+      - archivo: el nombre del .apkg (LeELE_Anki_<Nombre>.apkg), para que el
+        frontend no tenga que repetir la regla de nombres.
+      - version: el SHA del build, que el boton usa como ?v= para saltarse el
+        cache de GitHub Pages (max-age=600).
+
+    El boton compara `notas` con las filas de la tabla que ve el estudiante.
+    Si no coinciden, el .apkg que ofrece el navegador es una copia vieja y se
+    le avisa que espere en vez de importarlo y creer que fallo.
 
     El archivo se escribe aunque el build haya fallado, para que un error de
     parseo se muestre como "desfasado" y no como pagina rota.
@@ -378,10 +383,11 @@ def escribir_manifest(vault_root, site_root, generados):
     ruta_manifests = os.path.join(site_root)
     os.makedirs(ruta_manifests, exist_ok=True)
 
+    # slug de carpeta -> (cantidad, nombre del .apkg)
     conteo = {}
     for ruta, cantidad in generados:
         carpeta = os.path.basename(os.path.dirname(ruta))
-        conteo[carpeta] = cantidad
+        conteo[carpeta] = (cantidad, os.path.basename(ruta))
 
     # Anadir tambien los que tienen Anki.md pero no generaron mazo (tabla
     # vacia o error de parseo), con 0, para que la web pueda avisar en vez de
@@ -394,15 +400,20 @@ def escribir_manifest(vault_root, site_root, generados):
             os.path.join(ruta_estudiante, NOMBRE_MAZO + ".md")
         ):
             continue
-        conteo.setdefault(slug_carpeta(entrada), 0)
+        conteo.setdefault(
+            slug_carpeta(entrada), (0, nombre_archivo(entrada))
+        )
 
-    for carpeta, cantidad in conteo.items():
+    for carpeta, (cantidad, archivo) in conteo.items():
         destino = os.path.join(
             ruta_manifests, carpeta, NOMBRE_MAZO + ".json"
         )
         os.makedirs(os.path.dirname(destino), exist_ok=True)
         with open(destino, "w", encoding="utf-8") as f:
-            json.dump({"notas": cantidad, "version": VERSION}, f)
+            json.dump(
+                {"notas": cantidad, "version": VERSION, "archivo": archivo},
+                f,
+            )
 
 
 def main():
