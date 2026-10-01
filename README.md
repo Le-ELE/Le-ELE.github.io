@@ -41,7 +41,7 @@ Le-ELE.github.io/
 │   ├── quartz.config.ts       ← configuración real de Quartz (la usa el pipeline)
 │   ├── student.css            ← tema del portal (tarjetas, modo oscuro, login…)
 │   ├── hide-explorer.js       ← oculta sidebars/grafos, agrega navegación y login
-│   └── anki_build.py          ← convierte las tablas de Anki/ en .apkg descargables
+│   └── anki_build.py          ← convierte la tabla de Anki.md en un .apkg descargable
 └── .github/workflows/
     └── deploy-quartz.yml      ← build + deploy a GitHub Pages
 ```
@@ -115,7 +115,13 @@ Eso es solo para los cambios. No hace falta hacer nada más.
 
 Dos cosas que conviene saber:
 
-- Si **corregís la traducción** de una palabra, la tarjeta se actualiza sola.
+- Si **corregís la traducción** de una palabra o frase, la tarjeta se actualiza sola.
+- Las **opciones de importación** se pueden dejar como aparecen. El `.apkg`
+  solo lleva el preset `Default` que Anki ya tiene siempre, así que Anki no
+  pisa los límites, el FSRS ni el resto de ajustes del estudiante: el mazo
+  importado queda usando su propio preset. (Borrar esa configuración del
+  paquete a mano lo rompe: Anki aborta la importación con `No such deck
+  config: '1'`.)
 - Si **borrás una palabra** del vault, la tarjeta sigue en el Anki del
   estudiante: hay que borrarla a mano desde Anki. Borrar del vault nunca borra
   tarjetas importadas.
@@ -169,8 +175,8 @@ minuto (mensaje `vault: fecha`). El workflow se dispara solo en cada push.
 2. `site/quartz.config.ts` se copia al checkout de **Quartz v4.5.2** (pinned).
 3. `estudiantes/*` se copia como `content/` de Quartz y se corre `npx quartz build`.
 4. El resultado se ensambla en `/tmp/site/` junto con `index.html`, `style.css` e `imagenes/`.
-5. `site/anki_build.py` convierte las tablas de `estudiantes/*/Anki/*.md` en `.apkg`
-   descargables, en la misma carpeta donde Quartz dejó la página de cada nota.
+5. `site/anki_build.py` convierte la tabla de `estudiantes/*/Anki.md` en un `.apkg`
+   descargable, en la misma carpeta donde Quartz dejó la página de esa nota.
 6. `student.css` y `hide-explorer.js` se inyectan en cada HTML generado.
 7. `actions/deploy-pages` publica el artefacto en GitHub Pages (fuente = **GitHub Actions**).
 
@@ -197,8 +203,8 @@ python3 -m venv /tmp/anki-venv && /tmp/anki-venv/bin/pip install genanki==0.13.1
 /tmp/anki-venv/bin/python ../site/anki_build.py ../estudiantes public/
 ```
 
-Cada `.apkg` debe aparecer en `public/<Estudiante>/Anki/`, junto al `.html` de
-la tabla que lo originó.
+El `.apkg` debe aparecer en `public/<Estudiante>/`, junto al `Anki.html` de la
+tabla que lo originó.
 
 ## Notas
 
