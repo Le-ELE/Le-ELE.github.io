@@ -60,4 +60,20 @@
 - Ella va a tener 60 en mayo
 - ¿Cuándo murió M. Jackson?
 	- M. J. murió en 2009
-- 
+---
+321
+533
+765
+638
+943
+
+---
+1000 - mil
+2000 
+3000
+10000
+100.000
+500.000 - quinientos mil
+999.000
+999.999
+
