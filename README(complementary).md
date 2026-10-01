@@ -59,11 +59,11 @@ Página web/
 │   ├── Jo-Lynne-i9se2x3/   Estudiante activo → su hero saluda "Jo Lynne".
 │   ├── Rebecca-u1e74p/     Estudiante activo.
 │   ├── Rheis-kggbu0/       Estudiante activo.
-│   ├── Rosie-r223kd/       Estudiante activo (estructura modelo: Gramática/ · Notas/ · Tareas.md).
+│   ├── Rosie-r223kd/       Estudiante activo (estructura modelo: Gramática/ · Notas/ · Anki.md · Paquetes.md · Plan.md · Tareas.md).
 │   ├── Atsuno-o23jfi/      Estudiante activo (⚠ ver §4: publica un email real).
 │   ├── Nuevo estudiante/   Plantilla de estudiante (copiar y renombrar).
 │   ├── Inactivos/          Estudiantes sin clases (igual se publica, a propósito).
-│   ├── Pruebas/            Notas de prueba. Único con mazo de Anki (Pruebas/Anki.md).
+│   ├── Pruebas/            Notas de prueba (Pruebas/Anki.md, con material de test). Cada estudiante tiene su propio Anki.md; el de Pruebas es el que se usa para experimentar.
 │   └── Templates Obsidian/ Templates del vault (NO confundir con la carpeta "templates" de Quartz).
 ├── site/                   → TODO lo del portal vive acá.
 │   ├── quartz.config.ts    Config REAL de Quartz (la copia el pipeline encima del vendored).

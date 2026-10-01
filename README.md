@@ -57,14 +57,19 @@ Le-ELE.github.io/
 ## Estructura del vault (una carpeta por estudiante)
 
 Cada estudiante es una carpeta `Nombre-código` (el código es alfanumérico y es la
-"clave" de acceso). Debería seguir esta estructura:
+"clave" de acceso). La plantilla `Nuevo estudiante/` ya trae esta estructura
+lista para copiar y renombrar:
 
 ```
-Rosie-r223kd/
+Nombre-código/
 ├── Gramática/          ← fichas de gramática (una nota por tema)
-├── Notas/              ← lo que se vio en clase
-│   └── 2026-09-24.md   ← una nota por fecha (Mes/Año)
+├── Notas/              ← lo que se vio en clase (una subcarpeta por mes)
+│   └── Mes/
+│       └── fecha.md
 ├── Anki.md             ← el mazo del curso (tabla Markdown, todo el material)
+├── Paquetes.md         ← horas del paquete y casillas de clases
+├── Plan.md             ← plan de clase y enlace público del estudiante
+├── Info.md             ← datos de contacto (opcional)
 └── Tareas.md           ← pendientes y checkboxes
 ```
 
@@ -89,9 +94,14 @@ La tabla se lee así:
 ```
 
 - **La primera tabla del archivo es la que se convierte.** El resto del texto
-  es para el estudiante y no genera tarjetas.
-- **Cada archivo es un mazo aparte.** `Vocabulario.md` → mazo `Vocabulario`,
-  `Frases.md` → mazo `Frases`. Se pueden repasar por separado.
+  es para el estudiante y no genera tarjetas. Por eso no pongas ninguna otra
+  tabla antes de la del mazo.
+- **Hay un solo mazo por estudiante.** El archivo se llama siempre `Anki.md` y
+  el mazo también `Anki`, para que al reimportar se actualice el mismo en vez
+  de crear otro. Todo el material de un estudiante va a esa única tabla.
+- **Un `Anki.md` sin filas no rompe el build**: genera un `Anki.json` con 0 y
+  la web muestra «todavía no tiene tarjetas» en lugar de un botón roto. Es el
+  estado normal de un estudiante recién creado.
 - **La columna 1 es el anverso y la 2 el reverso.** La 3 (nota) es opcional y se
   muestra debajo de la respuesta.
 - **Las dos primeras columnas son obligatorias.** Si una fila tiene el anverso
@@ -167,6 +177,10 @@ se publique a medias. El `.apkg` solo queda bien si la tabla está completa.
 2. Renombrala a `Nombre-código` (ej. `Ana-ab12cd`).
 3. Su URL queda disponible en `https://le-ele.github.io/estudiantes/Nombre-código/`
    (el código debe ser difícil de adivinar).
+4. La plantilla ya trae `Anki.md`, `Paquetes.md`, `Plan.md`, `Tareas.md`,
+   `Gramática/` y `Notas/`. Editá los datos (fechas, enlace del `Plan.md`) y
+   empezá a añadir material. El mazo se genera solo: mientras `Anki.md` no
+   tenga filas, la página del mazo dice «todavía no tiene tarjetas».
 
 ### Editar notas existentes
 Solo escribís en Obsidian. El plugin **Obsidian Git** hace commit + push cada
