@@ -291,7 +291,8 @@
     help.className = 'leele-anki-help';
     help.textContent = 'Descárgalo y ábrelo con Anki para importar las tarjetas. ' +
                        'Cuando lo vuelvas a descargar e importar, se actualizan las que cambiaron ' +
-                       'y se conserva lo que ya repasaste.';
+                       'y se conserva lo que ya repasaste. Puedes dejar las opciones de importación ' +
+                       'tal cual: no modifican nada de lo que tengas.';
 
     box.appendChild(link);
     box.appendChild(help);

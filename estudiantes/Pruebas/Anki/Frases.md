@@ -1,8 +1,46 @@
 # Frases
 
-Un mazo aparte del de vocabulario, para practicar estructuras y frases completas
-en vez de palabras sueltas. Se lee igual: columna 1 = anverso, columna 2 = reverso,
-columna 3 = nota.
+Este es tu mazo de frases. Cada frase es una tarjeta con las dos caras: la ves
+en español y la traduces a inglés, y al revés, para practicarla en los dos
+sentidos. Son frases hechas para usar, no palabras sueltas: así practicas la
+lengua como se habla. Cuando una frase trae la nota de la regla, aparece
+debajo de la respuesta en cursiva.
+
+## Cómo añadirlo a Anki
+
+1. Pulsa el botón de arriba para descargar el archivo `Frases.apkg`.
+2. Abre Anki y ve a **Archivo → Importar**.
+3. Elige el archivo que te acabas de bajar y dale a importar.
+
+No hace falta que toques ninguna de las opciones que aparecen. Puedes
+importarlo aunque tengas otros mazos, otras notas o el programador FSRS
+activado: nada de lo que tengas se toca.
+
+Este mazo va aparte del de vocabulario. Si quieres las dos cosas, importa los
+dos archivos: cada uno crea su propio mazo.
+
+## Cómo actualizarlo
+
+Cuando añadamos frases nuevas, vuelve a descargar el archivo y a importarlo.
+Anki actualiza solo lo que ha cambiado y **conserva lo que ya has repasado**,
+así que no pierdes tu progreso.
+
+Un aviso: si cambias tú una traducción que viene del curso y después vuelves
+a importar el archivo, tu cambio se sobrescribe. Si quieres conservar tu
+versión, ponla en un mazo aparte.
+
+## Si quieres añadir cosas por tu cuenta
+
+Crea tu propio mazo, por ejemplo `Mis frases`, y guarda ahí todo lo que
+quieras practicar: lo que te dice tu compañero, una escena de una película,
+una frase que escuchaste, algo que quieras decir en el próximo viaje. Escribe
+la frase en el primer campo, su traducción en el segundo, y una pista en el
+tercero solo si la necesitas.
+
+No añadas tus frases dentro de los mazos de LéELE. Si las pones ahí, se mezclan
+con el material del curso, no puedes distinguirlas y acabarías perdiéndolas al
+actualizar. Con un mazo propio todo queda ordenado, y además puedes exportarlo
+o borrarlo cuando quieras sin tocar nada del curso.
 
 | Español | Inglés | Nota |
 | --- | --- | --- |
