@@ -63,13 +63,13 @@ Página web/
 │   ├── Atsuno-o23jfi/      Estudiante activo (⚠ ver §4: publica un email real).
 │   ├── Nuevo estudiante/   Plantilla de estudiante (copiar y renombrar).
 │   ├── Inactivos/          Estudiantes sin clases (igual se publica, a propósito).
-│   ├── Pruebas/            Notas de prueba. Único con mazos de Anki (Pruebas/Anki/).
+│   ├── Pruebas/            Notas de prueba. Único con mazo de Anki (Pruebas/Anki.md).
 │   └── Templates Obsidian/ Templates del vault (NO confundir con la carpeta "templates" de Quartz).
 ├── site/                   → TODO lo del portal vive acá.
 │   ├── quartz.config.ts    Config REAL de Quartz (la copia el pipeline encima del vendored).
 │   ├── student.css         Tema del portal: tokens, login, nav, tarjetas, hero, folds, modo oscuro.
 │   ├── hide-explorer.js    Lógica del portal: login, nav, dark, folds, barras de paquete, saludo, títulos, botón de Anki.
-│   └── anki_build.py       Tablas Markdown de Anki/ → .apkg descargables (se ejecuta en CI).
+│   └── anki_build.py       Tabla Markdown de Anki.md → .apkg descargable (se ejecuta en CI).
 ├── .github/workflows/
 │   └── deploy-quartz.yml   Build + inyección + deploy a GitHub Pages.
 └── README.md               Documentación operativa (flujo, agregar estudiante, probar local).
@@ -155,21 +155,27 @@ si Quartz muta el DOM.
 
 Paso nuevo del workflow, entre el ensamblado y la inyección.
 
-**Idea:** cada tabla Markdown en `estudiantes/<Estudiante>/Anki/*.md` se convierte
+**Idea:** la tabla Markdown de `estudiantes/<Estudiante>/Anki.md` se convierte
 en un `.apkg` que el estudiante descarga desde su propia página. El `.apkg` se
 escribe en la misma carpeta donde Quartz dejó el `.html` de esa nota, así que
 `hide-explorer.js` (`addAnkiDownload`) deduce la URL del propio path de la
 página, sin ningún archivo de configuración.
 
 ```
-estudiantes/Pruebas/Anki/Vocabulario.md
-  -> /tmp/site/estudiantes/Pruebas/Anki/Vocabulario.apkg
-  -> https://le-ele.github.io/estudiantes/Pruebas/Anki/Vocabulario.apkg
+estudiantes/Pruebas/Anki.md
+  -> /tmp/site/estudiantes/Pruebas/Anki.apkg
+  -> https://le-ele.github.io/estudiantes/Pruebas/Anki.apkg
 ```
 
-**El botón solo aparece** si el path matchea `/estudiantes/<código>/Anki/<algo>`
-y `<algo> !== 'index'` (la página de la carpeta es un listado de mazos, no un
-mazo). Los estilos viven en `.leele-anki*` dentro de `student.css`.
+**Un solo mazo por estudiante.** Antes eran varios (`Anki/Vocabulario.md`,
+`Anki/Frases.md`) en una subcarpeta `Anki/`; ahora todo el material vive en un
+solo `Anki.md` en la raíz del estudiante y el deck se llama `Anki`. Con un
+único mazo la subcarpeta no aportaba nada y obligaba al botón a adivinar el
+nombre del archivo desde el path.
+
+**El botón solo aparece** si el path matchea
+`/estudiantes/<código>/Anki(.html)`. Los estilos viven en `.leele-anki*` dentro
+de `student.css`.
 
 **Decisiones que no romper:**
 
@@ -279,7 +285,7 @@ solo navega a `/estudiantes/<código>/`; no hay contraseña real.
   siempre entrecomillar.
 - **Los mazos de Anki solo existen para `Pruebas/`** (a decisión del usuario el
   30-09-2026: probar primero con un solo lugar antes de tocar las notas de los
-  estudiantes reales). El pipeline es genérico: crear `Anki/<Archivo>.md` en
+  estudiantes reales). El pipeline es genérico: crear `Anki.md` en
   cualquier carpeta de estudiante lo activa, sin tocar el workflow.
 - `genanki` es la única dependencia Python del proyecto y solo se usa en CI.
   Para trabajar en local: `python3 -m venv /tmp/anki-venv && /tmp/anki-venv/bin/pip install genanki==0.13.1`.
@@ -323,12 +329,12 @@ updates"*), encima de exigir re-compartir a mano desde el escritorio.
 
 Decisiones que se tomaron con el usuario:
 
-- **Formato de origen**: tabla Markdown en `Anki/<Archivo>.md` (no TSV), porque
+- **Formato de origen**: tabla Markdown en `Anki.md` (no TSV), porque
   se lee bien en Obsidian y Quartz la renderiza como tabla en la web.
 - **Carta de dos lados obligatoria**: si falta la columna 2, el build falla.
 - **Un mazo por archivo**, no uno con tags: `Vocabulario` y `Frases` se repasan
   por separado.
-- **Origen de las tarjetas: solo la carpeta `Anki/`**, sin harvest de `Notas/`
+- **Origen de las tarjetas: solo `Anki.md`**, sin harvest de `Notas/`
   (el formato de las notas va libre y el parser terminaría agarrando basura).
 - **Alcance: solo `Pruebas/`** para probar antes de tocar notas de estudiantes
   reales.
@@ -348,7 +354,7 @@ Como control, el mismo test con genanki puro dio 28: el duplicado era real.
 | Botón de descarga | `hide-explorer.js` → `addAnkiDownload()` |
 | Estilos | `student.css` → `.leele-anki*` |
 | Paso de CI | `deploy-quartz.yml` → "Install Python deps for Anki decks" + "Build Anki decks" |
-| Notas de prueba | `estudiantes/Pruebas/Anki/{Vocabulario,Frases}.md` |
+| Notas de prueba | `estudiantes/Pruebas/Anki.md` (45 tarjetas: 30 palabras + 15 frases) |
 
 ### 5.2 Trampas aprendidas (leer en futuras sesiones)
 
@@ -405,5 +411,5 @@ Como control, el mismo test con genanki puro dio 28: el duplicado era real.
   `Rheis-kggbu0`, `Rosie-r223kd`, **`Atsuno-o23jfi`** (este último no está en el
   mapa de §2 ni en la lista de §5.1: la documentación se había quedado atrás del
   vault).
-- Mazos de Anki: solo `Pruebas/Anki/{Vocabulario,Frases}.apkg`. Probando con el
+- Mazos de Anki: solo `Pruebas/Anki.apkg`. Probando con el
   usuario antes de activar el resto.
