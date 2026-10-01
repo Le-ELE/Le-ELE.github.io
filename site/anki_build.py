@@ -6,8 +6,12 @@ Se ejecuta en GitHub Actions, en el paso "Build Anki decks", DESPUES de que
 Quartz genero el sitio y ANTES de la inyeccion de estilos/scripts.
 
 Flujo:
-  estudiantes/<Estudiante>/Anki/<Archivo>.md   (tabla Markdown)
-    -> /tmp/site/estudiantes/<Estudiante>/Anki/<Archivo>.apkg
+  estudiantes/<Estudiante>/Anki.md   (tabla Markdown)
+    -> /tmp/site/estudiantes/<Estudiante>/Anki.apkg
+
+Cada estudiante tiene UN solo mazo, con todo el material del curso (palabras
+y frases). El archivo se llama Anki.md y vive en la raiz del estudiante, sin
+carpeta Anki/, porque un unico mazo no necesita carpeta.
 
 Por que se importa un .apkg y no un .txt: AnkiDroid y AnkiMobile importan
 .apkg directo desde el celu; los .txt/.csv obligan a pasar por el escritorio.
@@ -274,52 +278,45 @@ def procesar(vault_root, site_root):
 
     entradas = sorted(os.listdir(vault_root))
     for carpeta in entradas:
-        ruta_anexo = os.path.join(vault_root, carpeta, "Anki")
+        ruta_estudiante = os.path.join(vault_root, carpeta)
         # No es una carpeta de estudiante: templates, Pruebas, etc.
-        if not os.path.isdir(ruta_anexo):
+        if not os.path.isdir(ruta_estudiante):
+            continue
+
+        # El mazo del curso es un unico archivo: <Estudiante>/Anki.md
+        ruta_md = os.path.join(ruta_estudiante, NOMBRE_MAZO + ".md")
+        if not os.path.isfile(ruta_md):
             continue
 
         estudiante = nombre_estudiante(carpeta)
+        nombre_mazo = NOMBRE_MAZO
 
-        for archivo in sorted(os.listdir(ruta_anexo)):
-            if not archivo.endswith(".md"):
-                continue
+        try:
+            tarjetas = leer_tarjetas(ruta_md)
+        except Exception as e:
+            errores.append((ruta_md, str(e)))
+            continue
 
-            ruta_md = os.path.join(ruta_anexo, archivo)
-            nombre_mazo = archivo[:-3]  # sin .md
+        if not tarjetas:
+            errores.append((ruta_md, "la tabla no tiene ninguna tarjeta"))
+            continue
 
-            try:
-                tarjetas = leer_tarjetas(ruta_md)
-            except Exception as e:
-                errores.append((ruta_md, str(e)))
-                continue
+        deck_id = id_estable(LEELE_MODEL_ID, carpeta, nombre_mazo)
+        tags = [estudiante, nombre_mazo]
+        deck = construir_deck(tarjetas, nombre_mazo, deck_id, tags)
 
-            if not tarjetas:
-                errores.append(
-                    (ruta_md, "la tabla no tiene ninguna tarjeta")
-                )
-                continue
+        # El .apkg se escribe junto a la pagina de esa nota, asi el boton de
+        # descarga puede deducir la URL a partir del path de la pagina.
+        os.makedirs(os.path.join(site_root, carpeta), exist_ok=True)
+        destino = os.path.join(site_root, carpeta, nombre_mazo + ".apkg")
 
-            deck_id = id_estable(LEELE_MODEL_ID, carpeta, nombre_mazo)
-            tags = [estudiante, nombre_mazo]
-            deck = construir_deck(tarjetas, nombre_mazo, deck_id, tags)
+        try:
+            genanki.Package(deck).write_to_file(destino)
+        except Exception as e:
+            errores.append((destino, str(e)))
+            continue
 
-            # El .apkg se escribe en la misma carpeta donde Quartz dejo la
-            # pagina de esa nota, asi el boton de descarga puede deducir la
-            # URL a partir del path de la pagina.
-            destino_dir = os.path.join(
-                site_root, carpeta, "Anki"
-            )
-            os.makedirs(destino_dir, exist_ok=True)
-            destino = os.path.join(destino_dir, nombre_mazo + ".apkg")
-
-            try:
-                genanki.Package(deck).write_to_file(destino)
-            except Exception as e:
-                errores.append((destino, str(e)))
-                continue
-
-            generados.append((destino, len(tarjetas)))
+        generados.append((destino, len(tarjetas)))
 
     return generados, errores
 
