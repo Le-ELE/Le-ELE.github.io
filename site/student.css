@@ -159,6 +159,25 @@ html.dark .leele-anki-btn { color: #191512 !important; }
   line-height: 1.6;
   color: var(--leele-muted) !important;
 }
+/* Aviso de mazo desfasado: el .apkg es una copia cacheada y todavia no
+   incluye las filas mas nuevas de la tabla. */
+.leele-anki-stale {
+  margin: 0.75rem 0 0;
+  padding: 0.7rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid #e8c98a;
+  background: #fdf5e3;
+  font-size: 0.86rem;
+  line-height: 1.6;
+  color: #6b4e12 !important;
+}
+@media (prefers-color-scheme: dark) {
+  .leele-anki-stale {
+    border-color: #6b5320;
+    background: #2b2415;
+    color: #e8d5a8 !important;
+  }
+}
 @media (max-width: 600px) {
   .leele-anki { padding: 1rem; }
   .leele-anki-btn { width: 100%; justify-content: center; }
