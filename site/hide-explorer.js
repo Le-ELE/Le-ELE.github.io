@@ -294,10 +294,66 @@
     var article = document.querySelector('article');
     if (article) {
       article.insertBefore(box, article.firstChild);
-      return;
+    } else {
+      var holder = document.querySelector('.page-header .popover-hint');
+      if (holder) holder.appendChild(box);
     }
-    var holder = document.querySelector('.page-header .popover-hint');
-    if (holder) holder.appendChild(box);
+
+    comprobarMazoDesfasado(code, box);
+  }
+
+  // === Mazo desfasado: la pagina es nueva pero el .apkg sigue cacheado ===
+  // GitHub Pages sirve el .apkg con cache-control: max-age=600, o sea que el
+  // navegador puede devolver una copia de hace hasta 10 minutos. Si el
+  // profesor escribio una fila nueva y el estudiante recarga rápido, la
+  // tabla de la pagina ya la muestra pero el archivo que descarga todavia no
+  // la tiene. Importarlo da "45 notas, todas ya presentes" y parece un fallo.
+  //
+  // Por eso el build escribe <Estudiante>/Anki.json con cuantas tarjetas lleva
+  // el .apkg. Si no coincide con las filas de la tabla, el archivo es una copia
+  // vieja: se avisa que espere en vez de dejar que importe algo incompleto.
+  function contarFilasMazo() {
+    // La tabla del mazo: 3 columnas (espanol / ingles / nota). Se ignoran las
+    // filas de cabecera y separador, que Quartz ya renderizo como th.
+    var filas = document.querySelectorAll(
+      'article table tbody tr'
+    );
+    var total = 0;
+    for (var i = 0; i < filas.length; i++) {
+      var celdas = filas[i].querySelectorAll('td');
+      // Una fila con las tres columnas vacias no es una tarjeta (el parser de
+      // Python tambien las salta), asi que no cuenta.
+      var tieneAlgo = false;
+      for (var j = 0; j < celdas.length; j++) {
+        if ((celdas[j].textContent || '').trim()) { tieneAlgo = true; break; }
+      }
+      if (tieneAlgo) total++;
+    }
+    return total;
+  }
+
+  function comprobarMazoDesfasado(code, box) {
+    var enPagina = contarFilasMazo();
+    if (!enPagina) return;  // no hay tabla: nada que comparar
+
+    // El .json va con cache: no-store para no leer, justamente, la copia
+    // cacheada que es el problema que estamos detectando.
+    fetch('/estudiantes/' + code + '/Anki.json', { cache: 'no-store' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (data) {
+        if (!data || typeof data.notas !== 'number') return;
+        if (data.notas === enPagina) return;  // todo al dia
+
+        var aviso = document.createElement('p');
+        aviso.className = 'leele-anki-stale';
+        aviso.textContent =
+          'Tu mazo se está generando. Esta página ya muestra ' + enPagina +
+          ' tarjetas, pero el archivo que se descarga todavía tiene ' +
+          data.notas + '. Espera unos minutos y recarga la página para ' +
+          'descargarlo con todo el contenido.';
+        box.appendChild(aviso);
+      })
+      .catch(function () { /* sin manifest: no se avisa, el boton funciona */ });
   }
 
   // === Título de carpetas: solo el último segmento ===

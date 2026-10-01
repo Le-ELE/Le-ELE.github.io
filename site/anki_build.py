@@ -383,6 +383,17 @@ def main():
             )
         )
 
+    # El manifest se escribe siempre, incluso con errores: asi el boton de la
+    # web puede avisarle al estudiante que espere, en vez de servirle un
+    # .apkg viejo haciendole creer que la carga fallo.
+    try:
+        escribir_manifest(vault_root, site_root, generados)
+    except Exception as e:
+        print(
+            "ERROR escribiendo el manifest de Anki: {0}".format(e),
+            file=sys.stderr,
+        )
+
     for ruta, mensaje in errores:
         print("ERROR en {0}: {1}".format(ruta, mensaje), file=sys.stderr)
 
