@@ -53,8 +53,9 @@ except ImportError:
 # estructura de la carta, se crea un modelo NUEVO con otro ID.
 LEELE_MODEL_ID = 1607392319
 
-# Nombre del unico mazo de cada estudiante. Da nombre al archivo del vault
-# (<Estudiante>/Anki.md), al .apkg publicado y al mazo dentro de Anki.
+# Nombre base del unico mazo de cada estudiante en el vault: da nombre al
+# archivo (<Estudiante>/Anki.md) y al manifest (Anki.json). El nombre que
+# aparece DENTRO de Anki es LeELE_Anki_<Nombre> (ver nombre_mazo_estudiante).
 NOMBRE_MAZO = "Anki"
 
 # Version unica de este build, que viaja en Anki.json. El boton de descarga la
