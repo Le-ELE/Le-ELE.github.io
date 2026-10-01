@@ -88,3 +88,4 @@ exportarlo o borrarlo cuando quieras sin tocar nada del curso.
 | Siempre llego tarde.            | I always arrive late.          |                              |
 | Nunca como en la mañana.        | I never eat in the morning.    |                              |
 | Esta es la prueba               | This is the try                | DJSDJJDEJ                    |
+| Esta es la segunda prueba       | This is the second try         | kkdkkdkk                     |
