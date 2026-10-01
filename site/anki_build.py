@@ -279,15 +279,25 @@ def nombre_estudiante(carpeta):
     return nombre
 
 
+def nombre_mazo_estudiante(carpeta):
+    """'Rebecca-u1e74p' -> 'LeELE_Anki_Rebecca'.
+
+    Nombre del mazo tal como aparece DENTRO de Anki, y prefijo del archivo. El
+    prefijo va sin tilde (LeELE_) a proposito: asi la URL es ASCII pura y evita
+    lios de codificacion en la CDN. Los espacios (solo la plantilla) pasan a
+    guiones.
+    """
+    nombre = re.sub(r"\s+", "-", nombre_estudiante(os.path.basename(carpeta)))
+    return "LeELE_Anki_" + nombre
+
+
 def nombre_archivo(carpeta):
     """'Rebecca-u1e74p' -> 'LeELE_Anki_Rebecca.apkg'.
 
-    Nombre con el que el estudiante descarga el mazo. El prefijo va sin tilde
-    (LeELE_) a proposito: asi la URL es ASCII pura y evita lios de
-    codificacion en la CDN. Los espacios (solo la plantilla) pasan a guiones.
+    Nombre con el que el estudiante descarga el mazo: el mismo del mazo mas la
+    extension. Lo lee el boton desde Anki.json.
     """
-    nombre = re.sub(r"\s+", "-", nombre_estudiante(os.path.basename(carpeta)))
-    return "LeELE_Anki_" + nombre + ".apkg"
+    return nombre_mazo_estudiante(carpeta) + ".apkg"
 
 
 def construir_deck(tarjetas, nombre_mazo, deck_id, tags):
@@ -325,7 +335,8 @@ def procesar(vault_root, site_root):
             continue
 
         estudiante = nombre_estudiante(carpeta)
-        nombre_mazo = NOMBRE_MAZO
+        # Nombre visible dentro de Anki: LeELE_Anki_<Nombre>.
+        nombre_mazo = nombre_mazo_estudiante(carpeta)
 
         try:
             tarjetas = leer_tarjetas(ruta_md)
@@ -341,6 +352,11 @@ def procesar(vault_root, site_root):
             vacios.append(ruta_md)
             continue
 
+        # Anki empareja los mazos importados por NOMBRE, no por id (verificado
+        # con la libreria real de Anki 26.9.3): mientras el nombre no cambie,
+        # reimportar actualiza el mazo en vez de crear uno al lado. Por eso
+        # nombre_mazo_estudiante() tiene que ser estable en el tiempo. El id es
+        # cosmetico, pero se deja estable por estudiante.
         deck_id = id_estable(LEELE_MODEL_ID, carpeta, nombre_mazo)
         tags = [estudiante, nombre_mazo]
         deck = construir_deck(tarjetas, nombre_mazo, deck_id, tags)
