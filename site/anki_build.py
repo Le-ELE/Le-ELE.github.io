@@ -283,10 +283,10 @@ def procesar(vault_root, site_root):
     Devuelve (generados, errores), donde cada elemento es una tupla
     (ruta, mensaje) con la cantidad de tarjetas o el error.
     """
-    generados, errores = [], []
+    generados, errores, vacios = [], [], []
 
     if not os.path.isdir(vault_root):
-        return generados, errores
+        return generados, errores, vacios
 
     entradas = sorted(os.listdir(vault_root))
     for carpeta in entradas:
@@ -309,8 +309,12 @@ def procesar(vault_root, site_root):
             errores.append((ruta_md, str(e)))
             continue
 
+        # Una tabla sin filas no es un error: es un estudiante recien creado
+        # (o la plantilla) que todavia no tiene tarjetas. Se omite el .apkg,
+        # pero se le escribe Anki.json con 0 para que la web muestre "todavia
+        # no hay tarjetas" en vez de un boton de descarga roto.
         if not tarjetas:
-            errores.append((ruta_md, "la tabla no tiene ninguna tarjeta"))
+            vacios.append(ruta_md)
             continue
 
         deck_id = id_estable(LEELE_MODEL_ID, carpeta, nombre_mazo)
@@ -330,7 +334,7 @@ def procesar(vault_root, site_root):
 
         generados.append((destino, len(tarjetas)))
 
-    return generados, errores
+    return generados, errores, vacios
 
 
 def escribir_manifest(vault_root, site_root, generados):
@@ -353,8 +357,9 @@ def escribir_manifest(vault_root, site_root, generados):
         carpeta = os.path.basename(os.path.dirname(ruta))
         conteo[carpeta] = cantidad
 
-    # Anadir tambien los estudiantes que tienen Anki.md pero no Generates por
-    # error, para que el boton pueda avisar.
+    # Anadir tambien los que tienen Anki.md pero no generaron mazo (tabla
+    # vacia o error de parseo), con 0, para que la web pueda avisar en vez de
+    # ofrecer un .apkg que no existe.
     for entrada in sorted(os.listdir(vault_root)):
         ruta_estudiante = os.path.join(vault_root, entrada)
         if not os.path.isdir(ruta_estudiante):
@@ -380,13 +385,20 @@ def main():
         sys.exit(2)
 
     vault_root, site_root = sys.argv[1], sys.argv[2]
-    generados, errores = procesar(vault_root, site_root)
+    generados, errores, vacios = procesar(vault_root, site_root)
 
     for ruta, cantidad in generados:
         kb = os.path.getsize(ruta) / 1024.0
         print(
             "Anki: {0} ({1} tarjetas, {2:.1f} KB)".format(
                 os.path.relpath(ruta, site_root), cantidad, kb
+            )
+        )
+
+    for ruta in vacios:
+        print(
+            "Anki: {0} sin tarjetas todavia (se omite el mazo)".format(
+                os.path.relpath(ruta, vault_root)
             )
         )
 
