@@ -125,6 +125,14 @@ Dos cosas que conviene saber:
 - Si **borrás una palabra** del vault, la tarjeta sigue en el Anki del
   estudiante: hay que borrarla a mano desde Anki. Borrar del vault nunca borra
   tarjetas importadas.
+- **Aviso de mazo desfasado.** GitHub Pages sirve el `.apkg` con
+  `cache-control: max-age=600`, así que el navegador puede devolver una copia
+  de hasta 10 minutos. Si escribís una fila y el estudiante recarga rápido,
+  la página ya la muestra pero el archivo todavía no la tiene: importarlo da
+  *"45 notas, todas ya presentes"* y parece un fallo. Por eso el build escribe
+  `Anki.json` con el conteo del `.apkg` y `hide-explorer.js` lo compara con
+  las filas de la tabla; si no coinciden, avisa que espere unos minutos en vez
+  de dejar que importe algo incompleto.
 - Si **cambiás el texto del anverso**, eso es otra tarjeta y aparece la nueva
   al lado de la vieja. Para corregir el español de una palabra, cambiá la
   columna 2 y dejá la 1 igual.
