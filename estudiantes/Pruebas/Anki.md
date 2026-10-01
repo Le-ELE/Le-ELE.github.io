@@ -91,5 +91,5 @@ exportarlo o borrarlo cuando quieras sin tocar nada del curso.
 | Esta es la segunda prueba       | This is the second try         | kkdkkdkk                     |
 | Esta es la tercer prueba.       | This is the third try.         | Tercerita                    |
 | Esta es la cuarta               | This is the fourth             | cuartica                     |
-| Esta es la quinta               | This is the fifth              |                              |
+| Esta es la quinta               | This is the fifth              | quintica                     |
 
