@@ -1,16 +1,13 @@
-# acabar + de + infinitivo
+# Nombre de la estructura
 
-Someone just did something
+Explicación breve de cuándo se usa.
 
-- Acabo de comer (I just ate)
-- Ella acaba de irse (She just left)
-- Acabamos de hablar (We just talked)
+- Ejemplo en español (traducción)
+- Otro ejemplo (traducción)
 ---
-# seguir + gerundio
+# Otra estructura
 
-Someone is still doing something
-Someone keeps doing something
+Explicación breve de cuándo se usa.
 
-- Sigo leyendo mucho (I still read a lot)
-- Ella sigue siendo divertida (She keeps being fun)
-- Nosotros seguimos hablando sobre el proyecto (we are still talking about the project)
+- Ejemplo en español (traducción)
+- Otro ejemplo (traducción)

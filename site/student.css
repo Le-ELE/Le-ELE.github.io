@@ -348,6 +348,16 @@ hr {
   vertical-align: -3px;
   cursor: pointer;
 }
+/* Tareas completadas SIN tachado: Quartz tacha el <li> entero
+   (.contains-task-list li:has(input:checked)) y arrastra los parrafos de
+   continuacion (p. ej. "Fecha"). El item marcado se atenia, nunca se tacha. */
+.contains-task-list li:has(> input[type="checkbox"]:checked),
+.contains-task-list li:has(> input[type="checkbox"]:checked) * {
+  text-decoration: none !important;
+}
+.contains-task-list li:has(> input[type="checkbox"]:checked) {
+  opacity: 0.72;
+}
 
 /* === Títulos plegables === */
 article h1.is-foldable, article h2.is-foldable, article h3.is-foldable,
