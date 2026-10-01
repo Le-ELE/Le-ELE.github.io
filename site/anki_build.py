@@ -37,6 +37,7 @@ import json
 import os
 import re
 import sys
+import time
 
 try:
     import genanki
@@ -55,6 +56,12 @@ LEELE_MODEL_ID = 1607392319
 # Nombre del unico mazo de cada estudiante. Da nombre al archivo del vault
 # (<Estudiante>/Anki.md), al .apkg publicado y al mazo dentro de Anki.
 NOMBRE_MAZO = "Anki"
+
+# Version unica de este build, que viaja en Anki.json. El boton de descarga la
+# usa como ?v= para saltarse el cache de GitHub Pages (max-age=600), que si no
+# sirve un .apkg viejo durante 10 minutos. El CI pasa el SHA del commit; en
+# local cae a la hora del build, que basta para que la URL cambie.
+VERSION = os.environ.get("LEELE_BUILD_VERSION") or str(int(time.time()))
 
 # Plantilla de la carta: de dos lados, con carta invertida.
 #
@@ -364,7 +371,7 @@ def escribir_manifest(vault_root, site_root, generados):
         )
         os.makedirs(os.path.dirname(destino), exist_ok=True)
         with open(destino, "w", encoding="utf-8") as f:
-            json.dump({"notas": cantidad}, f)
+            json.dump({"notas": cantidad, "version": VERSION}, f)
 
 
 def main():

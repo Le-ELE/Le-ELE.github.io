@@ -299,7 +299,7 @@
       if (holder) holder.appendChild(box);
     }
 
-    comprobarMazoDesfasado(code, box);
+    comprobarMazoDesfasado(code, box, link);
   }
 
   // === Mazo desfasado: la pagina es nueva pero el .apkg sigue cacheado ===
@@ -309,9 +309,13 @@
   // tabla de la pagina ya la muestra pero el archivo que descarga todavia no
   // la tiene. Importarlo da "45 notas, todas ya presentes" y parece un fallo.
   //
-  // Por eso el build escribe <Estudiante>/Anki.json con cuantas tarjetas lleva
-  // el .apkg. Si no coincide con las filas de la tabla, el archivo es una copia
-  // vieja: se avisa que espere en vez de dejar que importe algo incompleto.
+  // El build escribe <Estudiante>/Anki.json con cuantas tarjetas lleva el
+  // .apkg y una version unica de ese build. Se piden sin cache (no-store) y:
+  //   - la version se pega como ?v= a la URL del .apkg, para que el navegador
+  //     siempre baje el archivo nuevo y no la copia cacheada;
+  //   - si el conteo no coincide con las filas de la tabla, el .apkg todavia
+  //     no incluye lo ultimo: se avisa que espere en vez de dejar que importe
+  //     algo incompleto creyendo que la carga fallo.
   function contarFilasMazo() {
     // La tabla del mazo: 3 columnas (espanol / ingles / nota). Se ignoran las
     // filas de cabecera y separador, que Quartz ya renderizo como th.
@@ -332,16 +336,23 @@
     return total;
   }
 
-  function comprobarMazoDesfasado(code, box) {
+  function comprobarMazoDesfasado(code, box, link) {
     var enPagina = contarFilasMazo();
     if (!enPagina) return;  // no hay tabla: nada que comparar
 
-    // El .json va con cache: no-store para no leer, justamente, la copia
-    // cacheada que es el problema que estamos detectando.
+    // El .json va con cache: no-store para leer siempre el build actual y no,
+    // justamente, la copia cacheada que es el problema que estamos evitando.
     fetch('/estudiantes/' + code + '/Anki.json', { cache: 'no-store' })
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (data) {
         if (!data || typeof data.notas !== 'number') return;
+
+        // Version del build actual: unica por despliegue, fuerza la descarga
+        // nueva saltando el cache de GitHub Pages.
+        if (data.version != null) {
+          link.href = link.href + '?v=' + encodeURIComponent(data.version);
+        }
+
         if (data.notas === enPagina) return;  // todo al dia
 
         var aviso = document.createElement('p');
@@ -353,7 +364,7 @@
           'descargarlo con todo el contenido.';
         box.appendChild(aviso);
       })
-      .catch(function () { /* sin manifest: no se avisa, el boton funciona */ });
+      .catch(function () { /* sin manifest: el boton sigue funcionando */ });
   }
 
   // === Título de carpetas: solo el último segmento ===

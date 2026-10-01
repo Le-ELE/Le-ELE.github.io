@@ -65,6 +65,7 @@ jobs:
 
       - name: Build Anki decks
         run: |
+          LEELE_BUILD_VERSION="${{ github.sha }}" \
           python3 $GITHUB_WORKSPACE/site/anki_build.py \
             $GITHUB_WORKSPACE/estudiantes \
             /tmp/site/estudiantes

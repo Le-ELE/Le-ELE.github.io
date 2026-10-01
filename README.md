@@ -129,10 +129,12 @@ Dos cosas que conviene saber:
   `cache-control: max-age=600`, así que el navegador puede devolver una copia
   de hasta 10 minutos. Si escribís una fila y el estudiante recarga rápido,
   la página ya la muestra pero el archivo todavía no la tiene: importarlo da
-  *"45 notas, todas ya presentes"* y parece un fallo. Por eso el build escribe
-  `Anki.json` con el conteo del `.apkg` y `hide-explorer.js` lo compara con
-  las filas de la tabla; si no coinciden, avisa que espere unos minutos en vez
-  de dejar que importe algo incompleto.
+  *"45 notas, todas ya presentes"* y parece un fallo. El build escribe
+  `Anki.json` con el conteo del `.apkg` y una versión única (el SHA del
+  commit). `hide-explorer.js` lo pide sin caché y usa esa versión como `?v=`
+  en la URL de descarga, para que el navegador baje siempre el archivo nuevo.
+  Si además el conteo no coincide con las filas de la tabla, avisa que espere
+  en vez de dejar que importe algo incompleto.
 - Si **cambiás el texto del anverso**, eso es otra tarjeta y aparece la nueva
   al lado de la vieja. Para corregir el español de una palabra, cambiá la
   columna 2 y dejá la 1 igual.
