@@ -283,10 +283,12 @@ solo navega a `/estudiantes/<código>/`; no hay contraseña real.
   hay que commitearlos rápido y explícito).
 - La ruta del repo **contiene un espacio** (`/home/zaov/Desarrollo/Página web`):
   siempre entrecomillar.
-- **Los mazos de Anki solo existen para `Pruebas/`** (a decisión del usuario el
-  30-09-2026: probar primero con un solo lugar antes de tocar las notas de los
-  estudiantes reales). El pipeline es genérico: crear `Anki.md` en
-  cualquier carpeta de estudiante lo activa, sin tocar el workflow.
+- **Todos los estudiantes tienen ya su `Anki.md`** (1-oct-2026). Se empezó solo
+  con `Pruebas/` para no tocar las notas reales hasta validar el pipeline; una
+  vez validado, se añadió el archivo a cada estudiante y a la plantilla
+  `Nuevo estudiante/`. Los reales están **sin filas** hasta que se cargue
+  material: eso no rompe el build (se omite el `.apkg` y la web muestra
+  «todavía no tiene tarjetas»). `Pruebas/` es el que tiene material de test.
 - `genanki` es la única dependencia Python del proyecto y solo se usa en CI.
   Para trabajar en local: `python3 -m venv /tmp/anki-venv && /tmp/anki-venv/bin/pip install genanki==0.13.1`.
 
@@ -351,10 +353,10 @@ Como control, el mismo test con genanki puro dio 28: el duplicado era real.
 | Qué | Dónde |
 |---|---|
 | Parser de tablas + generador | `site/anki_build.py` (`Nota.guid` = la parte crítica) |
-| Botón de descarga | `hide-explorer.js` → `addAnkiDownload()` |
+| Botón de descarga | `hide-explorer.js` → `addAnkiDownload()` (botón) + `configurarMazo()` (manifiesto/estado) |
 | Estilos | `student.css` → `.leele-anki*` |
 | Paso de CI | `deploy-quartz.yml` → "Install Python deps for Anki decks" + "Build Anki decks" |
-| Notas de prueba | `estudiantes/Pruebas/Anki.md` (45 tarjetas: 30 palabras + 15 frases) |
+| Notas de prueba | `estudiantes/Pruebas/Anki.md` (material de test, cambia seguido) |
 
 ### 5.2 Trampas aprendidas (leer en futuras sesiones)
 
