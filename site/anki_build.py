@@ -250,6 +250,18 @@ def id_estable(*partes):
     return (crudo % (2 ** 31 - 1000)) + 1000
 
 
+def slug_carpeta(carpeta):
+    """'Nuevo estudiante' -> 'Nuevo-estudiante', como lo publica Quartz.
+
+    Quartz reemplaza los espacios del nombre de carpeta por guiones al
+    publicar (la pagina queda en /estudiantes/Nuevo-estudiante/). El .apkg y
+    el Anki.json tienen que quedar en esa misma ruta o el boton de descarga no
+    los encuentra. Las carpetas de estudiante no llevan espacios
+    (Nombre-codigo), asi que en la practica esto solo afecta a la plantilla.
+    """
+    return carpeta.replace(" ", "-")
+
+
 def nombre_estudiante(carpeta):
     """'Jo-Lynne-i9se2x3' -> 'Jo-Lynne', usando la misma regla del saludo del portal.
 
@@ -322,9 +334,13 @@ def procesar(vault_root, site_root):
         deck = construir_deck(tarjetas, nombre_mazo, deck_id, tags)
 
         # El .apkg se escribe junto a la pagina de esa nota, asi el boton de
-        # descarga puede deducir la URL a partir del path de la pagina.
-        os.makedirs(os.path.join(site_root, carpeta), exist_ok=True)
-        destino = os.path.join(site_root, carpeta, nombre_mazo + ".apkg")
+        # descarga puede deducir la URL a partir del path de la pagina. Se usa
+        # el nombre con guiones (slug) porque asi publica Quartz la carpeta.
+        carpeta_slug = slug_carpeta(carpeta)
+        os.makedirs(os.path.join(site_root, carpeta_slug), exist_ok=True)
+        destino = os.path.join(
+            site_root, carpeta_slug, nombre_mazo + ".apkg"
+        )
 
         try:
             genanki.Package(deck).write_to_file(destino)
@@ -368,7 +384,7 @@ def escribir_manifest(vault_root, site_root, generados):
             os.path.join(ruta_estudiante, NOMBRE_MAZO + ".md")
         ):
             continue
-        conteo.setdefault(entrada, 0)
+        conteo.setdefault(slug_carpeta(entrada), 0)
 
     for carpeta, cantidad in conteo.items():
         destino = os.path.join(
