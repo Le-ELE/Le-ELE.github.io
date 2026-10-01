@@ -40,50 +40,51 @@ el material del curso, no puedes distinguirlas y acabarías perdiéndolas al
 actualizar. Con un mazo propio todo queda ordenado, y además puedes
 exportarlo o borrarlo cuando quieras sin tocar nada del curso.
 
-| Español | Inglés | Nota |
-| --- | --- | --- |
-| ella | she | |
-| el | the | |
-| la | the | feminine |
-| los | the | plural masculine |
-| las | the | plural feminine |
-| un | a / one | masculine |
-| una | a / one | feminine |
-| pero | but | |
-| porque | because | |
-| cuando | when | |
-| siempre | always | |
-| nunca | never | |
-| a veces | sometimes | |
-| querer | to want | irregular |
-| poder | to be able | irregular |
-| hacer | to do / make | irregular |
-| tener | to have | irregular |
-| ser | to be (permanent) | |
-| estar | to be (temporary) | |
-| ir | to go | irregular |
-| el balcón | the balcony | |
-| la playa | the beach | |
-| la cuenta | the bill / check | restaurant |
-| el desayuno | breakfast | |
-| la cena | dinner | |
-| dormir | to sleep | |
-| comer | to eat | |
-| guayaba | guava | fruta |
-| casco | helmet | también la cabeza (el hueso) |
-| tambor | drum | instrumento |
-| Me gustaría un café, por favor. | I would like a coffee, please. | |
-| ¿Cuánto cuesta? | How much does it cost? | |
-| ¿Dónde está la estación? | Where is the station? | |
-| Estoy aprendiendo español. | I am learning Spanish. | |
-| ¿Puede repetir, por favor? | Can you repeat, please? | |
-| No entiendo. | I don't understand. | |
-| ¿Qué hora es? | What time is it? | |
-| Mañana tengo clase. | Tomorrow I have class. | |
-| Me llamo Santiago. | My name is Santiago. | |
-| ¿Cómo se dice esto? | How do you say this? | |
-| Todo el día. | All day long. | |
-| A veces no sé. | Sometimes I don't know. | |
-| A veces, viene conmigo. | Sometimes, come with me. | irregular: `a veces` + coma |
-| Siempre llego tarde. | I always arrive late. | |
-| Nunca como en la mañana. | I never eat in the morning. | |
+| Español                         | Inglés                         | Nota                         |
+| ------------------------------- | ------------------------------ | ---------------------------- |
+| ella                            | she                            |                              |
+| el                              | the                            |                              |
+| la                              | the                            | feminine                     |
+| los                             | the                            | plural masculine             |
+| las                             | the                            | plural feminine              |
+| un                              | a / one                        | masculine                    |
+| una                             | a / one                        | feminine                     |
+| pero                            | but                            |                              |
+| porque                          | because                        |                              |
+| cuando                          | when                           |                              |
+| siempre                         | always                         |                              |
+| nunca                           | never                          |                              |
+| a veces                         | sometimes                      |                              |
+| querer                          | to want                        | irregular                    |
+| poder                           | to be able                     | irregular                    |
+| hacer                           | to do / make                   | irregular                    |
+| tener                           | to have                        | irregular                    |
+| ser                             | to be (permanent)              |                              |
+| estar                           | to be (temporary)              |                              |
+| ir                              | to go                          | irregular                    |
+| el balcón                       | the balcony                    |                              |
+| la playa                        | the beach                      |                              |
+| la cuenta                       | the bill / check               | restaurant                   |
+| el desayuno                     | breakfast                      |                              |
+| la cena                         | dinner                         |                              |
+| dormir                          | to sleep                       |                              |
+| comer                           | to eat                         |                              |
+| guayaba                         | guava                          | fruta                        |
+| casco                           | helmet                         | también la cabeza (el hueso) |
+| tambor                          | drum                           | instrumento                  |
+| Me gustaría un café, por favor. | I would like a coffee, please. |                              |
+| ¿Cuánto cuesta?                 | How much does it cost?         |                              |
+| ¿Dónde está la estación?        | Where is the station?          |                              |
+| Estoy aprendiendo español.      | I am learning Spanish.         |                              |
+| ¿Puede repetir, por favor?      | Can you repeat, please?        |                              |
+| No entiendo.                    | I don't understand.            |                              |
+| ¿Qué hora es?                   | What time is it?               |                              |
+| Mañana tengo clase.             | Tomorrow I have class.         |                              |
+| Me llamo Santiago.              | My name is Santiago.           |                              |
+| ¿Cómo se dice esto?             | How do you say this?           |                              |
+| Todo el día.                    | All day long.                  |                              |
+| A veces no sé.                  | Sometimes I don't know.        |                              |
+| A veces, viene conmigo.         | Sometimes, come with me.       | irregular: `a veces` + coma  |
+| Siempre llego tarde.            | I always arrive late.          |                              |
+| Nunca como en la mañana.        | I never eat in the morning.    |                              |
+| Esta es la prueba               | This is the try                | DJSDJJDEJ                    |
