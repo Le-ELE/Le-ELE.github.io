@@ -81,7 +81,7 @@ y el build las convierte en un `.apkg` que el estudiante descarga desde su
 propia página:
 
 ```
-estudiantes/Pruebas/Anki.md   ->  /estudiantes/Pruebas/Anki.apkg
+estudiantes/Pruebas/Anki.md   ->  /estudiantes/Pruebas/LeELE_Anki_Pruebas.apkg
 ```
 
 La tabla se lee así:
@@ -102,6 +102,10 @@ La tabla se lee así:
 - **Un `Anki.md` sin filas no rompe el build**: genera un `Anki.json` con 0 y
   la web muestra «todavía no tiene tarjetas» en lugar de un botón roto. Es el
   estado normal de un estudiante recién creado.
+- **El archivo descargable se llama `LeELE_Anki_<Nombre>.apkg`** (p. ej.
+  `LeELE_Anki_Pruebas.apkg`), sin tilde en el prefijo para que la URL sea ASCII
+  pura. Lo decide el build y el botón lo lee del `Anki.json`; nadie lo escribe
+  a mano.
 - **La columna 1 es el anverso y la 2 el reverso.** La 3 (nota) es opcional y se
   muestra debajo de la respuesta.
 - **Las dos primeras columnas son obligatorias.** Si una fila tiene el anverso

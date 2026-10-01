@@ -340,26 +340,30 @@
 
   function configurarMazo(code, box, link, help) {
     var enPagina = contarFilasMazo();
+    var base = '/estudiantes/' + code;
 
-    fetch('/estudiantes/' + code + '/Anki.json', { cache: 'no-store' })
+    fetch(base + '/Anki.json', { cache: 'no-store' })
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (data) {
-        // Sin manifest no deberia pasar (todos los Anki.md lo generan). Si
-        // pasa, se deja el boton como esta antes que romper la pagina.
-        if (!data || typeof data.notas !== 'number') return;
-
-        if (data.notas === 0) {
+        // Sin manifest o sin tarjetas no hay mazo que descargar: se oculta el
+        // boton para no ofrecer una descarga rota (un 404).
+        if (!data || typeof data.notas !== 'number' || data.notas === 0) {
           link.style.display = 'none';
           help.textContent = 'Este mazo todavía no tiene tarjetas. ' +
                              'Aparecerán aquí en cuanto se añada material.';
           return;
         }
 
-        // Version del build actual: unica por despliegue, fuerza la descarga
-        // nueva saltando el cache de GitHub Pages.
+        // El build define el nombre del archivo y la version (SHA). La version
+        // se pega como ?v= para saltar el cache de GitHub Pages
+        // (cache-control: max-age=600), que si no sirve un .apkg viejo.
+        var archivo = data.archivo || 'Anki.apkg';
+        var href = base + '/' + encodeURI(archivo);
         if (data.version != null) {
-          link.href = link.href + '?v=' + encodeURIComponent(data.version);
+          href += '?v=' + encodeURIComponent(data.version);
         }
+        link.href = href;
+        link.setAttribute('download', archivo);
 
         if (data.notas === enPagina) return;  // todo al dia
 
@@ -372,7 +376,7 @@
           'descargarlo con todo el contenido.';
         box.appendChild(aviso);
       })
-      .catch(function () { /* sin manifest: el boton sigue funcionando */ });
+      .catch(function () { /* error de red: se deja el boton como esta */ });
   }
 
   // === Título de carpetas: solo el último segmento ===

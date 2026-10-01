@@ -8,7 +8,7 @@ regla, aparece debajo de la respuesta en cursiva.
 
 ## Cómo añadirlo a Anki
 
-1. Pulsa el botón de arriba para descargar el archivo `Anki.apkg`.
+1. Pulsa el botón de arriba para descargar el archivo.
 2. Abre Anki y ve a **Archivo → Importar**.
 3. Elige el archivo que te acabas de bajar y dale a importar.
 

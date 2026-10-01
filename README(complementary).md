@@ -163,9 +163,13 @@ página, sin ningún archivo de configuración.
 
 ```
 estudiantes/Pruebas/Anki.md
-  -> /tmp/site/estudiantes/Pruebas/Anki.apkg
-  -> https://le-ele.github.io/estudiantes/Pruebas/Anki.apkg
+  -> /tmp/site/estudiantes/Pruebas/LeELE_Anki_Pruebas.apkg
+  -> https://le-ele.github.io/estudiantes/Pruebas/LeELE_Anki_Pruebas.apkg
 ```
+
+**Nombre del archivo:** `LeELE_Anki_<Nombre>.apkg` (prefijo sin tilde, para
+que la URL sea ASCII pura). Lo genera `nombre_archivo()` y se publica en
+`Anki.json` (`"archivo"`); el botón lo lee de ahí en vez de repetir la regla.
 
 **Un solo mazo por estudiante.** Antes eran varios (`Anki/Vocabulario.md`,
 `Anki/Frases.md`) en una subcarpeta `Anki/`; ahora todo el material vive en un
