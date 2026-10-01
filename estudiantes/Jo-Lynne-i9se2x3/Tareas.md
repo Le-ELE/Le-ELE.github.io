@@ -3,7 +3,7 @@
   - [x] Infinitivo
 
 
-  # 30-09-2026
+  # 2026-09-30
   
   - [ ] Escribir 3 ejemplos en presente, futuro y pasado de ir y ver
   - [ ] 
