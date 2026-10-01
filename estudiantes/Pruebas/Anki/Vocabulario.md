@@ -35,3 +35,6 @@ La tercera columna es opcional, pero la segunda no: toda tarjeta tiene los dos l
 | la cena | dinner | |
 | dormir | to sleep | |
 | comer | to eat | |
+| guayaba | guava | fruta |
+| casco | helmet | también la cabeza (el hueso) |
+| tambor | drum | instrumento |

@@ -47,10 +47,18 @@ except ImportError:
 # estructura de la carta, se crea un modelo NUEVO con otro ID.
 LEELE_MODEL_ID = 1607392319
 
-# Plantilla de la carta: siempre dos lados, siempre completos.
+# Plantilla de la carta: de dos lados, con carta invertida.
+#
+# Se siguen las plantillas estandar de Anki para "Basic (and reversed card)",
+# adaptadas a los nombres de campo Frente/Reverso. La carta invertida hace que
+# el estudiante practique tambien al reves: ver "she" y producir "ella".
+#
+# OJO: el nombre del modelo aparece en el menu de tipos de nota de Anki, asi
+# que el estudiante lo ve al elegir el mazo. No cambiar el MODEL_ID (arriba):
+# ese es el que permite actualizar las notas ya importadas.
 LEELE_MODEL = genanki.Model(
     LEELE_MODEL_ID,
-    "LéELE",
+    "LéELE-Basic (and reversed card)",
     fields=[
         {"name": "Frente"},
         {"name": "Reverso"},
@@ -61,6 +69,12 @@ LEELE_MODEL = genanki.Model(
             "name": "Carta",
             "qfmt": "{{Frente}}",
             "afmt": '{{FrontSide}}\n\n<hr id=answer>\n\n{{Reverso}}'
+                    '{{#Notas}}<div class="nota">{{Notas}}</div>{{/Notas}}',
+        },
+        {
+            "name": "Carta invertida",
+            "qfmt": "{{Reverso}}",
+            "afmt": '{{FrontSide}}\n\n<hr id=answer>\n\n{{Frente}}'
                     '{{#Notas}}<div class="nota">{{Notas}}</div>{{/Notas}}',
         },
     ],

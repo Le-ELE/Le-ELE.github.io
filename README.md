@@ -98,6 +98,9 @@ La tabla se lee así:
 - **Las dos primeras columnas son obligatorias.** Si una fila tiene el anverso
   pero no el reverso, el build falla y te dice qué fila es (es casi siempre un
   error de tipeo, no una tarjeta a medio hacer).
+- **Cada palabra genera dos cartas** (tipo de nota `LéELE-Basic (and reversed
+  card)`): una de español a inglés y otra de inglés a español. Por eso 30
+  palabras son 60 cartas.
 
 ### Cómo lo importa el estudiante
 
@@ -124,6 +127,12 @@ Dos cosas que conviene saber:
 El identificador de cada tarjeta se deriva del anverso, no de la posición en la
 tabla: por eso reordenar la tabla no rompe nada, pero cambiar el anverso crea
 una tarjeta nueva.
+
+**Si el estudiante agrega palabras por su cuenta:** se conservan intactas al
+reimportar, porque Anki les da un identificador propio que no coincide con el
+de las palabras del vault. Lo único a vigilar es que **no copie una palabra que
+ya esté en el vault**: quedaría con el mismo texto pero como una tarjeta
+duplicada aparte. Para eso conviene que use otro mazo.
 
 ### Probar los mazos en local
 

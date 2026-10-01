@@ -182,6 +182,21 @@ mazo). Los estilos viven en `.leele-anki*` dentro de `student.css`.
 - **El ID del modelo (`LEELE_MODEL_ID = 1607392319`) es fijo.** Si cambia, Anki
   deja de poder actualizar las notas viejas. Cambiar la estructura de la carta
   implica un modelo nuevo con otro ID.
+- **El tipo de nota se llama `LéELE-Basic (and reversed card)` y tiene DOS
+  plantillas** (`Carta` y `Carta invertida`), siguiendo las de Anki built-in
+  para "Basic (and reversed card)". Así cada palabra se repasa en los dos
+  sentidos: ver `casco` → `helmet`, y ver `helmet` → `casco`. Por eso 30 notas
+  del mazo son 60 cartas.
+- **Trampa verificada sobre cambiar el tipo de nota:** si el estudiante ya
+  importó un `.apkg` con un tipo de nota *distinto* y se importa el nuevo,
+  **Anki NO actualiza el viejo: crea uno nuevo** (con el mismo nombre y un `+`
+  al final) y las notas viejas quedan en el tipo anterior, con la plantilla
+  vieja. Se comprobó que NO depende del nombre ni del `mod` del `.apkg`, ni
+  siquiera forzando `ImportAnkiPackageOptions.update_notetypes = ALWAYS`; solo
+  depende de que las plantillas sean distintas. Como el modelo se cambió de 1 a
+  2 plantillas después del primer deploy, **quien ya lo haya importado tiene que
+  borrar el mazo y reimportarlo** (no se pierdo nada: no había repaso todavía).
+  Imports limpios y reimports posteriores funcionan bien.
 - **El `deck_id` también es estable**: `sha256(model_id|carpeta|archivo)` mapeado
   a un entero < 2³¹. Si variara, cada build crearía un mazo nuevo.
 - **Un `.apkg` por archivo, no uno solo**: así se puede repasar vocabulario y
@@ -211,6 +226,14 @@ mazo). Los estilos viven en `.leele-anki*` dentro de `student.css`.
   dependencia Python del proyecto.
 - **No hay push de scheduling**: el `.apkg` se genera con las cartas en estado
   nuevo; el estudiante conserva su propio progreso, no se sobrescribe.
+- **Las notas que crea el estudiante a mano no se tocan**, porque Anki les da un
+  GUID aleatorio que no coincide con el `hash(anverso)` de las notas del vault.
+  Verificado: 2 notas personales (`zafiro`, `cacao`) con traducción propia
+  sobrevivieron a una reimportación con `casco` editado y `cántaro` agregado.
+  Ojo: si el estudiante crea a mano una nota con un anverso **idéntico** a una
+  palabra del vault, queda con el mismo texto pero **otra nota aparte** (no se
+  fusionan), porque el GUID aleatorio no coincide. Recomendación: que las
+  palabras propias vayan en otro mazo o con otro tipo de nota.
 
 ### 3.5 Privacidad
 

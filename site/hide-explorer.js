@@ -289,7 +289,7 @@
 
     var help = document.createElement('p');
     help.className = 'leele-anki-help';
-    help.textContent = 'Descargalo y abrilo con Anki para importar las tarjetas. ' +
+    help.textContent = 'Descárgalo y ábrelo con Anki para importar las tarjetas. ' +
                        'Cuando lo vuelvas a descargar e importar, se actualizan las que cambiaron ' +
                        'y se conserva lo que ya repasaste.';
 
