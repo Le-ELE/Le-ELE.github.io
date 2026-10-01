@@ -78,5 +78,7 @@
 999.999
 1.000.000 - Un millón
 
-
+2 millones
+999.999.999
+novecientos noventa 
 
