@@ -64,20 +64,19 @@ Rosie-r223kd/
 ├── Gramática/          ← fichas de gramática (una nota por tema)
 ├── Notas/              ← lo que se vio en clase
 │   └── 2026-09-24.md   ← una nota por fecha (Mes/Año)
-├── Anki/               ← mazos de Anki (cada tabla .md es un mazo)
-│   ├── Vocabulario.md
-│   └── Frases.md
+├── Anki.md             ← el mazo del curso (tabla Markdown, todo el material)
 └── Tareas.md           ← pendientes y checkboxes
 ```
 
 ## Mazos de Anki
 
-Cada archivo `.md` dentro de `Anki/` es un mazo. Escribís las tarjetas como
-una tabla Markdown normal y el build las convierte en un `.apkg` que el
-estudiante descarga desde su propia página:
+Cada estudiante tiene **un solo mazo**, en `Anki.md`, en la raíz de su carpeta
+(sin subcarpeta `Anki/`). Escribís las tarjetas como una tabla Markdown normal
+y el build las convierte en un `.apkg` que el estudiante descarga desde su
+propia página:
 
 ```
-estudiantes/Pruebas/Anki/Vocabulario.md   ->  /estudiantes/Pruebas/Anki/Vocabulario.apkg
+estudiantes/Pruebas/Anki.md   ->  /estudiantes/Pruebas/Anki.apkg
 ```
 
 La tabla se lee así:

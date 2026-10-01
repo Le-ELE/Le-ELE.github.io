@@ -51,6 +51,10 @@ except ImportError:
 # estructura de la carta, se crea un modelo NUEVO con otro ID.
 LEELE_MODEL_ID = 1607392319
 
+# Nombre del unico mazo de cada estudiante. Da nombre al archivo del vault
+# (<Estudiante>/Anki.md), al .apkg publicado y al mazo dentro de Anki.
+NOMBRE_MAZO = "Anki"
+
 # Plantilla de la carta: de dos lados, con carta invertida.
 #
 # Se siguen las plantillas estandar de Anki para "Basic (and reversed card)",
@@ -341,7 +345,7 @@ def main():
         print("ERROR en {0}: {1}".format(ruta, mensaje), file=sys.stderr)
 
     if not generados and not errores:
-        print("Anki: ningun estudiante tiene carpeta Anki/ todavia")
+        print("Anki: ningun estudiante tiene {0}.md todavia".format(NOMBRE_MAZO))
 
     # Un error de parseo detiene el build a proposito: es preferible que la
     # web no se publique a que se publique un mazo incompleto. El mensaje de

@@ -256,24 +256,18 @@
   }
 
   // === Botón de descarga del mazo de Anki ===
-  // Solo aparece en las páginas dentro de /estudiantes/<código>/Anki/. El
-  // .apkg se genera en el build (site/anki_build.py) junto a la página, así
-  // que la URL se deduce del path quitando la extensión.
+  // Solo aparece en la pagina /estudiantes/<código>/Anki.html, que es donde
+  // vive la tabla del mazo. El .apkg se genera en el build
+  // (site/anki_build.py) junto a esa pagina, asi que la URL se deduce del
+  // path quitando la extensión.
   function addAnkiDownload() {
     if (document.getElementById('leele-anki')) return;
 
-    var match = window.location.pathname.match(/^\/estudiantes\/([^/]+)\/Anki\/(.+?)(?:\.html)?\/?$/);
+    var match = window.location.pathname.match(/^\/estudiantes\/([^/]+)\/Anki(?:\.html)?\/?$/);
     if (!match) return;
 
     var code = match[1];
-    var nombre = decodeURIComponent(match[2]);
-    // La página de la carpeta Anki/ es un listado de mazos, no un mazo: ahí
-    // no hay nada que descargar.
-    if (nombre === 'index') return;
-
-    // Nombre del archivo tal como lo publica Quartz (guiones por espacios).
-    var slug = nombre.replace(/\s+/g, '-');
-    var url = '/estudiantes/' + code + '/Anki/' + slug + '.apkg';
+    var url = '/estudiantes/' + code + '/Anki.apkg';
 
     var box = document.createElement('div');
     box.id = 'leele-anki';
@@ -282,9 +276,9 @@
     var link = document.createElement('a');
     link.className = 'leele-anki-btn';
     link.href = url;
-    link.setAttribute('download', nombre + '.apkg');
+    link.setAttribute('download', 'Anki.apkg');
     link.innerHTML = '<span class="leele-anki-ico">' + ICONS.download + '</span>' +
-                     '<span class="leele-anki-label">Descargar ' + nombre + '</span>' +
+                     '<span class="leele-anki-label">Descargar el mazo</span>' +
                      '<span class="leele-anki-ext">.apkg</span>';
 
     var help = document.createElement('p');
@@ -292,7 +286,7 @@
     help.textContent = 'Descárgalo y ábrelo con Anki para importar las tarjetas. ' +
                        'Cuando lo vuelvas a descargar e importar, se actualizan las que cambiaron ' +
                        'y se conserva lo que ya repasaste. Puedes dejar las opciones de importación ' +
-                       'tal cual: no modifican nada de lo que tengas.';
+                       'tal cual: el mazo usa tus propios ajustes y no modifica nada tuyo.';
 
     box.appendChild(link);
     box.appendChild(help);
