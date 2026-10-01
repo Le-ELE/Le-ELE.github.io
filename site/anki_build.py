@@ -278,6 +278,17 @@ def nombre_estudiante(carpeta):
     return nombre
 
 
+def nombre_archivo(carpeta):
+    """'Rebecca-u1e74p' -> 'LeELE_Anki_Rebecca.apkg'.
+
+    Nombre con el que el estudiante descarga el mazo. El prefijo va sin tilde
+    (LeELE_) a proposito: asi la URL es ASCII pura y evita lios de
+    codificacion en la CDN. Los espacios (solo la plantilla) pasan a guiones.
+    """
+    nombre = re.sub(r"\s+", "-", nombre_estudiante(os.path.basename(carpeta)))
+    return "LeELE_Anki_" + nombre + ".apkg"
+
+
 def construir_deck(tarjetas, nombre_mazo, deck_id, tags):
     deck = genanki.Deck(deck_id, nombre_mazo)
     deck.add_model(LEELE_MODEL)
@@ -335,12 +346,11 @@ def procesar(vault_root, site_root):
 
         # El .apkg se escribe junto a la pagina de esa nota, asi el boton de
         # descarga puede deducir la URL a partir del path de la pagina. Se usa
-        # el nombre con guiones (slug) porque asi publica Quartz la carpeta.
+        # el nombre con guiones (slug) porque asi publica Quartz la carpeta, y
+        # el nombre de archivo LeELE_Anki_<Nombre>.apkg.
         carpeta_slug = slug_carpeta(carpeta)
         os.makedirs(os.path.join(site_root, carpeta_slug), exist_ok=True)
-        destino = os.path.join(
-            site_root, carpeta_slug, nombre_mazo + ".apkg"
-        )
+        destino = os.path.join(site_root, carpeta_slug, nombre_archivo(carpeta))
 
         try:
             genanki.Package(deck).write_to_file(destino)
