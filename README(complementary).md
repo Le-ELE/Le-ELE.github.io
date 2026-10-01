@@ -264,6 +264,15 @@ solo navega a `/estudiantes/<código>/`; no hay contraseña real.
 - [ ] **Decidir visibilidad de `Inactivos/` y `Pruebas/`**: hoy se publican a
   propósito (URLs directas). Si algún día deben ocultarse, hay que tocar
   `quartz.config.ts` (no borrarlos del disco).
+- [ ] **Mazos de Anki dentro de `Inactivos/`**: hoy quedan fuera. `procesar()`
+  en `anki_build.py` solo mira el primer nivel
+  (`estudiantes/<Estudiante>/Anki.md`), así que `Inactivos/<Estudiante>/Anki.md`
+  no se convierte, y el regex del botón
+  (`/^\/estudiantes\/([^/]+)\/Anki(?:\.html)?\/?$/`) no matchea rutas anidadas.
+  Para incluirlos: recorrer el vault recursivamente buscando `Anki.md`,
+  generalizar el botón (base = pathname sin `/Anki(.html)`) y usar el basename
+  en `nombre_estudiante` (hoy `"Inactivos/Leo-jxbun0"` daría `"Inactivos/Leo"`).
+  Decidido dejarlo para después.
 - [ ] **Verificar en Android real** el comportamiento de la nav del portal
   (el usuario reportó una vez que el logo del botón LéELE se veía "corrido" en
   su dispositivo, que **no** se pudo reproducir con Chromium headless; el fix
@@ -417,5 +426,6 @@ Como control, el mismo test con genanki puro dio 28: el duplicado era real.
   `Rheis-kggbu0`, `Rosie-r223kd`, **`Atsuno-o23jfi`** (este último no está en el
   mapa de §2 ni en la lista de §5.1: la documentación se había quedado atrás del
   vault).
-- Mazos de Anki: solo `Pruebas/Anki.apkg`. Probando con el
-  usuario antes de activar el resto.
+- Mazos de Anki: todos los estudiantes tienen ya su `Anki.md`; solo `Pruebas`
+  lleva tarjetas. Los `.apkg` se publican como `LeELE_Anki_<Nombre>.apkg`.
+  Probando con el usuario antes de cargar material al resto.

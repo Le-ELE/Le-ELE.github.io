@@ -7,7 +7,7 @@ Quartz genero el sitio y ANTES de la inyeccion de estilos/scripts.
 
 Flujo:
   estudiantes/<Estudiante>/Anki.md   (tabla Markdown)
-    -> /tmp/site/estudiantes/<Estudiante>/Anki.apkg
+    -> /tmp/site/estudiantes/<Estudiante>/LeELE_Anki_<Nombre>.apkg
 
 Cada estudiante tiene UN solo mazo, con todo el material del curso (palabras
 y frases). El archivo se llama Anki.md y vive en la raiz del estudiante, sin
