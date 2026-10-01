@@ -416,7 +416,7 @@ def main():
     for ruta, mensaje in errores:
         print("ERROR en {0}: {1}".format(ruta, mensaje), file=sys.stderr)
 
-    if not generados and not errores:
+    if not generados and not errores and not vacios:
         print("Anki: ningun estudiante tiene {0}.md todavia".format(NOMBRE_MAZO))
 
     # Un error de parseo detiene el build a proposito: es preferible que la

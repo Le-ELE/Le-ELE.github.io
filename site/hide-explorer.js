@@ -299,23 +299,23 @@
       if (holder) holder.appendChild(box);
     }
 
-    comprobarMazoDesfasado(code, box, link);
+    configurarMazo(code, box, link, help);
   }
 
-  // === Mazo desfasado: la pagina es nueva pero el .apkg sigue cacheado ===
-  // GitHub Pages sirve el .apkg con cache-control: max-age=600, o sea que el
-  // navegador puede devolver una copia de hace hasta 10 minutos. Si el
-  // profesor escribio una fila nueva y el estudiante recarga rápido, la
-  // tabla de la pagina ya la muestra pero el archivo que descarga todavia no
-  // la tiene. Importarlo da "45 notas, todas ya presentes" y parece un fallo.
-  //
+  // === Estado del mazo: sin tarjetas, al dia o desfasado ===
   // El build escribe <Estudiante>/Anki.json con cuantas tarjetas lleva el
-  // .apkg y una version unica de ese build. Se piden sin cache (no-store) y:
-  //   - la version se pega como ?v= a la URL del .apkg, para que el navegador
-  //     siempre baje el archivo nuevo y no la copia cacheada;
-  //   - si el conteo no coincide con las filas de la tabla, el .apkg todavia
-  //     no incluye lo ultimo: se avisa que espere en vez de dejar que importe
-  //     algo incompleto creyendo que la carga fallo.
+  // .apkg y una version unica de ese build. Se pide con cache: no-store y
+  // segun lo que traiga:
+  //
+  //   - 0 tarjetas: el estudiante es nuevo (o es la plantilla) y todavia no
+  //     hay material. Se oculta el boton, que si no descargaria un 404.
+  //   - notas == filas de la tabla: todo al dia. La version se pega como ?v=
+  //     a la URL del .apkg para saltar el cache de GitHub Pages
+  //     (cache-control: max-age=600), que si no sirve un archivo viejo hasta
+  //     10 minutos.
+  //   - notas != filas: el .apkg todavia no incluye lo ultimo (el navegador
+  //     tiene el HTML nuevo pero el archivo cacheado). Se avisa que espere en
+  //     vez de dejar que importe algo incompleto creyendo que la carga fallo.
   function contarFilasMazo() {
     // La tabla del mazo: 3 columnas (espanol / ingles / nota). Se ignoran las
     // filas de cabecera y separador, que Quartz ya renderizo como th.
@@ -336,16 +336,22 @@
     return total;
   }
 
-  function comprobarMazoDesfasado(code, box, link) {
+  function configurarMazo(code, box, link, help) {
     var enPagina = contarFilasMazo();
-    if (!enPagina) return;  // no hay tabla: nada que comparar
 
-    // El .json va con cache: no-store para leer siempre el build actual y no,
-    // justamente, la copia cacheada que es el problema que estamos evitando.
     fetch('/estudiantes/' + code + '/Anki.json', { cache: 'no-store' })
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (data) {
+        // Sin manifest no deberia pasar (todos los Anki.md lo generan). Si
+        // pasa, se deja el boton como esta antes que romper la pagina.
         if (!data || typeof data.notas !== 'number') return;
+
+        if (data.notas === 0) {
+          link.style.display = 'none';
+          help.textContent = 'Este mazo todavía no tiene tarjetas. ' +
+                             'Aparecerán aquí en cuanto se añada material.';
+          return;
+        }
 
         // Version del build actual: unica por despliegue, fuerza la descarga
         // nueva saltando el cache de GitHub Pages.
