@@ -1,0 +1,1 @@
+La metodología es simple y está orientada a facilitar el aprendizaje de palabras y frases completas a través de conectar la necesidad lingüística con la exposición a la lengua 
