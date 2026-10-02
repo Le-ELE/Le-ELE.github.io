@@ -40,6 +40,11 @@ el material del curso, no puedes distinguirlas y acabarías perdiéndolas al
 actualizar. Con un mazo propio todo queda ordenado, y además puedes
 exportarlo o borrarlo cuando quieras sin tocar nada del curso.
 
-| Español                       | Inglés                        | Nota                                                       |
-| ----------------------------- | ----------------------------- | ---------------------------------------------------------- |
-| Quiero que aprendas mucho más | I want you to learn much more | Usamos el subjuntivo porque tenemos dos sujetos diferentes |
+| Español                                                 | Inglés                                            | Nota                                                                                                           |
+| ------------------------------------------------------- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Quiero que aprendas mucho más                           | I want you to learn much more                     | Usamos el subjuntivo porque tenemos dos sujetos diferentes                                                     |
+| Quiero que aprendas mucho más                           | I want you to learn much more                     | Usamos el subjuntivo porque tenemos dos sujetos diferentes                                                     |
+| Dormirse                                                | To fall asleep                                    |                                                                                                                |
+| Me gustaría que habláramos más de lo que ya hablamos    | I would like us to talk more than we already talk | Usamos el imperfecto de subjuntivo porque el primer verbo está en condicional y tenemos dos sujetos diferentes |
+| Quizá/quizás/tal vez puede que me guste ese restaurante | Maybe I could like that restaurant                |                                                                                                                |
+| Quiero que (tú) vengas a Perú                           | I want you to come to Peru                        | Uso "venir" en vez de "ir" porque estoy en en el momento de decirlo                                            |
