@@ -2,35 +2,34 @@ La metodología es simple y está orientada a facilitar el aprendizaje de palabr
 
 Para aprendizaje y retención de vocabulario:
 
-| Español | ¿Cómo suena?<br>_(¿How does it sounds?)_ | Inglés |
-| ------- | ---------------------------------------- | ------ |
-| La casa | lah-...-kah-sah                          | House  |
+| Español | ¿Cómo suena?<br>_(How does it sounds?)_ | Inglés |
+| ------- | --------------------------------------- | ------ |
+| La casa | lah-...-kah-sah                         | House  |
 Mis recomendaciones son: 
 1. Crea un sistema propio de reescritura en tu propia lengua. Si quieres revisa este: [[Sistema de reproducción de sonidos de inglés a español]] que puede servirte.
 2. Puedes usarlo para aprender como quieras, yo recomiendo:
 	1. Vocabulario: úsalo para aprender nuevas palabras individuales:
 
-| Español | ¿Cómo suena?<br>_(¿How does it sounds?)_ | Inglés |
-| ------- | ---------------------------------------- | ------ |
-| La casa | lah-...-kah-sah                          | House  |
+| Español | ¿Cómo suena?<br>_(How does it sounds?)_ | Inglés |
+| ------- | --------------------------------------- | ------ |
+| La casa | lah-...-kah-sah                         | House  |
 
 	2. Vocabulario: úsalo para aprender frases completas
 
 
-| Español      | ¿Cómo suena?<br>(¿How does it sounds?) | Inglés |
-| ------------ | -------------------------------------- | ------ |
-| ¿Cómo suena? | koh-moh-...-suh-eh-nah                 | How    |
+| Español      | ¿Cómo suena?<br>_(How does it sounds?)_ | Inglés              |
+| ------------ | --------------------------------------- | ------------------- |
+| ¿Cómo suena? | koh-moh-...-suh-eh-nah                  | How does it sounds? |
 
-
-  
+3.  Explora más la idea. 
+	1. Por ejemplo, añade una columna con la descripción:
+   
+| Español | ¿Cómo suena?<br>_(How does it sounds?)_ | Inglés | Descripción:                                                                                    |
+| ------- | --------------------------------------- | ------ | ----------------------------------------------------------------------------------------------- |
+| Gato    | gah-toh                                 | cat    | Hermoso animal, Santiago vive con dos <br>_(Beautiful animal, Santiago lives with two of them)_ |
+		2.  O, por ejemplo, añade el tipo de palabra: 
+	
 3. 
-	1. Frases: úsalo para aprender frases completas y sus significados
-	   
-      | Columna A | Columna B |
-      |-----------|-----------|
-      | dato 1    | dato 2    |
-      
-	2. 
 ---
 # Para hablar en español (si hablo inglés)
 
