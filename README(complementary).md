@@ -59,9 +59,9 @@ Página web/
 │   ├── Jo-Lynne-i9se2x3/   Estudiante activo → su hero saluda "Jo Lynne".
 │   ├── Rebecca-u1e74p/     Estudiante activo.
 │   ├── Rheis-kggbu0/       Estudiante activo.
-│   ├── Rosie-r223kd/       Estudiante activo (estructura modelo: Gramática/ · Notas/ · Anki.md · Paquetes.md · Plan.md · Tareas.md).
+│   ├── Rosie-r223kd/       Estudiante activo.
 │   ├── Atsuno-o23jfi/      Estudiante activo (⚠ ver §4: publica un email real).
-│   ├── Nuevo estudiante/   Plantilla de estudiante (copiar y renombrar).
+│   ├── Nuevo estudiante/   Plantilla de estudiante (copiar y renombrar). Estructura canónica: Anki.md, Mi info.md, Paquetes.md, Plan.md, Clases/Mes/, Gramática/.
 │   ├── Inactivos/          Estudiantes sin clases (igual se publica, a propósito).
 │   ├── Pruebas/            Notas de prueba (Pruebas/Anki.md, con material de test). Cada estudiante tiene su propio Anki.md; el de Pruebas es el que se usa para experimentar.
 │   └── Templates Obsidian/ Templates del vault (NO confundir con la carpeta "templates" de Quartz).
@@ -287,13 +287,11 @@ solo navega a `/estudiantes/<código>/`; no hay contraseña real.
   actual usa centrado absoluto, que es inmune a ese tipo de interferencia).
 - [ ] Posible mejora: medir el render del portal en CI (harness headless existe
   pero vive en `/tmp`, no en el repo).
-- [ ] **Riesgo de privacidad sin resolver: `estudiantes/Atsuno-o23jfi/Info.md`
-  contiene el email real de la estudiante y se publica en un sitio público.**
-  Contradice la regla de §3.5. **El usuario decidió dejarlo así por ahora**
-  (30-09-2026), así que NO se tocó el archivo. Arreglar solo el `.md` no alcanza:
-  el email sigue en el historial de git y hay que purgarlo (force push) si
-  algún día se decide sacarlo de verdad. Mientras tanto, ese archivo es el
-  lugar donde ese dato está expuesto.
+- [ ] **Riesgo de privacidad: el email de Atsuno-o23jfi** se encuentra ahora
+  integrado en `Mi info.md` (tras fusión de `Info.md`). El dato ya estaba
+  expuesto públicamente anteriormente; al fusionar se mantiene la información.
+  Si se desea eliminarlo, hay que purgarlo también del historial de git
+  (force push), no basta con editar el archivo actual.
 
 **Notas / deuda técnica:**
 
@@ -316,6 +314,30 @@ solo navega a `/estudiantes/<código>/`; no hay contraseña real.
 ---
 
 ## 5. Historial de la sesión (bitácora técnica)
+
+### 5.2 Sesión 2025-10-02 · Alineación de estructura a plantilla canónica
+
+**Objetivo:** Unificar estructura de todos los estudiantes activos con `Nuevo estudiante/` como fuente de verdad, preservando contenido.
+
+**Decisiones:**
+- Forzar archivos base (`Anki.md`, `Mi info.md`, `Paquetes.md`, `Plan.md`) a versión canónica desde plantilla.
+- Fusionar `Info.md` → `Mi info.md` (mantener contenido existente).
+- Mover `Notas/` → `Clases/Mes/` (preservar nombres y contenido). Registrar pendientes para integración estructurada.
+- Extraer contenido de `Tareas.md` a `.Por_implementar.md` (distribución al punto 6 por fecha). Eliminar originales.
+- Mantener temas existentes en `Gramática/`, añadir `Tema.md` de referencia.
+- Añadir `Fecha.md` (plantilla de referencia) en `Clases/Mes/`.
+- Recuperar `Paquetes.md` originales desde git: Rebecca (c8a7ce6c, 2026-09-30, 11.5h), Rheis (7bbab59, 2026-09-07, 10h). Atsuno sin contenido previo (correcto).
+- Crear `.Por_implementar.md` por estudiante con acciones pendientes.
+
+**Cambios principales:**
+- Estructura: `Clases/Mes/`, `Gramática/` creadas donde faltaban.
+- Archivos obsoletos eliminados: `Notas/`, `Tareas.md`, `Info.md` (tras fusionar).
+- Restaurados Paquetes.md con información histórica correcta.
+- Toda la información preservada; reorganización compleja registrada para implementación manual.
+
+**Lecciones:** Usar git (blame/show) para recuperar versiones anteriores al alinear. Marcar elementos no trivialmente reestructurables con `.Por_implementar.md` para no perder información ni romper legibilidad.
+
+---
 
 Sesión de pulido del portal y la landing (tarde del 24-seto-24 sep, commits del
 `bb3784f` al `65348fc`). Orden cronológico y hallazgos para no repetir errores.
