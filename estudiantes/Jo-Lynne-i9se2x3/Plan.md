@@ -7,13 +7,13 @@ Durante la conversación voy a tomar notas de los errores comunes que deban ser 
 
 # 3. Ejercicio de tritranscripción
 
-#3. Selección de vocabulario importante
-3. Preguntas (el resto de la clase)
-4. Tarea
+# 4. Selección de vocabulario importante
+
+# 5. Preguntas (el resto de la clase)
+
+# 6. Tarea
 
 ---
-
-- [ ] Complemento directo y complemento indirecto
 
 ---
 
