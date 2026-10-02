@@ -1,0 +1,28 @@
+# 1. Notas diarias
+- 
+---
+## 2. Resolución de errores
+
+- [ ] 
+---
+# 3. Ejercicio de [[Tritranscripción (triple transcripción)|tritranscripción]]
+
+| Español | ¿Cómo suena?<br>_(How does it sounds?)_ | Inglés |
+| ------- | --------------------------------------- | ------ |
+|         |                                         |        |
+
+---
+# 4. Selección de vocabulario o frases importantes
+
+| Español | Inglés | Nota |
+| ------- | ------ | ---- |
+
+---
+# 5. Preguntas
+
+- [ ] 
+
+---
+# 6. Tarea 
+
+- [ ] 

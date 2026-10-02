@@ -9,4 +9,4 @@
 
 ---
 
-https://le-ele.github.io/estudiantes/Jo-Lynne-i9se2x3/
+https://le-ele.github.io/estudiantes/nombre_y_código_del_estudiante/

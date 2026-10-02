@@ -1,22 +1,17 @@
-# Paquete 1
+# Paquete # 1
 
 ---
 
-**Fecha de pago:** 2026-09-30 
+**Fecha de pago:** 
 
-**Cantidad de horas:** 11.5
+**Cantidad de horas:** 5
 
 ---
 
-- [x] 1 
-- [x] 2
+- [ ] 1. (Fecha)
+- [ ] 2
 - [ ] 3
 - [ ] 4
 - [ ] 5
-- [ ] 6
-- [ ] 7
-- [ ] 8
-- [ ] 9
-- [ ] 10
-- [ ] 11.5
 
+---

@@ -1,1 +1,0 @@
-- [ ] Escribir más ejemplos con ojalá y los 4 subjuntivos, con verbos de consumo
