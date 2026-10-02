@@ -9,4 +9,4 @@
 
 ---
 
-https://le-ele.github.io/estudiantes/nombre_y_código_del_estudiante/
+https://le-ele.github.io/estudiantes/Atsuno-o23jfi/
