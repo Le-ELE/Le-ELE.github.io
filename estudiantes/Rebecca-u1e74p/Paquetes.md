@@ -11,7 +11,8 @@
 - [x] 1 
 - [x] 2.
        [[Rebecca-u1e74p/clases/Septiembre/2026-09-30|2026-09-30]]
-- [ ] 3
+- [x] 3
+      [[Rebecca-u1e74p/Clases/Octubre/2026-10-02|2026-10-02]]
 - [ ] 4
 - [ ] 5
 - [ ] 6
