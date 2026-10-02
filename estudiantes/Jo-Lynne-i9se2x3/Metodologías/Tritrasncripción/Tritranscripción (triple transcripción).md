@@ -2,7 +2,7 @@ Antes de explicar la metodología, quiero explicar por qué funciona para cualqu
 
 1. Si eres principiante, lo primero que quieres hacer es recordar fácilmente frases específicas para sobrevivir en el mundo real.
 2. Si te cuesta aprender con reglas gramaticales, de esta manera vas a ser capaz de expresar las cosas que realmente quieres expresar simplemente repitiendo los sonidos correctos (para esto te recomiendo un profesor, por ejemplo, Santiago o mi amiga Paola, o mi amiga Maritza _jajajaj_, para que tengas a quien preguntarle cómo decir las cosas).
-3. Si eres avanzado y te está costando reproducir un tipo de frase simplemente porque la regla no es clara o no
+3. Si eres avanzado y te está costando reproducir un tipo de frase simplemente porque la regla no es clara o no la entiendes bien, olvídate de la regla por un segundo, simplemente aprende a decir lo que quieres decir. Luego entenderás la regla y un profesor te la volverá a explicar todas las veces que lo necesites.
 
 La metodología es simple y está orientada a facilitar el aprendizaje de palabras y frases completas a través de conectar la necesidad lingüística con la exposición a la reproducción de sonidos propios de la lengua no a través de explicaciones gramaticales, sino de repetición de sonidos de la segunda lengua a través del conocimiento fonológico de la primera lengua.
 
