@@ -47,3 +47,4 @@ exportarlo o borrarlo cuando quieras sin tocar nada del curso.
 | sobrevivir  | to survive |                                                                                             |
 | un vuelo    | a flight   |                                                                                             |
 | crudo       | raw        |                                                                                             |
+| la meta     | the goal   |                                                                                             |
