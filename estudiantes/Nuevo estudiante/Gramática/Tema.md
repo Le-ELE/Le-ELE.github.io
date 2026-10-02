@@ -2,7 +2,6 @@
 Nivel gramatical:
 ---
 ---
-# Nombre de la estructura o el tema gramatical
 
 Explicación breve de cuándo se usa.
 
@@ -14,6 +13,11 @@ Explicación breve de cuándo se usa.
 |     |     |
 
 ---
-- Ejemplo en español (traducción)
-- Otro ejemplo (traducción)
+# Ejemplos:
+
+| Español | Inglés | Nota |
+| ------- | ------ | ---- |
+|         |        |      |
+
 ---
+
