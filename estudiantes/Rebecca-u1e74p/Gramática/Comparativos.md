@@ -21,7 +21,9 @@
 - Me gustaría que habláramos más de lo que ya hablamos (I would like us to talk more than we already talk)
 - Me alegraría que nos ~~veamos~~ viéramos pronto (I would be happy to see each other soon)
 	- Me alegra que nos veamos pronto (I am happy that we will see each other soon)
-- Me alegraría que no necesitara usar el subjuntivo
+- Me alegraría que no necesitara usar el subjuntivo (?)
+	- Me alegraría no necesitar usar el subjuntivo
+- 
 ---
 
 

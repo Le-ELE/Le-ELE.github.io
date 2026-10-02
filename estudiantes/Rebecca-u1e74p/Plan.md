@@ -6,6 +6,9 @@
 # 4. Selección de vocabulario importante
 # 5. Preguntas (el resto de la clase)
 # 6. Tarea
+---
+Cada semana al inicio de la semana decidir un tipo de frase que utilice el subjuntivo para trabajarla durante toda la semana.
+- [ ] 
 
 ---
 
