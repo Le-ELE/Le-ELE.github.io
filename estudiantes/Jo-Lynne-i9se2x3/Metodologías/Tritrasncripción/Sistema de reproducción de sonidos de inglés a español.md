@@ -1,4 +1,4 @@
-Sistema de sonido recomendado: completa el tuyo:
+Sistema de sonido recomendado para aprender a través de [[Tritranscripción (triple transcripción)|tritranscripción]].
 
 | Español | ¿Cómo suena?<br>_(How does it sounds?)_ |
 | ------- | --------------------------------------- |
@@ -33,4 +33,4 @@ Sistema de sonido recomendado: completa el tuyo:
 ---
 # etc...
 
-Crea cualquier sonido "simple" tal cual como TÚ lo escribirías a tu propio modo
+Crea cualquier sonido "simple" tal cual como TÚ lo escribirías a tu propio modo. Completa y transforma al sistema.
