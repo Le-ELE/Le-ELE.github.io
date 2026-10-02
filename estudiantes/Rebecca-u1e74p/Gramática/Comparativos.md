@@ -17,8 +17,14 @@
 - Quiero que él sea más inteligente que tú
 - Espero que (tú) seas más feliz que ayer
 - Espero que seas más feliz de lo que fuiste ayer
+---
+
 - Me gustaría que habláramos más de lo que ya hablamos
 	- I would like us to talk more than we already talk
+- Me alegraría
+---
+
+
 - 
 
 | sujeto | verbo                                 | más | adjetivo    | que | sujeto |
