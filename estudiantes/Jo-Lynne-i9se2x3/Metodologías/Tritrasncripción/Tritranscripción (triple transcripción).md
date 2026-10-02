@@ -81,17 +81,21 @@ Transforma los elementos en reglas
 # No solo puedes aprender español, puedes aprender cualquier lengua desde cualquier otra lengua
 ## Para hablar español (si ya hablo inglés)
 
-| Español | - ¿Cómo suena?<br>- How does it sounds? | Inglés |
+| Español | ¿Cómo suena?<br>_(How does it sounds?)_ | Inglés |
 | ------- | --------------------------------------- | ------ |
 |         |                                         |        |
 
 ---
 ## Para hablar inglés (si ya hablo español)
 
-| Inglés | - How does it sounds?<br>- ¿Cómo suena? | Español |
+| Inglés | How does it sounds?<br>_(¿Cómo suena?)_ | Español |
 | ------ | --------------------------------------- | ------- |
 |        |                                         |         |
 
 ---
 ## Para hablar español (si ya hablo japonés)
 
+
+| Español | ¿Cómo suena?<br>_(Dō hatsuon shimasu ka?)_ | Japonés |
+| ------- | ------------------------------------------ | ------- |
+|         |                                            |         |
