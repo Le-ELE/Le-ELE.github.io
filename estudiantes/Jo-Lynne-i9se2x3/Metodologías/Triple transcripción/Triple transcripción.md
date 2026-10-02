@@ -24,21 +24,26 @@ Mis recomendaciones son:
 3.  Explora más la idea. 
 	1. Por ejemplo, añade una columna con la descripción:
    
-| Español | ¿Cómo suena?<br>_(How does it sounds?)_ | Inglés | Descripción:                                                                                    |
+| Español | ¿Cómo suena?<br>_(How does it sounds?)_ | Inglés | Descripción                                                                                     |
 | ------- | --------------------------------------- | ------ | ----------------------------------------------------------------------------------------------- |
 | Gato    | gah-toh                                 | cat    | Hermoso animal, Santiago vive con dos <br>_(Beautiful animal, Santiago lives with two of them)_ |
 		2.  O, por ejemplo, añade el tipo de palabra: 
 	
-| Español | ¿Cómo suena?<br>_(How does it sounds?)_ | Inglés | Tipo de palabra:       |
+| Español | ¿Cómo suena?<br>_(How does it sounds?)_ | Inglés | Tipo de palabra        |
 | ------- | --------------------------------------- | ------ | ---------------------- |
 | Planta  | plahn-tah                               | plant  | Sustantivo<br>_(noun)_ |
 
 3. Piensa en cualquier información que puedas usar para recordar mejor.
-	1. Por ejemplo, si estás teniendo problemas con los géneros gramaticales, puedes recordártelo con pequeñas notas:
+	1. Por ejemplo, si estás teniendo problemas con los géneros gramaticales, añadir el artículo a la palabra:
 
-| Español     | ¿Cómo suena?<br>_(How does it sounds?)_ | Inglés | Notas |
-| ----------- | --------------------------------------- | ------ | ----- |
-| El problema |                                         |        |       |
+| Español     | ¿Cómo suena?<br>_(How does it sounds?)_ | Inglés  | Notas                                                       |
+| ----------- | --------------------------------------- | ------- | ----------------------------------------------------------- |
+| El problema | ehl-...-proh-bleh-mah                   | problem | Escribo la palabra con "el" para recordar que es masculina. |
+o
+
+| Español                                    | ¿Cómo suena?<br>_(How does it sounds?)_                        | Inglés    | Tipo de palabra                                 |     |
+| ------------------------------------------ | -------------------------------------------------------------- | --------- | ----------------------------------------------- | --- |
+| hermosa<br>hermoso<br>hermosas<br>hermosos | eehr-moh-sah<br>eehr-moh-soh<br>eehr-moh-sahs<br>eehr-moh-sohs | beautiful | Adjetivo. Puede ser femenina, masculina, singul |     |
 
 ---
 # Para hablar en español (si hablo inglés)
