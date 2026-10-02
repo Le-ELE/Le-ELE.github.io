@@ -40,5 +40,6 @@ el material del curso, no puedes distinguirlas y acabarías perdiéndolas al
 actualizar. Con un mazo propio todo queda ordenado, y además puedes
 exportarlo o borrarlo cuando quieras sin tocar nada del curso.
 
-| Español | Inglés | Nota |
-| ------- | ------ | ---- |
+| Español                       | Inglés                        | Nota                                                       |
+| ----------------------------- | ----------------------------- | ---------------------------------------------------------- |
+| Quiero que aprendas mucho más | I want you to learn much more | Usamos el subjuntivo porque tenemos dos sujetos diferentes |
