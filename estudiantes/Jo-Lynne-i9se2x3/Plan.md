@@ -6,6 +6,7 @@
 4. Ejercicio de tritranscripción
 5. Selección de vocabulario importante
 6. Preguntas (el resto de la clase)
+7. Tarea
 
 ---
 
