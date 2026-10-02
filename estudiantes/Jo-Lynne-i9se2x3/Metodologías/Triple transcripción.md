@@ -2,7 +2,8 @@ La metodología es simple y está orientada a facilitar el aprendizaje de palabr
 
 Para aprendizaje y retención de vocabulario:
 
-
-|     |     |
-| --- | --- |
-|     |     |
+| Español | - ¿Cómo suena?<br>- ¿How does it sounds? | Inglés |
+| ------- | ---------------------------------------- | ------ |
+| La casa | kah-sah                                  | House  |
+Mis recomendaciones son: 
+1. Crea un sistema propio de reescritura en tu propia lengua 
