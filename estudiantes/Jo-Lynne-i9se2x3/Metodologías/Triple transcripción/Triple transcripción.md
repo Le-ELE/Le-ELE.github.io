@@ -2,25 +2,25 @@ La metodología es simple y está orientada a facilitar el aprendizaje de palabr
 
 Para aprendizaje y retención de vocabulario:
 
-| Español | - ¿Cómo suena?<br>(¿How does it sounds?) | Inglés |
+| Español | ¿Cómo suena?<br>_(¿How does it sounds?)_ | Inglés |
 | ------- | ---------------------------------------- | ------ |
 | La casa | lah-...-kah-sah                          | House  |
 Mis recomendaciones son: 
 1. Crea un sistema propio de reescritura en tu propia lengua. Si quieres revisa este: [[Sistema de reproducción de sonidos de inglés a español]] que puede servirte.
 2. Puedes usarlo para aprender como quieras, yo recomiendo:
 	1. Vocabulario: úsalo para aprender nuevas palabras individuales:
-	
 
-| Español | - ¿Cómo suena?<br>(¿How does it sounds?) | Inglés |
+| Español | ¿Cómo suena?<br>_(¿How does it sounds?)_ | Inglés |
 | ------- | ---------------------------------------- | ------ |
 | La casa | lah-...-kah-sah                          | House  |
 
-. Puedes usarlo para aprender como quieras, yo recomiendo:
-	2. Vocabulario: úsalo para aprender nuevas palabras individuales
+	2. Vocabulario: úsalo para aprender frases completas
 
-|     |     |
-| --- | --- |
-|     |     |
+
+| Español      | ¿Cómo suena?<br>(¿How does it sounds?) | Inglés |
+| ------------ | -------------------------------------- | ------ |
+| ¿Cómo suena? | koh-moh-...-suh-eh-nah                 | How    |
+
 
   
 3. 

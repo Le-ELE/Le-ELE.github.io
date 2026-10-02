@@ -1,4 +1,4 @@
 
-| Español | - ¿Cómo suena?<br>- How does it sounds? | Inglés |
+| Español | ¿Cómo suena?<br>_(How does it sounds?)_ | Inglés |
 | ------- | --------------------------------------- | ------ |
 |         |                                         |        |
