@@ -49,6 +49,19 @@ o
 | y                                          | ...-ee-...-                                                    | and                       |                                                                                                                                 |                                                   |
 | el gato es hermoso también                 | ehl-...-gah-toh-...-ehs-...-ehr-moh-soh-                       | the cat also is beautiful |                                                                                                                                 |                                                   |
 ## 4. Cambia el sistema
+ 
+ Esta es solo una guía, pero en realidad, puedes hacer los cambios que sean necesarios para que tu aprendizaje sea más sencillo para ti.
+### Por ejemplo, puedes cambiar el [[Sistema de reproducción de sonidos de inglés a español|sistema que aprendiste antes]] por uno que sea mejor para ti
+
+| Español                             | ¿Cómo suena?<br>_(How does it sounds?)_         | Inglés                               |
+| ----------------------------------- | ----------------------------------------------- | ------------------------------------ |
+| Mis flores y mis gatos son hermosos | meehs flohrehs ee meehs gahtohs sohn ehrmohsohs | My flowers and my cats are beautiful |
+Transforma los elementos en reglas
+
+
+| Español                            | ¿Cómo suena?<br>_(How does it sounds?)_ | Inglés |
+| ---------------------------------- | --------------------------------------- | ------ |
+| Mis ..... y mis ..... son hermosas |                                         |        |
 
 ---
 # Para hablar en español (si hablo inglés)
