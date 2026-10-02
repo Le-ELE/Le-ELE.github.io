@@ -6,4 +6,5 @@ Para aprendizaje y retención de vocabulario:
 | ------- | ---------------------------------------- | ------ |
 | La casa | kah-sah                                  | House  |
 Mis recomendaciones son: 
-1. Crea un sistema propio de reescritura en tu propia lengua 
+1. Crea un sistema propio de reescritura en tu propia lengua. Si quieres revisa este: [[sistema de reproducción de sonidos de inglés a español]] que puede servirte.
+2. 
