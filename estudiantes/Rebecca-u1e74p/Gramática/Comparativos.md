@@ -7,16 +7,21 @@
 
 # Superioridad
 
+| sujeto | verbo | más | adjetivo    | que | sujeto |
+| ------ | ----- | --- | ----------- | --- | ------ |
+| Yo     | soy   | más | lento       | que | tú     |
+| Tú     | eres  | más | inteligente | que | yo     |
 
-| sujeto | verbo | más | adjetivo    | que | sujeto | Inglés |
-| ------ | ----- | --- | ----------- | --- | ------ | ------ |
-| Yo     | soy   | más | lento       | que | tú     |        |
-| Tú     | eres  | más | inteligente | que | yo     |        |
-|        |       |     |             |     |        |        |
 - Quiero conocer a una persona que sepa más portugués que yo
 - Quiero ser más inteligente que tú
-- Quiero que él sea más intel
+- Quiero que él sea más inteligente que tú
+- Espero que (tú) seas más feliz que ayer
+- Espero que seas más feliz de lo que fuiste ayer
+- Me gustaría que habláramos más de lo que ya hablamos
+	- I would like us to talk more than we already talk
+- 
 
-| sujeto | verbo | más | adjetivo | que | sujeto | Inglés |
-| ------ | ----- | --- | -------- | --- | ------ | ------ |
-|        |       |     |          |     |        |        |
+| sujeto | verbo                                 | más | adjetivo    | que | sujeto |
+| ------ | ------------------------------------- | --- | ----------- | --- | ------ |
+| Yo     | quiero ser                            | más | inteligente | que | tú     |
+| Yo     | quiero conocer a una persona que sepa | más | portugués   | que | yo     |
