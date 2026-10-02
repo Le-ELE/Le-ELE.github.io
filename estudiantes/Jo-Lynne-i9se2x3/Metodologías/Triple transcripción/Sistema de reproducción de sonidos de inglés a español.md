@@ -8,6 +8,9 @@ Sistema de sonido recomendado: completa el tuyo:
 | o       | oh                                      |
 | u       | ooh                                     |
 
+---
+# B
+
 | Español | ¿Cómo suena?<br>_(How does it sounds?)_ |
 | ------- | --------------------------------------- |
 | ba      | bah                                     |
@@ -15,3 +18,19 @@ Sistema de sonido recomendado: completa el tuyo:
 | bi      | bih                                     |
 | bo      | boh                                     |
 | bu      | buh                                     |
+
+---
+# C
+
+| Español | ¿Cómo suena?<br>_(How does it sounds?)_ |
+| ------- | --------------------------------------- |
+| ca      | kah                                     |
+| ce      | seh                                     |
+| ci      | seeh                                    |
+| co      | koh                                     |
+| cu      | kuh                                     |
+
+---
+# etc...
+
+Crea cualquier sonido "simple" tal cual como TÚ lo escribirías a tu propio modo

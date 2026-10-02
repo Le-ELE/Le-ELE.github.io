@@ -33,7 +33,13 @@ Mis recomendaciones son:
 | ------- | --------------------------------------- | ------ | ---------------------- |
 | Planta  | plahn-tah                               | plant  | Sustantivo<br>_(noun)_ |
 
-3. Piensa en cualquier información que puedas usar para recordar mejor 
+3. Piensa en cualquier información que puedas usar para recordar mejor.
+	1. Por ejemplo, si estás teniendo problemas con los géneros gramaticales, puedes recordártelo con pequeñas notas:
+
+| Español     | ¿Cómo suena?<br>_(How does it sounds?)_ | Inglés | Notas |
+| ----------- | --------------------------------------- | ------ | ----- |
+| El problema |                                         |        |       |
+
 ---
 # Para hablar en español (si hablo inglés)
 
