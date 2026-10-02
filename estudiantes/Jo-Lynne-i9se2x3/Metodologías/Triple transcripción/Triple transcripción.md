@@ -29,7 +29,11 @@ Mis recomendaciones son:
 | Gato    | gah-toh                                 | cat    | Hermoso animal, Santiago vive con dos <br>_(Beautiful animal, Santiago lives with two of them)_ |
 		2.  O, por ejemplo, añade el tipo de palabra: 
 	
-3. 
+| Español | ¿Cómo suena?<br>_(How does it sounds?)_ | Inglés | Tipo de palabra:       |
+| ------- | --------------------------------------- | ------ | ---------------------- |
+| Planta  | plahn-tah                               | plant  | Sustantivo<br>_(noun)_ |
+
+3. Piensa en cualquier información que puedas usar para recordar mejor 
 ---
 # Para hablar en español (si hablo inglés)
 
