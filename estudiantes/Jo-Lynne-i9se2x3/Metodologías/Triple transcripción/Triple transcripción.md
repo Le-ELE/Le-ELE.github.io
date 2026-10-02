@@ -9,11 +9,7 @@ Mis recomendaciones son:
 1. Crea un sistema propio de reescritura en tu propia lengua. Si quieres revisa este: [[sistema de reproducción de sonidos de inglés a español]] que puede servirte.
 2. Puedes usarlo para aprender como quieras, yo recomiendo:
 	1. Vocabulario: úsalo para aprender nuevas palabras individuales:
-	   
-| Español | - ¿Cómo suena?<br>- How does it sounds? | Inglés |
-| ------- | --------------------------------------- | ------ |
-|         |                                         |        |
-
+	2. 
 ---
 # Para hablar en español (si hablo inglés)
 
