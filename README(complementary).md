@@ -167,15 +167,17 @@ estudiantes/Pruebas/Anki.md
   -> https://le-ele.github.io/estudiantes/Pruebas/LeELE_Anki_Pruebas.apkg
 ```
 
-**Nombre del archivo:** `LeELE_Anki_<Nombre>.apkg` (prefijo sin tilde, para
-que la URL sea ASCII pura). Lo genera `nombre_archivo()` y se publica en
+**Nombre del archivo y del mazo:** el mazo que aparece **dentro de Anki** es
+`LeELE_Anki_<Nombre>` y el archivo descargable es ese nombre más `.apkg`. El
+prefijo va sin tilde para que la URL sea ASCII pura. Los generan
+`nombre_mazo_estudiante()` / `nombre_archivo()`, y el archivo se publica en
 `Anki.json` (`"archivo"`); el botón lo lee de ahí en vez de repetir la regla.
 
 **Un solo mazo por estudiante.** Antes eran varios (`Anki/Vocabulario.md`,
 `Anki/Frases.md`) en una subcarpeta `Anki/`; ahora todo el material vive en un
-solo `Anki.md` en la raíz del estudiante y el deck se llama `Anki`. Con un
-único mazo la subcarpeta no aportaba nada y obligaba al botón a adivinar el
-nombre del archivo desde el path.
+solo `Anki.md` en la raíz del estudiante y el deck se llama
+`LeELE_Anki_<Nombre>`. Con un único mazo la subcarpeta no aportaba nada y
+obligaba al botón a adivinar el nombre del archivo desde el path.
 
 **El botón solo aparece** si el path matchea
 `/estudiantes/<código>/Anki(.html)`. Los estilos viven en `.leele-anki*` dentro
@@ -189,6 +191,12 @@ de `student.css`.
   vez que se corrige una traducción aparece una tarjeta repetida. Verificado con
   la librería real de Anki 26.9.3: importar, reimportar editado → 27 notas (no
   28) y el progreso de repaso intacto.
+- **Anki empareja los mazos importados por NOMBRE, no por id.** Verificado con
+  Anki 26.9.3: mismo nombre + distinto id → actualiza el mazo; distinto nombre +
+  mismo id → crea un mazo nuevo. Por eso `LeELE_Anki_<Nombre>` (que deriva
+  `nombre_mazo_estudiante()`) tiene que ser estable: si se cambia, quien ya
+  importó obtiene un mazo duplicado en vez de un rename y hay que
+  borrar/renombrar el viejo a mano. El `deck_id` es cosmético.
 - **El ID del modelo (`LEELE_MODEL_ID = 1607392319`) es fijo.** Si cambia, Anki
   deja de poder actualizar las notas viejas. Cambiar la estructura de la carta
   implica un modelo nuevo con otro ID.

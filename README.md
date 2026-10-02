@@ -97,15 +97,18 @@ La tabla se lee así:
   es para el estudiante y no genera tarjetas. Por eso no pongas ninguna otra
   tabla antes de la del mazo.
 - **Hay un solo mazo por estudiante.** El archivo se llama siempre `Anki.md` y
-  el mazo también `Anki`, para que al reimportar se actualice el mismo en vez
-  de crear otro. Todo el material de un estudiante va a esa única tabla.
+  el mazo que aparece **dentro de Anki** es `LeELE_Anki_<Nombre>` (p. ej.
+  `LeELE_Anki_Rebecca`). Ese nombre tiene que ser estable: Anki empareja los
+  mazos importados **por nombre**, así que si lo renombras a mano, al
+  reimportar se crea un mazo nuevo al lado en vez de actualizar. Todo el
+  material de un estudiante va a esa única tabla.
 - **Un `Anki.md` sin filas no rompe el build**: genera un `Anki.json` con 0 y
   la web muestra «todavía no tiene tarjetas» en lugar de un botón roto. Es el
   estado normal de un estudiante recién creado.
 - **El archivo descargable se llama `LeELE_Anki_<Nombre>.apkg`** (p. ej.
-  `LeELE_Anki_Pruebas.apkg`), sin tilde en el prefijo para que la URL sea ASCII
-  pura. Lo decide el build y el botón lo lee del `Anki.json`; nadie lo escribe
-  a mano.
+  `LeELE_Anki_Pruebas.apkg`): el mismo nombre del mazo más la extensión, sin
+  tilde en el prefijo para que la URL sea ASCII pura. Lo decide el build y el
+  botón lo lee del `Anki.json`; nadie lo escribe a mano.
 - **La columna 1 es el anverso y la 2 el reverso.** La 3 (nota) es opcional y se
   muestra debajo de la respuesta.
 - **Las dos primeras columnas son obligatorias.** Si una fila tiene el anverso
