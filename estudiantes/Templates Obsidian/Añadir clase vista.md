@@ -5,7 +5,7 @@
 
 - [ ] 
 ---
-# 3. Ejercicio de tritranscipción
+# 3. Ejercicio de [[Tritranscripción (triple transcripción)|tritranscripción]]
 
 | Español | ¿Cómo suena?<br>_(How does it sounds?)_ | Inglés |
 | ------- | --------------------------------------- | ------ |
