@@ -49,7 +49,7 @@ El subjuntivo lo usamos para hablar de cosas que no hacen parte de "la realidad"
 	- (tú) Vas a caminar después de (tú) escribir un mensaje a tu amiga.
 	- (yo) Voy a caminar después de (yo) escribir un mensaje a mi amiga.
 - Si el primer sujeto es diferente al segundo sujeto y tenemos, por ejemplo, antes de o después de, usamos el subjuntivo en el segundo verbo.
-	- (tú) Vas a caminar después de que (yo) escriba a mi amiga.
+	- (tú) Vas a caminar después de que yo escriba a mi amiga.
 
 | Futuro                   | conector de tiempo                       | presente de subjuntivo         |
 | ------------------------ | ---------------------------------------- | ------------------------------ |
@@ -62,6 +62,9 @@ El subjuntivo lo usamos para hablar de cosas que no hacen parte de "la realidad"
 
 ---
 
-| Español | Inglés | Nota |
-| ------- | ------ | ---- |
-|         |        |      |
+| Español     | Inglés    | Nota                                                                                        |
+| ----------- | --------- | ------------------------------------------------------------------------------------------- |
+|             |           |                                                                                             |
+|             |           |                                                                                             |
+|             |           |                                                                                             |
+|             |           |                                                                                             |
