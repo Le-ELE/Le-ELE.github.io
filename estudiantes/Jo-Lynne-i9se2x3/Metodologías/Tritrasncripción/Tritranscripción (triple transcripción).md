@@ -12,7 +12,9 @@ Para aprendizaje y retención de vocabulario:
 | ------- | --------------------------------------- | ------ |
 | La casa | lah-...-kah-sah                         | House  |
 Mis recomendaciones son: 
-# 1. Crea un sistema propio de reescritura en tu propia lengua. Si quieres revisa este: [[Sistema de reproducción de sonidos de inglés a español]] que puede servirte.
+# 1. Crea un sistema propio de reescritura en tu propia lengua. 
+
+Si quieres revisa este: [[Sistema de reproducción de sonidos de inglés a español]] que puede servirte.
 ## Puedes usarlo para aprender como quieras, yo recomiendo:
 ### Vocabulario: úsalo para aprender nuevas palabras individuales:
 

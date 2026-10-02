@@ -33,4 +33,4 @@ Sistema de sonido recomendado para aprender a través de [[Tritranscripción (tr
 ---
 # etc...
 
-Crea cualquier sonido "simple" tal cual como TÚ lo escribirías a tu propio modo. Completa y transforma al sistema.
+Crea cualquier sonido "simple" tal cual como TÚ lo escribirías a tu propio modo y en tu lengua. Completa y transforma al sistema.
