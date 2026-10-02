@@ -40,5 +40,10 @@ el material del curso, no puedes distinguirlas y acabarías perdiéndolas al
 actualizar. Con un mazo propio todo queda ordenado, y además puedes
 exportarlo o borrarlo cuando quieras sin tocar nada del curso.
 
-| Español | Inglés | Nota |
-| ------- | ------ | ---- |
+| Español     | Inglés     | Nota                                                                                        |
+| ----------- | ---------- | ------------------------------------------------------------------------------------------- |
+| terminar de | to finish  | generalmente "terminar" necesita "de" cuando vamos a usar otro verbo después en infinitivo. |
+| añadir      | to add     |                                                                                             |
+| sobrevivir  | to survive |                                                                                             |
+| un vuelo    | a flight   |                                                                                             |
+| crudo       | raw        |                                                                                             |
