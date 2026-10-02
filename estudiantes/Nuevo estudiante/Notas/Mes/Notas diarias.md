@@ -1,5 +1,0 @@
-- 
----
-## Errores para corregir
-
-- [ ] 

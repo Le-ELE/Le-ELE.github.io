@@ -4,7 +4,8 @@
 2. Resolución de errores (10 minutos o lo que sea necesario)
 3. Revisión de la gramática que estás aprendiendo afuera de la clase (10 minutos o lo que sea necesario)
 4. Ejercicio de tritranscripción
-5. Preguntas (el resto de la clase)
+5. Selección de vocabulario importante
+6. Preguntas (el resto de la clase)
 
 ---
 
