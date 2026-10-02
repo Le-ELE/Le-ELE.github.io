@@ -41,9 +41,12 @@ Mis recomendaciones son:
 | El problema | ehl-...-proh-bleh-mah                   | problem | Escribo la palabra con "el" para recordar que es masculina. |
 o
 
-| Español                                    | ¿Cómo suena?<br>_(How does it sounds?)_                        | Inglés    | Tipo de palabra                                 |     |
-| ------------------------------------------ | -------------------------------------------------------------- | --------- | ----------------------------------------------- | --- |
-| hermosa<br>hermoso<br>hermosas<br>hermosos | eehr-moh-sah<br>eehr-moh-soh<br>eehr-moh-sahs<br>eehr-moh-sohs | beautiful | Adjetivo. Puede ser femenina, masculina, singul |     |
+| Español                                    | ¿Cómo suena?<br>_(How does it sounds?)_                        | Inglés                    | Tipo de palabra                                                                                                                 | Ejemplo                                           |     |
+| ------------------------------------------ | -------------------------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- | --- |
+| hermosa<br>hermoso<br>hermosas<br>hermosos | eehr-moh-sah<br>eehr-moh-soh<br>eehr-moh-sahs<br>eehr-moh-sohs | beautiful                 | Adjetivo. Puede ser femenina, masculina, singular o plural.<br>_(Adjective. It can be femenine, masculine, singular or plural)_ | La planta es hermosa y el gato es hermoso también |     |
+| La planta es hermosa                       | lah-...-plahn-tah-...-ehs-...-ehr-moh-sah-                     | The plant is beautiful    |                                                                                                                                 |                                                   |     |
+| y                                          | ...-ee-...-                                                    | and                       |                                                                                                                                 |                                                   |     |
+| el gato es hermoso también                 | ehl-...-gah-toh-...-ehs-...-ehr-moh-soh-                       | the cat also is beautiful |                                                                                                                                 |                                                   |     |
 
 ---
 # Para hablar en español (si hablo inglés)
