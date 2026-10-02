@@ -79,18 +79,19 @@ Transforma los elementos en reglas
 
 ---
 # No solo puedes aprender español, puedes aprender cualquier lengua desde cualquier otra lengua
-# Para hablar en español (si hablo inglés)
+## Para hablar español (si ya hablo inglés)
 
 | Español | - ¿Cómo suena?<br>- How does it sounds? | Inglés |
 | ------- | --------------------------------------- | ------ |
 |         |                                         |        |
 
 ---
-# Para hablar en inglés (si hablo español)
+## Para hablar inglés (si ya hablo español)
 
 | Inglés | - How does it sounds?<br>- ¿Cómo suena? | Español |
 | ------ | --------------------------------------- | ------- |
 |        |                                         |         |
 
 ---
-Para hablar español 
+## Para hablar español (si ya hablo japonés)
+
