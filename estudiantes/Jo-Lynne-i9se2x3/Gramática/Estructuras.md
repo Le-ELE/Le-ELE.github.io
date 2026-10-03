@@ -1,4 +1,4 @@
-# acabar + de + infinitivo
+## acabar + de + infinitivo
 
 Someone just did something
 
@@ -6,7 +6,7 @@ Someone just did something
 - Ella acaba de irse (She just left)
 - Acabamos de hablar (We just talked)
 ---
-# seguir + gerundio
+## seguir + gerundio
 
 Someone is still doing something
 Someone keeps doing something
