@@ -5,9 +5,9 @@ fue disparado
 
  Participio
 
-| ar  | er / ir |
-| --- | ------- |
-| ado | ido     |
+| ar       | er / ir  |
+| -------- | -------- |
+| ado/a(s) | ido/a(s) |
 
 | Sujeto            | ser | participio | agente     | momento |
 | ----------------- | --- | ---------- | ---------- | ------- |
@@ -16,5 +16,7 @@ fue disparado
 | El muro de Berlín | fue | derrumbado |            | en 1989 |
 | Mi padre          | fue | nacido     |            | en 1963 |
 | Mi hermano        |     |            |            |         |
-| El rey Charles    | fue | coronado   |            |         |
-coronar
+| El rey Charles    | fue | coronado   |            | en 2025 |
+| Microsoft         | fue | fundada    |            | en 1975 |
+|                   |     |            |            |         |
+
