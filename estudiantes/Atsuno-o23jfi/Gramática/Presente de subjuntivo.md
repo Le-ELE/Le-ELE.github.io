@@ -104,9 +104,16 @@ pierdan
 
 
 
-|     | (-ir)<br>ie -> i             | (-ir)<br>ue -> u | (-er o ) |
-| --- | ---------------------------- | ---------------- | -------- |
-|     | preferir<br>sentir<br>mentir | dormir<br>morir  |          |
+comenzar
+
+|          | (-ir)<br>ie -> i                                 | (-er o -ar)<br>ie -> e                         | (-ir)<br>ue -> u    |
+| -------- | ------------------------------------------------ | ---------------------------------------------- | ------------------- |
+|          | - preferir<br>- sentir<br>- mentir<br>- invertir | - perder<br>- pensar<br>- comenzar<br>- querer | - dormir<br>- morir |
+| Yo       |                                                  |                                                |                     |
+| Tú       |                                                  |                                                |                     |
+| Ella     |                                                  |                                                |                     |
+| Nosotros |                                                  |                                                |                     |
+| Ustedes  |                                                  |                                                |                     |
 
 
 
