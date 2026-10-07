@@ -88,4 +88,5 @@ El subjuntivo lo usamos para hablar de cosas que no hacen parte de "la realidad"
 - Avísame si funciona el link tan pronto como te envíe la tarea
 - Recomiéndame un libro en español para leer la próxima vez que tengamos clase
 - Sugiéreme (sugerir/suggest) una ciudad para visitar cuando vaya a Alemania
-- Dime 
+- Dime sobre tus gatos cuando tengamos un tiempo en clase
+- 
