@@ -1,7 +1,7 @@
 # 1. Notas diarias
 - 
 ---
-## 2. Resolución de errores
+# 2. Resolución de errores
 
 - [ ] 
 ---
