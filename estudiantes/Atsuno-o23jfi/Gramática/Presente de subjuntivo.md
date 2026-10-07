@@ -58,6 +58,56 @@ muera
 muramos
 mueran
 
+pedir
+
+pida
+pidas
+pida
+pidamos
+pidan
+
+ie -> i /-ir
+
+mentir
+
+mienta
+mientas
+mienta
+mintamos
+mientan
+
+sentir
+
+sienta
+sientas
+sienta
+sintamos
+sientan
+
+preferir
+
+prefiera
+prefieras
+prefiera
+prefiramos
+prefieran
+
+ie -> e /-er / -ar
+
+perder
+
+pierda
+pierdas
+pierda
+perdamos
+pierdan
+
+
+
+|     | (-ir)<br>ie -> i             | (-ir)<br>ue -> u | (-er o ) |
+| --- | ---------------------------- | ---------------- | -------- |
+|     | preferir<br>sentir<br>mentir | dormir<br>morir  |          |
+
 
 
 ---
