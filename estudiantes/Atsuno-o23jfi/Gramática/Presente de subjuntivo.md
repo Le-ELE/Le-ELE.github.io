@@ -40,71 +40,7 @@ El subjuntivo lo usamos para hablar de cosas que no hacen parte de "la realidad"
 | Usted / Ella / Él       | haga    | salga    | duerma       |
 | Nosotros                | hagamos | salgamos | ==durmamos== |
 | Ustedes / Ellas / Ellos | hagan   | salgan   | duerman      |
-ue -> u / -ir
-
-dormir
-
-duerma
-duermas
-duerma
-durmamos
-duerman
-
-morir
-
-muera
-mueras
-muera
-muramos
-mueran
-
-pedir
-
-pida
-pidas
-pida
-pidamos
-pidan
-
-ie -> i /-ir
-
-mentir
-
-mienta
-mientas
-mienta
-mintamos
-mientan
-
-sentir
-
-sienta
-sientas
-sienta
-sintamos
-sientan
-
-preferir
-
-prefiera
-prefieras
-prefiera
-prefiramos
-prefieran
-
-ie -> e /-er / -ar
-
-perder
-
-pierda
-pierdas
-pierda
-perdamos
-pierdan
-
-
-
-comenzar
+## Cambio vocálico
 
 |          | (-ir)<br>ie -> i                                 | (-er o -ar)<br>ie -> e                         | (-ir)<br>ue -> u    |
 | -------- | ------------------------------------------------ | ---------------------------------------------- | ------------------- |
@@ -118,7 +54,7 @@ comenzar
 
 
 ---
-# 1. Predicciones:
+# 1. Predicciones 1:
 
 - Si el primer sujeto es igual al segundo sujeto y tenemos, por ejemplo, antes de o después de, usamos el infinitivo en el segundo verbo.
 	- (tú) Vas a caminar después de (tú) escribir un mensaje a tu amiga.
@@ -137,9 +73,14 @@ comenzar
 
 ---
 
-| Español     | Inglés    | Nota                                                                                        |
-| ----------- | --------- | ------------------------------------------------------------------------------------------- |
-|             |           |                                                                                             |
-|             |           |                                                                                             |
-|             |           |                                                                                             |
-|             |           |                                                                                             |
+## Predicciones 2
+
+| Imperativo | conector de tiempo                       | presente de subjuntivo         |
+| ---------- | ---------------------------------------- | ------------------------------ |
+| Avísame    | cuando                                   | termines todos tus planes      |
+| Llámame    | tan pronto como (as soon as)             | termines de trabajar           |
+| Escríbeme  | después de que                           | hagas ejercicio en el gimnasio |
+| Dime       | antes de que                             | salgas de la casa              |
+| Guíanos    | la próxima vez que  (the next time that) | visitemos Colombia             |
+|            |                                          |                                |
+- guiar
