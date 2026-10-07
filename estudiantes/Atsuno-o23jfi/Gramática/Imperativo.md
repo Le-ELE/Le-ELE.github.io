@@ -8,9 +8,9 @@
 - camina
 
 
-|         | -ar / -er / ir |     |
-| ------- | -------------- | --- |
-| usted   | subjuntivo     |     |
-| ustedes | subjuntivo     |     |
+|         | -ar / -er / ir |          |       |         |
+| ------- | -------------- | -------- | ----- | ------- |
+| usted   | subjuntivo     | trabaje  | coma  | camine  |
+| ustedes | subjuntivo     | trabajen | coman | caminen |
 
 

@@ -75,6 +75,8 @@ El subjuntivo lo usamos para hablar de cosas que no hacen parte de "la realidad"
 
 ## Predicciones 2
 
+^8ab4ad
+
 | Imperativo | conector de tiempo                       | presente de subjuntivo         |
 | ---------- | ---------------------------------------- | ------------------------------ |
 | Avísame    | cuando                                   | termines todos tus planes      |
