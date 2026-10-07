@@ -40,6 +40,24 @@ El subjuntivo lo usamos para hablar de cosas que no hacen parte de "la realidad"
 | Usted / Ella / Él       | haga    | salga    | duerma       |
 | Nosotros                | hagamos | salgamos | ==durmamos== |
 | Ustedes / Ellas / Ellos | hagan   | salgan   | duerman      |
+ue -> u / -ir
+
+dormir
+
+duerma
+duermas
+duerma
+durmamos
+duerman
+
+morir
+
+muera
+mueras
+muera
+muramos
+mueran
+
 
 
 ---
