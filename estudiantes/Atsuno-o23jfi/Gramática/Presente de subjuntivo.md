@@ -84,3 +84,8 @@ El subjuntivo lo usamos para hablar de cosas que no hacen parte de "la realidad"
 | Guíanos    | la próxima vez que  (the next time that) | visitemos Colombia             |
 |            |                                          |                                |
 - guiar
+- Escríbeme sobre la tarea de la semana después de que terminemos la clase
+- Avísame si funciona el link tan pronto como te envíe la tarea
+- Recomiéndame un libro en español para leer la próxima vez que tengamos clase
+- Sugiéreme (sugerir/suggest) una ciudad para visitar cuando vaya a Alemania
+- Dime 
