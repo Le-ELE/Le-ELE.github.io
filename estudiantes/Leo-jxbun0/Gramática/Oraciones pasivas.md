@@ -1,9 +1,11 @@
+
 ser + -ado / -ido
 
-fue disparado
+| Sujeto | ser | participio | agente |
+| ------ | --- | ---------- | ------ |
 
 
- # Participio
+# Participio
 
 | ar       | er / ir  |
 | -------- | -------- |
@@ -22,7 +24,7 @@ fue disparado
 | Microsoft               | fue     | fundada          |       |            | en 1975       |                        |
 | El logotipo de la banda | fue     | diseñado         |       | por Ivor   |               |                        |
 |                         |         |                  |       |            |               |                        |
-| La cena                 | fue     | cocinad          |       |            |               |                        |
+| La cena                 | fue     | cocinada         |       | por mí     |               |                        |
 
 
 ---
@@ -36,11 +38,11 @@ fue disparado
 
 # Futuro
 
-| Sujeto     | ser       | participio | lugar | agente | momento  | Corrección |
-| ---------- | --------- | ---------- | ----- | ------ | -------- | ---------- |
-| La casa    | va a ser  | construída |       |        | este año |            |
-| Los perros | van a ser | paseados   |       | por mí |          |            |
-|            |           |            |       |        |          |            |
+| Sujeto      | ser       | participio | lugar | agente    | momento  | Corrección |
+| ----------- | --------- | ---------- | ----- | --------- | -------- | ---------- |
+| La casa     | va a ser  | construída |       |           | este año |            |
+| Los perros  | van a ser | paseados   |       | por mí    |          |            |
+| El edificio | va a ser  | comprado   |       | por ellos |          |            |
 # Presente
 
 | Sujeto   | ser | participio | lugar               | agente         | momento | Corrección |
@@ -53,3 +55,4 @@ fue disparado
 | ---------- | ---- | ---------- | ------------- | -------- | ----- |
 | La canción | era  | tocada     | por mi abuelo | cada día |       |
 | Los perros | eran | paseados   | por mí        |          |       |
+| El carro   | era  | conducido  | por mí        |          |       |
