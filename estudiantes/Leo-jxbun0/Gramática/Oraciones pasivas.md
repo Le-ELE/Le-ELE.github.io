@@ -28,4 +28,17 @@ fue disparado
 | Sujeto     | ser       | participio | lugar | agente | momento  | Corrección |
 | ---------- | --------- | ---------- | ----- | ------ | -------- | ---------- |
 | La casa    | va a ser  | construída |       |        | este año |            |
-| Los perros | van a ser |            |       |        |          |            |
+| Los perros | van a ser | paseados   |       | por mí |          |            |
+|            |           |            |       |        |          |            |
+# Presente
+
+| Sujeto  | ser | participio | lugar               | agente         | momento | Corrección |
+| ------- | --- | ---------- | ------------------- | -------------- | ------- | ---------- |
+| La sopa | es  | cocinada   | en este restaurante | por esa señora |         |            |
+|         |     |            |                     |                |         |            |
+# Imperfecto
+
+| Sujeto     | ser | participio | agente        | momento  | lugar |
+| ---------- | --- | ---------- | ------------- | -------- | ----- |
+| La canción | era | tocada     | por mi abuelo | cada día |       |
+|            |     |            |               |          |       |
