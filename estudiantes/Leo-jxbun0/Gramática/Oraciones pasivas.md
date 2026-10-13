@@ -38,7 +38,7 @@ fue disparado
 |         |     |            |                     |                |         |            |
 # Imperfecto
 
-| Sujeto     | ser | participio | agente        | momento  | lugar |
-| ---------- | --- | ---------- | ------------- | -------- | ----- |
-| La canción | era | tocada     | por mi abuelo | cada día |       |
-|            |     |            |               |          |       |
+| Sujeto     | ser  | participio | agente        | momento  | lugar |
+| ---------- | ---- | ---------- | ------------- | -------- | ----- |
+| La canción | era  | tocada     | por mi abuelo | cada día |       |
+| Los perros | eran | paseados   | por mí        |          |       |
