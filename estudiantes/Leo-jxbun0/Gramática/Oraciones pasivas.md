@@ -22,6 +22,17 @@ fue disparado
 | Microsoft               | fue     | fundada          |       |            | en 1975       |                        |
 | El logotipo de la banda | fue     | diseñado         |       | por Ivor   |               |                        |
 |                         |         |                  |       |            |               |                        |
+| La cena                 | fue     | cocinad          |       |            |               |                        |
+
+
+---
+
+- El hombre fue gustado por los locales
+	- A los locales les gustó el hombre
+- usar (to wear)
+- 
+- 
+---
 
 # Futuro
 
@@ -32,10 +43,10 @@ fue disparado
 |            |           |            |       |        |          |            |
 # Presente
 
-| Sujeto  | ser | participio | lugar               | agente         | momento | Corrección |
-| ------- | --- | ---------- | ------------------- | -------------- | ------- | ---------- |
-| La sopa | es  | cocinada   | en este restaurante | por esa señora |         |            |
-|         |     |            |                     |                |         |            |
+| Sujeto   | ser | participio | lugar               | agente         | momento | Corrección |
+| -------- | --- | ---------- | ------------------- | -------------- | ------- | ---------- |
+| La sopa  | es  | cocinada   | en este restaurante | por esa señora |         |            |
+| El libro | es  | leído      |                     | por ella       |         |            |
 # Imperfecto
 
 | Sujeto     | ser  | participio | agente        | momento  | lugar |
