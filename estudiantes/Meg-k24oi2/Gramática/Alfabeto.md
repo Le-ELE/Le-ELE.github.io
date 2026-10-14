@@ -22,4 +22,10 @@ Solo un sonido por vocal
 - n (eneh) (n)
 - ñ (egneh) (gn)
 - p (peh) (p)
-- q (kuh)
+- q (kooh) (q) (siempre tiene "u" después)
+- r (erreh) (we roll it)
+	- pero / perro
+	- caro / carro
+- s (essay) (s)
+- t (teh) (t)
+- w (doble )
