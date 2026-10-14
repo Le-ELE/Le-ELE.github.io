@@ -47,5 +47,6 @@ Solo un sonido por vocal
 - y p L k d s
 	- _ e n t a n a 
 	- Ventana (window)
-- * * m n o c
+- i d m n o c
 	- _ _ e r t a
+	- puerta (door)
