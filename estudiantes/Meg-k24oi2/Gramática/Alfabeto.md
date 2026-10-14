@@ -1,4 +1,5 @@
-# Vocales (vowels)
+# Letras (letters)
+## Vocales (vowels)
 
 Solo un sonido por vocal
 
@@ -8,7 +9,7 @@ Solo un sonido por vocal
 - o (oh)
 - u (ooh)
 ---
-# Consonantes 
+## Consonantes 
 - b (beh) (b)
 - c (seh) (k/s)
 - d (deh) (d)
@@ -33,3 +34,13 @@ Solo un sonido por vocal
 	- vaca (vakah = bakah)
 - x (equis) (x - éxito)
 - y (i griega / yeh) ([g]eneral)
+	- yo
+	- soy
+	- y
+- z (setah) (s)
+	- zoo (sooh)
+---
+- * * * * * *
+	- _ a s a
+
+- 
