@@ -9,9 +9,17 @@ Solo un sonido por vocal
 - u (ooh)
 ---
 # Consonantes 
-- b (beh)
-- c (seh)
-- d (deh)
-- f (efeh)
-- g (heh)
-- 
+- b (beh) (b)
+- c (seh) (k/s)
+- d (deh) (d)
+- f (efeh) (ph)
+- g (heh) (g/h)
+- h (acheh) (no suena, solo con [ch])
+- j (hotah) (h)
+- k (kah) (k)
+- l (eleh) (l)
+- m (emeh) (m)
+- n (eneh) (n)
+- ñ (egneh) (gn)
+- p (peh) (p)
+- q (kuh)
