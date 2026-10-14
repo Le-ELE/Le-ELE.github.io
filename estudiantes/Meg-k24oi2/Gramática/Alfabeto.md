@@ -28,4 +28,8 @@ Solo un sonido por vocal
 	- caro / carro
 - s (essay) (s)
 - t (teh) (t)
-- w (doble )
+- w (doble ooh) () water
+- v (uveh / veh pequeña) (b = v)
+	- vaca (vakah = bakah)
+- x (equis) (x - éxito)
+- y (i griega / yeh) ([g]eneral)
