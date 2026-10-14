@@ -41,6 +41,8 @@ Solo un sonido por vocal
 	- zoo (sooh)
 ---
 - * * * * * *
-	- _ a s a
-
-- 
+	- c a s a
+- * c i m s e 
+	- t r a b a j o (siete letras)
+- * * * * * *
+	- _ _ _ _ _ _ _ 
