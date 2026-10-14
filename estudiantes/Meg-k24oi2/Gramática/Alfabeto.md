@@ -44,5 +44,8 @@ Solo un sonido por vocal
 	- c a s a
 - * c i m s e 
 	- t r a b a j o (siete letras)
-- * * * * * *
-	- _ _ _ _ _ _ _ 
+- y p L k d s
+	- _ e n t a n a 
+	- Ventana (window)
+- * * m n o c
+	- _ _ e r t a
