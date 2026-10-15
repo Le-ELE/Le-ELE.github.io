@@ -30,4 +30,5 @@ Estos verbos no usan el subjuntivo en el positivo, solo en el negativo.
 - No me parece que a tu gata le guste su camisa.
 - Pienso que a tu gata no le gusta que no estés prestándole atención a ella.
 - sepamos
+- polillas (moth)
 - 
