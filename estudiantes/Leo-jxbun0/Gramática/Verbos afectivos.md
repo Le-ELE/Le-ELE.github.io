@@ -15,3 +15,8 @@
 | a   | usted / ella / él       | le  |     | gustas | (tú)                      |
 | a   | nosotros                | nos |     | gusta  |                           |
 | a   | ustedes / ellas / ellos | les |     | gusta  |                           |
+- I need it
+	- Lo necesito
+- It is important
+	- Me importa (It is important to me)
+	- (it) Es importante
