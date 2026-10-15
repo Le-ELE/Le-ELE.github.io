@@ -1,4 +1,12 @@
 - deseos
 - predicciones
 - emociones
+- opiniones
 ---
+## Sujetos diferentes
+- Si hay un sujeto que hace las dos acciones, infinitivo.
+- Si hay un sujeto para la primera acción y otro sujeto diferente para la segunda, que + subjuntivo.
+---
+- Espero que tú y Meg tengan un muy buen trek
+- Odio que mi mamá tenga que trabajar
+- 
