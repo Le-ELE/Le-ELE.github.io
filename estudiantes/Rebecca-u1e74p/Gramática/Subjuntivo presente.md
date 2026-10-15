@@ -25,5 +25,7 @@ Estos verbos no usan el subjuntivo en el positivo, solo en el negativo.
 - No creo que ella esté mintiendo
 	- I don't think she is lying
 ---
+- Me parece que (a ti) te gustó(a) Medellín (It seems to me that you liked Medellin)
 - Me parece que te gusté (It seems to me that you liked me)
-- 
+- No me parece que a tu gata le guste su camisa.
+- Pienso que a tu gato
