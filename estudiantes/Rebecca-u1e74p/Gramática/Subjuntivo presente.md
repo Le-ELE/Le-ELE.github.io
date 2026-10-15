@@ -20,6 +20,10 @@ Estos verbos no usan el subjuntivo en el positivo, solo en el negativo.
 - No creo que esté lloviendo.
 ---
 - Creo que ella no está mintiendo
+	- I DO think she is not lying
  
 - No creo que ella esté mintiendo
+	- I don't think she is lying
 ---
+- Me parece que te gusté (It seems to me that you liked me)
+- 
