@@ -27,3 +27,8 @@
 | pluscuamperfecto | condicional compuesto |
 | ---------------- | --------------------- |
 | hubiera comido   | habría comido         |
+
+---
+
+- Hoy visité a mi amiga y si no la hubiera visitado, no me hubiera dado cuenta de que tiene un nuevo novio
+- Si Meg no hubiera ido a la caminata conmigo, me hubiera aburrido.
