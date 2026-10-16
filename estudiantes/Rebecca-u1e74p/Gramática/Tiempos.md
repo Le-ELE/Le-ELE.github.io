@@ -22,3 +22,8 @@
 ---
 
 ![[Pasted image 20261016174055.png]]
+
+
+| pluscuamperfecto | condicional compuesto |
+| ---------------- | --------------------- |
+| hubiera comido   | habría comido         |
