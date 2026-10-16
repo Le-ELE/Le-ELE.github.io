@@ -3,15 +3,25 @@
 | --- | ----------------------------- | ------------------------------ | ------------------------------------------------ | -------------------- |
 | Yo  | soy                           | estoy                          | tengo                                            | hay                  |
 | Tú  | eres                          | estás                          | tienes                                           |                      |
+# Con acciones
 - I am...
 	- traveling (viajar -> viajando)
+		- Estoy viajando
 	- learning (aprender -> aprendiendo)
-	- eating
+		- Estoy aprendiendo
+	- eating (comer -> comiendo)
+		- Estoy comiendo
+	-  studying (estudiar -> estudiando)
+		- Estoy estudiando
+---
+- sitting (sentar -> sentando)
+	- Estoy sentada
+---
+# Características
+- 
 	- blonde
 	- short
 	- welsh (galés)
-	- sitting
-	- studying
 	- concentrated
 	- happy
 	- sad
@@ -19,3 +29,9 @@
 	- hungry
 	- tired
 	- excited
+
+Gerundio (gerund -ing)
+
+| -ar   | -er / -ir |
+| ----- | --------- |
+| -ando | -iendo    |
