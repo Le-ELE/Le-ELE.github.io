@@ -14,9 +14,6 @@
 	-  studying (estudiar -> estudiando)
 		- Estoy estudiando
 ---
-- sitting (sentar -> sentando)
-	- Estoy sentada
----
 # Características
 - blonde (rubia/o)
 - short (baja/o)
@@ -33,7 +30,11 @@
 
 # Excepciones
 
-- hungry ()
+- hungry (hambriento)
+	- hunger (hambre)
+		- Tengo hambre
+- sitting (sentar -> sentando)
+	- Estoy sentada
 
 
 Gerundio (gerund -ing)
