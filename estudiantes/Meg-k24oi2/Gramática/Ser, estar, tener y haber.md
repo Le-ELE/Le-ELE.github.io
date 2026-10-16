@@ -18,17 +18,23 @@
 	- Estoy sentada
 ---
 # Características
-- 
-	- blonde
-	- short
-	- welsh (galés)
-	- concentrated
-	- happy
-	- sad
-	- relaxed
-	- hungry
-	- tired
-	- excited
+- blonde (rubia/o)
+- short (baja/o)
+- welsh (galesa)
+- happy (feliz)
+- sad (triste)
+# Circunstancia
+- concentrated (concentrada/o)
+- happy (feliz)
+- sad (triste)
+- relaxed (relajada/o)
+- tired (cansada/o)
+- excited (emocionada/o)
+
+# Excepciones
+
+- hungry ()
+
 
 Gerundio (gerund -ing)
 
