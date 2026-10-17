@@ -95,7 +95,11 @@ temblar
 ---
 - tranquilicémonos
 	- tranquilizar
-- 
+- calmémonos
+- caminemos más despacio
+- vamos a tomárnoslo con calma
+---
+
 
 
 
