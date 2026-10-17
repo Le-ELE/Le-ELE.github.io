@@ -24,10 +24,32 @@ o -> u
 ---
 mentir
 preferir
+sonreír
+sentir
+seguir
+competir
+
 
 - miento
 	- mintamos
-- 
+- preferir
+	- prefiramos
+- sonreír
+	- sonriamos
+- sentir
+	- sintamos
+- seguir
+	- sigamos
+- competir
+	- compitamos
+	- 
+
+---
+pensar
+gobernar
+
+- pienso
+	- pensemos
 
 
 # Negativo
