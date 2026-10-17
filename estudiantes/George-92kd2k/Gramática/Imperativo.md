@@ -85,6 +85,17 @@ temblar
 - comencemos
 - empecemos
 - paremos en
+- salgamos
+- digámosle (Let's tell her)
+- digámoselo  (Let's tell her it)
+- hablémoslo (let's talk about it)
+- hablémosle (Let's talk to her)
+- hablémoselo (Let's talk about it to her)
+- olvidémoslo
+---
+- tranquilicémonos
+	- tranquilizar
+- 
 
 
 
