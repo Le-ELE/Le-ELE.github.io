@@ -73,7 +73,18 @@ temblar
 - tiremos una moneda para decidir quién empieza
 - confiar
 - la cagada
-- 
+---
+- vea
+	- veamos
+- escribamos 
+- conozcamos
+- Reunirse
+	- reunámonos con él
+- veámonos
+- tengamos esta conversación ahora
+- comencemos
+- empecemos
+- paremos en
 
 
 
