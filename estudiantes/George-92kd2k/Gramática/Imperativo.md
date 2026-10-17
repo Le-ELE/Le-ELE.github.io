@@ -47,9 +47,25 @@ competir
 ---
 pensar
 gobernar
+temblar
 
 - pienso
 	- pensemos
+- gobernar
+	- gobierno
+		- gobernemos
+- temblar
+	- tiemblo
+		- temblemos
+- negarse
+	- me niego
+		- ~~neguemosnos~~
+		- neguémonos
+- irse
+	- me voy
+		- ~~vayámosnos~~
+		- vayámonos
+
 
 
 # Negativo
