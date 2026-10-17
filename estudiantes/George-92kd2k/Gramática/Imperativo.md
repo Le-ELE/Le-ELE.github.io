@@ -65,6 +65,15 @@ temblar
 	- me voy
 		- ~~vayámosnos~~
 		- vayámonos
+---
+- mintamos a nuestras madres y salgamos al bar
+- sonreír
+	- sonriamos
+- moneda
+- tiremos una moneda para decidir quién empieza
+- confiar
+- la cagada
+- 
 
 
 
