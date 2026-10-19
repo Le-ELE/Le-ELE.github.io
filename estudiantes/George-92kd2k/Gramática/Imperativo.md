@@ -129,4 +129,8 @@ Al principio del verbo
 - A dónde quieres que vayamos?
 - Entremos a este bar.
 - No entremos en este.
-- Pues, yo sé otros en la próximo barrio, 
+- Pues, yo sé que hay otros en el próximo barrio. Busquemos allí.
+- Escuché que en ese barrio hay un restaurante muy bueno vegetariano, busquémoslo.
+- No vayamos (a ese) porque la dueña es mi exnovia.
+- Entonces corramos a Il Forno antes de que cierren.
+- 
