@@ -102,5 +102,19 @@ temblar
 
 
 
-
+# Positivo 
+Al final del verbo
 # Negativo
+
+Al principio del verbo 
+
+---
+
+- repasar (temas o información / to review)
+	- Repasémoslo
+	- No lo repasemos
+- fijarse (to check / to take a look)
+	- Fíjate en la gramática
+	- Fíjate en tu bolsa
+	- Fijémonos en el carro
+- 
