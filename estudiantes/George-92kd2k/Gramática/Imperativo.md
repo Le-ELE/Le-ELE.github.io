@@ -117,4 +117,16 @@ Al principio del verbo
 	- Fíjate en la gramática
 	- Fíjate en tu bolsa
 	- Fijémonos en el carro
-- 
+- guitarra
+- toquemos la guitarra
+- No la toques
+- No la toquemos
+---
+- Bueno, vamos a revisar el subjuntivo, pero primero repasemos el imperativo para estar seguros.
+- Es tarde y tengo hambre, almorcemos ya.
+- Pidámoslo por Rappi.
+- Después de almorzar tengo tiempo, entonces vayámonos del restaurante después.
+- A dónde quieres que vayamos?
+- Entremos a este bar.
+- No entremos en este.
+- Pues, yo sé otros en la próximo barrio, 
