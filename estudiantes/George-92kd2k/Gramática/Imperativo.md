@@ -133,4 +133,9 @@ Al principio del verbo
 - Escuché que en ese barrio hay un restaurante muy bueno vegetariano, busquémoslo.
 - No vayamos (a ese) porque la dueña es mi exnovia.
 - Entonces corramos a Il Forno antes de que cierren.
+
+
+---
+
+- El Nacional va~~n~~ a jugar hoy.
 - 
