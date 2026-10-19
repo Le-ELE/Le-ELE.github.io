@@ -10,3 +10,11 @@
 ---
 
 https://le-ele.github.io/estudiantes/nombre_y_código_del_estudiante/
+
+---
+
+- Empezar el subjuntivo por tipos de triggers
+	- [ ] Sujetos diferentes
+
+markdown
+
