@@ -40,5 +40,7 @@ el material del curso, no puedes distinguirlas y acabarías perdiéndolas al
 actualizar. Con un mazo propio todo queda ordenado, y además puedes
 exportarlo o borrarlo cuando quieras sin tocar nada del curso.
 
-| Español | Inglés | Nota |
-| ------- | ------ | ---- |
+| Español                                               | Inglés                                                  | Nota                                                                                                    |
+| ----------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| La peor temporada en mi opinión es invierno.          | The worst season in my opinion is winter                | Puedes cambiar "temporada" y "invierno"                                                                 |
+| Quieren que los granjeros tienen más luz en la mañana | They want the farmers to have more light in the morning | We don't need "that" in english, but in spanish we add it when talking about the action of someone else |
