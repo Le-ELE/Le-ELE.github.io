@@ -28,4 +28,10 @@
 # Cosas que AÚN no han pasado
 
 - ¿Qué cosas no has hecho, pero quieres hacer y cuándo vas a hacerlas?
-- Yo pienso que no hay muchas cosas que yo quier
+- Yo pienso que no hay muchas cosas que yo quiero hacer en Medellín ahora, pero el próximo mes quiero ir a la playa en México en Playa del Carmen.
+- Aún no he ido a Playa del Carmen, pero quiero ir el próximo mes.
+---
+- Yo nunca he...
+	- Yo nunca he ido a Cancún.
+	- No, yo nunca he ido a Cancún.
+- 
