@@ -34,4 +34,9 @@
 - Yo nunca he...
 	- Yo nunca he ido a Cancún.
 	- No, yo nunca he ido a Cancún.
+- conduc(ido)
+- enseñ(ado)
+- fumado
+- bebido
+- tomado
 - 
