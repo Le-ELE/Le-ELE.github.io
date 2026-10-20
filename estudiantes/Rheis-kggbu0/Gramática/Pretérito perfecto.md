@@ -39,4 +39,8 @@
 - fumado
 - bebido
 - tomado
+- usar
+- bermudas
 - 
+---
+- pronto
