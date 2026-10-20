@@ -41,6 +41,12 @@
 - tomado
 - usar
 - bermudas
+- Yo nunca he comprado ropa en Medellín
+- probado
+- hacer un piercing
+- Yo nunca he hecho un piercing
+- Yo nunca he tenido que usar gafas / lentes
+- Yo nunca he tenido que usar braces
 - 
 ---
 - pronto
