@@ -17,4 +17,15 @@
 - Hoy yo solamente he trabajado
 ---
 - ¿Qué has hecho esta semana?
-- Esta semana yo he trabajado lunes y martes, pero en la noche del lunes mi y mi amigo Justis
+- Esta semana yo he trabajado lunes y martes, pero en la noche del lunes mi y mi amigo Justuce fuimos al estadio para correr.
+---
+- ¿Qué has aprendido este mes?
+- Este mes he aprendido las oraciones pasivas.
+---
+- ¿Cuáles lugares has visitado este año?
+- Este año yo he visitado Montreal y Medellín, Colombia.
+----
+# Cosas que AÚN no han pasado
+
+- ¿Qué cosas no has hecho, pero quieres hacer y cuándo vas a hacerlas?
+- Yo pienso que no hay muchas cosas que yo quier
