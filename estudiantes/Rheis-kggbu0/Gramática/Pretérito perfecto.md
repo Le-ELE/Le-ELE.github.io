@@ -12,6 +12,10 @@
 | nosotros                | hemos |                |
 | ustedes / ellas / ellos | han   |                |
 - Yo he comido mucho hoy
+- Mi madre nunca ha visitado Colombia
+- Mis hermanos han fumado marihuana
+- señora de la limpieza
+- 
 ---
 - ¿Qué has hecho hoy?
 - Hoy yo solamente he trabajado
@@ -47,6 +51,8 @@
 - Yo nunca he hecho un piercing
 - Yo nunca he tenido que usar gafas / lentes
 - Yo nunca he tenido que usar braces
+- cortar
+- Yo nunca he cortado mi bigote en tres meses
 - 
 ---
 - pronto

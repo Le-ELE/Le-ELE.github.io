@@ -18,7 +18,8 @@
       [[Rheis-kggbu0/Clases/Octubre/2026-10-01|2026-10-01]]
 - [x] 8.
       [[Rheis-kggbu0/Clases/Octubre/2026-10-07|2026-10-07]]
-- [ ] 9.
+- [x] 9.
+      
 - [ ] 10.
 
 ---
