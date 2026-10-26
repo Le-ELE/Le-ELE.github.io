@@ -12,4 +12,9 @@
 	- Me asustaría el descubrimiento de IA si lo usaran para ganar dinero.
 - esperanza
 - malvado
-- Si los descubrimiento fueran puros, me sentiría mejor porque... 
+- Si los descubrimiento fueran puros, me sentiría mejor porque...
+- No creo que 
+- filosófico
+- filosofía
+- estéril
+- 
