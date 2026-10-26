@@ -6,4 +6,10 @@
 - ¿Qué tipo de película no te gustaría que fuera You can see everything?
 	- Me parece una película muy interesante, entonces ojalá que mantenga mi interés.
 - ¿Cuál descubrimiento científico te gustaría que ocurriera en los próximos 5 años?
-	- Me gustaría que descubriera la energía de fisión.
+	- Me gustaría que descubrieran la energía de fisión.
+	- Ojalá que usen su conocimiento para el bien mayor.
+- ¿Qué tipo de descubrimiento te (daría miedo) asustaría?
+	- Me asustaría el descubrimiento de IA si lo usaran para ganar dinero.
+- esperanza
+- malvado
+- Si los descubrimiento fueran puros, me sentiría mejor porque... 
