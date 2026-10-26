@@ -1,2 +1,0 @@
-- ¿Qué tipo de disfraz te gustaría tener si no tuvieras el de almirante? 
-	- Si encontraría un disfraz, me gustaría un que se pueda usar en todos las fiestas.

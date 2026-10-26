@@ -1,0 +1,6 @@
+- ¿Qué tipo de disfraz te gustaría tener si no tuvieras el de almirante? 
+	- Si encontrara un disfraz, me gustaría uno que se pueda (pudiera) usar en todos las fiestas.
+- ¿Qué tipo de disfraz te gustaría que tuviera Fran para combinar con el tuyo?
+	- Me gustaría que Fran buscara un disfraz de Star Wars
+	- Quiero que Fran encuentre algo divertido y bonito de ciencia ficción
+- 
