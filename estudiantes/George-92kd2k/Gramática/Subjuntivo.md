@@ -3,4 +3,4 @@
 - ¿Qué tipo de disfraz te gustaría que tuviera Fran para combinar con el tuyo?
 	- Me gustaría que Fran buscara un disfraz de Star Wars
 	- Quiero que Fran encuentre algo divertido y bonito de ciencia ficción
-- 
+- ¿
