@@ -23,4 +23,10 @@
 - Cuando tenías 20 años, qué música te gustaba escuchar?
 	- Cuando yo tenía 20 años, me gustaba el hiphop alternativo
 - ¿Cómo era tu casa cuando tenías 15 años y cómo es ahora?
-	- 
+	- Cuando yo tenía 15 años, mi casa era 
+- Vivíamos en la casa
+---
+# Acciones simultáneas
+
+- Ayer estaba escuchando música mientras cocinaba
+- 
