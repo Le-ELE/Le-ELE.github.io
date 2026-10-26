@@ -29,4 +29,9 @@
 # Acciones simultáneas
 
 - Ayer estaba escuchando música mientras cocinaba
-- 
+- --
+- ¿Qué hiciste ayer?
+	- Ayer yo fui a correr mientras yo escuchaba la música
+- Ayer yo vi un programa mientras yo trabajaba con Claude (en mi computador)
+---
+- Estaba 
