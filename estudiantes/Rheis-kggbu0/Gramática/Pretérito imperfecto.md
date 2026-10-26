@@ -11,4 +11,12 @@
 - ¿Cuántos años tenías cuando te hiciste tu primer tatuaje?
 	- Tenía 19 años cuando me hice mi primer tatuaje
 - --
-- ¿Cuando eras niño, qué te gu
+- Cuando eras niño, qué te gustaba comer?
+	- Cuando yo era (un) niño, me gustaban los nuggets de pollo
+	- Cuando yo era niño, me gustaban los pepinos
+- Cuando tenías 15 años, qué te gustaba hacer?
+	- Cuando yo tenía 15 años, me gustaban los videojuegos
+- Cuál videojuego era tu favorito?
+	- Mi videojuego favorito era TF2
+- Cuando tenías 20 años, qué hacías con tu tiempo libre?
+	- En mi tiempo libre cuando yo tenía 20 años, yo fotografiaba todo que yo hacer
