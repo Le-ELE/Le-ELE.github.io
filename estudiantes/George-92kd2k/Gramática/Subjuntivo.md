@@ -3,4 +3,7 @@
 - ¿Qué tipo de disfraz te gustaría que tuviera Fran para combinar con el tuyo?
 	- Me gustaría que Fran buscara un disfraz de Star Wars
 	- Quiero que Fran encuentre algo divertido y bonito de ciencia ficción
-- ¿
+- ¿Qué tipo de película no te gustaría que fuera You can see everything?
+	- Me parece una película muy interesante, entonces ojalá que mantenga mi interés.
+- ¿Cuál descubrimiento científico te gustaría que ocurriera en los próximos 5 años?
+	- Me gustaría que descubriera la energía de fisión.
