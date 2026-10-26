@@ -34,4 +34,7 @@
 	- Ayer yo fui a correr mientras yo escuchaba la música
 - Ayer yo vi un programa mientras yo trabajaba con Claude (en mi computador)
 ---
-- Estaba 
+- Estaba (-ando / -iendo) cuando indefinido.
+	- Ayer estaba cocinando cuando llegaste.
+- La semana pasada estaba viendo una película cuando recibí tu llamada
+- Ayer estaba durmiendo cuando Louise me texteó 
