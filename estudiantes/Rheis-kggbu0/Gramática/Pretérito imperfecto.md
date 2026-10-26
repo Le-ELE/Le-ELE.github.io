@@ -19,4 +19,8 @@
 - Cuál videojuego era tu favorito?
 	- Mi videojuego favorito era TF2
 - Cuando tenías 20 años, qué hacías con tu tiempo libre?
-	- En mi tiempo libre cuando yo tenía 20 años, yo fotografiaba todo que yo hacer
+	- En mi tiempo libre cuando yo tenía 20 años, yo fotografiaba todo lo que yo hacía
+- Cuando tenías 20 años, qué música te gustaba escuchar?
+	- Cuando yo tenía 20 años, me gustaba el hiphop alternativo
+- ¿Cómo era tu casa cuando tenías 15 años y cómo es ahora?
+	- 
