@@ -17,4 +17,7 @@
 - filosófico
 - filosofía
 - estéril
+- empleados
+- que se han ido
+- no hay duda
 - 
