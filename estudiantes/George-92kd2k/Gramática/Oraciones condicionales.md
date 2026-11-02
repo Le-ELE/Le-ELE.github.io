@@ -14,4 +14,6 @@
 			- me hubiera ido a Canadá
 ---
 - ¿Qué hubieras hecho si la prostituta no te hubiera tirado la billetera?
-- Si hubiera mantenido 
+- Si hubiera mantenido mi billetera, hubiera debido ir a la embajada por mis tarjetas
+	- Si se hubiera quedado con...
+- Si no hubiera cambiado la hora de day light savings, me hubiera levantado más temprano
