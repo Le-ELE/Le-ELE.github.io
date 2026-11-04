@@ -152,6 +152,8 @@ El subjuntivo lo usamos para hablar de cosas que no hacen parte de "la realidad"
 - Quiero aprender español para hablar con locales
 - Quiero aprender español para que los locales hablen conmigo
 - --
+# Verbos afectivos con dos sujetos
+
 - Me gusta comer contigo
 	- 
 - Me gusta que comas conmigo
@@ -162,4 +164,6 @@ El subjuntivo lo usamos para hablar de cosas que no hacen parte de "la realidad"
 - ¿Qué te molesta que otras personas hagan?
 	- Me molesta que otras personas escuchen la música muy alto
 	- Me molesta que otras personas hagan sonidos cuando ellos comen
-- ¿Qué te fasci
+- ¿Qué te fascina que otras personas hagan?
+	- Me fascina que otras personas canten muy bien
+	- Me fascina que otras personas conozcan mucho sobre historia
