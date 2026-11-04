@@ -50,7 +50,15 @@ El subjuntivo lo usamos para hablar de cosas que no hacen parte de "la realidad"
 | Ella     |                                                  |                                                |                     |
 | Nosotros |                                                  |                                                |                     |
 | Ustedes  |                                                  |                                                |                     |
+## Completamente irregulares
 
+|          | ser    | ir      |
+| -------- | ------ | ------- |
+| Yo       | sea    | vaya    |
+| Tú       | seas   | vayas   |
+| Ella     | sea    | vaya    |
+| Nosotros | seamos | vayamos |
+| Ustedes  | sean   | vayan   |
 
 
 ---
@@ -148,4 +156,10 @@ El subjuntivo lo usamos para hablar de cosas que no hacen parte de "la realidad"
 	- 
 - Me gusta que comas conmigo
 - ---
-- 
+- ¿Qué te gusta de tu mamá?
+	- Me gusta que ella hable conmigo mucho
+	- No me gusta que ella no sea muy buena para limpiar/organizar
+- ¿Qué te molesta que otras personas hagan?
+	- Me molesta que otras personas escuchen la música muy alto
+	- Me molesta que otras personas hagan sonidos cuando ellos comen
+- ¿Qué te fasci
