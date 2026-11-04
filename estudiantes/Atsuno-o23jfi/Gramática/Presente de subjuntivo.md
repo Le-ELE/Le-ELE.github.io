@@ -107,7 +107,15 @@ El subjuntivo lo usamos para hablar de cosas que no hacen parte de "la realidad"
 - Necesitar
 	- ¿Qué necesitas que otra persona haga esta semana?
 		- Necesito que mi mamá cocine para mí
-		- NEces
+		- Necesito que mi amigo me escriba
 - Querer
-- Desear
-- Esperar
+	- ¿Qué quiere tu mamá que tú hagas?
+		- Mi mamá quiere que (yo) limpie mi habitación
+	- ¿Qué quiere tu papá que tu mamá haga?
+		- Mi papá quiere que mi mamá lave su ropa
+	- ¿Qué quiere tu mamá que tu papá haga?
+		- Mi mamá quiere que mi papá le ayude 
+- Desear (wish)
+	- 
+- Esperar (hope)
+	- 
