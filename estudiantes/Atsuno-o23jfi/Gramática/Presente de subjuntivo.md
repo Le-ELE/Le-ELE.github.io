@@ -116,6 +116,12 @@ El subjuntivo lo usamos para hablar de cosas que no hacen parte de "la realidad"
 	- ¿Qué quiere tu mamá que tu papá haga?
 		- Mi mamá quiere que mi papá le ayude 
 - Desear (wish)
-	- 
+	- Mi gato desea que yo compre la comida más cara
+	- Mi amiga desea que su novio vaya de vacaciones con ella
+	- Mi abuelo desea que mi hermana aprenda más en la escuela
+	- Yo deseo que mi trabajo me de más dinero
+	- Tú deseas que yo te escriba más
 - Esperar (hope)
+	- Yo espero que mi mamá compre una ropa nueva
+	- Esperas que ella escuche a su hermano
 	- 
