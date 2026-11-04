@@ -132,3 +132,8 @@ El subjuntivo lo usamos para hablar de cosas que no hacen parte de "la realidad"
 - ¿Qué quieres que pase en Lima?
 	- Yo quiero que la tranquilidad me encuentre
 		- que el sol brille 
+- nublado
+- ¿Qué no quieres que pase en Lima?
+	- No quiero que en mi trabajo me den mucho trabajo
+- ---
+- ¿Qué necesitas de una persona para que sea tu
