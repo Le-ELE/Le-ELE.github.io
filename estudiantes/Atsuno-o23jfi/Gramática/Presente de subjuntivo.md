@@ -136,4 +136,16 @@ El subjuntivo lo usamos para hablar de cosas que no hacen parte de "la realidad"
 - ¿Qué no quieres que pase en Lima?
 	- No quiero que en mi trabajo me den mucho trabajo
 - ---
-- ¿Qué necesitas de una persona para que sea tu
+- ¿Qué necesitas de una persona para que sea tu pareja?
+	- Necesito que la persona tenga un trabajo
+	- Necesito que a la persona le gusten los animales 
+	- Necesito que la persona viaje conmigo
+---
+- Quiero aprender español para hablar con locales
+- Quiero aprender español para que los locales hablen conmigo
+- --
+- Me gusta comer contigo
+	- 
+- Me gusta que comas conmigo
+- ---
+- 
