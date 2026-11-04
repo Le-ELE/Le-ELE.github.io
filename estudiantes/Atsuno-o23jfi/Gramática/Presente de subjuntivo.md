@@ -124,4 +124,11 @@ El subjuntivo lo usamos para hablar de cosas que no hacen parte de "la realidad"
 - Esperar (hope)
 	- Yo espero que mi mamá compre una ropa nueva
 	- Esperas que ella escuche a su hermano
-	- 
+		-  Esperas que ella escuche sobre su hermano
+	- Esperamos que nuestra amiga enferma se quede en la casa
+	- Ellos esperan que sus papás les compren una bicicleta
+	- Mi profesor espera que yo le ayude el fin de semana
+- ---
+- ¿Qué quieres que pase en Lima?
+	- Yo quiero que la tranquilidad me encuentre
+		- que el sol brille 
