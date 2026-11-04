@@ -91,4 +91,23 @@ El subjuntivo lo usamos para hablar de cosas que no hacen parte de "la realidad"
 - Recomiéndame un libro en español para leer la próxima vez que tengamos clase
 - Sugiéreme (sugerir/suggest) una ciudad para visitar cuando vaya a Alemania
 - Dime sobre tus gatos cuando tengamos un tiempo en clase
-- 
+
+---
+
+# Sujetos diferentes
+
+- Quiero bailar contigo
+- Quiero que bailes conmigo
+---
+- Quiero comer contigo
+- Quiero que comas conmigo
+- Quiero que ella coma conmigo
+- Quiero que coman conmigo
+- --
+- Necesitar
+	- ¿Qué necesitas que otra persona haga esta semana?
+		- Necesito que mi mamá cocine para mí
+		- NEces
+- Querer
+- Desear
+- Esperar
