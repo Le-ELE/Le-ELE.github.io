@@ -15,4 +15,13 @@ yo -> ella
 - Santiago me dijo que hiciera mi tarea
 
 imperativo -> imperfecto de subjuntivo
-tú -> mi
+tú -> yo  (sujetos)
+tu -> mi (posesivos)
+
+---
+- Meg: llámame después de la clase con Santiago
+- Meg me dijo que la llamara después de la clase contigo 
+
+---
+
+prometer
