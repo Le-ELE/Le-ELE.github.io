@@ -167,3 +167,7 @@ El subjuntivo lo usamos para hablar de cosas que no hacen parte de "la realidad"
 - ¿Qué te fascina que otras personas hagan?
 	- Me fascina que otras personas canten muy bien
 	- Me fascina que otras personas conozcan mucho sobre historia
+
+---
+- doler
+- 
