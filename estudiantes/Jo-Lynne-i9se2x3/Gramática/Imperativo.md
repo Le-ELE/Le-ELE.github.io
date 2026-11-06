@@ -4,12 +4,19 @@
 | ---- | --------------- | --------------- |
 | (tú) | Tercera persona | Tercera persona |
 - Comer
-	- como
-	- comes
 	- come
 - Hablar
 	- habla
-- 
+- Trabajar
+	- Trabaja
+- Parar
+	- para
+- Dormir
+	- duerme
+- Correr
+	- corre
+- caminar
+	- 
 
 Negativo
 
