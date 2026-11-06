@@ -170,4 +170,15 @@ El subjuntivo lo usamos para hablar de cosas que no hacen parte de "la realidad"
 
 ---
 - doler
-- 
+	- ¿Qué te duele que otras personas hagan?
+		- Me duele que otras personas mientan
+		- Me duele que otras personas estén enojadas 
+	- ¿Qué le duele a tu mamá que otras personas hagan?
+		- A mi mamá le duele que otras personas no la entiendan
+	- ¿Qué me duele que otras personas hagan?
+		- Te duele que otras personas no tengan paciencia
+- interesar
+	- Me interesa que otra persona diseñe muy bien
+	- haga
+	- 
+- sorprender
