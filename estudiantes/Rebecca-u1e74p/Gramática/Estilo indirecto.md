@@ -23,5 +23,14 @@ tu -> mi (posesivos)
 - Meg me dijo que la llamara después de la clase contigo 
 
 ---
+- Mi hermana: llega a casa
+- Mi hermana me dijo que llegara a casa
+
+---
+- Mi hermana: compré unas flores para nuestra madre, se las compré en el parque
+- Mi hermana me dijo que compró unas flores para nuestra madre, se las compró en el parque
+
+
+
 
 prometer
