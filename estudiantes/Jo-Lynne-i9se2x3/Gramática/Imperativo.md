@@ -1,8 +1,14 @@
+- Haz tu tarea
+- Ve a la fiesta
+- zapatos
+- afuera
+- Pon tus zapatos afuera
+- 
 
 
-|      | -ar             | -ar / -er       |
-| ---- | --------------- | --------------- |
-| (tú) | Tercera persona | Tercera persona |
+|      | -ar             | -ar / -er       | tener | decir | poner | hacer | salir | ir  |     |     |
+| ---- | --------------- | --------------- | ----- | ----- | ----- | ----- | ----- | --- | --- | --- |
+| (tú) | Tercera persona | Tercera persona | ten   | di    | pon   | haz   | sal   | ve  |     |     |
 - Comer
 	- come
 - Hablar
@@ -15,8 +21,11 @@
 	- duerme
 - Correr
 	- corre
-- caminar
-	- 
+- Caminar
+	- Camina
+---
+
+---
 
 Negativo
 
