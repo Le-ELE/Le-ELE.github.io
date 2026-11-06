@@ -9,3 +9,10 @@ yo -> ella
 - Santiago: tienes que hacer tu tarea
 - Tú me dijiste que yo tenía que hacer mi tarea
 
+---
+
+- Santiago: haz tu tarea
+- Santiago me dijo que hiciera mi tarea
+
+imperativo -> imperfecto de subjuntivo
+tú -> mi
