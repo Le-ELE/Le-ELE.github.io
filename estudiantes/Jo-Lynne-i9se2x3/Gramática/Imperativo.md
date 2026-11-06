@@ -3,6 +3,15 @@
 - zapatos
 - afuera
 - Pon tus zapatos afuera
+- Di la verdad
+- paciencia
+- Ten paciencia
+- Sal de aquí
+- Come mejor
+- Ten un buen fin de semana
+- Ten un buen día
+- Ten una buena semana
+- Ten un buen viernes
 - 
 
 
