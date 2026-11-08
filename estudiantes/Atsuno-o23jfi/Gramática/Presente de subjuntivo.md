@@ -180,5 +180,64 @@ El subjuntivo lo usamos para hablar de cosas que no hacen parte de "la realidad"
 - interesar
 	- Me interesa que otra persona diseñe muy bien
 	- haga
-	- 
+	- practique
 - sorprender
+	- Me sorprende
+---
+# Cosa inespecífica
+
+- Quiero una novia que (saber) sepa hablar chino
+---
+- Estoy buscando a un hombre que tiene camisa negra
+	- Esa persona existe y es específica
+- Estoy buscando a un hombre que tenga camisa negra
+	- Esa persona es imaginaria y "cualquier hombre con camisa negra" me sirve
+- --
+- ¿Qué quieres comer?
+	- Quiero comer una comida que tenga pasta
+- ---
+- ¿Qué quieres comer?
+	- Lo que hay en la nevera
+		- That thing that is in the fridge
+	- Lo que haya en la nevera
+		- Anything in the fridge
+---
+- ¿Qué necesitas que tenga una persona para ser tu pareja?
+- que tenga paciencia
+- que tenga trabajo
+- que tenga pasión
+- que no sea idiota
+- que haga ejercicio
+---
+Imagina que necesitas un asistente para tu trabajo
+
+Crea una lista de requisitos para esa persona
+
+- Necesito que el asistente organice muy bien
+- Necesito que el asistente sea puntual
+- Necesito que el asistente dibuje muy bien
+---
+- un poquito de monedas
+- donación
+- ser amable
+- respetuoso
+---
+¿Qué es necesario para ser monje?
+
+- devoto 
+- humilde
+- Es necesario que seas devoto
+- Es necesario que seas humilde
+- Es necesario que tengas paciencia
+---
+- no romper las reglas
+- ---
+- ¿Qué es necesario que haga para ir a Japón como colombiano?
+- Es necesario que sepas japonés básico, que sepas las reglas japonesas, que seas puntual si quieres trabajar en Japón
+- --
+- Si quiero una novia japonesa, qué es buena idea que haga?
+	- Es buena idea que tú seas de ayuda con cosas de la casa
+	- que seas honesto
+	- 
+
+
