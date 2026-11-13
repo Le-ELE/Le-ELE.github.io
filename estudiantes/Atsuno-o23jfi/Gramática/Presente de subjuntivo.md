@@ -241,3 +241,23 @@ Crea una lista de requisitos para esa persona
 	- 
 
 
+---
+# Verbos de opinión
+
+- pensar
+- creer
+- parecer que
+  
+  Este tipo de verbos usa el subjuntivo cuando está después de "no"
+
+---
+- Pienso que está lloviendo
+- Pienso que no está lloviendo
+- No pienso que esté lloviendo
+- ---
+- Creo que no estás enferma
+- Creo que estás enferma
+- No creo que estés enferma
+- ---
+- No me parece que tengamos suficiente tiempo para aprender otro uso del subjuntivo
+- No me parece que la tienda esté 
