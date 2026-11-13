@@ -260,4 +260,17 @@ Crea una lista de requisitos para esa persona
 - No creo que estés enferma
 - ---
 - No me parece que tengamos suficiente tiempo para aprender otro uso del subjuntivo
-- No me parece que la tienda esté 
+- No me parece que la tienda esté abierta
+- No me parece que Medellín sea muy caliente
+- No me parece que haya un problema
+- ---
+- Mi mamá no cree que yo esté enfermo
+- A Atzi no le parece que el subjuntivo sea difícil
+- A mi gato no le parece que yo esté triste
+- No me parece que mi gato tenga hambre
+- ---
+- A mis papás les parece que tengo mucho tiempo para hablar con ellos
+- A mis papás no les parece que tenga mucho tiempo...
+- --
+- ¿Crees que Trump es un buen presidente?
+- Yo no creo que Trump sea 
