@@ -273,4 +273,9 @@ Crea una lista de requisitos para esa persona
 - A mis papás no les parece que tenga mucho tiempo...
 - --
 - ¿Crees que Trump es un buen presidente?
-- Yo no creo que Trump sea 
+- Yo no creo que Trump sea un buen presidente
+- ¿crees que Santiago conduce bien?
+	- Creo que Santiago conduce bien
+	- No creo que Santiago conduzca bien
+- ---
+- 
