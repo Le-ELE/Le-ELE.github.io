@@ -43,4 +43,11 @@ Si + imperfecto de subjuntivo, + condicional
 * ¿Dónde vivirías si pudieras vivir por 3 meses completamente gratis?
 * ¿Si pudieras vivir por 3 meses completamente gratis, dónde vivirías ?
 	* Si pudiera vivir por 3 meses completamente gratis, viviría en las Maldivas.
-* 
+
+---
+
+* Dónde volarías si podría tener una boleta gratis? 
+
+* Qúe comieras si tendría UberEasts para gratis? 
+
+* Si hablaras con una persona famosa pero muerta, con quién querías hablar?
