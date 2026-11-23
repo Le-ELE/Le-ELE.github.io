@@ -52,6 +52,19 @@ Si + imperfecto de subjuntivo, + condicional
 
 * Qué comerías si tuvieras UberEasts gratis? 
 	* si tuviera UberEasts gratis, comería en Kaime
-	* 
+	* pediría comida de Salud Pan 
 
 * Si pudieras hablar con una persona famosa pero muerta, con quién querrías hablar?
+* Hablaría con Pessoa / Clarice Lispector
+* 
+
+---
+
+* Si pudieras hablar con cualquier persona viva, con quién hablarías?
+	* 
+* Si pudieras hablar con cualquier persona viva obligada a decir la verdad, con quién hablarías?
+	* 
+* Si pudieras hablar con cualquier persona muerta, con quién hablarías?
+	* 
+* Si pudieras hablar con cualquier persona muerta obligada a decir la verdad, con quién hablarías?
+	* 
