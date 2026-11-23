@@ -21,6 +21,6 @@ Si presente, imperativo
 
 	Si tienes tiempo, ayúdame
 	
-	Si quiero decir unas cosas, dime
+	Si quieres decir algo, dime
 	
-	Si
+	Si corres en el fin de semana, avísame
