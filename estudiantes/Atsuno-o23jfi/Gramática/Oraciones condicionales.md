@@ -69,4 +69,8 @@ Si + imperfecto de subjuntivo, + condicional
 	* Me gustaría hablar con mi abuela
 	* autor
 * Si pudieras hablar con cualquier persona muerta obligada a decir la verdad, con quién hablarías?
-	* 
+	* científicos desaparecidos
+	* Siddharta Gautama / Buda / 
+	* Jesucristo
+
+respuesta
