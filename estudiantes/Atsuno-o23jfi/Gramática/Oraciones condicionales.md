@@ -61,10 +61,12 @@ Si + imperfecto de subjuntivo, + condicional
 ---
 
 * Si pudieras hablar con cualquier persona viva, con quién hablarías?
-	* 
+	* Si pudiera hablar con cualquier persona viva, me gustaría hablar con Elon Musk
+	* Silvio Rodríguez
 * Si pudieras hablar con cualquier persona viva obligada a decir la verdad, con quién hablarías?
-	* 
+	* Me gustaría hablar con cualquier persona que conozca sobre Epstein y UFO
 * Si pudieras hablar con cualquier persona muerta, con quién hablarías?
-	* 
+	* Me gustaría hablar con mi abuela
+	* autor
 * Si pudieras hablar con cualquier persona muerta obligada a decir la verdad, con quién hablarías?
 	* 
