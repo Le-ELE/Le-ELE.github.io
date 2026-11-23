@@ -30,3 +30,5 @@ Si presente, imperativo
 
 Si + imperfecto de subjuntivo, + condicional
 
+
+Si tuviera más dinero, compraría una casa
