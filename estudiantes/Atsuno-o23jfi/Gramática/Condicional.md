@@ -9,3 +9,12 @@ infinitivo + ía
 Los irregulares son los mismos irregulares del futuro simple
 
 
+tendré
+	tendría
+
+pondré
+	pondría
+
+querré
+	querría
+

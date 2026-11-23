@@ -39,4 +39,8 @@ Si + imperfecto de subjuntivo, + condicional
 
 ---
 * ¿Qué harías si tuvieras diez mil dólares para usar como quieras?
-* Si tuviera 10.000 para usar, m
+	* Si tuviera 10.000 dólares para usar, querría comprar (compraría) un portátil mejor
+* ¿Dónde vivirías si pudieras vivir por 3 meses completamente gratis?
+* ¿Si pudieras vivir por 3 meses completamente gratis, dónde vivirías ?
+	* Si pudiera vivir por 3 meses completamente gratis, viviría en las Maldivas.
+* 
