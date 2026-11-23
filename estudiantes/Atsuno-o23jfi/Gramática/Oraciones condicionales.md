@@ -46,8 +46,12 @@ Si + imperfecto de subjuntivo, + condicional
 
 ---
 
-* Dónde volarías si podría tener una boleta gratis? 
+* Dónde volarías si pudieras tener una boleta gratis? 
+	* Si tuviera una boleta gratis de solo ida, iría a Cambodia. 
+	*  Si tuviera una boleta gratis de solo ida, me gustaría visitar Vietnam. 
 
-* Qúe comieras si tendría UberEasts para gratis? 
+* Qué comerías si tuvieras UberEasts gratis? 
+	* si tuviera UberEasts gratis, comería en Kaime
+	* 
 
-* Si hablaras con una persona famosa pero muerta, con quién querías hablar?
+* Si pudieras hablar con una persona famosa pero muerta, con quién querrías hablar?
