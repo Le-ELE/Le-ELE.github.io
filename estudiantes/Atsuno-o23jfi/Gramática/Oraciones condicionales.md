@@ -31,4 +31,12 @@ Si presente, imperativo
 Si + imperfecto de subjuntivo, + condicional
 
 
-Si tuviera más dinero, compraría una casa
++ Si tuviera más dinero, compraría una casa
+	+ If i had more money, I would buy a house
++ Si tuviera tiempo, te ayudaría
+=/=
++ Si tengo tiempo, te voy a ayudar
+
+---
+* ¿Qué harías si tuvieras diez mil dólares para usar como quieras?
+* Si tuviera 10.000 para usar, m
