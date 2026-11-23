@@ -24,3 +24,9 @@ Si presente, imperativo
 	Si quieres decir algo, dime
 	
 	Si corres en el fin de semana, avísame
+---
+
+# Oraciones condicionales irreales
+
+Si + imperfecto de subjuntivo, + condicional
+
