@@ -20,5 +20,22 @@
 | Español          | Inglés            |
 | ---------------- | ----------------- |
 | Me gustaría ____ | I would like ____ |
-| Qué tal          |                   |
 |                  |                   |
+|                  |                   |
+# Direcciones
+
+| Español              | Inglés           |
+| -------------------- | ---------------- |
+| ¿Dónde queda ____?   | Where is ___?    |
+| el baño              |                  |
+| el cajero            | the atm          |
+| el restaurante       |                  |
+| el hotel             |                  |
+| la playa             |                  |
+| ¿Dónde están____?    | Where are ___?   |
+| los taxis            |                  |
+| los hoteles          |                  |
+| los guías turísticos | touristic guides |
+|                      |                  |
+# Pronombres
+
