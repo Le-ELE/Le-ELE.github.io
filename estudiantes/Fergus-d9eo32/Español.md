@@ -15,6 +15,8 @@
 | Ten una buena tarde |        |
 | Ten una buena noche |        |
 |                     |        |
+
+---
 # Restaurantes
 
 | Español          | Inglés            |
@@ -22,6 +24,8 @@
 | Me gustaría ____ | I would like ____ |
 |                  |                   |
 |                  |                   |
+
+---
 # Direcciones
 
 | Español              | Inglés           |
@@ -37,5 +41,44 @@
 | los hoteles          |                  |
 | los guías turísticos | touristic guides |
 |                      |                  |
+
+---
 # Pronombres
 
+
+| Español       | Inglés     |
+| ------------- | ---------- |
+| Yo            | I          |
+| Tú            | You        |
+| Ella / Él     | She / He   |
+| Nosotros      | We         |
+| Ustedes       | You all    |
+| Ellas / Ellos | They F / M |
+
+---
+
+# Posesivos
+
+
+| Español | Inglés    |
+| ------- | --------- |
+| Mi      | my        |
+| tu      | your      |
+| su      | his / her |
+| nuestro | our       |
+| su      | their     |
+
+---
+
+# Frases
+
+
+| Español             | Inglés              |
+| ------------------- | ------------------- |
+| Más despacio porfa  |                     |
+| ¿Qué significa?     |                     |
+| ¿Hablas inglés?     |                     |
+| Mucho gusto         |                     |
+| Yo quiero un taxi   | I want a taxi       |
+| Me gustaría un taxi | I would like a taxi |
+| Necesito un taxi    | I need a taxi       |
