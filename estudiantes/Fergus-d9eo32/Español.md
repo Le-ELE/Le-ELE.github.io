@@ -143,20 +143,20 @@
 # At beach
 
 
-| playa                    | beach                            |
-| ------------------------ | -------------------------------- |
-| bloqueador solar         | sun screen                       |
-| nadar                    | swiming                          |
-| Yo quiero nadar          |                                  |
-| surfear                  | surfing                          |
-| masaje                   | massage                          |
-| mi novia                 | my girlfriend                    |
-| Ella vive en             |                                  |
-| Ella necesita ___        |                                  |
-| Ella quiere ____         |                                  |
-| Nos gustaría ir a cenar  | We would like to go to dinner    |
-| Nos gustaría conocer ___ | We would like to get to know ___ |
-| un museo                 |                                  |
-| una caminata             | a hike / a walk                  |
-| un regalo                | a gift                           |
-|                          |                                  |
+| playa                          | beach                            |
+| ------------------------------ | -------------------------------- |
+| bloqueador solar               | sun screen                       |
+| nadar                          | swiming                          |
+| Yo quiero nadar                |                                  |
+| surfear                        | surfing                          |
+| masaje                         | massage                          |
+| mi novia                       | my girlfriend                    |
+| Ella vive en                   |                                  |
+| Ella necesita ___              |                                  |
+| Ella quiere ____               |                                  |
+| Nos gustaría ir a cenar        | We would like to go to dinner    |
+| Nos gustaría conocer ___       | We would like to get to know ___ |
+| un museo                       |                                  |
+| una caminata                   | a hike / a walk                  |
+| un regalo                      | a gift                           |
+| Quiero un regalo para mi novia |                                  |
