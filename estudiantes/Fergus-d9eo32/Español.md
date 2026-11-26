@@ -73,12 +73,27 @@
 # Frases
 
 
-| Español             | Inglés              |
-| ------------------- | ------------------- |
-| Más despacio porfa  |                     |
-| ¿Qué significa?     |                     |
-| ¿Hablas inglés?     |                     |
-| Mucho gusto         |                     |
-| Yo quiero un taxi   | I want a taxi       |
-| Me gustaría un taxi | I would like a taxi |
-| Necesito un taxi    | I need a taxi       |
+| Español                                | Inglés              |
+| -------------------------------------- | ------------------- |
+| Más despacio porfa                     |                     |
+| ¿Qué significa?                        |                     |
+| ¿Hablas inglés?                        |                     |
+| Mucho gusto                            |                     |
+| Yo quiero un taxi                      | I want a taxi       |
+| Me gustaría un taxi                    | I would like a taxi |
+| Necesito un taxi                       | I need a taxi       |
+| ¿Cuántos años tienes?                  | How old are you?    |
+| Tengo treinta y cinco años             | I am 35             |
+| Tengo hambre                           | I am hungry         |
+| Tengo sed                              | I am thursty        |
+| ¿Cuál es tu nombre? / ¿Cómo te llamas? | What is your name?  |
+| Me llamo Fergus / Mi nombre es Fergus  |                     |
+| ¿Qué tal tu día?                       | How about your day? |
+|                                        |                     |
+
+---
+
+
+| Español      | Inglés        |
+| ------------ | ------------- |
+| Me gusta ___ | I like to ___ |
