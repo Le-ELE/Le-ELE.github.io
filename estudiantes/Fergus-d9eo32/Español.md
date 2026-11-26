@@ -93,7 +93,23 @@
 
 ---
 
+# Like / Want
 
-| Español      | Inglés        |
-| ------------ | ------------- |
-| Me gusta ___ | I like to ___ |
+| Español              | Inglés                  |         |
+| -------------------- | ----------------------- | ------- |
+| Me gusta ___         | I like to ___           |         |
+| ¿Qué te gusta hacer? | What do you like to do? |         |
+| ¿Qué quieres hacer?  | What do you want to do? |         |
+| ¿Te gustaría ___?    | Would you like to ___?  | conmigo |
+|                      |                         |         |
+
+---
+
+# Verbos
+
+
+| Español         | Inglés              |
+| --------------- | ------------------- |
+| bailar          | to dance            |
+| ir a otro lugar | go to another place |
+| viajar          | to travel           |
