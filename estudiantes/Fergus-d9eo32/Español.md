@@ -134,4 +134,18 @@
 | ¿Dónde estás?              | Where are you?          |
 | Estoy en ___               | I am in/at/on           |
 | ¿Dónde hago check in?      |                         |
+| ¿Dónde está mi equipaje?   | Where is my bagaged?    |
 |                            |                         |
+|                            |                         |
+
+---
+
+# At beach
+
+
+| playa            | beach      |
+| ---------------- | ---------- |
+| bloqueador solar | sun screen |
+| nadar            | swiming    |
+| Yo quiero nadar  |            |
+|                  |            |
