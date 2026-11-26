@@ -126,4 +126,12 @@
 | ¿Cuánto tiempo?            | How long?               |
 | entrada                    | entrance                |
 | salida                     | exit                    |
+| Necesito ayuda             | I need help             |
+| el / la                    | the                     |
+| la llave                   | key                     |
+| necesito una sábana        | I need a blanket        |
+| ¿dónde voy?                | Where do I go?          |
+| ¿Dónde estás?              | Where are you?          |
+| Estoy en ___               | I am in/at/on           |
+| ¿Dónde hago check in?      |                         |
 |                            |                         |
