@@ -113,3 +113,17 @@
 | bailar          | to dance            |
 | ir a otro lugar | go to another place |
 | viajar          | to travel           |
+
+
+| Español                    | Inglés                  |
+| -------------------------- | ----------------------- |
+| ¿Puedes prestarme __?      | Can I borrow __ __?     |
+| un cargador                | a charger               |
+| ¿Puedo cargar mi teléfono? | Can I charge my phone?  |
+| ¿Puedo usar el baño?       | Can I use the bathroom? |
+| ¿Cuánto cuesta __?         | How much is __?         |
+| comida                     | food                    |
+| ¿Cuánto tiempo?            | How long?               |
+| entrada                    | entrance                |
+| salida                     | exit                    |
+|                            |                         |
