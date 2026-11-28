@@ -199,4 +199,7 @@
 | Hace 10 años                             | 10 years ago            |
 | ¿Qué te gustaría comer esta noche?       |                         |
 | hamburguesa vegana                       |                         |
+| hermana                                  |                         |
+| cocina                                   |                         |
+| ¿Eres católico?                          |                         |
 |                                          |                         |
