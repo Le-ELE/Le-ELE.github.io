@@ -206,3 +206,6 @@
 | Muy borracho                             |                         |
 | ¿De dónde eres (en Colombia)?            |                         |
 | cincuenta kilómetros                     |                         |
+| Tu inglés es muy bueno                   |                         |
+| dónde aprendiste?                        |                         |
+|                                          |                         |
