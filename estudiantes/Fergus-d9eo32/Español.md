@@ -169,18 +169,26 @@
 
 
 
-| Español                | Inglés          |
-| ---------------------- | --------------- |
-| fui                    | I went          |
-| comí                   | I ate           |
-| comí sanduche de jamón |                 |
-| jugué                  | played          |
-| jugué con mi sobrina   |                 |
-| Eso es todo            | that's it       |
-| Desperté               | I woke up       |
-| Desayuné               | I ate breakfast |
-| papas                  |                 |
-| huevos                 | eggs            |
-| A veces                | sometimes       |
-| Más o menos            | more or less    |
-|                        |                 |
+| Español                                  | Inglés                  |
+| ---------------------------------------- | ----------------------- |
+| fui                                      | I went                  |
+| comí                                     | I ate                   |
+| comí sanduche de jamón                   |                         |
+| jugué                                    | played                  |
+| jugué con mi sobrina                     |                         |
+| Eso es todo                              | that's it               |
+| Desperté                                 | I woke up               |
+| Desayuné                                 | I ate breakfast         |
+| papas                                    |                         |
+| huevos                                   | eggs                    |
+| A veces                                  | sometimes               |
+| Más o menos                              | more or less            |
+| ¿Cuándo fue tu cumpleaños?               | When was your birthday? |
+| Mi cumpleaños fue el 19 de septiembre    |                         |
+| tres de julio                            |                         |
+| treinta de junio                         |                         |
+| ocho de diciembre                        |                         |
+| Creo                                     |                         |
+| Qué quieres hacer el próximo año?        |                         |
+| El próximo año quiero ganar mucho dinero |                         |
+|                                          |                         |
