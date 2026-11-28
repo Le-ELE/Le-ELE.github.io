@@ -219,4 +219,12 @@
 | Ayer jugué  fútbol con unos niños        |                                 |
 | ¿Cuál es tu equipo favorito?             | What is your favorite team?     |
 | Te gusta correr?                         | Do you like to run?             |
-|                                          |                                 |
+| todos los días                           | All days                        |
+| ¿Es lindo Nepal?                         | Is beautiful Nepal?             |
+| El más lindo                             |                                 |
+| caliente                                 | hot                             |
+| frío                                     | cold                            |
+| montañas                                 | mountains                       |
+| hermosas                                 | beautiful                       |
+| Las montañas son hermosas                | The mountains are beautiful     |
+| el agua                                  |                                 |
