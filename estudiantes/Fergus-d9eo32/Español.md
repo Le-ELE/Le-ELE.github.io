@@ -194,4 +194,9 @@
 | vivir en California                      |                         |
 | Me encanta                               | I love                  |
 | Dónde te gustaría viajar?                |                         |
+| He estado en Cambodia                    |                         |
+| Dos semanas                              |                         |
+| Hace 10 años                             | 10 years ago            |
+| ¿Qué te gustaría comer esta noche?       |                         |
+| hamburguesa vegana                       |                         |
 |                                          |                         |
