@@ -160,3 +160,21 @@
 | una caminata                   | a hike / a walk                  |
 | un regalo                      | a gift                           |
 | Quiero un regalo para mi novia |                                  |
+| muy bien                       | very good                        |
+| todos los músculos             |                                  |
+
+---
+
+# Important verbs
+
+
+
+| Español                | Inglés    |
+| ---------------------- | --------- |
+| fui                    | I went    |
+| comí                   | I ate     |
+| comí sanduche de jamón |           |
+| jugué                  | played    |
+| jugué con mi sobrina   |           |
+| Eso es todo            | that's it |
+|                        |           |
