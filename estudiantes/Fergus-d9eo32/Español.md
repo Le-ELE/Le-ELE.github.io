@@ -213,4 +213,10 @@
 | ¿Tienes novia?                           | Do you have a girlfriend?       |
 | ¿Hace cuánto?                            | How long ago?                   |
 | Tal vez                                  | Maybe                           |
+| ¿Tú quieres tener hijos?                 | Do you want to have kids?       |
+| Para cuidar a las niñas                  | To take care of the girls       |
+| Enseñar                                  |                                 |
+| Ayer jugué  fútbol con unos niños        |                                 |
+| ¿Cuál es tu equipo favorito?             | What is your favorite team?     |
+| Te gusta correr?                         | Do you like to run?             |
 |                                          |                                 |
