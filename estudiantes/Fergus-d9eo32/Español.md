@@ -169,69 +169,73 @@
 
 
 
-| Español                                  | Inglés                                     |
-| ---------------------------------------- | ------------------------------------------ |
-| fui                                      | I went                                     |
-| comí                                     | I ate                                      |
-| comí sanduche de jamón                   |                                            |
-| jugué                                    | played                                     |
-| jugué con mi sobrina                     |                                            |
-| Eso es todo                              | that's it                                  |
-| Desperté                                 | I woke up                                  |
-| Desayuné                                 | I ate breakfast                            |
-| papas                                    |                                            |
-| huevos                                   | eggs                                       |
-| A veces                                  | sometimes                                  |
-| Más o menos                              | more or less                               |
-| ¿Cuándo fue tu cumpleaños?               | When was your birthday?                    |
-| Mi cumpleaños fue el 19 de septiembre    |                                            |
-| tres de julio                            |                                            |
-| treinta de junio                         |                                            |
-| ocho de diciembre                        |                                            |
-| Creo                                     |                                            |
-| Qué quieres hacer el próximo año?        |                                            |
-| El próximo año quiero ganar mucho dinero |                                            |
-| vivir en California                      |                                            |
-| Me encanta                               | I love                                     |
-| Dónde te gustaría viajar?                |                                            |
-| He estado en Cambodia                    |                                            |
-| Dos semanas                              |                                            |
-| Hace 10 años                             | 10 years ago                               |
-| ¿Qué te gustaría comer esta noche?       |                                            |
-| hamburguesa vegana                       |                                            |
-| hermana                                  |                                            |
-| cocina                                   |                                            |
-| ¿Eres católico?                          |                                            |
-| Perro callejero                          |                                            |
-| Muy borracho                             |                                            |
-| ¿De dónde eres (en Colombia)?            |                                            |
-| cincuenta kilómetros                     |                                            |
-| Tu inglés es muy bueno                   |                                            |
-| dónde aprendiste?                        | Where did you learn?                       |
-| ¿Cuántos clientes tienes?                |                                            |
-| ¿Hace cuánto trabajas como ___?          | How long ago do you work as __?            |
-| ¿Tienes novia?                           | Do you have a girlfriend?                  |
-| ¿Hace cuánto?                            | How long ago?                              |
-| Tal vez                                  | Maybe                                      |
-| ¿Tú quieres tener hijos?                 | Do you want to have kids?                  |
-| Para cuidar a las niñas                  | To take care of the girls                  |
-| Enseñar                                  |                                            |
-| Ayer jugué  fútbol con unos niños        |                                            |
-| ¿Cuál es tu equipo favorito?             | What is your favorite team?                |
-| Te gusta correr?                         | Do you like to run?                        |
-| todos los días                           | All days                                   |
-| ¿Es lindo Nepal?                         | Is beautiful Nepal?                        |
-| El más lindo                             |                                            |
-| caliente                                 | hot                                        |
-| frío                                     | cold                                       |
-| montañas                                 | mountains                                  |
-| hermosas                                 | beautiful                                  |
-| Las montañas son hermosas                | The mountains are beautiful                |
-| el mar es hermoso                        | the sea is beautiful                       |
-| Mi novia es hermosa                      | My girlfriend is beautiful                 |
-| dinero                                   |                                            |
-| Nepal es caro o barato?                  | Is Nepal expensive or cheap?               |
-| el vuelo                                 | the flight                                 |
-| Yo quiero ser monje budista por dos años | I want to be a buddhist monk for two years |
-| Si tengo tiempo                          | If I have time                             |
-|                                          |                                            |
+| Español                                                  | Inglés                                     |
+| -------------------------------------------------------- | ------------------------------------------ |
+| fui                                                      | I went                                     |
+| comí                                                     | I ate                                      |
+| comí sanduche de jamón                                   |                                            |
+| jugué                                                    | played                                     |
+| jugué con mi sobrina                                     |                                            |
+| Eso es todo                                              | that's it                                  |
+| Desperté                                                 | I woke up                                  |
+| Desayuné                                                 | I ate breakfast                            |
+| papas                                                    |                                            |
+| huevos                                                   | eggs                                       |
+| A veces                                                  | sometimes                                  |
+| Más o menos                                              | more or less                               |
+| ¿Cuándo fue tu cumpleaños?                               | When was your birthday?                    |
+| Mi cumpleaños fue el 19 de septiembre                    |                                            |
+| tres de julio                                            |                                            |
+| treinta de junio                                         |                                            |
+| ocho de diciembre                                        |                                            |
+| Creo                                                     |                                            |
+| Qué quieres hacer el próximo año?                        |                                            |
+| El próximo año quiero ganar mucho dinero                 |                                            |
+| vivir en California                                      |                                            |
+| Me encanta                                               | I love                                     |
+| Dónde te gustaría viajar?                                |                                            |
+| He estado en Cambodia                                    |                                            |
+| Dos semanas                                              |                                            |
+| Hace 10 años                                             | 10 years ago                               |
+| ¿Qué te gustaría comer esta noche?                       |                                            |
+| hamburguesa vegana                                       |                                            |
+| hermana                                                  |                                            |
+| cocina                                                   |                                            |
+| ¿Eres católico?                                          |                                            |
+| Perro callejero                                          |                                            |
+| Muy borracho                                             |                                            |
+| ¿De dónde eres (en Colombia)?                            |                                            |
+| cincuenta kilómetros                                     |                                            |
+| Tu inglés es muy bueno                                   |                                            |
+| dónde aprendiste?                                        | Where did you learn?                       |
+| ¿Cuántos clientes tienes?                                |                                            |
+| ¿Hace cuánto trabajas como ___?                          | How long ago do you work as __?            |
+| ¿Tienes novia?                                           | Do you have a girlfriend?                  |
+| ¿Hace cuánto?                                            | How long ago?                              |
+| Tal vez                                                  | Maybe                                      |
+| ¿Tú quieres tener hijos?                                 | Do you want to have kids?                  |
+| Para cuidar a las niñas                                  | To take care of the girls                  |
+| Enseñar                                                  |                                            |
+| Ayer jugué  fútbol con unos niños                        |                                            |
+| ¿Cuál es tu equipo favorito?                             | What is your favorite team?                |
+| Te gusta correr?                                         | Do you like to run?                        |
+| todos los días                                           | All days                                   |
+| ¿Es lindo Nepal?                                         | Is beautiful Nepal?                        |
+| El más lindo                                             |                                            |
+| caliente                                                 | hot                                        |
+| frío                                                     | cold                                       |
+| montañas                                                 | mountains                                  |
+| hermosas                                                 | beautiful                                  |
+| Las montañas son hermosas                                | The mountains are beautiful                |
+| el mar es hermoso                                        | the sea is beautiful                       |
+| Mi novia es hermosa                                      | My girlfriend is beautiful                 |
+| dinero                                                   |                                            |
+| Nepal es caro o barato?                                  | Is Nepal expensive or cheap?               |
+| el vuelo                                                 | the flight                                 |
+| Yo quiero ser monje budista por dos años                 | I want to be a buddhist monk for two years |
+| Si tengo tiempo                                          | If I have time                             |
+| Tú tocas algún instrumento?                              |                                            |
+| modesto                                                  | modest                                     |
+| El próximo año                                           | Next year                                  |
+| Aprende piano y cuando yo visito Londres, tocamos juntos |                                            |
+| Oliver lee mucho                                         | Oli reads a                                |
