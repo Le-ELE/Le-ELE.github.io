@@ -202,4 +202,7 @@
 | hermana                                  |                         |
 | cocina                                   |                         |
 | ¿Eres católico?                          |                         |
-|                                          |                         |
+| Perro callejero                          |                         |
+| Muy borracho                             |                         |
+| ¿De dónde eres (en Colombia)?            |                         |
+| cincuenta kilómetros                     |                         |
