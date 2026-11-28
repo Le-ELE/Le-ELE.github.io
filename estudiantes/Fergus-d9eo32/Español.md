@@ -251,4 +251,15 @@
 | Ella enseña sola o en una escuela?                       | She teaches alone or in a school?             |
 | ambos                                                    | both                                          |
 | Otra pregunta                                            | Another question                              |
+| Deberías                                                 | you should                                    |
+| Deberías pedirle hablar en español                       |                                               |
+| inmediatamente                                           | inmidiatly                                    |
+| A las 6                                                  | at 6                                          |
+| A las 3                                                  |                                               |
+| A las cuatro y media                                     | at 4:30                                       |
+|                                                          |                                               |
+| ¿Qué vas a hacer después de la clase?                    | What are you going to do after the class?     |
+| Voy a ___                                                | I am going to ___                             |
+| llamar                                                   | to call                                       |
+| ¿Sobre qué vas a hablar con ella?                        |                                               |
 |                                                          |                                               |
