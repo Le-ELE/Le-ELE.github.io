@@ -169,43 +169,48 @@
 
 
 
-| Español                                  | Inglés                  |
-| ---------------------------------------- | ----------------------- |
-| fui                                      | I went                  |
-| comí                                     | I ate                   |
-| comí sanduche de jamón                   |                         |
-| jugué                                    | played                  |
-| jugué con mi sobrina                     |                         |
-| Eso es todo                              | that's it               |
-| Desperté                                 | I woke up               |
-| Desayuné                                 | I ate breakfast         |
-| papas                                    |                         |
-| huevos                                   | eggs                    |
-| A veces                                  | sometimes               |
-| Más o menos                              | more or less            |
-| ¿Cuándo fue tu cumpleaños?               | When was your birthday? |
-| Mi cumpleaños fue el 19 de septiembre    |                         |
-| tres de julio                            |                         |
-| treinta de junio                         |                         |
-| ocho de diciembre                        |                         |
-| Creo                                     |                         |
-| Qué quieres hacer el próximo año?        |                         |
-| El próximo año quiero ganar mucho dinero |                         |
-| vivir en California                      |                         |
-| Me encanta                               | I love                  |
-| Dónde te gustaría viajar?                |                         |
-| He estado en Cambodia                    |                         |
-| Dos semanas                              |                         |
-| Hace 10 años                             | 10 years ago            |
-| ¿Qué te gustaría comer esta noche?       |                         |
-| hamburguesa vegana                       |                         |
-| hermana                                  |                         |
-| cocina                                   |                         |
-| ¿Eres católico?                          |                         |
-| Perro callejero                          |                         |
-| Muy borracho                             |                         |
-| ¿De dónde eres (en Colombia)?            |                         |
-| cincuenta kilómetros                     |                         |
-| Tu inglés es muy bueno                   |                         |
-| dónde aprendiste?                        |                         |
-|                                          |                         |
+| Español                                  | Inglés                          |
+| ---------------------------------------- | ------------------------------- |
+| fui                                      | I went                          |
+| comí                                     | I ate                           |
+| comí sanduche de jamón                   |                                 |
+| jugué                                    | played                          |
+| jugué con mi sobrina                     |                                 |
+| Eso es todo                              | that's it                       |
+| Desperté                                 | I woke up                       |
+| Desayuné                                 | I ate breakfast                 |
+| papas                                    |                                 |
+| huevos                                   | eggs                            |
+| A veces                                  | sometimes                       |
+| Más o menos                              | more or less                    |
+| ¿Cuándo fue tu cumpleaños?               | When was your birthday?         |
+| Mi cumpleaños fue el 19 de septiembre    |                                 |
+| tres de julio                            |                                 |
+| treinta de junio                         |                                 |
+| ocho de diciembre                        |                                 |
+| Creo                                     |                                 |
+| Qué quieres hacer el próximo año?        |                                 |
+| El próximo año quiero ganar mucho dinero |                                 |
+| vivir en California                      |                                 |
+| Me encanta                               | I love                          |
+| Dónde te gustaría viajar?                |                                 |
+| He estado en Cambodia                    |                                 |
+| Dos semanas                              |                                 |
+| Hace 10 años                             | 10 years ago                    |
+| ¿Qué te gustaría comer esta noche?       |                                 |
+| hamburguesa vegana                       |                                 |
+| hermana                                  |                                 |
+| cocina                                   |                                 |
+| ¿Eres católico?                          |                                 |
+| Perro callejero                          |                                 |
+| Muy borracho                             |                                 |
+| ¿De dónde eres (en Colombia)?            |                                 |
+| cincuenta kilómetros                     |                                 |
+| Tu inglés es muy bueno                   |                                 |
+| dónde aprendiste?                        | Where did you learn?            |
+| ¿Cuántos clientes tienes?                |                                 |
+| ¿Hace cuánto trabajas como ___?          | How long ago do you work as __? |
+| ¿Tienes novia?                           | Do you have a girlfriend?       |
+| ¿Hace cuánto?                            | How long ago?                   |
+| Tal vez                                  | Maybe                           |
+|                                          |                                 |
