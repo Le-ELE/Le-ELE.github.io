@@ -262,4 +262,15 @@
 | Voy a ___                                                | I am going to ___                             |
 | llamar                                                   | to call                                       |
 | ¿Sobre qué vas a hablar con ella?                        |                                               |
+| ¿Qué vas a hacer después de hablar con ella?             |                                               |
+| Voy a caminar con mi perro                               |                                               |
+| Voy a comer                                              |                                               |
+| ¿Qué vas a comer?                                        |                                               |
+| No sé                                                    | I don't know                                  |
+| ¿Qué vas a hacer mañana?                                 |                                               |
+| Mañana voy a ir con sobrino y sobrina a una granja       |                                               |
+| Una granja de qué?                                       |                                               |
+| Pollos, vacas, caballos, toros, ovejas                   |                                               |
+| ¿Dónde es la granja?                                     | Where is the farm?                            |
+| ¿De quién es la granja?                                  | of                                            |
 |                                                          |                                               |
