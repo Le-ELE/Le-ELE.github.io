@@ -238,4 +238,9 @@
 | modesto                                                  | modest                                     |
 | El próximo año                                           | Next year                                  |
 | Aprende piano y cuando yo visito Londres, tocamos juntos |                                            |
-| Oliver lee mucho                                         | Oli reads a                                |
+| Oliver lee mucho                                         | Oli reads a lot                            |
+| El mes/año pasado                                        | Last month/year                            |
+| La semana pasada                                         | Last weak                                  |
+| cómo                                                     | how                                        |
+| El principito                                            | The little prince                          |
+|                                                          |                                            |
