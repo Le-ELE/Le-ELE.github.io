@@ -245,4 +245,10 @@
 | El principito                                            | The little prince                             |
 | conocí a Sheeny en Hong Kong practicando fútbol          | I met Sheeny in Hong Kong practicing football |
 | ¿Dónde conociste a Amanda?                               |                                               |
-| Fuimos a                                                 |                                               |
+| Fuimos a cenar                                           | We went for dinner                            |
+| En octubre yo viajé a California                         | In october I traveled to California           |
+| Con ella?                                                |                                               |
+| Ella enseña sola o en una escuela?                       | She teaches alone or in a school?             |
+| ambos                                                    | both                                          |
+| Otra pregunta                                            | Another question                              |
+|                                                          |                                               |
