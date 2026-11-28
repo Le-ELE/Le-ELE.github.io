@@ -191,4 +191,7 @@
 | Creo                                     |                         |
 | Qué quieres hacer el próximo año?        |                         |
 | El próximo año quiero ganar mucho dinero |                         |
+| vivir en California                      |                         |
+| Me encanta                               | I love                  |
+| Dónde te gustaría viajar?                |                         |
 |                                          |                         |
