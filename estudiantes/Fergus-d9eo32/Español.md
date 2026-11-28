@@ -233,4 +233,5 @@
 | Nepal es caro o barato?                  | Is Nepal expensive or cheap?               |
 | el vuelo                                 | the flight                                 |
 | Yo quiero ser monje budista por dos años | I want to be a buddhist monk for two years |
+| Si tengo tiempo                          | If I have time                             |
 |                                          |                                            |
